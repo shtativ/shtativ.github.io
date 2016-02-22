@@ -1,0 +1,142 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+.container{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:flex;
+    max-width: 1123px;  /*why such a width?*/
+    margin: 0 auto;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.in_sldider{
+     /* наложить фон
+    background: url("img/macbook.jpg");
+*/
+    align-self: flex-end;
+    border:1px solid black;
+    width:300px;
+}
+.services{
+    display:flex;
+    flex: 1 1 200px;
+    text-align:center;
+    align-items: baseline;
+    width: 180px;
+    height: 222px;
+}
+
+section#hero { /*вот ту не понтно, почему картинка съехала? gjyznyj*/
+	height: 40vw; /*relative to viewport width, took ratio from psd*/
+	background-image: url('../img/macbook.jpg');
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#hero h3 {
+	font-family: 'Open Sans';
+	color: #fff;
+	font-weight: 800;
+	font-size: 67px;
+	margin: 0;
+}
+
+#hero h3 span {
+	color: #f7600e;
+}
+
+
+.in_slider {
+	display: inline-block;
+	text-align: center;
+}
+
+#hero p {
+	color: #fff;
+	font-size: 24px;
+	line-height: 1.6;
+	margin-bottom: 62px;
+}
+
+a.btn {
+	display: inline-block;
+	width: 220px;
+	height: 48px;
+	border: 1px solid rgba(255,255,255,0.20);
+	line-height: 3.3;
+	border-radius: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 600;
+	transition: all 0.3s;
+	cursor:pointer;
+}
+
+a.btn:hover {
+	background-color: #f7600e;
+	border: 1px solid transparent;
+}
+
+
+section#services {
+	height: 25vw; /*relative to viewport width, took ratio from psd*/
+	padding: 96px 0; /*padding is used for vertical `centering` inside section instead of flex*/
+	box-sizing: border-box;
+}
+
+.serviced {
+	text-align: center;
+	color: #3b434c;
+	padding: 0 46px;
+}
+
+.serviced h3 {
+	font-weight: 600;
+	font-size: 15px;
+	margin: 26px 0 22px;
+}
+
+.serviced p {
+	font-size: 14px;
+	line-height: 1.78;
+	margin: 0;
+}
+
+.serviced .img-wrap {
+	display: inline-block;
+	height: 145px;
+	width: 145px;
+	border: 1px solid rgba(59,67,76,0.30);
+	border-radius: 50%;  /*отказался от доп.картинки-класс)*/
+	display: flex; /*sorry no prefixes; I'm lazy*/
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+/*-------------------------------*/
+.newsletter{
+    
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 250px;
+    flex-basis: 100%;
+    background: url(../img/tablet-cofe.png);
+    margin:0px;
+    padding-top: 0px;
+    
+}
+
+/*-при уменьшении ширины окна браузера  секия hero уезжает наверх
+из-за 40vw
+-какого цвета пленка на заглавной картинке?
+-
+*/
