@@ -194,15 +194,28 @@ section#services {
     
     margin:60px auto;  /*отступ от картинки*/
     max-width: 1180px; /*число от балды*/
+    
 }
+/*--------------ВОТ ТУТ-----------------*/
 .bl{
     flex-basis: 360px;
     height: 360px;
     margin:15px;
     padding: 0px;
     border-radius:10px;
-    
+    position: relative;
 }
+.orange{
+    position: absolute;
+    background:rgba(247, 96, 14, 0.9);
+    opacity: 0;
+    cursor:pointer;
+}
+.bl:hover .orange{
+    opacity: 1;
+}
+
+/*    background:rgba(247, 96, 14, 0.9);  */
 
 .fl1{
     width: 455px;
@@ -210,7 +223,6 @@ section#services {
     align-self: center;
     height: 200px;  
     margin:0 120px 0 120px; /*       число не обоснованно, без него элемент не остается один в строке*/
-
 }
 .fl2{background: url("../img/p1.png") no-repeat;}
 .fl3{background: url("../img/p2.png") no-repeat;}
