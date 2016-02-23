@@ -35,6 +35,7 @@ body{
 section#hero { /*вот ту не понтно, почему картинка съехала? gjyznyj*/
 	height: 40vw; /*relative to viewport width, took ratio from psd*/
 	background-image: url('../img/macbook.jpg');
+    background-repeat: no-repeat;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -87,7 +88,7 @@ a.btn:hover {
 
 
 section#services {
-	height: 25vw; /*relative to viewport width, took ratio from psd*/
+
 	padding: 96px 0; /*padding is used for vertical `centering` inside section instead of flex*/
 	box-sizing: border-box;
 }
@@ -124,19 +125,138 @@ section#services {
 
 /*-------------------------------*/
 .newsletter{
-    
-    align-items: flex-start;
-    justify-content: space-between;
     height: 250px;
-    flex-basis: 100%;
-    background: url(../img/tablet-cofe.png);
+    width: auto;
+    background: url(../img/tablet-cofe.png) 100% 0% no-repeat;
     margin:0px;
     padding-top: 0px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.newsletter form {
+    display:inline-block; 
+/*как выравнить формму ввода по центру изображения?
+    vertical-align: middle;*/
     
 }
+.newsletter input{ /*свойста формы email*/
+    width:562px;
+    height: 50px;
+    border-radius: 10px;
+	background:#fff;
+	font-size:0.9em;
+    border:0px solid #FFF;
+    
+    color: #3b434c; /*свойста текста формы*/
+    font-family: 'OpenSans';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align:left;
+    padding-left:24px;
+    outline: none;
+}
+#submit{ /*свойста кнопки*/
+    width: 269px;
+    height: 50px;
+    background: #f7600e;
+    border-radius: 10px;
+    border:0px solid #FFF;
+    margin-left: 30px;
+    padding-left: 0px;
+    transition:all 0.3s;
+    cursor: pointer;
+    border: 1px solid transparent;
+    
+    text-align: center; /*свойста текста кнопки*/
+    color: white;
+    font-family: 'OpenSans';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+#submit:hover{
+    border: 1px solid rgba(255,255,255,0.20);
+    background:rgba(0, 0, 0, 0);
+}
+
+/*проба flexbox*/
+/*upd. вроде получилось*/
+
+.reviews{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    
+    margin:60px auto;  /*отступ от картинки*/
+    max-width: 1180px; /*число от балды*/
+    
+}
+.bl{
+    flex-basis: 360px;
+    height: 360px;
+    margin:15px;
+    padding: 0px;
+}
+
+.fl1{
+    width: 455px;
+    flex-basis:  50%;
+    align-self: center;
+    height: 200px;  
+    margin:0 120px 0 120px; /*       число не обоснованно, без него элемент не остается один в строке
+*/
+}
+.fl2{background: url("../img/p1.png") no-repeat;}
+.fl3{background: url("../img/p2.png") no-repeat;}
+.fl4{background: url("../img/p3.png") no-repeat;}
+.fl5{background: url("../img/p4.png") no-repeat;}
+.fl6{background: url("../img/p5.png") no-repeat;}
+.fl7{background: url("../img/p6.png") no-repeat;}
+
+.fl1 h4{                        /*текст первого блока*/
+    font-family: 'OpenSans';
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #3b434c;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+ .fl1 p{
+    color: #3b434c;
+    font-family: 'OpenSans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+     margin-top:10px;
+}
+/*конец флекс-контейнера*/
+
+
+.btn2 a{   /*недоделал. нужно центровать*/
+    color: #3b434c;
+    font-family: 'OpenSans';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    border: 1px solid rgba(59, 67, 76, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s;
+	cursor:pointer;
+    text-transform: uppercase;
+    width: 210px;
+    height: 50px;
+    padding: 18px 55px;
+    margin-top:40px;      
+}
+
 
 /*-при уменьшении ширины окна браузера  секия hero уезжает наверх
 из-за 40vw
--какого цвета пленка на заглавной картинке?
--
+
 */
