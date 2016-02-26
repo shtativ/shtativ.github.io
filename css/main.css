@@ -463,27 +463,41 @@ a#button_2:hover {
 .team {
     margin: 0 25px 30px 25px;
     border-radius: 10px;
-    /*
-    min-width: 235px;
-    height: 283px;
-*/
 }
 
-.person-1 {
-    background: url("../img/person_1.png") no-repeat;
-}
-
-.person-2 {
-    background: url("../img/person_1.png") no-repeat;
-    /*тут должен быть парень с сальными волосами*/
-}
-
-.person-3 {
-    background: url("../img/person_3.png") no-repeat;
-}
-
+.person-1,
+.person-2,
+.person-3,
 .person-4 {
-    background: url("../img/person_4.png") no-repeat;
+    transition: all 0.3s;
+    opacity: 0.5;
+}
+
+.person-1 img,
+.person-2 img,
+.person-3 img,
+.person-4 img {
+    border-bottom-color: #F7600E;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.person-1:hover,
+.person-2:hover,
+.person-3:hover,
+.person-4:hover {
+    opacity: 1;
+}
+
+.team:hover img {
+    transform: scale(1.11);
+    transform-origin: 50% bottom 0;
+    opacity: 1;
+    /*Как отменить наследование значения opacity от предыдущего селектора?*/
 }
 
 .people_text h4 {
@@ -497,6 +511,7 @@ a#button_2:hover {
     text-transform: uppercase;
     text-align: center;
     margin: 23px auto;
+    margin-bottom: 30px;
 }
 
 .people_text p {
@@ -508,10 +523,32 @@ a#button_2:hover {
     font-weight: 400;
     line-height: 1;
     text-align: center;
+    margin-top: 0px;
 }
 
+.soc_btn a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
 
-/*25.02.16 в этот блок добавить социальные кнопки*/
+.soc_btn {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.btn_t {
+    background: url("../img/twitter.png") no-repeat;
+}
+
+.btn_f {
+    background: url("../img/facebook.png") no-repeat;
+}
+
+.btn_g {
+    background: url("../img/gplus.png") no-repeat;
+}
 
 
 /*-при уменьшении ширины окна браузера  секия hero уезжает наверх
