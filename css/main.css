@@ -550,6 +550,41 @@ a#button_2:hover {
     background: url("../img/gplus.png") no-repeat;
 }
 
+.contact_2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /*    max-width: 2000px;*/
+    width: auto;
+    height: 800px;
+    margin-top: 212px;
+    background: url("../img/contact.png") no-repeat 100% 0;
+}
+
+.contact_2 form {
+    align-self: center;
+}
+
+.contact_2 input {
+    /*свойства кнопок*/
+    width: 554px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    border: 0px solid #FFF;
+    margin: 20px 20px;
+    text-align: center;
+    /*свойства текста кнопки*/
+    color: #3b434c;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+
+/*сделать соц.кнопки серыми до :hover*/
+
 
 /*-при уменьшении ширины окна браузера  секия hero уезжает наверх
 из-за 40vw
