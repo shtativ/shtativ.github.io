@@ -27,15 +27,6 @@ body {
     width: 300px;
 }
 
-.services {
-    display: flex;
-    flex: 1 1 200px;
-    text-align: center;
-    align-items: baseline;
-    width: 180px;
-    height: 222px;
-}
-
 section#hero {
     /*вот ту не понтно, почему картинка съехала? gjyznyj*/
     height: 40vw;
@@ -91,45 +82,79 @@ a.btn:hover {
     border: 1px solid transparent;
 }
 
+
+/*services*/
+
 section#services {
-    padding: 96px 0;
-    /*padding is used for vertical `centering` inside section instead of flex*/
-    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .serviced {
-    text-align: center;
-    color: #3b434c;
-    padding: 0 46px;
+    align-self: center;
+    width: 230px;
+    height: 370px;
+    padding: 0;
+    margin: 15px;
 }
 
-.serviced h3 {
-    font-weight: 600;
-    font-size: 15px;
-    margin: 26px 0 22px;
-}
-
-.serviced p {
-    font-size: 14px;
-    line-height: 1.78;
-    margin: 0;
+.serviced .print {
+    align-self: center;
+    width: auto;
+    padding: auto;
 }
 
 .serviced .img-wrap {
-    display: inline-block;
-    height: 145px;
-    width: 145px;
+    text-align: center;
+    padding: 0 auto;
+    ;
+}
+
+.print img,
+.web img,
+.app img,
+.logo img {
+    width: 70px;
+    height: 70px;
     border: 1px solid rgba(59, 67, 76, 0.30);
     border-radius: 50%;
-    display: flex;
-    /*sorry no prefixes; I'm lazy*/
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    padding: 41px;
+    object-fit: none;
+    align-self: center;
+    margin-top: 65px;
+    margin-bottom: 18px;
+}
+
+.serviced h3 {
+    color: #3b434c;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.78;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    margin-bottom: 18px;
+}
+
+.serviced p {
+    color: #3b434c;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.78;
+    text-align: center;
+    padding: auto;
+    margin: auto;
 }
 
 
-/*-------------------------------*/
+/* end of services */
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
 
 .newsletter {
     display: flex;
@@ -141,6 +166,7 @@ section#services {
     margin: 0px;
     padding-top: 0px;
     text-align: center;
+    margin-top: 40px;
     margin-bottom: 80px;
 }
 
@@ -458,7 +484,6 @@ a#button_2:hover {
     justify-content: center;
     margin-top: 115px;
     min-width: 235px;
-    height: 420px;
 }
 
 .team {
@@ -554,113 +579,127 @@ a#button_2:hover {
 
 /*Contact*/
 
-.contact_2 {
-    width: auto;
-    height: 800px;
-    margin-top: 212px;
-    background: url("../img/contact.png") no-repeat 50% 0;
-}
-
-.contact_1-intro {
+.contact {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
-    width: auto;
+    align-items: center;
+    background: url("../img/contact.png") 50% 0 no-repeat;
+    background-size: cover;
+    padding: 96px 10px;
 }
 
-.footer_head {
+.contact .contact-intro {
+    align-self: center;
+    width: 470px;
+    height: auto;
+    margin: auto;
     flex-basis: 100%;
-    max-height: 462px;
-    height: 160px;
-    width: 462px;
-    text-align: center;
+    padding-top: 0px;
 }
 
-.footer_head h4 {
+.contact-intro h4 {
+    color: white;
     width: 181px;
     height: 26px;
     font-family: 'Open Sans';
     font-size: 35px;
     font-weight: 600;
     line-height: 1;
-    color: white;
-    margin-top: 0px;
-    margin-bottom: 0px;
     text-align: center;
+    margin: auto;
 }
 
-.footer_head p {
+.contact-intro p {
+    width: 462px;
     color: #FFF;
     font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    margin-top: 29px;
-    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 25px;
+    margin: auto;
 }
 
-.contact_2-forms {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: auto;
-}
-
-.contact_2-forms .footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+.contact1 .contact-form {
     align-self: center;
-    max-width: 554px;
+    height: auto;
+    margin: auto 20px;
+    flex-basis: 100%;
+    padding-top: 94px;
 }
 
-.contact_2-forms input {
-    /*свойства кнопок*/
+form.footer {
+    align-self: center;
+    margin: auto;
+    flex-basis: 100%;
+    padding-top: 14px;
+    width: 555px;
+    height: auto;
+}
+
+.footer input,
+textarea {
+    /*свойства формы*/
     background-color: white;
     border-radius: 10px;
     border: 0px solid #FFF;
     margin: 20px 20px;
-    text-align: center;
-    /*свойства текста кнопки*/
+    text-align: left;
+    width: 100%;
+    /*свойства текста формы*/
     color: #3b434c;
     font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 300;
     line-height: 1.2;
+    align-self: center;
 }
 
-#namecontact {
+.footer #namecontact {
+    flex-basis: 100%;
+    align-self: center;
+    height: 50px;
+    padding: 0 0 0 22px;
+    margin: 10px 20px 0px 20px;
+}
+
+.footer #emailcontact {
     flex-basis: 100%;
     height: 50px;
-    padding: 0;
+    padding: 0 0 0 22px;
     margin: 20px 20px 0px 20px;
 }
 
-#emailcontact {
+.footer #subjectcontact {
     flex-basis: 100%;
     height: 50px;
-    padding: 0;
+    padding: 0 0 0 22px;
     margin: 20px 20px 0px 20px;
 }
 
-#subjectcontact {
-    flex-basis: 100%;
-    height: 50px;
-    padding: 0;
-    margin: 20px 20px 0px 20px;
-}
-
-#messagecontact {
+.footer #messagecontact {
     flex-basis: 100%;
     height: 231px;
-    padding: 0;
+    padding: 0 0 0 22px;
     margin: 20px 20px 0px 20px;
 }
 
-#send {
+.footer textarea {
+    flex-basis: 100%;
+    height: 231px;
+    padding: 20px 0 0 22px;
+    margin: 20px 20px 0px 20px;
+    resize: none;
+    text-align: left;
+}
+
+.footer #send {
     flex-basis: 100%;
     background-color: #f7600e;
     border-radius: 10px;
+    width: 555px;
     color: #FFF;
     font-family: 'Open Sans';
     font-size: 16px;
@@ -671,10 +710,13 @@ a#button_2:hover {
     cursor: pointer;
     text-transform: uppercase;
     padding: 0;
+    margin: 0;
+    text-align: right;
     margin: 20px 20px 0px 20px;
+    padding-right: 85px;
 }
 
-#send:hover {
+.footer #send:hover {
     border: 1px solid rgba(34, 31, 29, 0.69);
     background: rgba(0, 0, 0, 0);
     color: #3b434c;
@@ -684,9 +726,10 @@ a#button_2:hover {
 /*сделать соц.кнопки серыми до :hover*/
 
 
+/**/
+
+
 /*-при уменьшении ширины окна браузера  секия hero уезжает наверх
 из-за 40vw
 
 */
-
-'
