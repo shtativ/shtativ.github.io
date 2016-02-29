@@ -18,69 +18,86 @@ body {
     align-items: baseline;
 }
 
-.in_sldider {
-    /* наложить фон
-    background: url("img/macbook.jpg");
-*/
-    align-self: flex-end;
-    border: 1px solid black;
-    width: 300px;
-}
 
-section#hero {
-    /*вот ту не понтно, почему картинка съехала? gjyznyj*/
-    height: 40vw;
-    /*relative to viewport width, took ratio from psd*/
-    background-image: url('../img/macbook.jpg');
-    background-repeat: no-repeat;
+/*--------------------------------------------------------------------------------------------------------------*/
+
+section#slider {
     display: flex;
-    align-items: center;
+    flex-flow: row wrap;
     justify-content: center;
-}
-
-#hero h3 {
-    font-family: 'Open Sans';
-    color: #fff;
-    font-weight: 800;
-    font-size: 67px;
-    margin: 0;
-}
-
-#hero h3 span {
-    color: #f7600e;
+    align-items: center;
+    background: url("../img/macbook.jpg") 50% 0 no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 662px;
 }
 
 .in_slider {
-    display: inline-block;
+    align-self: center;
+}
+
+
+/*что сюда можно положить?*/
+
+.in_slider h3 {
+    font-family: 'Open Sans';
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
     text-align: center;
 }
 
-#hero p {
-    color: #fff;
-    font-size: 24px;
-    line-height: 1.6;
-    margin-bottom: 62px;
+.in_slider p {
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.78;
+    text-align: center;
 }
 
-a.btn {
+#btns {
+    align-self: center;
+    width: auto;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.in_slider a.btn {
     display: inline-block;
+    text-align: center;
     width: 220px;
     height: 48px;
-    border: 1px solid rgba(255, 255, 255, 0.20);
-    line-height: 3.3;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    color: #fff;
-    text-transform: uppercase;
+    color: #FFF;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 600px;
+    line-height: 3.3;
+    text-transform: uppercase;
+    text-decoration: none;
     transition: all 0.3s;
     cursor: pointer;
+    margin: 25px;
 }
 
-a.btn:hover {
-    background-color: #f7600e;
-    border: 1px solid transparent;
+.in_slider a.btn:hover {
+    background: #F7600e;
+    border: 1px solid (rgba 255, 255, 255, 0);
 }
+
+#pointer-down {
+    align-self: center;
+    margin: 20px;
+    text-align: center;
+    width: auto;
+    margin: 10px 0;
+    padding-top: 50px;
+}
+
+
+/*подключить jquery и анимировать переход к якорю*/
 
 
 /*services*/
@@ -152,9 +169,6 @@ section#services {
 
 
 /* end of services */
-
-
-/*--------------------------------------------------------------------------------------------------------------*/
 
 .newsletter {
     display: flex;
@@ -717,7 +731,7 @@ textarea {
 }
 
 .footer #send:hover {
-    border: 1px solid rgba(34, 31, 29, 0.69);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     background: rgba(0, 0, 0, 0);
     color: #3b434c;
 }
