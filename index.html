@@ -189,17 +189,27 @@
 
     </div>
 
-    <div class="contact_1"></div>
     <div class="contact_2">
-        <form>
-            <input type="text" id="namecontact" name="usernamecontact" required="required" placeholder="Your Name" />
+        <div class="contact_1-intro">
+            <div class="footer_head">
+                <h4>SAY <span style="color: #f7600e;">HELLO</span></h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+        </div>
+        <div class="contact_2-forms">
+            <form class="footer">
+                <input type="text" id="namecontact" name="usernamecontact" required="required" placeholder="Your Name" />
 
-            <input type="email" name="email" placeholder="Your Email" required="required" maxlength="129">
+                <input type="email" id="emailcontact" name="emailcontact" placeholder="Your Email" required="required" maxlength="129">
 
-            <input type="text" id="subjectcontact" name="subjectcontact" required="required" placeholder="Subject" />
-        </form>
+                <input type="text" id="subjectcontact" name="subjectcontact" required="required" placeholder="Subject" />
+
+                <input type="text" id="messagecontact" name="messagecontact" required="required" placeholder="Your Message" />
+
+                <input id="send" name="send" type="submit" value="send">
+            </form>
+        </div>
     </div>
-
 </body>
 
 </html>
