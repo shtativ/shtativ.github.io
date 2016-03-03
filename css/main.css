@@ -5,24 +5,137 @@ body {
     font-size: 16px;
 }
 
-
-/** .container {
+.container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    /*
     max-width: 1123px;
     min-width: 360px;
-    
     margin: 0 auto;
-    
     justify-content: center;
     align-items: baseline;
+*/
 }
-**/
 
 
 /*--------------------------------------------------------------------------------------------------------------*/
+
+header {
+    width: 100%;
+    padding: 30px 0px;
+    position: fixed;
+    color: #FFF;
+    background: rgba(59, 67, 76, 0.3);
+    z-index: 2;
+}
+
+nav.container {
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav.menu_container {
+    flex-direction: column;
+    align-items: center;
+}
+
+a#header-menu {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+a#header-menu img {
+    vertical-align: middle;
+    margin-left: 17px;
+}
+
+div#menu {
+    position: fixed;
+    background-color: rgba(59, 67, 76, 0.95);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    text-align: center;
+    padding-top: 9px;
+    display: none;
+}
+
+#menu a {
+    /*
+    width: 207px;
+    height: 306px;
+*/
+    display: block;
+    font-family: 'Open Sans';
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.97;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #f7600e;
+}
+
+
+/*полоса*/
+
+#menu hr {
+    width: 167px;
+    border-color: #f7600e;
+    margin: 36px 0 50px;
+}
+
+a.close img {
+    height: 22px;
+    width: 22px;
+}
+
+a.close {
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+#menu .menu_social a {
+    /*-a*/
+    display: inline-block;
+}
+
+.menu_social a {
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    display: inline-block;
+    transition: all 0.3s;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+a#fb {
+    background: url("../img/menu_fb.png") no-repeat;
+}
+
+a#tw {
+    background: url("../img/menu_tw.png") no-repeat;
+}
+
+a#gp {
+    background: url("../img/menu_gp.png") no-repeat;
+}
+
+a#dr {
+    background: url("../img/menu_dr.png");
+}
+
+a#be {
+    background: url("../img/menu_be.png");
+}
 
 section#slider {
     display: flex;
@@ -40,7 +153,7 @@ section#slider {
 }
 
 
-/*что сюда можно положить?*/
+/*доделать кнопки, полосу и скролл*/
 
 .in_slider h3 {
     font-family: 'Open Sans';
