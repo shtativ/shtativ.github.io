@@ -24,7 +24,7 @@ body {
 
 header {
     width: 100%;
-    padding: 30px 0px;
+    padding: 25px 0px;
     position: fixed;
     color: #FFF;
     background: rgba(59, 67, 76, 0.3);
@@ -87,7 +87,8 @@ div#menu {
 /*полоса*/
 
 #menu hr {
-    width: 167px;
+    display: inline-block;
+    width: 187px;
     border-color: #f7600e;
     margin: 36px 0 50px;
 }
@@ -98,18 +99,16 @@ a.close img {
 }
 
 a.close {
-    align-self: flex-end;
     cursor: pointer;
 }
 
 #menu .menu_social a {
-    /*-a*/
     display: inline-block;
 }
 
 .menu_social a {
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     background-size: cover;
     display: inline-block;
     transition: all 0.3s;
@@ -130,11 +129,11 @@ a#gp {
 }
 
 a#dr {
-    background: url("../img/menu_dr.png");
+    background: url("../img/menu_dr.png") no-repeat;
 }
 
 a#be {
-    background: url("../img/menu_be.png");
+    background: url("../img/menu_be.png") no-repeat;
 }
 
 section#slider {
@@ -171,13 +170,14 @@ section#slider {
     font-weight: 400;
     line-height: 1.78;
     text-align: center;
+    margin: 40px auto;
 }
 
 #btns {
     align-self: center;
     width: auto;
     text-align: center;
-    padding: 30px 0;
+    padding: 30px 0 10px 0;
 }
 
 .in_slider a.btn {
@@ -195,7 +195,7 @@ section#slider {
     text-decoration: none;
     transition: all 0.3s;
     cursor: pointer;
-    margin: 25px;
+    margin: 10px 25px;
 }
 
 .in_slider a.btn:hover {
@@ -302,12 +302,13 @@ section#services {
 
 .newsletter form {
     align-self: center;
+    width: 100%;
 }
 
 .newsletter input {
     /*свойста формы email*/
-    width: 100%;
     max-width: 562px;
+    width: 465px;
     height: 50px;
     border-radius: 10px;
     background: #fff;
@@ -327,6 +328,7 @@ section#services {
 }
 
 #submit {
+    flex-grow: 1;
     /*свойста кнопки*/
     width: 269px;
     height: 50px;
