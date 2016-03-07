@@ -31,12 +31,12 @@ nav.menu_container {
     align-items: center;
 }
 
-a#header-menu {
+a#header_menu {
     font-size: 15px;
     cursor: pointer;
 }
 
-a#header-menu img {
+a#header_menu img {
     vertical-align: middle;
     margin-left: 17px;
 }
@@ -183,13 +183,17 @@ section#slider {
     border: 1px solid (rgba 255, 255, 255, 0);
 }
 
-#pointer-down {
-    align-self: center;
+#pointer_down {
     margin: 20px;
-    text-align: center;
     width: auto;
     margin: 10px 0;
     padding-top: 50px;
+    margin-top: 20p;
+}
+
+#pointer_down img {
+    display: block;
+    margin: 30px auto 0;
 }
 
 section#services {
@@ -213,7 +217,7 @@ section#services {
     padding: auto;
 }
 
-.serviced .img-wrap {
+.serviced .img_wrap {
     text-align: center;
     padding: 0 auto;
     ;
@@ -262,13 +266,11 @@ section#services {
     flex-flow: row nowrap;
     justify-content: center;
     height: 250px;
-    width: auto;
-    background: url(../img/tablet-cofe.png) 50% 0% no-repeat;
-    margin: 0px;
-    padding-top: 0px;
+    width: 100%;
+    background: url(../img/tablet-cofe.jpg) 50% 0% no-repeat;
+    background-size: cover;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin: 0 auto;
 }
 
 .newsletter form {
@@ -450,7 +452,7 @@ section#services {
     margin-bottom: 87px;
 }
 
-a#button_3 {
+a.button_3 {
     display: block;
     margin: 0 auto;
     color: #FFF;
@@ -459,7 +461,7 @@ a#button_3 {
     border: 1px solid #FFF;
 }
 
-a#button_3:hover {
+a.button_3:hover {
     background-color: #FFF;
     color: #f7600e;
     border: 1px solid rgba(255, 255, 255, 0);
@@ -492,58 +494,101 @@ a#button_2:hover {
     width: 210px;
     height: 50px;
 }
+
+
 /*-------------------------------------------------------------------------------------*/
-/*
-.what_clients_say {
-    display: flex;
-    flex-flow: column nowrap;
+
+#testimonials {
+    background-image: url("../img/pic_client_say.jpg");
+    background-size: cover;
+    color: #FFF;
     height: 501px;
-    width: auto;
-    background: url("../img/pic_client_say.png") 50% 0% no-repeat;
-    margin: 0;
-}
-/*
-.what_clients_say .client_1 {
-    align-self: center;
-    background: url("../img/client_1.png") no-repeat;
-    width: 120px;
-    height: 120px;
-    margin-top: 100px;
+    padding: 96px 0;
+    box-sizing: border-box;
+    position: relative;
 }
 
-.what_clients_say p {
-    align-self: center;
-    width: 100%;
+#testimonials .client {
+    text-align: center;
+}
+
+#testimonials .client img {
+    display: inline;
+    width: auto;
+    border-radius: 50%;
+    backface-visibility: hidden;
+}
+
+#testimonials .client blockquote {
     max-width: 797px;
     height: 65px;
     color: white;
     font-family: 'Open Sans';
-    font-size: 25px;
+    font-size: 24px;
     font-style: italic;
     line-height: 1.3;
-    margin-top: 50px;
+    margin: 48px auto 38px;
+    padding: 0 30px;
 }
 
-.what_clients_say .author {
-    align-self: center;
-    text-align: center;
-    height: 18px;
-    width: auto;
+#testimonials .client p {
     color: white;
     font-family: 'Open Sans';
     font-size: 18px;
     font-weight: 600;
     line-height: 1.3;
-    margin-top: 17px;
 }
-*/
+
+#testimonials nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#testimonials nav a,
+.owl-prev,
+.owl-next {
+    display: block;
+    width: 21px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#testimonials nav a:active,
+.owl-prev:active,
+.owl-next:active {
+    transform: scale(1.5);
+}
+
+nav a.prev,
+.owl-prev {
+    background-image: url("../img/prev_btn.png");
+}
+
+nav a.next,
+.owl-next {
+    background-image: url("../img/next_btn.png");
+}
+
 #owl-demo .item img {
     display: block;
     width: 100%;
     height: auto;
 }
 
+
 /*-------------------------------------------------------------------------------------*/
+
 .our_team {
     display: flex;
     flex-flow: column nowrap;
@@ -585,18 +630,18 @@ a#button_2:hover {
     border-radius: 10px;
 }
 
-.person-1,
-.person-2,
-.person-3,
-.person-4 {
+.person_1,
+.person_2,
+.person_3,
+.person_4 {
     transition: all 0.3s;
     opacity: 0.5;
 }
 
-.person-1 img,
-.person-2 img,
-.person-3 img,
-.person-4 img {
+.person_1 img,
+.person_2 img,
+.person_3 img,
+.person_4 img {
     border-bottom-color: #F7600E;
     border-bottom-style: solid;
     border-bottom-width: 5px;
@@ -606,10 +651,10 @@ a#button_2:hover {
     transition: all 0.5s;
 }
 
-.person-1:hover,
-.person-2:hover,
-.person-3:hover,
-.person-4:hover {
+.person_1:hover,
+.person_2:hover,
+.person_3:hover,
+.person_4:hover {
     opacity: 1;
 }
 
@@ -655,6 +700,13 @@ a#button_2:hover {
 .soc_btn {
     text-align: center;
     margin-bottom: 28px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.team:hover .soc_btn {
+    -webkit-filter: none;
+    filter: none;
 }
 
 .btn_t {
@@ -674,12 +726,12 @@ a#button_2:hover {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    background: url("../img/contact.png") 50% 0 no-repeat;
+    background: url("../img/contact.jpg") 50% 0 no-repeat;
     background-size: cover;
     padding: 96px 10px;
 }
 
-.contact .contact-intro {
+.contact .contact_intro {
     align-self: center;
     width: 470px;
     height: auto;
@@ -688,7 +740,7 @@ a#button_2:hover {
     padding-top: 0px;
 }
 
-.contact-intro h4 {
+.contact_intro h4 {
     color: white;
     width: 181px;
     height: 26px;
@@ -700,7 +752,7 @@ a#button_2:hover {
     margin: auto;
 }
 
-.contact-intro p {
+.contact_intro p {
     width: 462px;
     color: #FFF;
     font-family: 'Open Sans';
@@ -712,7 +764,7 @@ a#button_2:hover {
     margin: auto;
 }
 
-.contact1 .contact-form {
+.contact1 .contact_form {
     align-self: center;
     height: auto;
     box-sizing: border-box;
@@ -816,6 +868,3 @@ textarea {
     background: rgba(0, 0, 0, 0);
     color: #FFF;
 }
-
-
-/*сделать соц.кнопки серыми до :hover*/

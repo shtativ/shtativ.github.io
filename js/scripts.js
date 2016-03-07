@@ -1,5 +1,5 @@
 //hide menu
-    $('a#header-menu').click(function () {
+    $('a#header_menu').click(function () {
     $('#menu').fadeIn('slow');
 });
 //show menu
@@ -8,7 +8,7 @@
 });
  //slow transition 
 //    $("#pointer-down").on("click","a", function (event) { 
-    $('#pointer-down').click(function (event) {
+    $('#pointer_down').click(function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
@@ -22,20 +22,16 @@
     });
 //owl carousel
 
-
-$("#owl-demo").owlCarousel({
- 
-      navigation : true, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true
- 
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
- 
-  });
- 
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        items:1,
+        dots:false,
+        autoplay:true,
+        smartSpeed: 1050,  
+        nav:true,
+        navContainer:'#testimonials nav',
+        navText:['','']
+    
+});
