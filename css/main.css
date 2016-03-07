@@ -30,6 +30,7 @@ nav.menu_container {
     flex-direction: column;
     align-items: center;
 }
+
 #header_menu {
     font-size: 15px;
     cursor: pointer;
@@ -187,7 +188,7 @@ section#slider {
     width: auto;
     margin: 10px 0;
     padding-top: 50px;
-    margin-top: 20p;
+    margin-top: 20px;
 }
 
 #pointer_down img {
@@ -213,12 +214,11 @@ section#services {
 .serviced .print {
     align-self: center;
     width: auto;
-    padding: auto;
 }
 
 .serviced .img_wrap {
     text-align: center;
-    padding: 0 auto;
+    padding: 0;
     ;
 }
 
@@ -244,7 +244,6 @@ section#services {
     font-weight: 600;
     line-height: 1.78;
     text-align: center;
-    padding: auto;
     margin: auto;
     margin-bottom: 18px;
 }
@@ -256,7 +255,6 @@ section#services {
     font-weight: 400;
     line-height: 1.78;
     text-align: center;
-    padding: auto;
     margin: auto;
 }
 
@@ -334,7 +332,7 @@ section#services {
     justify-content: center;
     align-items: stretch;
     margin: 60px auto;
-    max-width: 1180px;
+    max-width: 1170px;
 }
 
 .bl {
@@ -495,8 +493,6 @@ a.button_3:hover {
 }
 
 
-/*-------------------------------------------------------------------------------------*/
-
 #testimonials {
     background-image: url("../img/pic_client_say.jpg");
     background-size: cover;
@@ -584,9 +580,6 @@ nav a.next,
     width: 100%;
     height: auto;
 }
-
-
-/*-------------------------------------------------------------------------------------*/
 
 .our_team {
     display: flex;
