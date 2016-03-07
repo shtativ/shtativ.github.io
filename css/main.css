@@ -30,18 +30,17 @@ nav.menu_container {
     flex-direction: column;
     align-items: center;
 }
-
-a#header_menu {
+#header_menu {
     font-size: 15px;
     cursor: pointer;
 }
 
-a#header_menu img {
+#header_menu img {
     vertical-align: middle;
     margin-left: 17px;
 }
 
-div#menu {
+#menu {
     position: fixed;
     background-color: rgba(59, 67, 76, 0.95);
     width: 100%;
@@ -99,23 +98,23 @@ a.close {
     cursor: pointer;
 }
 
-a#fb {
+#fb {
     background: url("../img/menu_fb.png") no-repeat;
 }
 
-a#tw {
+#tw {
     background: url("../img/menu_tw.png") no-repeat;
 }
 
-a#gp {
+#gp {
     background: url("../img/menu_gp.png") no-repeat;
 }
 
-a#dr {
+#dr {
     background: url("../img/menu_dr.png") no-repeat;
 }
 
-a#be {
+#be {
     background: url("../img/menu_be.png") no-repeat;
 }
 
@@ -467,14 +466,14 @@ a.button_3:hover {
     border: 1px solid rgba(255, 255, 255, 0);
 }
 
-a#button_2 {
+#button_2 {
     display: block;
     margin: 100px auto;
     color: #3b434c;
     Border-color: rgba(59, 67, 76, 0.2);
 }
 
-a#button_2:hover {
+#button_2:hover {
     background-color: #f7600e;
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0);
