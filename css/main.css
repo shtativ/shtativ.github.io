@@ -567,12 +567,12 @@ a.button_3:hover {
 
 nav a.prev,
 .owl-prev {
-    background-image: url("../img/prev_btn.png");
+    background: url("../img/prev_btn.png") no-repeat;
 }
 
 nav a.next,
 .owl-next {
-    background-image: url("../img/next_btn.png");
+    background: url("../img/next_btn.png") no-repeat;
 }
 
 #owl-demo .item img {
