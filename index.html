@@ -6,6 +6,9 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
     <meta charset="UTF-8">
+    <!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+<script src="owl-carousel/owl.carousel.js"></script>
 </head>
 
 <body>
@@ -18,12 +21,12 @@
     <div id="menu">
         <nav class="menu_container" ;>
             <a class="close"><img src="./img/menu-close.png"></a>
-            <a href="#home">Home</a>
-            <a href="">ABOUT US</a>
+            <a href="#slider">Home</a>
+            <a href="#testimonials"> TESTIMONIALS</a>
             <a href="#services">SERVICES</a>
-            <a href="#our_team">OUR WORKS</a>
-            <a href="">OUR TEAM</a>
-            <a href=".contact">CONTACT</a>
+            <a href="#our_works">OUR WORKS</a>
+            <a href="#our_team">OUR TEAM</a>
+            <a href="#contact">CONTACT</a>
             <hr>
             <div class="menu_social">
                 <a id="fb" href="#"></a>
@@ -44,12 +47,12 @@
                 <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
             <div id="btns">
-                <a class="btn" href="#">Hire Us</a>
-                <a class="btn" href="#">Our Works</a>
+                <a class="btn" href="#contact">Hire Us</a>
+                <a class="btn" href="#our_works">Our Works</a>
             </div>
             <div id="pointer-down">
                 <a href="#services"><img src="img/pointer_down.png" alt="&darr;"></a>
-            </div>
+           
         </div>
 
     </section>
@@ -149,14 +152,29 @@
         </div>
     </div>
     <a class="btn2" id="button_2">SHOW MORE</a>
-
-    <div class="what_clients_say">
+    
+<!----------------------------------------------------------------------------------------------------->
+   
+<!--
+    <div id="testimonials" class="what_clients_say">
         <a class="client_1"></a>
         <p>These guys are incredible! I get my project in 10 days and it was awesome! Very good service! Highly recommended!</p>
         <p class="author">John Smith</p>
     </div>
+    
+-->
 
-    <div class="our_team">
+<div id="owl-demo" class="owl-carousel owl-theme">
+
+    <div class="item"><img src="assets/fullimage1.png" alt="The Last of us"></div>
+    <div class="item"><img src="assets/fullimage2.png" alt="GTA V"></div>
+    <div class="item"><img src="assets/fullimage3.png" alt="Mirror Edge"></div>
+
+</div>
+        
+<!----------------------------------------------------------------------------------------------------->
+   
+    <div id="our_team" class="our_team">
         <div class="head">
             <h4>OUR <span style="color: #f7600e;">TEAM</span></h4>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem </p>
@@ -238,9 +256,12 @@
             </form>
         </div>
     </div>
+ 
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 
     <script src="js/scripts.js"></script>
+  
+    
 </body>
 
 </html>

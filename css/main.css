@@ -492,7 +492,8 @@ a#button_2:hover {
     width: 210px;
     height: 50px;
 }
-
+/*-------------------------------------------------------------------------------------*/
+/*
 .what_clients_say {
     display: flex;
     flex-flow: column nowrap;
@@ -501,7 +502,7 @@ a#button_2:hover {
     background: url("../img/pic_client_say.png") 50% 0% no-repeat;
     margin: 0;
 }
-
+/*
 .what_clients_say .client_1 {
     align-self: center;
     background: url("../img/client_1.png") no-repeat;
@@ -535,7 +536,14 @@ a#button_2:hover {
     line-height: 1.3;
     margin-top: 17px;
 }
+*/
+#owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
+/*-------------------------------------------------------------------------------------*/
 .our_team {
     display: flex;
     flex-flow: column nowrap;
