@@ -151,6 +151,7 @@ section#slider {
     line-height: 1.78;
     text-align: center;
     margin: 40px auto;
+    width: 90%;
 }
 
 #btns {
@@ -593,7 +594,7 @@ nav a.next,
 .our_team .head {
     align-self: center;
     text-align: center;
-    width: 470px;
+    max-width: 470px;
     margin-top: 20px;
 }
 
@@ -712,71 +713,55 @@ nav a.next,
 .btn_g {
     background: url("../img/gplus.png") no-repeat;
 }
-
-.contact {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    background: url("../img/contact.jpg") 50% 0 no-repeat;
+.contacts {
+    background-image: url(../img/contact.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    padding: 96px 10px;
+    margin: 0 auto;
 }
 
-.contact .contact_intro {
+.contacts .container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contacts .intro {
     align-self: center;
-    width: 470px;
-    height: auto;
-    margin: auto;
-    flex-basis: 100%;
-    padding-top: 0px;
+    margin: 40px auto;
+    max-width: 470px;
 }
 
-.contact_intro h4 {
-    color: white;
+.intro h3 {
+    color: #FFF;
     width: 181px;
-    height: 26px;
+    /*    height: 26px;*/
     font-family: 'Open Sans';
     font-size: 35px;
     font-weight: 600;
     line-height: 1;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
-.contact_intro p {
-    width: 462px;
+.intro p {
     color: #FFF;
     font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     text-align: center;
-    padding-top: 25px;
-    margin: auto;
+    /*    padding-top: 25px;*/
 }
 
-.contact1 .contact_form {
+.contacts .container form {
     align-self: center;
-    height: auto;
-    box-sizing: border-box;
-    flex-basis: 100%;
-    padding-top: 94px;
-}
-
-form.footer {
-    align-self: center;
-    box-sizing: border-box;
-    flex-basis: 100%;
-    padding-top: 14px;
     max-width: 555px;
-    min-width: 340px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
 }
 
-.footer input,
+form input,
 textarea {
     /*свойства формы*/
     background-color: white;
@@ -797,7 +782,13 @@ textarea {
     box-sizing: border-box;
 }
 
-.footer #namecontact {
+form textarea {
+    height: 231px;
+    resize: none;
+    padding: 0 0 0 22px;
+}
+
+form input {
     flex-basis: 100%;
     align-self: center;
     height: 50px;
@@ -805,58 +796,54 @@ textarea {
     box-sizing: border-box;
 }
 
-.footer #emailcontact {
-    flex-basis: 100%;
-    height: 50px;
-    padding: 0 0 0 22px;
-    box-sizing: border-box;
-}
-
-.footer #subjectcontact {
-    flex-basis: 100%;
-    height: 50px;
-    padding: 0 0 0 22px;
-    box-sizing: border-box;
-}
-
-.footer #messagecontact {
-    flex-basis: 100%;
-    height: 231px;
-    padding: 0 0 0 22px;
-    box-sizing: border-box;
-}
-
-.footer textarea {
-    flex-basis: 100%;
-    height: 231px;
-    padding: 20px 0 0 22px;
-    box-sizing: border-box;
-    resize: none;
-    text-align: left;
-}
-
-.footer #send {
-    display: block;
+form .send {
     background-color: #f7600e;
-    border-radius: 10px;
-    width: 100%;
-    color: #FFF;
-    font-family: 'Open Sans';
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 3.3;
     border: 1px solid rgba(255, 255, 255, 0);
     transition: all 0.3s;
     cursor: pointer;
     text-transform: uppercase;
-    padding: 0;
-    margin: 0 auto;
-    text-align: right;
-    padding-right: 85px;
+    text-align: center;
+    padding-right: 22px;
+    margin-bottom: 40px;
 }
 
-.footer #send:hover {
+form .send:hover {
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: rgba(0, 0, 0, 0);
     color: #FFF;
+}
+
+footer {
+    background-color: #3b434c;
+    background-size: cover;
+    height: 105px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    padding: 0 10%;
+    vertical-align: baseline;
+}
+
+footer #footer_logo-1 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+footer #footer_logo-2 {
+    color: red;
+    font-weight: 800;
 }
