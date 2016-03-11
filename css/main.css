@@ -41,10 +41,19 @@ nav.menu_container {
     margin-left: 17px;
 }
 
+.menu_container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 30%;
+    margin: 0 auto;
+}
+
 #menu {
-    position: fixed;
+    justify-content: center;
+    position:fixed;
     background-color: rgba(59, 67, 76, 0.95);
     width: 100%;
+    min-width: 360px;
     height: 100%;
     z-index: 3;
     text-align: center;
@@ -53,7 +62,7 @@ nav.menu_container {
 }
 
 #menu a {
-    display: block;
+    align-self: center;
     font-family: 'Open Sans';
     font-size: 35px;
     font-weight: 600;
@@ -360,11 +369,33 @@ section#services {
 }
 
 .fl1 {
-    width: 455px;
-    flex-basis: 50%;
     align-self: center;
-    height: 200px;
-    margin: 0 120px 0 120px;
+    margin: 0px auto 90px auto;
+    width: auto;
+    flex-basis: 100%;
+    height: auto;
+}
+
+.fl1 h4 {
+    font-family: 'Open Sans';
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #3b434c;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.fl1 p {
+    color: #3b434c;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+    max-width: 455px;
+    margin: 0 auto;
 }
 
 .fl2 {
@@ -391,27 +422,6 @@ section#services {
     background: url("../img/p6.png") no-repeat;
 }
 
-.fl1 h4 {
-    font-family: 'Open Sans';
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 40px;
-    color: #3b434c;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-.fl1 p {
-    color: #3b434c;
-    font-family: 'Open Sans';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-    margin-top: 10px;
-}
-
 .orange h5 {
     display: block;
     text-align: center;
@@ -430,7 +440,7 @@ section#services {
     font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1;
     margin: 28px 55px;
 }
 
@@ -492,7 +502,6 @@ a.button_3:hover {
     width: 210px;
     height: 50px;
 }
-
 
 #testimonials {
     background-image: url("../img/pic_client_say.jpg");
@@ -713,6 +722,7 @@ nav a.next,
 .btn_g {
     background: url("../img/gplus.png") no-repeat;
 }
+
 .contacts {
     background-image: url(../img/contact.jpg);
     background-repeat: no-repeat;
