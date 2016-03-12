@@ -286,13 +286,13 @@ section#services {
 
 .newsletter form {
     align-self: center;
-    width: 100%;
+    width: 90%;
 }
 
 .newsletter input {
     /*свойста формы email*/
     max-width: 562px;
-    width: 465px;
+    /*width: 465px*/;
     height: 50px;
     border-radius: 10px;
     background: #fff;
