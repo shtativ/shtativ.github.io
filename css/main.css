@@ -44,13 +44,14 @@ nav.menu_container {
 .menu_container {
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
     width: 30%;
-    margin: 0 auto;
+    margin: auto auto;
 }
 
 #menu {
     justify-content: center;
-    position:fixed;
+    position: fixed;
     background-color: rgba(59, 67, 76, 0.95);
     width: 100%;
     min-width: 360px;
@@ -94,11 +95,10 @@ a.close {
     cursor: pointer;
 }
 
-#menu .menu_social  {
+#menu .menu_social {
     display: flex;
     flex-flow: row nowrap;
-    justify-content:center;
-
+    justify-content: center;
 }
 
 .menu_social a {
@@ -140,7 +140,8 @@ section#slider {
     background: url("../img/macbook.jpg") 50% 0 no-repeat;
     background-size: cover;
     width: auto;
-    height: 662px;
+    height: auto;
+    margin-bottom: 30px;
 }
 
 .in_slider {
@@ -207,7 +208,7 @@ section#slider {
 
 #pointer_down img {
     display: block;
-    margin: 30px auto 0;
+    margin: 30px auto;
 }
 
 section#services {
@@ -220,7 +221,7 @@ section#services {
 .serviced {
     align-self: center;
     width: 230px;
-    height: 370px;
+    height: auto;
     padding: 0;
     margin: 15px;
 }
@@ -247,7 +248,6 @@ section#services {
     padding: 41px;
     object-fit: none;
     align-self: center;
-    margin-top: 65px;
     margin-bottom: 18px;
 }
 
@@ -281,7 +281,7 @@ section#services {
     background: url(../img/tablet-cofe.jpg) 50% 0% no-repeat;
     background-size: cover;
     text-align: center;
-    margin: 0 auto;
+    margin: 30px 0 auto;
 }
 
 .newsletter form {
@@ -292,7 +292,6 @@ section#services {
 .newsletter input {
     /*свойста формы email*/
     max-width: 562px;
-    /*width: 465px*/;
     height: 50px;
     border-radius: 10px;
     background: #fff;
@@ -314,12 +313,12 @@ section#services {
 #submit {
     flex-grow: 1;
     /*свойста кнопки*/
-    width: 269px;
+    max-width: 269px;
+    width: 100%;
     height: 50px;
     background: #f7600e;
     border-radius: 10px;
     border: 0px solid rgba(255, 255, 255, 0);
-    margin-left: 30px;
     margin-top: 20px;
     padding-left: 0px;
     transition: all 0.3s;
@@ -452,7 +451,7 @@ section#services {
     font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 600;
-    line-height: 3.3;
+    line-height: 1;
     border: 1px solid #fff;
     border-radius: 10px;
     transition: all 0.3s;
@@ -465,7 +464,9 @@ section#services {
 }
 
 a.button_3 {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     color: #FFF;
     background-color: #f7600e;
@@ -480,10 +481,13 @@ a.button_3:hover {
 }
 
 #button_2 {
-    display: block;
-    margin: 100px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 90px auto;
     color: #3b434c;
-    Border-color: rgba(59, 67, 76, 0.2);
+    border-color: rgba(59, 67, 76, 0.2);
 }
 
 #button_2:hover {
@@ -496,12 +500,11 @@ a.button_3:hover {
     font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 600;
-    line-height: 3.3;
+    line-height: 1;
     border: 1px solid rgba(59, 67, 76, 0.2);
     border-radius: 10px;
     transition: all 0.3s;
     cursor: pointer;
-    text-align: center;
     text-transform: uppercase;
     width: 210px;
     height: 50px;
@@ -609,7 +612,6 @@ nav a.next,
     text-align: center;
     max-width: 470px;
     margin-top: 20px;
-    
 }
 
 .head h4 {
@@ -623,7 +625,6 @@ nav a.next,
     margin: auto;
     margin-bottom: 30px;
 }
-
 
 .people {
     display: flex;
@@ -688,7 +689,7 @@ nav a.next,
 
 .people_text p {
     width: 242px;
-    height: 37px;
+    height: auto;
     color: #3b434c;
     font-family: 'Open Sans';
     font-size: 14px;
@@ -753,7 +754,6 @@ nav a.next,
 .intro h3 {
     color: #FFF;
     width: 100%;
-    /*    height: 26px;*/
     font-family: 'Open Sans';
     font-size: 35px;
     font-weight: 600;
@@ -769,7 +769,6 @@ nav a.next,
     font-weight: 400;
     line-height: 30px;
     text-align: center;
-    /*    padding-top: 25px;*/
 }
 
 .contacts .container form {
@@ -802,7 +801,6 @@ form textarea {
     height: 231px;
     resize: none;
     padding: 20px 0 0 22px;
-    
 }
 
 form input {
