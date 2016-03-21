@@ -13,6 +13,8 @@
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- bootstrap (15column)-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap_col_15.css" />
     <link rel="stylesheet" href="css/main.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -25,14 +27,14 @@
 
 <body>
     <header>
+        <div class="header_border">
 
-        <img src="img/header_border.png" alt="border" class="header_border center-block">
-        <div class="header_text">
-            <h3>Otoc theme</h3>
-            <p>The reflection of the impact of creativity</p>
+            <div class="header_text">
+                <h3>Otoc theme</h3>
+                <p>The reflection of the impact of creativity</p>
+            
+            <a href="#" class="header_btn">See more</a></div>
         </div>
-        <a href="#" class="header_btn">See more</a>
-
     </header>
     <nav>
         <div class="container-fluid text-center">
@@ -89,7 +91,29 @@
         <hr>
     </section>
 
-    
+    <section class="works">
+        <div class="container text-center">
+            <div class="intro">
+                <h4>Last works</h4>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour or randomised.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container portfolio">
+        <div class="row">
+            <!--            <div class="col-md-12">-->
+            <div class="col15-lg-3 col15-md-3"><img src="img/works_1.jpg" alt="portfolio 1"></div>
+            <div class="col15-lg-3 col15-md-3"><img src="img/works_2.jpg" alt="portfolio 2"></div>
+            <div class="col15-lg-3 col15-md-3"><img src="img/works_3.jpg" alt="portfolio 3"></div>
+            <div class="col15-lg-3 col15-md-3"><img src="img/works_4.jpg" alt="portfolio 4"></div>
+            <div class="col15-lg-3 col15-md-3"><img src="img/works_5.jpg" alt="portfolio 5"></div>
+            <!--</div>    -->
+        </div>
+    </div>
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>

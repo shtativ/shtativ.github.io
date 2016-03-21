@@ -1,0 +1,3 @@
+Theme			: OTOC
+Designed by		: Elyounssi Wahib (https://www.behance.net/wahib)
+Licence			: Free for personal use only
