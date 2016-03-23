@@ -366,6 +366,7 @@ section#services {
 
 .bl:hover .orange {
     opacity: 1;
+    transition: all 0.3s;
 }
 
 .fl1 {
