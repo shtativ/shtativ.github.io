@@ -249,14 +249,27 @@ hr {
 
  .portfolio_item{
 	 position: relative;
-	 opacity: 0.9; /*это я для себя*/
+	 opacity: 1; /*это я для себя*/
 	padding: 0;
+	 z-index: 1;
 	 cursor: pointer;
 }
+/*
 .portfolio_item:hover{
 	background-color: rgba(0, 180, 204, 0.72);
 	opacity: 1;
 	position: relative;
+}
+*/
+.blue{
+	background-color: rgba(0, 180, 204, 0.72);
+	opacity: 0;
+	
+}
+.blue:hover{
+	z-index: 2;
+	opacity: 1;
+	background-color: rgba(0, 180, 204, 0.72);
 }
 
 .blog {
