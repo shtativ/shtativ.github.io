@@ -246,28 +246,22 @@ hr {
 	padding-bottom: 1.563em;
 }
 
-
- .portfolio_item{
-	 position: relative;
-	 opacity: 1; /*это я для себя*/
+.portfolio_item {
+	opacity: 1;
 	padding: 0;
-	 z-index: 1;
-	 cursor: pointer;
+	cursor: pointer;
 }
-/*
-.portfolio_item:hover{
+
+.portfolio_item img {
+	width: 100%;
+}
+
+.blue {
 	background-color: rgba(0, 180, 204, 0.72);
 	opacity: 1;
-	position: relative;
 }
-*/
-.blue{
-	background-color: rgba(0, 180, 204, 0.72);
-	opacity: 0;
-	
-}
-.blue:hover{
-	z-index: 2;
+
+.blue:hover {
 	opacity: 1;
 	background-color: rgba(0, 180, 204, 0.72);
 }
@@ -307,7 +301,6 @@ hr {
 
 .blog p {
 	/* Text style for "There are oman" */
-	
 	color: #838383;
 	font-family: 'Open Sans';
 	font-size: 0.875em;
@@ -339,7 +332,6 @@ hr {
 
 .blog_item {
 	padding-bottom: 2.375em;
-	
 }
 
 .blog_item .blog_date {
@@ -367,7 +359,7 @@ hr {
 }
 
 .blog .blog_quote {
-/*	width: 16.250em;*/
+	/*	width: 16.250em;*/
 	font-family: 'Open Sans';
 	font-weight: 400;
 	color: #838383;
@@ -384,7 +376,7 @@ hr {
 }
 
 .blog .blog_comments {
-width: 16.250em;
+	width: 16.250em;
 	/* height: 73px;*/
 	font-family: 'Open Sans';
 	font-weight: 400;
