@@ -1,450 +1,439 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    /*100%*/
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	/*100%*/
 }
 
 header {
-    background: url("../img/header_bg.jpg") no-repeat;
-    background-size: cover;
-    height: 31.188em;
-    width: 100%;
+	background: url("../img/header_bg.jpg") no-repeat;
+	background-size: cover;
+	height: 31.188em;
+	width: 100%;
 }
 
 header .header_border {
-    background: url(../img/header_border.png) 50% 51% no-repeat;
-    height: inherit;
+	background: url(../img/header_border.png) 50% 51% no-repeat;
+	height: inherit;
 }
 
 header .header_text {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
 }
 
 header h3 {
-    color: white;
-    font-family: 'Open Sans';
-    font-size: 2.375em;
-    font-weight: 300;
-    line-height: 1.375em;
-    padding-top: 2.753em;
-    text-transform: uppercase;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 2.375em;
+	font-weight: 300;
+	line-height: 1.375em;
+	padding-top: 2.753em;
+	text-transform: uppercase;
 }
 
 header p {
-    color: white;
-    font-family: 'Open Sans';
-    font-size: 1.688em;
-    font-weight: 400;
-    line-height: 1.375em;
-    padding-top: 1.415em;
-    padding-bottom: 4.375em;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 1.688em;
+	font-weight: 400;
+	line-height: 1.375em;
+	padding-top: 1.415em;
+	padding-bottom: 4.375em;
 }
 
 header .header_btn {
-    text-align: center;
-    height: 3.875em;
-    background: #00b4cc;
-    /* Text style for "See more" */
-    color: white;
-    font-family: 'Open Sans';
-    font-size: 1.063em;
-    font-weight: 700;
-    line-height: 1.375em;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.250em 4.063em;
+	text-align: center;
+	height: 3.875em;
+	background: #00b4cc;
+	/* Text style for "See more" */
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 1.063em;
+	font-weight: 700;
+	line-height: 1.375em;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1.250em 4.063em;
 }
 
 nav .nav_item {
-    display: inline-block;
-    font-family: 'Open Sans';
-    font-size: 0.875em;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #838383;
-    border-left: 0.063em solid #ddd;
-    height: 4.625em;
-    transition: all 0.2s;
-    cursor: pointer;
-    text-align: center;
-    padding-top: 1.563em;
+	display: inline-block;
+	font-family: 'Open Sans';
+	font-size: 0.875em;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #838383;
+	border-left: 0.063em solid #ddd;
+	height: 4.625em;
+	transition: all 0.2s;
+	cursor: pointer;
+	text-align: center;
+	padding-top: 1.563em;
 }
 
 nav .nav_img {
-    padding-top: 0.875em;
+	padding-top: 0.875em;
 }
 
 nav .nav_item:hover {
-    color: #343838;
-    border-left: 0.250em solid #019db2;
+	color: #343838;
+	border-left: 0.250em solid #019db2;
 }
 
 .services {
-    background: #00b4cc;
-    width: 100%;
-    height: 29.688em;
+	background: #00b4cc;
+	width: 100%;
+	height: 29.688em;
 }
 
 .services .container {
-    display: block;
+	display: block;
 }
 
 .services .intro:before {
-    background: #60e2f3;
-    content: "";
-    display: block;
-    text-align: center;
-    width: 0.250em;
-    height: 5.375em;
-    margin: 0 auto;
-    padding: 0;
+	background: #60e2f3;
+	content: "";
+	display: block;
+	text-align: center;
+	width: 0.250em;
+	height: 5.375em;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .services .intro {
-    display: inline-block;
-    text-align: center;
-    max-width: 40.438em;
+	display: inline-block;
+	text-align: center;
+	max-width: 40.438em;
 }
 
 .services .intro h4:before {
-    content: url(../img/icon_gear.png);
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding-right: 0.625em;
+	content: url(../img/icon_gear.png);
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	padding-right: 0.625em;
 }
 
 .services .intro h4 {
-    color: white;
-    font-family: 'Open Sans';
-    font-size: 1.125em;
-    font-weight: 700;
-    line-height: 1.375em;
-    text-transform: uppercase;
-    border: 0.250em solid #60e2f3;
-    width: 13.538em;
-    height: 3.500em;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0.9em 0;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 1.125em;
+	font-weight: 700;
+	line-height: 1.375em;
+	text-transform: uppercase;
+	border: 0.250em solid #60e2f3;
+	width: 13.538em;
+	height: 3.500em;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0.9em 0;
 }
 
 .services .intro p {
-    width: 40.438em;
-    text-align: center;
-    color: white;
-    font-family: 'Open Sans';
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.563em;
-    padding-top: 1.563em;
+	width: 40.438em;
+	text-align: center;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.563em;
+	padding-top: 1.563em;
 }
 
 .services_item {
-    background: #FFF;
-    text-align: center;
-    padding-top: 4.625em;
-    padding: 4.063em 1.563em 1.563em;
-    margin-top: 2.500em;
-    cursor: pointer;
+	background: #FFF;
+	text-align: center;
+	padding-top: 4.625em;
+	padding: 4.063em 1.563em 1.563em;
+	margin-top: 2.500em;
+	cursor: pointer;
 }
 
 .services_item img {
-    padding-bottom: 1.250em;
+	padding-bottom: 1.250em;
 }
 
 .services_item h4 {
-    font-family: 'Open Sans';
-    color: #343838;
-    font-size: 1.125em;
-    font-weight: 600;
-    line-height: 1.563em;
-    padding-bottom: 1.250em;
+	font-family: 'Open Sans';
+	color: #343838;
+	font-size: 1.125em;
+	font-weight: 600;
+	line-height: 1.563em;
+	padding-bottom: 1.250em;
 }
 
 .services_item p {
-    font-family: 'Open Sans';
-    color: #afafaf;
-    font-size: 0.875em;
-    font-weight: 400;
-    line-height: 1.375em;
-    padding-bottom: 2.1em;
+	font-family: 'Open Sans';
+	color: #afafaf;
+	font-size: 0.875em;
+	font-weight: 400;
+	line-height: 1.375em;
+	padding-bottom: 2.1em;
 }
 
 hr {
-    border-bottom: 0.063em solid #DDD;
+	border-bottom: 0.063em solid #DDD;
 }
 
 ----- .works {
-    background: #00b4cc;
-    width: 100%;
-    height: 29.688em;
+	background: #00b4cc;
+	width: 100%;
+	height: 29.688em;
 }
 
 .works .container {
-    display: block;
+	display: block;
 }
 
 .works .intro:before {
-    background: #DDD;
-    content: "";
-    display: block;
-    text-align: center;
-    width: 0.250em;
-    height: 5.375em;
-    margin: 0 auto;
-    padding: 0;
+	background: #DDD;
+	content: "";
+	display: block;
+	text-align: center;
+	width: 0.250em;
+	height: 5.375em;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .works .intro {
-    display: inline-block;
-    text-align: center;
-    max-width: 40.438em;
-    margin-top: 2rem;
+	display: inline-block;
+	text-align: center;
+	max-width: 40.438em;
+	margin-top: 2rem;
 }
 
 .works .intro h4:before {
-    content: url(../img/icon_cascade.png);
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding-right: 0.625em;
+	content: url(../img/icon_cascade.png);
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	padding-right: 0.625em;
 }
 
 .works .intro h4 {
-    color: #00b4cc;
-    ;
-    font-family: 'Open Sans';
-    font-size: 1.125em;
-    font-weight: 700;
-    line-height: 1.375em;
-    text-transform: uppercase;
-    border: 0.250em solid #DDD;
-    width: 13.538em;
-    height: 3.500em;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0.9em 0;
+	color: #00b4cc;
+	;
+	font-family: 'Open Sans';
+	font-size: 1.125em;
+	font-weight: 700;
+	line-height: 1.375em;
+	text-transform: uppercase;
+	border: 0.250em solid #DDD;
+	width: 13.538em;
+	height: 3.500em;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0.9em 0;
 }
 
 .works .intro p {
-    width: 40.438em;
-    text-align: center;
-    color: #afafaf;
-    font-family: 'Open Sans';
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.563em;
-    padding-top: 1.563em;
-    padding-bottom: 1.563em;
+	width: 40.438em;
+	text-align: center;
+	color: #afafaf;
+	font-family: 'Open Sans';
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.563em;
+	padding-top: 1.563em;
+	padding-bottom: 1.563em;
 }
 
 
-/*
- .portfolio .blue {
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-    cursor: pointer;
-    position: absolute;
-    background-color: rgba(0, 180, 204, 0.72);
+ .portfolio_item{
+	 position: relative;
+	 opacity: 0.9; /*это я для себя*/
+	padding: 0;
+	 cursor: pointer;
 }
-.blue:hover{
-    opacity:1;
-}
-*/
-
-
-/*
-
 .portfolio_item:hover{
-   background-color: rgba(0, 180, 204, 0.72);
-    opacity: 1;
-   position: absolute;
+	background-color: rgba(0, 180, 204, 0.72);
+	opacity: 1;
+	position: relative;
 }
-*/
 
 .blog {
-    /*    padding: 0px;*/
-    margin: 80px 0;
-    width: 100%;
-    height: 350px;
+	margin: 5.000em 0;
+	width: 100%;
+	height: 21.875em;
 }
 
 .blog h2 {
-    font-family: 'Open Sans';
-    font-size: 25px;
-    line-height: 22px;
-    color: #afafaf;
-    font-weight: 400;
-text-align: left;
-    padding: 0;
-    margin: 0;
-
+	font-family: 'Open Sans';
+	font-size: 1.563em;
+	line-height: 1.375em;
+	color: #afafaf;
+	font-weight: 400;
+	text-align: left;
+	padding: 0;
+	margin: 0;
 }
 
 .blog h2:after {
-    content: "";
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: #00B4CC;
-    margin-top: 16px;
-	mar
-    text-align: center;
+	content: "";
+	display: block;
+	width: 2.188em;
+	height: 0.313em;
+	background-color: #00B4CC;
+	margin-top: 1.000em;
+	mar text-align: center;
 }
 
 .blog span {
-    color: #00b4cc;
-    font-weight: 700;
-    text-transform: uppercase;
+	color: #00b4cc;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .blog p {
-    /* Text style for "There are oman" */
-    max-width: 207px;
-    color: #838383;
-    font-family: 'Open Sans';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 23px;
-    margin: 20px 0 28px 0;
-   
+	/* Text style for "There are oman" */
+	
+	color: #838383;
+	font-family: 'Open Sans';
+	font-size: 0.875em;
+	font-weight: 400;
+	line-height: 1.438em;
+	margin: 1.250em 0 1.750em 0;
 }
 
 .blog a {
 	display: block;
-    color: #343838;
-	width: 196px;
-    font-family: 'Open Sans';
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 23px;
+	color: #343838;
+	width: 12.250em;
+	font-family: 'Open Sans';
+	font-size: 0.938em;
+	font-weight: 700;
+	line-height: 1.438em;
 	cursor: pointer;
 	text-decoration: none;
-    text-transform: uppercase;	
-    border: 4px solid #343838;
-    padding: 15px 30px;
+	text-transform: uppercase;
+	border: 0.250em solid #343838;
+	padding: 0.938em 1.575em;
 	transition: all 0.3s;
 }
-.blog a:hover{
+
+.blog a:hover {
 	color: #00B4CC;
-	border: 4px solid #00B4CC;
+	border: 0.250em solid #00B4CC;
 }
-.blog_item{
-	padding-bottom: 38px;
+
+.blog_item {
+	padding-bottom: 2.375em;
+	
 }
+
 .blog_item .blog_date {
-    float: left;    width: 43px;
-  
-    height: 59px;
-    color: #00b4cc;
-    font-family: 'Open Sans';
-    line-height: 37px;
-    margin-right: 25px;
+	float: left;
+	width: 2.688em;
+	height: 3.688em;
+	color: #00b4cc;
+	font-family: 'Open Sans';
+	line-height: 2.313em;
+	margin-right: 1.563em;
 }
 
 .blog_date .date_day {
-    font-size: 30px;
-    font-weight: 400;
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+	font-size: 1.875em;
+	font-weight: 400;
+	border-bottom: 0.063em solid #ddd;
+	border-right: 0.063em solid #ddd;
 }
 
 .blog_date .date_month {
-    font-size: 17px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-right: 1px solid #ddd;
+	font-size: 1.063em;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-right: 0.063em solid #ddd;
 }
 
 .blog .blog_quote {
-    width: 260px;
-
-    font-family: 'Open Sans';
-    font-weight: 400;
-    color: #838383;
-    font-size: 18px;
-    line-height: 25px;
-    padding-left:25px;
-    margin: 0;
+/*	width: 16.250em;*/
+	font-family: 'Open Sans';
+	font-weight: 400;
+	color: #838383;
+	font-size: 1.125em;
+	line-height: 1.563em;
+	padding-left: 1.563em;
+	margin: 0;
 }
-.blog .blog_quote p{
-        margin: 0;
-    padding: 0;
+
+.blog .blog_quote p {
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 
 .blog .blog_comments {
-    width: 260px;
-   /* height: 73px;*/
-    font-family: 'Open Sans';
-    font-weight: 400;
-    color: #838383;
-    color: #afafaf;
-    font-size: 16px;
-    line-height: 30px;
-    padding-left: 45px;
-    margin: 0;
+width: 16.250em;
+	/* height: 73px;*/
+	font-family: 'Open Sans';
+	font-weight: 400;
+	color: #838383;
+	color: #afafaf;
+	font-size: 1.0em;
+	line-height: 1.875em;
+	padding-left: 2.813em;
+	margin: 0;
 }
 
 .blog .blog_date:hover {
-    color: #343838;
-    cursor: pointer;
+	color: #343838;
+	cursor: pointer;
 }
 
 .statistics {
-    width: 100%;
-    height: 22.375em;
-    background: #00b4cc;
-    margin-top: 5.000em;
-    margin-bottom: 4.750em;
+	width: 100%;
+	height: 22.375em;
+	background: #00b4cc;
+	margin-top: 5.000em;
+	margin-bottom: 4.750em;
 }
 
 .statistics .container {
-    display: block;
-    vertical-align: middle;
-    padding-top: 4.750em;
+	display: block;
+	vertical-align: middle;
+	padding-top: 4.750em;
 }
 
 .statistics .container .statistics_item {
-    background: url("../img/statistics_border.png") 50% no-repeat;
-    height: 11.250em;
-    cursor: pointer;
+	background: url("../img/statistics_border.png") 50% no-repeat;
+	height: 11.250em;
+	cursor: pointer;
 }
 
 .statistics img {
-    margin-top: -1em;
+	margin-top: -1em;
 }
 
 .statistics h1 {
-    display: block;
-    padding: 0.28em 0em;
-    margin: 0;
-    /*
+	display: block;
+	padding: 0.28em 0em;
+	margin: 0;
+	/*
 width: 67px;
 height: 48px;
 */
-    color: white;
-    font-family: 'Open Sans';
-    font-size: 4.063em;
-    font-weight: 300;
-    line-height: 1.563em;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 4.063em;
+	font-weight: 300;
+	line-height: 1.563em;
 }
 
 .statistics p {
-    display: block;
-    color: white;
-    font-family: 'Open Sans';
-    font-size: 1.250em;
-    font-weight: 300;
-    line-height: 1.563em;
-    margin-top: 1.0em;
-    padding: 1.0em;
+	display: block;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 1.250em;
+	font-weight: 300;
+	line-height: 1.563em;
+	margin-top: 1.0em;
+	padding: 1.0em;
 }
