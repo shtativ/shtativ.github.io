@@ -1,29 +1,27 @@
 body {
-	margin: 0;
-	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	/*100%*/
+	margin: 0;
+	padding: 0;
 }
 
 header {
 	background: url("../img/header_bg.jpg") no-repeat;
-	background-size: cover;
 	height: 31.188em;
 	width: 100%;
 }
 
 header .header_border {
-	background: url(../img/header_border.png) 50% 51% no-repeat;
+	background: url("../img/header_border.png") 50% 51% no-repeat;
 	height: inherit;
 }
 
 header .header_text {
 	display: block;
-	position: absolute;
-	top: 0;
 	left: 0;
+	position: absolute;
 	text-align: center;
+	top: 0;
 	width: 100%;
 }
 
@@ -43,38 +41,39 @@ header p {
 	font-size: 1.688em;
 	font-weight: 400;
 	line-height: 1.375em;
-	padding-top: 1.415em;
 	padding-bottom: 4.375em;
+	padding-top: 1.415em;
 }
 
 header .header_btn {
-	text-align: center;
-	height: 3.875em;
-	background: #00b4cc;
-	/* Text style for "See more" */
+	background: #00B4CC;
 	color: white;
 	font-family: 'Open Sans';
 	font-size: 1.063em;
 	font-weight: 700;
+	height: 3.875em;
 	line-height: 1.375em;
-	text-transform: uppercase;
+	padding: 1.25em 4.063em;
+	text-align: center;
 	text-decoration: none;
-	padding: 1.250em 4.063em;
+	text-transform: uppercase;
 }
 
 nav .nav_item {
+	border-left-color: #DDDDDD;
+	border-left-style: solid;
+	border-left-width: 0.063em;
+	color: #838383;
+	cursor: pointer;
 	display: inline-block;
 	font-family: 'Open Sans';
 	font-size: 0.875em;
 	font-weight: 700;
-	text-transform: uppercase;
-	color: #838383;
-	border-left: 0.063em solid #ddd;
 	height: 4.625em;
-	transition: all 0.2s;
-	cursor: pointer;
-	text-align: center;
 	padding-top: 1.563em;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 0.2s;
 }
 
 nav .nav_img {
@@ -82,98 +81,100 @@ nav .nav_img {
 }
 
 nav .nav_item:hover {
+	border-left-color: #019DB2;
+	border-left-style: solid;
+	border-left-width: 0.25em;
 	color: #343838;
-	border-left: 0.250em solid #019db2;
+	box-shadow: inset 4px 1px 9px -1px rgba(0, 0, 0, 0.2);
 }
 
 .services {
-	background: #00b4cc;
-	width: 100%;
+	background: #00B4CC;
 	height: 29.688em;
+	width: 100%;
 }
 
 .services .container {
 	display: block;
 }
 
-.services .intro:before {
-	background: #60e2f3;
+.services .intro::before {
+	background: #60E2F3;
 	content: "";
 	display: block;
-	text-align: center;
-	width: 0.250em;
 	height: 5.375em;
 	margin: 0 auto;
 	padding: 0;
+	text-align: center;
+	width: 0.25em;
 }
 
 .services .intro {
 	display: inline-block;
-	text-align: center;
 	max-width: 40.438em;
+	text-align: center;
 }
 
-.services .intro h4:before {
-	content: url(../img/icon_gear.png);
+.services .intro h4::before {
+	content: url("../img/icon_gear.png");
 	display: inline-block;
+	padding-right: 0.625em;
 	text-align: center;
 	vertical-align: middle;
-	padding-right: 0.625em;
 }
 
 .services .intro h4 {
+	border: 0.25em solid #60E2F3;
 	color: white;
 	font-family: 'Open Sans';
 	font-size: 1.125em;
 	font-weight: 700;
+	height: 3.5em;
 	line-height: 1.375em;
-	text-transform: uppercase;
-	border: 0.250em solid #60e2f3;
-	width: 13.538em;
-	height: 3.500em;
-	text-align: center;
 	margin: 0 auto;
 	padding: 0.9em 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 13.538em;
 }
 
 .services .intro p {
-	width: 40.438em;
-	text-align: center;
 	color: white;
 	font-family: 'Open Sans';
 	font-size: 1em;
 	font-weight: 400;
 	line-height: 1.563em;
 	padding-top: 1.563em;
+	text-align: center;
+	width: 40.438em;
 }
 
 .services_item {
-	background: #FFF;
-	text-align: center;
-	padding-top: 2.625em;
-	padding: 4.063em 1.563em 1.563em;
-	margin-top: 2.500em;
+	background: #FFFFFF;
 	cursor: pointer;
+	margin-top: 2.5em;
+	padding: 4.063em 1.563em 1.563em;
+	text-align: center;
 }
 
 .services_item img {
-	    width: 52px;
-    height: 52px;
-    transition: all 0.3s;
+	height: 52px;
+	transition: all 0.3s;
+	width: 52px;
 }
 
 .services_item h4 {
-	font-family: 'Open Sans';
 	color: #343838;
+	font-family: 'Open Sans';
 	font-size: 1.125em;
 	font-weight: 600;
 	line-height: 1.563em;
-	padding-bottom: 1.250em;
+	padding-bottom: 1.25em;
 }
 
 .services_item p {
+	color: #AFAFAF;
 	font-family: 'Open Sans';
-	color: #afafaf;
 	font-size: 0.875em;
 	font-weight: 400;
 	line-height: 1.375em;
@@ -181,110 +182,107 @@ nav .nav_item:hover {
 }
 
 hr {
-	border-bottom: 0.063em solid #DDD;
+	border-bottom-color: #DDDDDD;
+	border-bottom-style: solid;
+	border-bottom-width: 0.063em;
 }
 
 ----- .works {
-	background: #00b4cc;
-	width: 100%;
+	background: #00B4CC;
 	height: 29.688em;
+	width: 100%;
+/*	починить*/
 }
 
 .works .container {
 	display: block;
 }
 
-.works .intro:before {
-	background: #DDD;
+.works .intro::before {
+	background: #DDDDDD;
 	content: "";
 	display: block;
-	text-align: center;
-	width: 0.250em;
 	height: 5.375em;
 	margin: 0 auto;
 	padding: 0;
+	text-align: center;
+	width: 0.25em;
 }
 
 .works .intro {
 	display: inline-block;
-	text-align: center;
+	margin-top: 9.250em;
 	max-width: 40.438em;
-	margin-top: 2rem;
+	text-align: center;
 }
 
-.works .intro h4:before {
-	content: url(../img/icon_cascade.png);
+.works .intro h4::before {
+	content: url("../img/icon_cascade.png");
 	display: inline-block;
+	padding-right: 0.625em;
 	text-align: center;
 	vertical-align: middle;
-	padding-right: 0.625em;
 }
 
 .works .intro h4 {
-	color: #00b4cc;
-	;
+	border: 0.25em solid #DDDDDD;
+	color: #00B4CC;
 	font-family: 'Open Sans';
 	font-size: 1.125em;
 	font-weight: 700;
+	height: 3.5em;
 	line-height: 1.375em;
-	text-transform: uppercase;
-	border: 0.250em solid #DDD;
-	width: 13.538em;
-	height: 3.500em;
-	text-align: center;
 	margin: 0 auto;
 	padding: 0.9em 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 13.538em;
 }
 
 .works .intro p {
-	width: 40.438em;
-	text-align: center;
-	color: #afafaf;
+	color: #AFAFAF;
 	font-family: 'Open Sans';
 	font-size: 1em;
 	font-weight: 400;
 	line-height: 1.563em;
-	padding-top: 1.563em;
 	padding-bottom: 1.563em;
+	padding-top: 1.563em;
+	text-align: center;
+	width: 40.438em;
 }
 
 .portfolio_item {
-	position: relative;
-	width: 20%;
+	background-size: cover;
 	height: 225px;
 	padding-bottom: 16.5%;
-	background-size: cover;
-	verflow: visible;
+	position: relative;
+	width: 20%;
 }
 
 .portfolio_item h5 {
-	width: 12.875em;
-	height: 156px;
+	border: 4px solid white;
 	color: white;
 	font-family: 'Open Sans';
 	font-size: 15px;
 	font-weight: 700;
+	height: 156px;
 	line-height: 25px;
-	text-transform: uppercase;
-	border: 4px solid white;
-	text-align: center;
 	margin-top: 34px;
 	padding-top: 65px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 12.875em;
 }
 
-
-/*избавиться от статичных отступов*/
-
 .portfolio_item .blue {
-	position: absolute;
-	background: rgba(0, 180, 204, 0.72);
-	opacity: 0;
+	background: rgba(0, 180, 204, 0.721569);
 	cursor: pointer;
-	width: 100%;
 	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
 	transition: all 0.3s;
-	left:0;
-	/*выровнить  блок относисельно фоновой картинки*/
+	width: 100%;
 }
 
 .portfolio_item:hover .blue {
@@ -312,9 +310,14 @@ hr {
 }
 
 .blog {
+	margin: 5em 0;
+	width: 100%;
+}
+
+.blog {
 	margin: 5.000em 0;
 	width: 100%;
-/*	height: 21.875em;*/
+	/*	height: 21.875em;*/
 }
 
 .blog h2 {
@@ -424,7 +427,7 @@ hr {
 
 .blog .blog_comments {
 	width: 20.250em;
-/*	height: 73px;*/
+	/*	height: 73px;*/
 	font-family: 'Open Sans';
 	font-weight: 400;
 	color: #838383;
@@ -509,9 +512,7 @@ height: 48px;
 	padding: 1.0em;
 }
 
-.f_left {
-	
-}
+.f_left {}
 
 .f_right {
 	background: #343838;
@@ -563,7 +564,6 @@ height: 48px;
 	margin-left: -5px;
 	margin-bottom: 30px;
 	border-radius: 0;
-	
 }
 
 .f_right .social_block {
@@ -580,9 +580,10 @@ height: 48px;
 	transition: all 0.3s;
 	cursor: pointer;
 	text-align: center;
-	width: 48px;	
+	width: 48px;
 }
-.social_btn:hover{
+
+.social_btn:hover {
 	background: #252828;
 }
 
@@ -590,22 +591,11 @@ height: 48px;
 	max-width: 20px;
 	max-height: 20px;
 }
-/*svg*/
-.socual_btn .img svg path{
-	fill:#FFF;
+ .social_btn:hover svg path {
+  fill:#fff;
 }
-.socual_block .img svg path{
-	fill:#FFF;
-}
-.socual_block svg path{
-	fill:#FFF;
-}
-.socual_block .svg path{
-	fill:#FFF;
-}
-.socual_btn .svg path{
-	fill:#FFF;
-}
-.socual_btn svg path{
-	fill:#FFF;
+
+a.social_btn svg path {
+	fill: #fff !important;
+	/*починить*/
 }
