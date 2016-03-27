@@ -250,10 +250,13 @@ hr {
 	position: relative;
 	width: 20%;
 	height: 225px;
+	padding-bottom: 16.5%;
+	background-size: cover;
+	verflow: visible;
 }
 
 .portfolio_item h5 {
-	width: 206px;
+	width: 12.875em;
 	height: 156px;
 	color: white;
 	font-family: 'Open Sans';
@@ -278,6 +281,7 @@ hr {
 	width: 100%;
 	height: 100%;
 	transition: all 0.3s;
+	/*выровнить  блок относисельно фоновой картинки*/
 }
 
 .portfolio_item:hover .blue {
@@ -285,23 +289,23 @@ hr {
 }
 
 .item1 {
-	background: url("../img/works_1.jpg") no-repeat;
+	background-image: url("../img/works_1.jpg");
 }
 
 .item2 {
-	background: url("../img/works_2.jpg") no-repeat;
+	background-image: url("../img/works_2.jpg");
 }
 
 .item3 {
-	background: url("../img/works_3.jpg") no-repeat;
+	background-image: url("../img/works_3.jpg");
 }
 
 .item4 {
-	background: url("../img/works_4.jpg") no-repeat;
+	background-image: url("../img/works_4.jpg");
 }
 
 .item5 {
-	background: url("../img/works_5.jpg") no-repeat;
+	background-image: url("../img/works_5.jpg");
 }
 
 .blog {
@@ -338,16 +342,16 @@ hr {
 }
 
 .blog p {
-	/* Text style for "There are oman" */
+	width: 80%;
 	color: #838383;
 	font-family: 'Open Sans';
 	font-size: 0.875em;
 	font-weight: 400;
 	line-height: 1.438em;
-	margin: 1.250em 0 1.750em 0;
+	margin: 1.850em 0 2.40em 0;
 }
 
-.blog a {
+.blog .blog_btn {
 	display: block;
 	color: #343838;
 	width: 12.250em;
@@ -361,15 +365,17 @@ hr {
 	border: 0.250em solid #343838;
 	padding: 0.938em 1.575em;
 	transition: all 0.3s;
+	margin-bottom: 1em;
 }
 
-.blog a:hover {
+.blog .blog_btn:hover {
 	color: #00B4CC;
 	border: 0.250em solid #00B4CC;
 }
 
 .blog_item {
 	padding-bottom: 2.375em;
+	padding-right: 2.375em;
 }
 
 .blog_item .blog_date {
@@ -414,8 +420,8 @@ hr {
 }
 
 .blog .blog_comments {
-	width: 16.250em;
-	/* height: 73px;*/
+	width: 20.250em;
+	height: 73px;
 	font-family: 'Open Sans';
 	font-weight: 400;
 	color: #838383;
@@ -424,6 +430,25 @@ hr {
 	line-height: 1.875em;
 	padding-left: 2.813em;
 	margin: 0;
+}
+
+.blog_comments .comments_1,
+.comments_2 {
+	color: #afafaf;
+	font-size: 16px;
+	line-height: 30px;
+	margin-right: 16px;
+}
+
+.blog_comments .comments_1:before {
+	content: url("../img/comments.png");
+	margin-right: 6px;
+	vertical-align: sub;
+}
+
+.blog_comments .comments_2:before {
+	content: url("../img/categorie.png");
+	margin-right: 6px;
 }
 
 .blog .blog_date:hover {
@@ -486,7 +511,7 @@ height: 48px;
 .f_right {
 	background: #343838;
 	height: 434px;
-	padding: 73px 0 79px 50px;
+	padding: 73px 16px 79px 50px;
 }
 
 .f_right h4 {
@@ -495,7 +520,8 @@ height: 48px;
 	font-size: 20px;
 	font-weight: 700;
 	font-variant: small-caps;
-	margin-bottom: 19px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 .f_right p {
@@ -512,10 +538,12 @@ height: 48px;
 	outline: none;
 	border: none;
 	height: 57px;
-	width: 248px;
 	box-sizing: border-box;
 	color: white;
+	width: 80%;
 	padding-left: 15px;
+	margin-right: 5px;
+	margin-bottom: 30px;
 }
 
 .f_right button {
@@ -523,15 +551,37 @@ height: 48px;
 	outline: none;
 	border: none;
 	height: 57px;
-	width: 94px;
+	width: 20%;
 	transition: all 0.3s;
 	margin-left: -5px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
-.social_btn {
-	background: url("../img/temp_icon.png") no-repeat;
-	width: 43px;
-	height: 43px;
-	margin-top: 30px;
+.f_right .social_block {
+	width: 100%;
+	height: 70px;
+/*	margin-bottom: 60px;*/
+}
+
+.social_block .social_btn {
+	display: inline-block;
+	background: #2f3333;
+	margin-right: 7px;
+	margin-top: 22px;
+	padding: 11px;
+	transition: all 0.3s;
+	cursor: pointer;
+	text-align: center;
+	width: 48px;
+	
+}
+.social_btn:hover{
+	background: #252828;
+	box-shadow:  0 0 4px  #00b4cc;
+	
+}
+
+.social_block .social_btn img {
+	max-width: 20px;
+	max-height: 20px;
 }
