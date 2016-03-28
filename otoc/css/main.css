@@ -7,6 +7,7 @@ body {
 
 header {
 	background: url("../img/header_bg.jpg") no-repeat;
+	background-size: cover;
 	height: 31.188em;
 	width: 100%;
 }
@@ -187,11 +188,11 @@ hr {
 	border-bottom-width: 0.063em;
 }
 
------ .works {
-	background: #00B4CC;
+.works {
+	/*	background: #00B4CC;*/
 	height: 29.688em;
 	width: 100%;
-/*	починить*/
+	/*	починить*/
 }
 
 .works .container {
@@ -208,12 +209,16 @@ hr {
 	text-align: center;
 	width: 0.25em;
 }
-
+.works .intro .ll{
+	text-align: center;
+	margin:0 auto;
+}
 .works .intro {
 	display: inline-block;
 	margin-top: 9.250em;
 	max-width: 40.438em;
 	text-align: center;
+
 }
 
 .works .intro h4::before {
@@ -369,9 +374,10 @@ hr {
 	text-decoration: none;
 	text-transform: uppercase;
 	border: 0.250em solid #343838;
-	padding: 0.938em 1.575em;
+	padding: 0.938em 1.175em;
 	transition: all 0.3s;
 	margin-bottom: 1em;
+	text-align: center;
 }
 
 .blog .blog_btn:hover {
@@ -490,10 +496,6 @@ hr {
 	display: block;
 	padding: 0.28em 0em;
 	margin: 0;
-	/*
-width: 67px;
-height: 48px;
-*/
 	color: white;
 	font-family: 'Open Sans';
 	font-size: 4.063em;
@@ -581,6 +583,7 @@ height: 48px;
 	cursor: pointer;
 	text-align: center;
 	width: 48px;
+	height: 48px;
 }
 
 .social_btn:hover {
@@ -591,11 +594,8 @@ height: 48px;
 	max-width: 20px;
 	max-height: 20px;
 }
- .social_btn:hover svg path {
-  fill:#fff;
-}
 
-a.social_btn svg path {
-	fill: #fff !important;
-	/*починить*/
+.social_btn:hover svg path {
+	fill: #fff;
+	transition: all 0.3s;
 }
