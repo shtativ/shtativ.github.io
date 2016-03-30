@@ -522,7 +522,32 @@ hr {
 	padding: 1.0em;
 }
 
-.f_left {}
+
+.views .media{
+	width: 700px;
+	margin-left: 270px;
+}
+.views h4{
+color: #00b4cc;
+font-size: 20px;
+font-weight: 700;
+}
+.views span{
+	color: #afafaf;
+font-size: 14px;
+font-weight: 600;
+font-style: italic;
+line-height: 20px;
+}
+.views p{
+	width: 566px;
+height: 95px;
+font-family: 'Open Sans';
+}
+
+.f_left {
+	/*map*/
+}
 
 .f_right {
 	background: #343838;

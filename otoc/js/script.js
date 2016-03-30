@@ -1,8 +1,12 @@
 $(function(){
-  $(".owl-carousel").owlCarousel();
-	items:5,
+  $(".owl-carousel").owlCarousel({
+	items:1,
 	margin:10,
-	autoHeight:true,
 	loop:true,
-	nav:true
+	nav:true,
+	autoplay:true,
+  autoplayHoverPause: true,
+  animateOut: 'slideOutUp',
+  animateIn: 'slideInUp'
+  });
 });
