@@ -62,11 +62,11 @@ header .header_btn {
 	transition: all 0.3s;
 	outline: none;
 }
-header .header_btn:hover{
-	color:#fff;
+
+header .header_btn:hover {
+	color: #fff;
 	background: rgba(0, 180, 204, 0);
 	border: 4px solid #00B4CC;
-	
 }
 
 nav .nav_item {
@@ -277,7 +277,7 @@ hr {
 	font-weight: 700;
 	height: 156px;
 	line-height: 25px;
-/*	margin-top: 34px;*/
+	/*	margin-top: 34px;*/
 	padding-top: 25%;
 	text-align: center;
 	text-transform: uppercase;
@@ -521,35 +521,55 @@ hr {
 	margin-top: 1.0em;
 	padding: 1.0em;
 }
-.views .media{
-	width: 700px;
-	margin-left: 270px;
+
+.views{
+	margin-bottom: 64px;
 }
-.views container{
+
+.views .media {
+	width: 100%;
+	margin-left: 270px;
+	margin-left: 20px;
+/*	text-align: left;*/
+}
+
+.views container {
 	width: 100%;
 	height: auto;
-	margin:0 auto;
+	margin: 0 auto;
 }
-.views .media-object{
+
+
+.views .media-object {
 	margin-right: 34px;
+	width: 393px !important;
+	height: auto;
+
+	border-left:250px solid #00B4CC;
+	border-right:5px solid #00B4CC;
+
 }
-.views h4{
-color: #00b4cc;
-font-size: 20px;
-font-weight: 700;
+
+.views h4 {
+	color: #00b4cc;
+	font-size: 20px;
+	font-weight: 700;
 }
-.views span{
+
+.views span {
 	color: #afafaf;
-font-size: 14px;
-font-weight: 600;
-font-style: italic;
-line-height: 20px;
+	font-size: 14px;
+	font-weight: 600;
+	font-style: italic;
+	line-height: 20px;
 }
-.views p{
-	width: 566px;
-height: 95px;
-font-family: 'Open Sans';
+
+.views p {
+	width: 436px;
+	height: 95px;
+	font-family: 'Open Sans';
 }
+
 .f_left {
 	/*map*/
 }
@@ -632,9 +652,11 @@ font-family: 'Open Sans';
 }
 
 .social_btn svg path {
-	fill: #FFF;;
+	fill: #FFF;
+	;
 	transition: all 0.3s;
 }
+
 .social_btn:hover svg path {
 	fill: #00b4cc;
 	background: #FFF;
