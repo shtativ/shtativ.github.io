@@ -190,8 +190,9 @@ hr {
 
 .works {
 	/*	background: #00B4CC;*/
-	height: 29.688em;
+	/*	height: 29.688em;*/
 	width: 100%;
+	margin-top: 150px;
 	/*	починить*/
 }
 
@@ -212,11 +213,11 @@ hr {
 
 .works .intro {
 	display: inline-block;
-/*	margin-top: 9.250em;	*/
-/*	margin-top: 1.2em;*/
+	/*	margin-top: 9.250em;	*/
+	/*	margin-top: 1.2em;*/
 	max-width: 40.438em;
 	text-align: center;
-
+	margin-top: -20px;
 }
 
 .works .intro h4::before {
@@ -233,7 +234,7 @@ hr {
 	font-family: 'Open Sans';
 	font-size: 1.125em;
 	font-weight: 700;
-/*	height: 3.5em;*/
+	/*	height: 3.5em;*/
 	line-height: 1.375em;
 	margin: 0 auto;
 	pzdding-bottom: 20px;
@@ -271,11 +272,13 @@ hr {
 	font-weight: 700;
 	height: 156px;
 	line-height: 25px;
-	margin-top: 34px;
-	padding-top: 65px;
+/*	margin-top: 34px;*/
+	padding-top: 25%;
 	text-align: center;
 	text-transform: uppercase;
-	width: 12.875em;
+	width: 100%;
+	height: 100%;
+	margin: 0;
 }
 
 .portfolio_item .blue {
@@ -287,6 +290,7 @@ hr {
 	position: absolute;
 	transition: all 0.3s;
 	width: 100%;
+	padding: 40px
 }
 
 .portfolio_item:hover .blue {
@@ -548,8 +552,6 @@ hr {
 	box-sizing: border-box;
 	color: white;
 	width: 80%;
-	padding-left: 15px;
-	margin-right: 5px;
 	margin-bottom: 30px;
 	border-radius: 0;
 	box-shadow: none !important;
@@ -594,7 +596,12 @@ hr {
 	max-height: 20px;
 }
 
+.social_btn svg path {
+	fill: #FFF;;
+	transition: all 0.3s;
+}
 .social_btn:hover svg path {
-	fill: #fff;
+	fill: #00b4cc;
+	background: #FFF;
 	transition: all 0.3s;
 }
