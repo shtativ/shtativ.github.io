@@ -209,13 +209,11 @@ hr {
 	text-align: center;
 	width: 0.25em;
 }
-.works .intro .ll{
-	text-align: center;
-	margin:0 auto;
-}
+
 .works .intro {
 	display: inline-block;
-	margin-top: 9.250em;
+/*	margin-top: 9.250em;	*/
+/*	margin-top: 1.2em;*/
 	max-width: 40.438em;
 	text-align: center;
 
@@ -235,9 +233,10 @@ hr {
 	font-family: 'Open Sans';
 	font-size: 1.125em;
 	font-weight: 700;
-	height: 3.5em;
+/*	height: 3.5em;*/
 	line-height: 1.375em;
 	margin: 0 auto;
+	pzdding-bottom: 20px;
 	padding: 0.9em 0;
 	text-align: center;
 	text-transform: uppercase;
