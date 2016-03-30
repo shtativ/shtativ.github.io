@@ -528,9 +528,8 @@ hr {
 
 .views .media {
 	width: 100%;
-	margin-left: 270px;
-	margin-left: 20px;
-/*	text-align: left;*/
+	margin-left: 15%;
+	text-align: left;
 }
 
 .views container {
@@ -539,15 +538,10 @@ hr {
 	margin: 0 auto;
 }
 
-
 .views .media-object {
 	margin-right: 34px;
-	width: 393px !important;
+	width: 140px !important;
 	height: auto;
-
-	border-left:250px solid #00B4CC;
-	border-right:5px solid #00B4CC;
-
 }
 
 .views h4 {
@@ -570,8 +564,12 @@ hr {
 	font-family: 'Open Sans';
 }
 
-.f_left {
-	/*map*/
+.f_left .map{
+	width: 750px;
+    height: 400px;
+	background-color: #CCC;
+
+
 }
 
 .f_right {

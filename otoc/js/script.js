@@ -4,7 +4,8 @@ $(function(){
 	margin:10,
 	loop:true,
 	nav:true,
-	autoplay:false,
+	autoplay:true,
+	mouseDrag:false,
   autoplayHoverPause: true,
   animateOut: 'slideOutUp',
   animateIn: 'slideInUp'

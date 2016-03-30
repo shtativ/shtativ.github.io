@@ -21,6 +21,11 @@
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/animate.css">
 
+	<!--
+	 vertical slider 
+	<link rel="stylesheet" href="css/vslider.css">
+-->
+
 	<!--HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -229,67 +234,76 @@
 
 	<section class="views">
 		<div class="container">
-			<div class="owl-carousel">
-				<div class="media">
-					<div class="media-left">
-						<img class="media-object" src="img/views_team-1.jpg" alt="CEO">
+			<div class="vslider">
+				<div class="owl-carousel">
+					<div class="media">
+						<div class="media-left">
+							<img class="media-object" src="img/views_team-1.jpg" alt="CEO">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Keanu Reeves-1</h4>
+							<span>CEO / Founder</span>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+						</div>
 					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Keanu Reeves-1</h4>
-						<span>CEO / Founder</span>
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
-					</div>
-				</div>
-				<div class="media">
-					<div class="media-left">
-						<img class="media-object" src="img/views_team-1.jpg" alt="CEO">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Keanu Reeves-2</h4>
-						<span>CEO / Founder</span>
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
-					</div>
-				</div>
-				<div class="media">
-					<div class="media-left">
-						<img class="media-object" src="img/views_team-1.jpg" alt="CEO">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Keanu Reeves-3</h4>
-						<span>CEO / Founder</span>
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
-					</div>
-				</div>
-				<div class="media">
-					<div class="media-left">
-						<img class="media-object" src="img/views_team-1.jpg" alt="CEO">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Keanu Reeves-4</h4>
-						<span>CEO / Founder</span>
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
-					</div>
-				</div>
-				<div class="media">
-					<div class="media-left">
-						<img class="media-object" src="img/views_team-1.jpg" alt="CEO">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Keanu Reeves-5</h4>
-						<span>CEO / Founder</span>
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
-					</div>
-				</div>
 
+					<div class="media">
+						<div class="media-left">
+							<img class="media-object" src="img/views_team-2.jpg" alt="CEO">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Keanu Reeves-2</h4>
+							<span>CEO / Founder</span>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+						</div>
+					</div>
+
+					<div class="media">
+						<div class="media-left">
+							<img class="media-object" src="img/views_team-1.jpg" alt="CEO">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Keanu Reeves-3</h4>
+							<span>CEO / Founder</span>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+						</div>
+					</div>
+
+					<div class="media">
+						<div class="media-left">
+							<img class="media-object" src="img/views_team-2.jpg" alt="CEO">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Keanu Reeves-4</h4>
+							<span>CEO / Founder</span>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+						</div>
+					</div>
+
+					<div class="media">
+						<div class="media-left">
+							<img class="media-object" src="img/views_team-1.jpg" alt="CEO">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Keanu Reeves-5</h4>
+							<span>CEO / Founder</span>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<footer>
+
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-7 col-md-7 sm-12">
 					<div class="f_left">
+						<div class="map">
+
+						</div>
 
 					</div>
 				</div>
@@ -330,6 +344,23 @@
 		<script src="js/owl.carousel.min.js"></script>
 
 		<script src="js/script.js"></script>
+
+
+		<!-- google maps -->
+		<script>
+			function initMap() {
+				var mapDiv = document.getElementById('map');
+				var map = new google.maps.Map(mapDiv, {
+					center: {
+						lat: 44.540,
+						lng: -78.546
+					},
+					zoom: 8
+				});
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+
 </body>
 
 </html>
