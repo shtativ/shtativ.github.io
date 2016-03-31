@@ -45,6 +45,27 @@
 				<a href="#" class="header_btn">See more</a></div>
 		</div>
 	</header>
+
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					<img alt="Brand" src="img/logo_md.png">
+				</a>
+				<ul class="nav navbar-nav">
+					<li><a href="#" class="nav_item">Home</a></li>
+					<li><a href="#" class="nav_item">About</a></li>
+					<li><a href="#" class="nav_item">Services</a></li>
+					<li><a href="#" class="nav_item">Works</a></li>
+					<li><a href="#" class="nav_item">Contact</a></li>
+					<li><a href="#" class="nav_item">Blog</a></li>
+					<li></li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+	<!--
 	<nav>
 		<div class="containertext-center">
 			<div class="row">
@@ -60,6 +81,7 @@
 			</div>
 		</div>
 	</nav>
+-->
 	<section class="services">
 		<div class="container text-center">
 			<div class="intro ">
@@ -347,19 +369,24 @@
 
 
 		<!-- google maps -->
-		<script>
+		<script type="text/javascript">
+			var map;
+
 			function initMap() {
-				var mapDiv = document.getElementById('map');
-				var map = new google.maps.Map(mapDiv, {
+				map = new google.maps.Map(document.getElementById('map'), {
 					center: {
-						lat: 44.540,
-						lng: -78.546
+						lat: -34.397,
+						lng: 150.644
 					},
 					zoom: 8
 				});
 			}
 		</script>
-		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALsPKffiZVlWbOHfDNSYPqR2LKaYSO9wI&callback=initMap">
+		</script>
+
+
+		<!--    temp-->
 
 </body>
 

@@ -69,13 +69,21 @@ header .header_btn:hover {
 	border: 4px solid #00B4CC;
 }
 
-nav .nav_item {
+.navbar {
+	background-color: #FFF;
+	border-color: black;
+}
+.navbar-nav{
+	margin:0 auto;
+}
+
+.navbar-nav .nav_item {
+	
 	border-left-color: #DDDDDD;
 	border-left-style: solid;
 	border-left-width: 0.063em;
 	color: #838383;
 	cursor: pointer;
-	display: inline-block;
 	font-family: 'Open Sans';
 	font-size: 0.875em;
 	font-weight: 700;
@@ -86,9 +94,13 @@ nav .nav_item {
 	transition: all 0.2s;
 }
 
+
+/*
 nav .nav_img {
 	padding-top: 0.875em;
 }
+
+*/
 
 nav .nav_item:hover {
 	border-left-color: #019DB2;
@@ -522,7 +534,7 @@ hr {
 	padding: 1.0em;
 }
 
-.views{
+.views {
 	margin-bottom: 64px;
 }
 
@@ -564,12 +576,10 @@ hr {
 	font-family: 'Open Sans';
 }
 
-.f_left .map{
+.f_left .map {
 	width: 750px;
-    height: 400px;
+	height: 400px;
 	background-color: #CCC;
-
-
 }
 
 .f_right {
