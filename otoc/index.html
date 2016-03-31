@@ -35,54 +35,45 @@
 </head>
 
 <body>
-	<header>
-		<div class="header_border">
+	<section class="top">
+		<div id="home" class="top_border">
 
-			<div class="header_text">
+			<div class="top_text">
 				<h3>Otoc theme</h3>
 				<p>The reflection of the impact of creativity</p>
 
-				<a href="#" class="header_btn">See more</a></div>
+				<a href="#" class="top_btn">See more</a></div>
 		</div>
-	</header>
+	</section>
 
-	<nav class="navbar navbar-default navbar-static-top">
-		<div class="container-fluid">
+	<nav class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="container">
 			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcollapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 				<a class="navbar-brand" href="#">
 					<img alt="Brand" src="img/logo_md.png">
 				</a>
-				<ul class="nav navbar-nav">
-					<li><a href="#" class="nav_item">Home</a></li>
-					<li><a href="#" class="nav_item">About</a></li>
-					<li><a href="#" class="nav_item">Services</a></li>
-					<li><a href="#" class="nav_item">Works</a></li>
-					<li><a href="#" class="nav_item">Contact</a></li>
-					<li><a href="#" class="nav_item">Blog</a></li>
-					<li></li>
-				</ul>
+				<div class="collapse navbar-collapse" id="navcollapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#home" class="nav_item">Home</a></li>
+						<li><a href="#about" class="nav_item">About</a></li>
+						<li><a href="#services" class="nav_item">Services</a></li>
+						<li><a href="#works" class="nav_item">Works</a></li>
+						<li><a href="#blog" class="nav_item">Blog</a></li>
+						<li><a href="#contacts" class="nav_item">Contact</a></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
 
-			</div>
-		</div>
-	</nav>
-	<!--
-	<nav>
-		<div class="containertext-center">
-			<div class="row">
-				<div class="col-lg-1  col-md-1"></div>
-				<div class="col-lg-4  col-md-4 nav_img"><img src="./img/logo_md.png" alt="logo" class="img-responsive"></div>
-				<div class="col-lg-1  col-md-1 nav_item">Home</div>
-				<div class="col-lg-1  col-md-1 nav_item">About</div>
-				<div class="col-lg-1  col-md-1 nav_item">Services</div>
-				<div class="col-lg-1  col-md-1 nav_item">Works</div>
-				<div class="col-lg-1  col-md-1 nav_item">Contact</div>
-				<div class="col-lg-1  col-md-1 nav_item">Blog</div>
-				<div class="col-lg-1  col-md-1 nav_item"></div>
-			</div>
-		</div>
-	</nav>
--->
-	<section class="services">
+	<section id="services" class="services">
 		<div class="container text-center">
 			<div class="intro ">
 				<h4>Services</h4>
@@ -122,7 +113,7 @@
 		<!--		<hr>-->
 	</section>
 
-	<section class="works">
+	<section id="works" class="works">
 		<hr>
 		<div class="container-fluid portfolio text-center">
 			<div class="intro">
@@ -135,30 +126,34 @@
 
 				<div class="col15-lg-3 col15-md-3 portfolio_item item1">
 					<div class="blue">
-						<h5 class="center-block">Videography</h5></div>
-
+						<h5 class="center-block">Videography</h5>
+					<div class="under_works animated fadeInDown"><h6>Curabitur vel libero quis neque</h6></div></div>
 				</div>
 				<div class="col15-lg-3 col15-md-3 portfolio_item item2">
 					<div class="blue">
-						<h5 class="center-block">Videography</h5></div>
+						<h5 class="center-block">Videography</h5>
+					<div class="under_works animated fadeInDown"><h6>Curabitur vel libero quis neque</h6></div></div>
 				</div>
 				<div class="col15-lg-3 col15-md-3 portfolio_item item3">
 					<div class="blue">
-						<h5 class="center-block">Videography</h5></div>
+						<h5 class="center-block">Videography</h5>
+					<div class="under_works animated fadeInDown"><h6>Curabitur vel libero quis neque</h6></div></div>
 				</div>
 				<div class="col15-lg-3 col15-md-3 portfolio_item item4">
 					<div class="blue">
-						<h5 class="center-block">Videography</h5></div>
+						<h5 class="center-block">Videography</h5>
+					<div class="under_works animated fadeInDown"><h6>Curabitur vel libero quis neque</h6></div></div>
 				</div>
 				<div class="col15-lg-3 col15-md-3 portfolio_item item5">
 					<div class="blue">
-						<h5 class="center-block">Videography</h5></div>
+						<h5 class="center-block">Videography</h5>
+					<div class="under_works animated fadeInDown"><h6>Curabitur vel libero quis neque</h6></div></div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="blog">
+	<section id="blog" class="blog">
 		<div class="container">
 			<div class="row  ">
 				<div class="col-lg-4 col-md-4 col-sm-12">
@@ -231,7 +226,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="statistics">
+	<section id="about" class="statistics">
 		<div class="container text-center">
 			<div class="row text-center">
 				<div class="col-lg-3 col-md-3 col-sm-3 statistics_item"><img src="img/statistics_client-icon.png" alt="client icon">
@@ -318,8 +313,7 @@
 	</section>
 
 	<footer>
-
-		<div class="container-fluid">
+		<div id="contacts" class="container-fluid">
 			<div class="row">
 				<div class="col-lg-7 col-md-7 sm-12">
 					<div class="f_left">
@@ -356,7 +350,6 @@
 		</foter>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 		<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
