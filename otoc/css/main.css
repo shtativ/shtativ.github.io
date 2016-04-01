@@ -1,5 +1,6 @@
 body {
 	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
@@ -324,11 +325,10 @@ hr {
 	background: #343838;
 	margin-top: 40px;
 	margin-left: -40px;
-    position: absolute;
-    text-align: center;
-    transition: all 0.3s ease 0s;
+	position: absolute;
+	text-align: center;
+	transition: all 0.3s ease 0s;
 	transform: translateY(-100%);
-
 }
 
 .portfolio_item .under_works h6 {
@@ -338,7 +338,7 @@ hr {
 	font-weight: 400;
 	line-height: 25px;
 	text-align: center;
-	margin:5% 0;
+	margin: 5% 0;
 }
 
 
@@ -605,10 +605,40 @@ hr {
 	font-family: 'Open Sans';
 }
 
-.f_left .map {
-	width: 750px;
-	height: 400px;
-/*	background-color: #CCC;*/
+.f_left #map {
+	position: relative;
+	width: 100%;
+	height: 360px;
+}
+.f_left .map_contacts{ /*исправить приоритет отображения*/
+	position: absolute;
+	width: 350px;
+	height: 125px;
+	color: #343838;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 55px;
+}
+
+.f_left .f_credits { /*выровнять текст по центру */
+	background: #00a1b7;
+	color: #bfe1e5;
+	height: 70px;
+	font-family: 'Raleway';
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: 400;
+	text-align: right;
+	padding-right: 51px;
+}
+
+.f_left .f_credits p{
+
+}
+.f_left .f_credits span{
+	color: #f8f9fb;
+	font-weight: 700;
 }
 
 .f_right {
