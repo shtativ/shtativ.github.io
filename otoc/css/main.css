@@ -1,6 +1,12 @@
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Raleway'), url("../fonts/raleway/ralewayregular.woff2") format('woff2'), url("../fonts/raleway/ralewayregular.woff") format('woff'), url("../fonts/raleway/ralewayregular.ttf") format('ttf');
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
@@ -606,11 +612,17 @@ hr {
 }
 
 .f_left #map {
-	position: relative;
 	width: 100%;
 	height: 360px;
+	opacity: 0.5;
 }
-.f_left .map_contacts{ /*исправить приоритет отображения*/
+
+.nopadding {
+	padding: 0;
+}
+
+.f_left .map_contacts {
+	/*исправить приоритет отображения*/
 	position: absolute;
 	width: 350px;
 	height: 125px;
@@ -619,9 +631,11 @@ hr {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 55px;
+	top: -10;
 }
 
-.f_left .f_credits { /*выровнять текст по центру */
+.f_left .f_credits {
+	/*выровнять текст по центру */
 	background: #00a1b7;
 	color: #bfe1e5;
 	height: 70px;
@@ -633,18 +647,17 @@ hr {
 	padding-right: 51px;
 }
 
-.f_left .f_credits p{
+.f_left .f_credits p {}
 
-}
-.f_left .f_credits span{
+.f_left .f_credits span {
 	color: #f8f9fb;
 	font-weight: 700;
 }
 
 .f_right {
 	background: #343838;
-	height: 434px;
-	padding: 73px 16px 79px 50px;
+	height: 100%;
+	padding: 73px 16px 18px 50px;
 }
 
 .f_right h4 {
@@ -666,6 +679,10 @@ hr {
 	margin-bottom: 28px;
 }
 
+.f_right .form-control {
+	width: 60%;
+}
+
 .f_right input {
 	background: #2f3333;
 	outline: none;
@@ -673,8 +690,7 @@ hr {
 	height: 57px;
 	box-sizing: border-box;
 	color: white;
-	width: 80%;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 	border-radius: 0;
 	box-shadow: none !important;
 }
@@ -687,7 +703,7 @@ hr {
 	width: 20%;
 	transition: all 0.3s;
 	margin-left: -5px;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 	border-radius: 0;
 }
 
