@@ -7,6 +7,7 @@ $(function () {
 		nav: true,
 		autoplay: true,
 		mouseDrag: false,
+		navText:['',''],
 		autoplayHoverPause: true,
 		animateOut: 'slideOutUp',
 		animateIn: 'slideInUp'

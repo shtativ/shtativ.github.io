@@ -169,6 +169,12 @@ div .navbar-header {
 	text-align: center;
 	text-transform: uppercase;
 	width: 13.538em;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.services .intro h4:hover {
+	background: #60E2F3;
 }
 
 .services .intro p {
@@ -258,7 +264,7 @@ hr {
 }
 
 .works .intro h4 {
-	border: 0.25em solid #DDDDDD;
+	border: 0.25em solid #DDD;
 	color: #00B4CC;
 	font-family: 'Open Sans';
 	font-size: 1.125em;
@@ -270,6 +276,12 @@ hr {
 	text-align: center;
 	text-transform: uppercase;
 	width: 13.538em;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.works .intro h4:hover {
+	background: #DDD;
 }
 
 .works .intro p {
@@ -453,6 +465,7 @@ hr {
 	font-family: 'Open Sans';
 	line-height: 2.313em;
 	margin-right: 1.563em;
+	transition: all 0.3s;
 }
 
 .blog_date .date_day {
@@ -470,10 +483,8 @@ hr {
 }
 
 .blog .blog_quote {
-	/*	width: 16.250em;*/
 	font-family: 'Open Sans';
 	font-weight: 400;
-	color: #838383;
 	font-size: 1.125em;
 	line-height: 1.563em;
 	padding-left: 1.563em;
@@ -484,11 +495,11 @@ hr {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	color: #343838;
 }
 
 .blog .blog_comments {
 	width: 20.250em;
-	/*	height: 73px;*/
 	font-family: 'Open Sans';
 	font-weight: 400;
 	color: #838383;
@@ -497,6 +508,16 @@ hr {
 	line-height: 1.875em;
 	padding-left: 2.813em;
 	margin: 0;
+}
+
+.blog_comments a {
+	outline: none;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.blog_comments a:hover {
+	color: #343838;
 }
 
 .blog_comments .comments_1,
@@ -589,6 +610,7 @@ hr {
 	margin-right: 34px;
 	width: 140px !important;
 	height: auto;
+	backface-visibility: hidden;
 }
 
 .views h4 {
@@ -614,7 +636,7 @@ hr {
 .f_left #map {
 	width: 100%;
 	height: 360px;
-	opacity: 0.5;
+	opacity: 0.8;
 }
 
 .nopadding {
@@ -622,20 +644,53 @@ hr {
 }
 
 .f_left .map_contacts {
-	/*исправить приоритет отображения*/
 	position: absolute;
-	width: 350px;
 	height: 125px;
 	color: #343838;
 	font-family: 'Open Sans';
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 55px;
-	top: -10;
+	z-index: 10;
+	left: 20%;
+	top: 20%
+}
+
+.map_contacts a {
+	color: #343838;
+	text-decoration: none;
+	transition: all 0.3s;
+	outline: none;
+}
+
+.map_contacts a:hover {
+	color: #00a1b7;
+}
+
+.map_contacts .map_bg::before {
+	background: #FFF;
+	float: left;
+	width: 53px;
+	margin-right: 10px;
+}
+
+.map_contacts .address::before {
+	content: url("../img/map/icon_ancor.png");
+	text-align: center;
+}
+
+.map_contacts .tel::before {
+	content: url("../img/map/icon_tel.png");
+	text-align: center;
+}
+
+.map_contacts .email::before {
+	content: url("../img/map/icon_mail.png");
+	text-align: center;
+	vertical-align: middle;
 }
 
 .f_left .f_credits {
-	/*выровнять текст по центру */
 	background: #00a1b7;
 	color: #bfe1e5;
 	height: 70px;
@@ -644,10 +699,10 @@ hr {
 	line-height: 40px;
 	font-weight: 400;
 	text-align: right;
+	padding-top: 18px;
 	padding-right: 51px;
+	padding-left: 18px;
 }
-
-.f_left .f_credits p {}
 
 .f_left .f_credits span {
 	color: #f8f9fb;
@@ -683,6 +738,10 @@ hr {
 	width: 60%;
 }
 
+.f_right .form-inline {
+	margin-bottom: 50px;
+}
+
 .f_right input {
 	background: #2f3333;
 	outline: none;
@@ -710,38 +769,82 @@ hr {
 .f_right .social_block {
 	width: 100%;
 	height: 70px;
-}
-
-.social_block .social_btn {
 	display: inline-block;
-	background: #2f3333;
-	margin-right: 7px;
-	margin-top: 22px;
-	padding: 11px;
-	transition: all 0.3s;
-	cursor: pointer;
-	text-align: center;
-	width: 48px;
-	height: 48px;
 }
 
-.social_btn:hover {
-	background: #252828;
+.f_right .social_block a {
+	display: inline-block;
+	margin: 3px;
 }
 
-.social_block .social_btn img {
-	max-width: 20px;
-	max-height: 20px;
+.social_block .btn_fb {
+	background: url(../img/social/soc_btn_sprite.png) no-repeat -10px 0px;
+	display: block;
+	width: 45px;
+	height: 45px;
+	transition: all 0.5s;
 }
 
-.social_btn svg path {
-	fill: #FFF;
-	;
-	transition: all 0.3s;
+.social_block .btn_fb:hover {
+	background: url(../img/social/soc_btn_sprite.png) no-repeat -10px -74px;
 }
 
-.social_btn:hover svg path {
-	fill: #00b4cc;
-	background: #FFF;
-	transition: all 0.3s;
+.social_block .btn_ins {
+	background: url(../img/social/soc_btn_sprite.png) no-repeat -70px 0px;
+	display: block;
+	width: 45px;
+	height: 45px;
+	transition: all 0.5s;
+}
+
+.social_block .btn_ins:hover {
+	background: url(../img/social/soc_btn_sprite.png) no-repeat -70px -74px;
+}
+
+.social_block .btn_pin {
+	background: url(../img/social/soc_btn_sprite.png) no-repeat -126px 0px;
+	display: block;
+	width: 45px;
+	height: 45px;
+	transition: all 0.5s;
+}
+
+.social_block .btn_pin:hover {
+	background: url(../img/social/soc_btn_sprite.png) no-repeat -126px -74px;
+}
+
+.social_block .btn_gp {
+	background: url(../img/social/soc_btn_sprite.png) no-repeat -186px 0px;
+	display: block;
+	width: 45px;
+	height: 45px;
+	transition: all 0.5s;
+}
+
+.social_block .btn_gp:hover {
+	background: url(../img/social/soc_btn_sprite.png) no-repeat -186px -74px;
+}
+
+.social_block .btn_tw {
+	background: url(../img/social/soc_btn_sprite.png) no-repeat -243px 0px;
+	display: block;
+	width: 45px;
+	height: 45px;
+	transition: all 0.5s;
+}
+
+.social_block .btn_tw:hover {
+	background: url(../img/social/soc_btn_sprite.png) no-repeat -243px -74px;
+}
+
+.social_block .btn_rss {
+	background: url(../img/social/soc_btn_sprite.png) no-repeat -308px 0px;
+	display: block;
+	width: 45px;
+	height: 45px;
+	transition: all 0.5s;
+}
+
+.social_block .btn_rss:hover {
+	background: url(../img/social/soc_btn_sprite.png) no-repeat -308px -74px;
 }
