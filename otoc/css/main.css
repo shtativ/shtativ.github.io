@@ -2,7 +2,10 @@
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Raleway'), url("../fonts/raleway/ralewayregular.woff2") format('woff2'), url("../fonts/raleway/ralewayregular.woff") format('woff'), url("../fonts/raleway/ralewayregular.ttf") format('ttf');
+	src: local('Raleway'),
+		url("../fonts/raleway/ralewayregular.woff2") format('woff2'),
+		url("../fonts/raleway/ralewayregular.woff") format('woff'),
+		url("../fonts/raleway/ralewayregular.ttf") format('ttf');
 }
 
 body {
@@ -105,7 +108,6 @@ nav .nav_item:hover {
 	border-left-width: 0.25em;
 	color: #343838;
 	box-shadow: inset 4px 1px 9px -1px rgba(0, 0, 0, 0.2);
-	/*	width:  calc(100%-4px);*/
 }
 
 div .navbar-header {
@@ -185,7 +187,7 @@ div .navbar-header {
 	line-height: 1.563em;
 	padding-top: 1.563em;
 	text-align: center;
-	width: 40.438em;
+	width: 100%;
 }
 
 .services_item {
@@ -248,8 +250,6 @@ hr {
 
 .works .intro {
 	display: inline-block;
-	/*	margin-top: 9.250em;	*/
-	/*	margin-top: 1.2em;*/
 	max-width: 40.438em;
 	text-align: center;
 	margin-top: -20px;
@@ -293,7 +293,8 @@ hr {
 	padding-bottom: 1.563em;
 	padding-top: 1.563em;
 	text-align: center;
-	width: 40.438em;
+	/*	width: 40.438em;*/
+	width: 100%;
 }
 
 .portfolio_item {
@@ -312,7 +313,6 @@ hr {
 	font-weight: 700;
 	height: 156px;
 	line-height: 25px;
-	/*	margin-top: 34px;*/
 	padding-top: 25%;
 	text-align: center;
 	text-transform: uppercase;
@@ -358,9 +358,6 @@ hr {
 	text-align: center;
 	margin: 5% 0;
 }
-
-
-/*under_block*/
 
 .item1 {
 	background-image: url("../img/works_1.jpg");
@@ -546,10 +543,11 @@ hr {
 
 .statistics {
 	width: 100%;
-	height: 22.375em;
+	height: 100%;
 	background: #00b4cc;
 	margin-top: 5.000em;
 	margin-bottom: 4.750em;
+	padding-bottom: 2em;
 }
 
 .statistics .container {
@@ -562,6 +560,7 @@ hr {
 	background: url("../img/statistics_border.png") 50% no-repeat;
 	height: 11.250em;
 	cursor: pointer;
+	margin-bottom: 3em;
 }
 
 .statistics img {
@@ -586,7 +585,6 @@ hr {
 	font-size: 1.250em;
 	font-weight: 300;
 	line-height: 1.563em;
-	margin-top: 1.0em;
 	padding: 1.0em;
 }
 
@@ -632,6 +630,29 @@ hr {
 	height: 95px;
 	font-family: 'Open Sans';
 }
+
+.vslider .views_btn {
+	margin: 0;
+	padding: 0;
+}
+
+.owl-dot {
+	display: block;
+	background-color: #eee;
+	width: 10px;
+	height: 10px;
+	transition: background 0.5s;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.owl-dot.active {
+	color: inherit;
+	text-decoration: none;
+	background: #343838;
+}
+
+/*footer*/
 
 .f_left #map {
 	width: 100%;
@@ -752,6 +773,7 @@ hr {
 	margin-bottom: 0px;
 	border-radius: 0;
 	box-shadow: none !important;
+	margin-right: -5px;
 }
 
 .f_right button {
@@ -761,7 +783,6 @@ hr {
 	height: 57px;
 	width: 20%;
 	transition: all 0.3s;
-	margin-left: -5px;
 	margin-bottom: 0px;
 	border-radius: 0;
 }
