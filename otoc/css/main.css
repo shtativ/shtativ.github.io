@@ -635,8 +635,18 @@ hr {
 	margin: 0;
 	padding: 0;
 }
-
-.owl-dot {
+.owl-carousel{
+	position: relative;
+}
+.owl-dots {
+	position: absolute;
+	height: 100px;
+	top:0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+}
+.owl-dot{
 	display: block;
 	background-color: #eee;
 	width: 10px;
