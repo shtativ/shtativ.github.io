@@ -101,43 +101,37 @@ body {
 }
 
 .skills .skills_bar {
-	display: inline-block;
-	/*why not*/
 	height: 54px;
-	width: 445px;
-	background-color: #FFF;
-	color: #00b4cc;
 	border: 4px solid #00b4cc;
-	box-shadow: none;
-	margin: 0 35px 26px;
+	margin: 0 26px 26px 0;
+	border-radius: 0;
+	background: #FFF;
+	text-align: right;
 }
 
-.progress-bar {
+.skills .bar_item {
 	background: #00b4cc;
+	box-shadow: none;
 	text-align: left;
-	position: relative;
+	padding: 12px 30px;
+	overflow: hidden;
 }
 
 .skills p {
-	position: absolute;
-	color: white;
 	font-family: 'Raleway';
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 22px;
-	padding-left: 23px;
-	padding-top: 12px;
-	text-align: left;
 }
 
 .skills span {
-	/*	display: inline-block;*/
-	height: 18px;
 	color: #343838;
 	font-family: 'Raleway';
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 22px;
+	vertical-align: -10px;
+	margin-right: 10px;
 }
 
 
@@ -168,45 +162,70 @@ body {
 	margin-bottom: 45px;
 }
 
-.our_team .team {
-	width: 251px;
-	height: 375px;
-	margin: 0 40px 70px 0;
-	padding: 0;
-}
-
 .our_team .team_item-1 {
 	background: url("../img/About/team_1.jpg") no-repeat;
 }
 
 .our_team .team_item-2 {
-	background: url("../img/About/team_1.jpg") no-repeat;
+	background: url("../img/About/team_2.jpg") no-repeat;
 }
 
 .our_team .team_item-3 {
-	background: url("../img/About/team_1.jpg") no-repeat;
+	background: url("../img/About/team_3.jpg") no-repeat;
 }
 
 .our_team .team_item-4 {
-	background: url("../img/About/team_1.jpg") no-repeat;
+	background: url("../img/About/team_4.jpg") no-repeat;
 }
 
-.our_team .team p{
-	width: 100%;
-	height: 119px;
-	
-	display:block;
+.our_team .teams {
+	width: 250px;
+	height: 440px;
+	margin: 0 20px 40px 20px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.our_team .team {
+	width: 250px;
+	height: 260px;
+	margin: 0;
+	border: 4px solid #00b4cc;
+	/*подогнать рамер*/
+}
+
+.our_team .team_block {
+	width: 250px;
+	height: 120px;
 	background: #00b4cc;
-	text-align: center;
+	position: relative;
 	font-family: 'Raleway';
 	font-weight: 400;
 	line-height: 25px;
-	color: white;
-	font-size: 20px;
-	padding-top: 38px;
+	text-align: center;
+	margin: 0;
 }
 
-.team span {
+.team_block p {
+	color: white;
+	font-size: 20px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.team_block span {
+	text-align: center;
 	color: #b5dfe4;
 	font-size: 15px;
+}
+
+.our_team .team_social {
+	width: 250px;
+	height: 61px;
+	background: #343838;
+	border: 4px solid #00b4cc;
+}
+.our_team .team_social:hover {
+
 }
