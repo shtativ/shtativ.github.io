@@ -141,7 +141,7 @@ body {
 	text-align: center;
 }
 
-.our_team h1 {
+.our_team .title h1 {
 	display: block;
 	color: #00b4cc;
 	font-family: 'Raleway';
@@ -151,7 +151,7 @@ body {
 	margin-bottom: 32px;
 }
 
-.our_team p {
+.our_team .title p {
 	display: inline-block;
 	max-width: 473px;
 	color: #838383;
@@ -164,38 +164,42 @@ body {
 
 .our_team .team_item-1 {
 	background: url("../img/About/team_1.jpg") no-repeat;
+	background-size: cover;
 }
 
 .our_team .team_item-2 {
 	background: url("../img/About/team_2.jpg") no-repeat;
+	background-size: cover;
 }
 
 .our_team .team_item-3 {
 	background: url("../img/About/team_3.jpg") no-repeat;
+	background-size: cover;
 }
 
 .our_team .team_item-4 {
 	background: url("../img/About/team_4.jpg") no-repeat;
+	background-size: cover;
 }
 
 .our_team .teams {
-	width: 250px;
-	height: 440px;
+	width: 100%;
+	max-width: 250px;
+	height: auto;
+	background: #00b4cc;
+	border: 4px solid #00b4cc;
 	margin: 0 20px 40px 20px;
 	cursor: pointer;
 	transition: all 0.3s;
+	padding: 0;
 }
 
 .our_team .team {
-	width: 250px;
 	height: 260px;
 	margin: 0;
-	border: 4px solid #00b4cc;
-	/*подогнать рамер*/
 }
 
 .our_team .team_block {
-	width: 250px;
 	height: 120px;
 	background: #00b4cc;
 	position: relative;
@@ -203,7 +207,6 @@ body {
 	font-weight: 400;
 	line-height: 25px;
 	text-align: center;
-	margin: 0;
 }
 
 .team_block p {
@@ -221,11 +224,8 @@ body {
 }
 
 .our_team .team_social {
-	width: 250px;
 	height: 61px;
 	background: #343838;
-	border: 4px solid #00b4cc;
 }
-.our_team .team_social:hover {
 
-}
+.our_team .team_social:hover {}
