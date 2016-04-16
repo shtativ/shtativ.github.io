@@ -17,6 +17,11 @@ body {
 	margin: 0;
 }
 
+/*header*/
+
+header{
+	background: #343838;
+}
 
 /*section about*/
 
@@ -240,17 +245,19 @@ body {
 
 .our_team .team_social {
 	height: 61px;
-	width: auto;
+	width: 100%;
 	background:#2f3333;
 	border: 4px solid #00b4cc;
 	transition: bottom 0.3s;
-	position: relative;
+	position: absolute;
 	bottom: 0;
+	z-index: -1;
 	text-align: center;
 }
 
 .our_team .team_social:hover {
 	bottom: -61px;
+	position: relative
 }
 
 .team_social .btn_ins {

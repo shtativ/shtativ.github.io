@@ -2,10 +2,7 @@
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Raleway'),
-		url("../fonts/raleway/ralewayregular.woff2") format('woff2'),
-		url("../fonts/raleway/ralewayregular.woff") format('woff'),
-		url("../fonts/raleway/ralewayregular.ttf") format('ttf');
+	src: local('Raleway'), url("../fonts/raleway/ralewayregular.woff2") format('woff2'), url("../fonts/raleway/ralewayregular.woff") format('woff'), url("../fonts/raleway/ralewayregular.ttf") format('ttf');
 }
 
 body {
@@ -13,70 +10,71 @@ body {
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
+	/*!!!!*/
+	min-width: 760px;
 }
 
 .top {
 	background: url("../img/top_bg.jpg") no-repeat;
 	background-size: cover;
-	height: 31.188em;
 	width: 100%;
+	padding-top: 120px;
 }
 
-.top .top_border {
-	background: url("../img/top_border.png") 50% 51% no-repeat;
-	height: inherit;
-}
-
-.top .top_text {
-	display: block;
-	left: 0;
-	position: absolute;
+.top .row {
+	color: #FFF;
 	text-align: center;
-	top: 0;
-	width: 100%;
+	font-size: 27px;
+	position: relative;
+	margin: auto;
 }
 
 .top h3 {
-	color: white;
 	font-family: 'Open Sans';
-	font-size: 2.375em;
+	font-size: 38px;
 	font-weight: 300;
-	line-height: 1.375em;
-	padding-top: 2.753em;
+	line-height: 1;
+	text-align: center;
 	text-transform: uppercase;
+	padding-top: 30px;
+	margin: 0;
 }
 
 .top p {
-	color: white;
 	font-family: 'Open Sans';
-	font-size: 1.688em;
+	font-size: 27px;
 	font-weight: 400;
-	line-height: 1.375em;
-	padding-bottom: 4.375em;
-	padding-top: 1.415em;
+	line-height: 1;
+	text-align: center;
+	padding-top: 65px;
+}
+
+.top img {
+	position: relative;
+	text-align: center;
+	top: -122px;
 }
 
 .top .top_btn {
+	position: relative;
 	background: #00B4CC;
 	color: white;
 	font-family: 'Open Sans';
-	font-size: 1.063em;
+	font-size: 17px;
 	font-weight: 700;
-	height: 3.625em;
-	line-height: 1.375em;
-	padding: 1em 3.813em;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	border: 4px solid #00B4CC;
+	line-height: 22px;
+	border: 2px solid #00B4CC;
 	transition: all 0.3s;
 	outline: none;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1em 3.813em;
+	top: -147px;
+	box-sizing: border-box;
 }
 
 .top .top_btn:hover {
-	color: #fff;
-	background: rgba(0, 180, 204, 0);
-	border: 4px solid #00B4CC;
+	border: 2px solid #FFF;
 }
 
 .navbar {
@@ -119,6 +117,7 @@ div .navbar-header {
 }
 
 .navbar-brand {
+	position: absolute;
 	vertical-align: middle;
 	padding-top: 5px;
 }
@@ -171,13 +170,17 @@ div .navbar-header {
 	text-align: center;
 	text-transform: uppercase;
 	width: 13.538em;
-	transition: all 0.3s;
-	cursor: pointer;
 }
+
+
+/*  animation
 
 .services .intro h4:hover {
 	background: #60E2F3;
+	transition: all 0.3s;
+	cursor: pointer;
 }
+*/
 
 .services .intro p {
 	color: white;
@@ -202,6 +205,11 @@ div .navbar-header {
 	height: 52px;
 	transition: all 0.3s;
 	width: 52px;
+}
+
+.services_item img svg path {
+	/*починить*/
+	fill: #FFF;
 }
 
 .services_item h4 {
@@ -276,13 +284,17 @@ hr {
 	text-align: center;
 	text-transform: uppercase;
 	width: 13.538em;
-	cursor: pointer;
-	transition: all 0.3s;
 }
+
+
+/* animation
 
 .works .intro h4:hover {
 	background: #DDD;
+	cursor: pointer;
+	transition: all 0.3s;
 }
+*/
 
 .works .intro p {
 	color: #AFAFAF;
@@ -635,18 +647,21 @@ hr {
 	margin: 0;
 	padding: 0;
 }
-.owl-carousel{
+
+.owl-carousel {
 	position: relative;
 }
+
 .owl-dots {
 	position: absolute;
 	height: 100px;
-	top:0;
+	top: 0;
 	right: 0;
 	bottom: 0;
-	margin:auto;
+	margin: auto;
 }
-.owl-dot{
+
+.owl-dot {
 	display: block;
 	background-color: #eee;
 	width: 10px;
@@ -661,6 +676,7 @@ hr {
 	text-decoration: none;
 	background: #343838;
 }
+
 
 /*footer*/
 
