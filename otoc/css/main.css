@@ -11,7 +11,7 @@ body {
 	margin: 0;
 	padding: 0;
 	/*!!!!*/
-	min-width: 760px;
+/*	min-width: 760px;*/
 }
 
 .top {
@@ -305,13 +305,11 @@ hr {
 	padding-bottom: 1.563em;
 	padding-top: 1.563em;
 	text-align: center;
-	/*	width: 40.438em;*/
 	width: 100%;
 }
 
 .portfolio_item {
 	background-size: cover;
-	height: 225px;
 	padding-bottom: 16.5%;
 	position: relative;
 	width: 20%;
