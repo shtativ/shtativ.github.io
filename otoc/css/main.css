@@ -74,15 +74,24 @@ body {
 .top .top_btn:hover {
 	border: 2px solid #FFF;
 }
+
 @media all and (max-width: 768px) {
-	.top h3{
-		
+	.top {
+		padding-top: 65px;
 	}
-	.top p{
-		
+	.top h3 {
+		font-size: 26px;
+		padding-top: 0;
+	}
+	.top p {
+		font-size: 16px;
+		padding-top: 10px;
+	}
+	.top .top_btn {
+		font-size: 12px;
+		top: -20px;
 	}
 }
-
 
 .navbar {
 	background-color: #FFF;
@@ -107,6 +116,7 @@ body {
 	outline: none;
 }
 
+
 nav .nav_item:hover {
 	border-left-color: #019DB2;
 	border-left-style: solid;
@@ -123,23 +133,24 @@ div .navbar-header {
 	float: right;
 }
 
-
 @media all and (max-width: 768px) {
 	nav .navbar-nav {
 		float: none;
 		width: auto;
 		border: none;
 	}
-	nav .nav_item:hover{
-		border-left:none;  	
+
+	nav .nav_item:hover {
+		border-left: none;
 	}
 	nav .navbar-brand {
 		text-align: center;
 		padding-top: 5px;
+	}
 }
-}
+
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #00B4CC;
+	background-color: #00B4CC;
 }
 
 .navbar-brand {
@@ -584,7 +595,7 @@ hr {
 	background: url("../img/statistics_border.png") 50% no-repeat;
 	height: 11.250em;
 	cursor: pointer;
-	margin-bottom: 3em;
+	margin-bottom: 4em;
 }
 
 .statistics img {
