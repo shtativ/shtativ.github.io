@@ -13,13 +13,13 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 
 	<link rel="stylesheet" href="css/about_main.css">
-	
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-	
+	<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+
 	<!-- google maps -->
-		<script src="js/initMap.js"></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALsPKffiZVlWbOHfDNSYPqR2LKaYSO9wI&callback=initMap"></script>
+	<script src="js/initMap.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALsPKffiZVlWbOHfDNSYPqR2LKaYSO9wI&callback=initMap"></script>
 
 	<!--HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,22 +30,50 @@
 </head>
 
 <body>
+	<header id="regular" class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcollapse" aria-expanded="false">
+					<span class="sr_only">Toggle navigation</span>
+					<span class="icon_bar"></span>
+					<span class="icon_bar"></span>
+					<span class="icon_bar"></span>
+				</button>
+				<a class="header_logo" href="/"><img src="img/About/logo_w.png" alt="logo" /></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="navcollapse">
+				<div id="header-nav" class="nav navbar-nav navbar-right">
+					<!--<li><a href="#">Link3</a></li>-->
+					<a href="#">home</a>
+					<a href="#">about</a>
+					<a href="#services">services</a>
+					<a href="#portfolio">works</a>
+					<a href="#blog">blog</a>
+					<a href="#map">contacts</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
 	<section class="about">
 
 		<div class="container-fluid nopadding">
 			<div class="slogan">
 				<h2>The reflection of the impact of creativity</h2></div>
 			<div class="row  nopadding border_row">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 nopadding"><img src="img/About/about_bg.jpg" class="img-responsive" alt="About background"></div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 slogan_pic nopadding"></div>
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about_text nopadding">
 					<h3>The what</h3>
 					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage.</p>
 					<div class="row nopadding">
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 nopadding">
 							<h3>The why</h3>
 							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which.</p>
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 nopadding">
 							<h3>The how</h3>
 							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't.</p>
 						</div>
@@ -174,7 +202,7 @@
 	<footer>
 		<div id="contacts" class="container-fluid">
 			<div class="row">
-				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 nopadding">
+				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 f_height nopadding">
 					<div class="f_left">
 
 						<div class="map_contacts">
@@ -194,7 +222,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 nopadding">
+				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 f_height  nopadding">
 					<div class="f_right">
 						<h4>Newsletter</h4>
 						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p>
@@ -217,7 +245,7 @@
 				</div>
 			</div>
 		</div>
-		</footer>
+	</footer>
 </body>
 
 </html>

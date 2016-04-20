@@ -116,7 +116,6 @@ body {
 	outline: none;
 }
 
-
 nav .nav_item:hover {
 	border-left-color: #019DB2;
 	border-left-style: solid;
@@ -139,7 +138,6 @@ div .navbar-header {
 		width: auto;
 		border: none;
 	}
-
 	nav .nav_item:hover {
 		border-left: none;
 	}
@@ -703,9 +701,17 @@ hr {
 
 /*footer*/
 
+footer .row {
+	height: 480px;
+}
+
+.f_height {
+	height: 100%;
+}
+
 .f_left #map {
 	width: 100%;
-	height: 360px;
+	height: 410px;
 	opacity: 0.8;
 }
 

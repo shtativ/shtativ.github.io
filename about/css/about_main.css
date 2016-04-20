@@ -17,11 +17,13 @@ body {
 	margin: 0;
 }
 
+
 /*header*/
 
-header{
+header {
 	background: #343838;
 }
+
 
 /*section about*/
 
@@ -31,6 +33,12 @@ header{
 
 .slogan {
 	text-align: center;
+}
+
+.row .slogan_pic {
+	background: url("../img/About/about_bg.jpg") no-repeat;
+	background-size: cover;
+	height: 480px;
 }
 
 .slogan h2 {
@@ -141,9 +149,11 @@ header{
 
 
 /*section our team*/
-.our_team{
+
+.our_team {
 	margin-bottom: 134px;
 }
+
 .our_team .title {
 	text-align: center;
 }
@@ -246,7 +256,7 @@ header{
 .our_team .team_social {
 	height: 61px;
 	width: 100%;
-	background:#2f3333;
+	background: #2f3333;
 	border: 4px solid #00b4cc;
 	transition: bottom 0.3s;
 	position: absolute;
@@ -265,7 +275,7 @@ header{
 	display: inline-block;
 	width: 45px;
 	height: 45px;
-	margin-top:3px;
+	margin-top: 3px;
 }
 
 .team_social .btn_ins:hover {
@@ -293,19 +303,27 @@ header{
 .team_social .btn_tw:hover {
 	background: url("../img/social/soc_btn_sprite.png") no-repeat -243px -74px;
 }
+
+
 /*footer*/
+
+footer .row {
+	height: 480px;
+}
+
+.f_height {
+	height: 100%;
+}
 
 .f_left #map {
 	width: 100%;
-	height: 360px;
+	height: 410px;
 	opacity: 0.8;
 }
 
-/*
 .nopadding {
 	padding: 0;
 }
-*/
 
 .f_left .map_contacts {
 	position: absolute;
