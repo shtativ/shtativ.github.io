@@ -10,8 +10,6 @@ body {
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
-	/*!!!!*/
-/*	min-width: 760px;*/
 }
 
 .top {
@@ -76,6 +74,15 @@ body {
 .top .top_btn:hover {
 	border: 2px solid #FFF;
 }
+@media all and (max-width: 768px) {
+	.top h3{
+		
+	}
+	.top p{
+		
+	}
+}
+
 
 .navbar {
 	background-color: #FFF;
@@ -83,7 +90,7 @@ body {
 }
 
 .navbar-nav .nav_item {
-	width: 120px;
+	min-width: 80px;
 	border-left-color: #DDDDDD;
 	border-left-style: solid;
 	border-left-width: 0.063em;
@@ -116,15 +123,33 @@ div .navbar-header {
 	float: right;
 }
 
+
+@media all and (max-width: 768px) {
+	nav .navbar-nav {
+		float: none;
+		width: auto;
+		border: none;
+	}
+	nav .nav_item:hover{
+		border-left:none;  	
+	}
+	nav .navbar-brand {
+		text-align: center;
+		padding-top: 5px;
+}
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #00B4CC;
+}
+
 .navbar-brand {
 	position: absolute;
 	vertical-align: middle;
-	padding-top: 5px;
+	padding-top: 15px;
 }
 
 .services {
 	background: #00B4CC;
-	height: 29.688em;
 	width: 100%;
 }
 
@@ -171,16 +196,6 @@ div .navbar-header {
 	text-transform: uppercase;
 	width: 13.538em;
 }
-
-
-/*  animation
-
-.services .intro h4:hover {
-	background: #60E2F3;
-	transition: all 0.3s;
-	cursor: pointer;
-}
-*/
 
 .services .intro p {
 	color: white;
@@ -245,6 +260,10 @@ hr {
 	display: block;
 }
 
+.works .row {
+	width: 100%;
+}
+
 .works .intro::before {
 	background: #DDDDDD;
 	content: "";
@@ -286,16 +305,6 @@ hr {
 	width: 13.538em;
 }
 
-
-/* animation
-
-.works .intro h4:hover {
-	background: #DDD;
-	cursor: pointer;
-	transition: all 0.3s;
-}
-*/
-
 .works .intro p {
 	color: #AFAFAF;
 	font-family: 'Open Sans';
@@ -312,7 +321,13 @@ hr {
 	background-size: cover;
 	padding-bottom: 16.5%;
 	position: relative;
-/*	width: 20%;*/
+}
+
+@media all and (max-width: 768px) {
+	.portfolio_item {
+		padding-bottom: 40%;
+		width: 50%;
+	}
 }
 
 .portfolio_item h5 {
@@ -461,7 +476,6 @@ hr {
 
 .blog_item {
 	padding-bottom: 2.375em;
-	padding-right: 2.375em;
 }
 
 .blog_item .blog_date {
