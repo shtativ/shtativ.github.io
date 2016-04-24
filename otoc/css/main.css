@@ -118,7 +118,7 @@ ul {
 .navbar-header button {
 	margin-top: 16px;
 }
-.navbar-toggle .icon-bar{
+.navbar-default .navbar-toggle .icon-bar{
 	background-color: #00B4CC;
 }
 .nav li {
