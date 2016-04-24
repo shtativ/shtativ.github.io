@@ -93,30 +93,49 @@ body {
 	}
 }
 
-.navbar {
-	background-color: #FFF;
-	margin-bottom: 0;
+
+/*header*/
+
+.navbar,
+navbar-default {
+	border-radius: 0;
+	border: 0;
+	background: #fff;
+	margin: 0;
 }
 
-.navbar-nav .nav_item {
-	min-width: 80px;
-	border-left-color: #DDDDDD;
-	border-left-style: solid;
-	border-left-width: 0.063em;
-	color: #838383;
-	cursor: pointer;
-	font-family: 'Open Sans';
-	font-size: 0.875em;
-	font-weight: 700;
-	height: 4.625em;
-	padding-top: 1.563em;
+.navbar-header,
+ul {
+	min-height: 66px;
+}
+
+.navbar-brand {
+	padding-top: 14px;
+	padding-left: 90px;
+	padding-right: 0;
+}
+
+.navbar-header button {
+	margin-top: 16px;
+}
+.navbar-toggle .icon-bar{
+	background-color: #00B4CC;
+}
+.nav li {
+	color: #c4c4c4;
+	font-family: 'Raleway';
+	font-size: 15px;
+	font-weight: 600;
+	border-left: 1px solid #ddd;
+	width: 110px;
+	height: 66px;
 	text-align: center;
-	text-transform: uppercase;
+	padding-top: 10px;
 	transition: all 0.2s;
-	outline: none;
+	cursor: pointer;
 }
 
-nav .nav_item:hover {
+.nav li:hover {
 	border-left-color: #019DB2;
 	border-left-style: solid;
 	border-left-width: 0.25em;
@@ -124,37 +143,35 @@ nav .nav_item:hover {
 	box-shadow: inset 4px 1px 9px -1px rgba(0, 0, 0, 0.2);
 }
 
-div .navbar-header {
-	width: 100%;
+.nav li:last-child:hover {
+	border-left: 1px solid #ddd;
+	box-shadow: none;
+	cursor: auto;
 }
 
-.navbar-nav {
-	float: right;
+@media all and (max-width: 1010px) {
+	.navbar-brand {
+		padding-left: 30px;
+	}
+	.nav li {
+		width: 95px;
+	}
+	.nav li:last-child {
+		width: 0px;
+	}
 }
 
 @media all and (max-width: 768px) {
-	nav .navbar-nav {
-		float: none;
+	.nav li {
 		width: auto;
-		border: none;
+		border: 0;
 	}
-	nav .nav_item:hover {
-		border-left: none;
+	.nav li:hover {
+		border: 0;
+		border-bottom-color: #019DB2;
+		border-bottom-style: solid;
+		border-bottom-width: 0.25em;
 	}
-	nav .navbar-brand {
-		text-align: center;
-		padding-top: 5px;
-	}
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: #00B4CC;
-}
-
-.navbar-brand {
-	position: absolute;
-	vertical-align: middle;
-	padding-top: 15px;
 }
 
 .services {

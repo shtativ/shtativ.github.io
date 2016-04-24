@@ -18,7 +18,7 @@ $(function () {
 		event.preventDefault();
 		var id = $(this).attr('href'),
 			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top }, 555);
+		$('body, html').animate({scrollTop: top }, 555);
 		if ($.browser.safari) {
 			$('body').animate({scrollTop: top }, 555);
 		} else {

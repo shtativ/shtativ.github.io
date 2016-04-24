@@ -19,11 +19,82 @@ body {
 
 
 /*header*/
-
-header {
+header{
+	margin-bottom: 63px;
+}
+.navbar,
+navbar-inverse {
+	border-radius: 0;
+	border: 0;
 	background: #343838;
 }
 
+.navbar-header,
+ul {
+	min-height: 92px;
+}
+
+.navbar-brand {
+	padding-top: 26px;
+	padding-left: 90px;
+	padding-right: 0;
+}
+
+.navbar-header button {
+	margin-top: 29px;
+}
+
+.nav li {
+	color: #c4c4c4;
+	font-family: 'Raleway';
+	font-size: 15px;
+	font-weight: 600;
+	border-left: 1px solid #464a4a;
+	width: 110px;
+	height: 92px;
+	text-align: center;
+	padding-top: 20px;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+.nav li:hover {
+	border-left-color: #019DB2;
+	border-left-style: solid;
+	border-left-width: 0.25em;
+	color: #343838;
+	box-shadow: inset 4px 1px 9px -1px rgba(0, 0, 0, 0.2);
+}
+.nav li:last-child:hover{
+	border-left: 1px solid #464a4a;
+	box-shadow: none;
+	cursor:auto;
+}
+
+@media all and (max-width: 1010px) {
+	.navbar-brand {
+	padding-left: 30px;
+}
+	.nav li {
+		width: 95px;
+	}
+	.nav li:last-child{
+		width: 0px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.nav li {
+		width: auto;
+		border: 0;
+	}
+	.nav li:hover {
+		border: 0;
+		border-bottom-color: #019DB2;
+		border-bottom-style: solid;
+		border-bottom-width: 0.25em;
+	}
+}
 
 /*section about*/
 
