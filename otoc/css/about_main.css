@@ -375,6 +375,13 @@ ul {
 	background: url("../img/social/soc_btn_sprite.png") no-repeat -243px -74px;
 }
 
+@media all and (max-width: 468px) {
+	footer .f_right .social_block a { 	
+		margin:0px;
+		margin-top: 30px;
+	}
+}
+
 
 /*footer*/
 
@@ -473,6 +480,7 @@ footer .row {
 	font-family: 'Open Sans';
 	font-size: 20px;
 	font-weight: 700;
+	letter-spacing: 1px;
 	font-variant: small-caps;
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -489,6 +497,7 @@ footer .row {
 
 .f_right .form-control {
 	width: 60%;
+	display: inline-block;
 }
 
 .f_right .form-inline {

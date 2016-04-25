@@ -288,8 +288,8 @@ hr {
 
 .works .row {
 	width: 100%;
+	margin-left: 0;
 }
-
 .works .intro::before {
 	background: #DDDDDD;
 	content: "";
@@ -428,6 +428,48 @@ hr {
 
 .item5 {
 	background-image: url("../img/works_5.jpg");
+}
+.item6 {
+	background: #fff;
+	color: #afafaf;
+	cursor: pointer;
+	transition: all 0.1s;
+	text-align: center;
+	position: relative;
+	border:2px solid #fff;
+	box-sizing: border-box;
+	
+}
+.item6 .item_text{
+	font-family: 'Open Sans';
+	font-size:26px;
+	
+	text-decoration: none;
+	text-transform: none;
+	position: absolute;
+    top: 50%;
+	left:40%;
+    transform: translateY(-50%);	
+}
+.item6:hover {
+	color: #00b4cc;
+}
+
+
+@media all and (max-width: 468px) {
+	.portfolio_item h5{
+		font-size:10px;
+		line-height: 1;
+		border: 2px solid white;
+	}
+	.item6 .item_text{
+		font-size: 18px;
+		left:35%;
+	}
+	footer .f_right .social_block a { 	
+		margin:0px;
+		margin-top: 30px;
+	}
 }
 
 .blog {
@@ -813,6 +855,7 @@ footer .row {
 	font-family: 'Open Sans';
 	font-size: 20px;
 	font-weight: 700;
+	letter-spacing: 1px;
 	font-variant: small-caps;
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -829,6 +872,7 @@ footer .row {
 
 .f_right .form-control {
 	width: 60%;
+	display: inline-block;
 }
 
 .f_right .form-inline {
