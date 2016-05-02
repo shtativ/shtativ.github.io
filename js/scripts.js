@@ -41,4 +41,10 @@
 });
 //target the entire page, and listen for touch events
 
-
+/* $('#menu a').click(function () {
+    $('#menu').fadeOut('slow');
+		$('html, body').off('touchstart touchmove', function(e){ 
+     //prevent native touch activity like scrolling
+     e.preventDefault(); 
+});
+});**/
