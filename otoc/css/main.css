@@ -920,7 +920,7 @@ footer .row {
 	margin-bottom: 0px;
 	border-radius: 0;
 }
-.f_right button {
+.f_right button .btn-default, .btn {
 	outline: none;
 }
 
