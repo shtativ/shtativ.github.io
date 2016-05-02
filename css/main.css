@@ -21,6 +21,7 @@ header {
     z-index: 2;
 }
 
+/*menu*/
 nav.container {
     justify-content: space-between;
     padding: 0 20px;
@@ -127,6 +128,23 @@ a.close {
 #be {
     background: url("../img/menu_be.png") no-repeat;
 }
+
+@media all and (max-width: 768px) {
+	#menu a{
+		font-size: 22px;
+	}
+	#menu hr{
+		margin: 16px 0 26px;
+	}
+	#fb, #tw, #gp, #dr, #be {
+		background-size: 30px;
+	}
+	.menu_social a{
+		width: 35px;
+		height: 35px;
+	}
+}
+/*---end of menu---*/
 
 section#slider {
     display: flex;
