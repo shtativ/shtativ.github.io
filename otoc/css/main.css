@@ -113,6 +113,8 @@ ul {
 	padding-top: 14px;
 	padding-left: 90px;
 	padding-right: 0;
+}
+.navbar-header a{
 	outline: none;
 }
 
@@ -919,7 +921,7 @@ footer .row {
 	margin-bottom: 0px;
 	border-radius: 0;
 }
-.btn-default{
+.btn, .btn-default{
 	outline: none;
 }
 
