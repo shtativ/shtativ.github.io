@@ -52,7 +52,7 @@ nav.container {
     position: fixed;
     background-color: rgba(59, 67, 76, 0.95);
     width: 100%;
-    height: 120%;
+    height: 100%;
     z-index: 3;
     text-align: center;
     padding-top: 9px;
