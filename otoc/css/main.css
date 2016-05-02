@@ -113,6 +113,7 @@ ul {
 	padding-top: 14px;
 	padding-left: 90px;
 	padding-right: 0;
+	outline: none;
 }
 
 .navbar-header button {
@@ -147,6 +148,9 @@ ul {
 	border-left: 1px solid #ddd;
 	box-shadow: none;
 	cursor: auto;
+}
+.nav li a{
+	outline: none;
 }
 
 @media all and (max-width: 1010px) {
@@ -535,6 +539,7 @@ hr {
 	transition: all 0.3s;
 	margin-bottom: 1em;
 	text-align: center;
+	outline: none;
 }
 
 .blog .blog_btn:hover {
@@ -799,7 +804,7 @@ footer .row {
 @media all and (max-width: 490px){
 	.f_left .map_contacts{
 		left:1%;
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 
@@ -914,6 +919,9 @@ footer .row {
 	margin-bottom: 0px;
 	border-radius: 0;
 }
+.btn-default{
+	outline: none;
+}
 
 .f_right .social_block {
 	width: 100%;
@@ -924,6 +932,7 @@ footer .row {
 .f_right .social_block a {
 	display: inline-block;
 	margin: 3px;
+	outline:none;
 }
 
 .social_block .btn_fb {
