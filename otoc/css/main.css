@@ -913,7 +913,6 @@ footer .row {
 
 .f_right button {
 	background: #252828;
-	outline: none;
 	border: none;
 	height: 57px;
 	width: 20%;
@@ -921,7 +920,7 @@ footer .row {
 	margin-bottom: 0px;
 	border-radius: 0;
 }
-.btn, .btn-default{
+button.btn.btn-default{
 	outline: none;
 }
 
