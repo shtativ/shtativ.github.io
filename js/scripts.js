@@ -10,7 +10,7 @@
 //hide menu
     $('#menu a').click(function () {
     $('#menu').fadeOut('slow');
-				$('html, body').off();
+				$('html, body').off('touchstart touchmove');
 });
  //slow transition 
 //    $("#pointer-down").on("click","a", function (event) { 

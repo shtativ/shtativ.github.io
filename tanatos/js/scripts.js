@@ -1,10 +1,16 @@
-//hide menu
+
+//show menu
     $('a#header_menu').click(function () {
     $('#menu').fadeIn('slow');
+		$('html, body').on('touchstart touchmove', function(e){ 
+     //prevent native touch activity like scrolling
+     e.preventDefault(); 
 });
-//show menu
+});
+//hide menu
     $('#menu a').click(function () {
     $('#menu').fadeOut('slow');
+				$('html, body').off('touchstart touchmove');
 });
  //slow transition 
 //    $("#pointer-down").on("click","a", function (event) { 
@@ -37,7 +43,10 @@
 });
 //target the entire page, and listen for touch events
 
-$('html, body').on('touchstart touchmove', function(e){ 
+/* $('#menu a').click(function () {
+    $('#menu').fadeOut('slow');
+		$('html, body').off('touchstart touchmove', function(e){ 
      //prevent native touch activity like scrolling
      e.preventDefault(); 
 });
+});**/
