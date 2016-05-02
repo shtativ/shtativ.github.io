@@ -456,7 +456,7 @@ hr {
 }
 
 
-@media all and (max-width: 468px) {
+@media all and (max-width: 468px) { .f_left .map_contacts
 	.portfolio_item h5{
 		font-size:10px;
 		line-height: 1;
@@ -789,6 +789,18 @@ footer .row {
 	z-index: 10;
 	left: 20%;
 	top: 20%
+}
+@media all and (max-width: 568px) { 
+	.f_left .map_contacts{
+		left:10%;
+		font-size: 16px;
+	}
+}
+@media all and (max-width: 490px){
+	.f_left .map_contacts{
+		left:1%;
+		font-size: 12px;
+	}
 }
 
 .map_contacts a {
