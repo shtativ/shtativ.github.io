@@ -19,9 +19,11 @@ body {
 
 
 /*header*/
-header{
+
+header {
 	margin-bottom: 63px;
 }
+
 .navbar,
 navbar-inverse {
 	border-radius: 0;
@@ -43,9 +45,11 @@ ul {
 .navbar-header button {
 	margin-top: 29px;
 }
+
 .navbar-header a {
 	outline: none;
 }
+
 .nav li a {
 	outline: none;
 }
@@ -71,20 +75,21 @@ ul {
 	color: #343838;
 	box-shadow: inset 4px 1px 9px -1px rgba(0, 0, 0, 0.2);
 }
-.nav li:last-child:hover{
+
+.nav li:last-child:hover {
 	border-left: 1px solid #464a4a;
 	box-shadow: none;
-	cursor:auto;
+	cursor: auto;
 }
 
 @media all and (max-width: 1010px) {
 	.navbar-brand {
-	padding-left: 30px;
-}
+		padding-left: 30px;
+	}
 	.nav li {
 		width: 95px;
 	}
-	.nav li:last-child{
+	.nav li:last-child {
 		width: 0px;
 	}
 }
@@ -101,6 +106,7 @@ ul {
 		border-bottom-width: 0.25em;
 	}
 }
+
 
 /*section about*/
 
@@ -382,8 +388,8 @@ ul {
 }
 
 @media all and (max-width: 468px) {
-	footer .f_right .social_block a { 	
-		margin:0px;
+	footer .f_right .social_block a {
+		margin: 0px;
 		margin-top: 30px;
 	}
 }
