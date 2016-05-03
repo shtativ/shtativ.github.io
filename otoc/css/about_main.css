@@ -46,6 +46,9 @@ ul {
 .navbar-header a {
 	outline: none;
 }
+.nav li a {
+	outline: none;
+}
 
 .nav li {
 	color: #c4c4c4;
