@@ -762,7 +762,8 @@ hr {
 
 /*from ie*/
 .owl-item{overflow: hidden;}
-.owl-stage {overflow:hidden;}
+.owl-stage{overflow: hidden;}
+.owl-stage-outer{overflow: hidden;}
 .vslider .views_btn {
 	margin: 0;
 	padding: 0;

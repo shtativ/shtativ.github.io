@@ -43,6 +43,9 @@ ul {
 .navbar-header button {
 	margin-top: 29px;
 }
+.navbar-header a {
+	outline: none;
+}
 
 .nav li {
 	color: #c4c4c4;
