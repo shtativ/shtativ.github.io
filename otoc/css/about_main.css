@@ -416,6 +416,20 @@ footer .row {
 	top: 20%
 }
 
+@media all and (max-width: 568px) {
+	.f_left .map_contacts {
+		left: 10%;
+		font-size: 16px;
+	}
+}
+
+@media all and (max-width: 490px) {
+	.f_left .map_contacts {
+		left: 1%;
+		font-size: 14px;
+	}
+}
+
 .map_contacts a {
 	color: #343838;
 	text-decoration: none;
@@ -519,13 +533,16 @@ footer .row {
 
 .f_right button {
 	background: #252828;
-	outline: none;
 	border: none;
 	height: 57px;
 	width: 20%;
 	transition: all 0.3s;
 	margin-bottom: 0px;
 	border-radius: 0;
+}
+
+.f_right form .btn_dot {
+	outline: none;
 }
 
 .f_right .social_block {
@@ -537,6 +554,7 @@ footer .row {
 .f_right .social_block a {
 	display: inline-block;
 	margin: 3px;
+	outline: none;
 }
 
 .social_block .btn_fb {

@@ -369,7 +369,7 @@ hr {
 	font-weight: 700;
 	height: 156px;
 	line-height: 25px;
-	padding-top: 25%;
+	padding-top: 35%;
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
@@ -442,7 +442,7 @@ hr {
 	.blue .center-block {
 		font-size: 15px;
 		border: 2px solid white;
-		padding-top: 35%;
+		padding-top: 25%;
 	}
 }
 
