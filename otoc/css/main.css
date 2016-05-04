@@ -277,11 +277,19 @@ ul {
 	padding-bottom: 2.1em;
 }
 
+.services_item img,
+.services_item svg {
+	height: 52px;
+	width: 52px;
+}
 
-/*починить*/
+.services_item svg * {
+	stroke: #00b4cc;
+	transition: all 0.3s ease 0s;
+}
 
-.services_item img svg path {
-	fill: #00b4cc;
+.services_item:hover svg * {
+	stroke: #343838;
 }
 
 hr {
