@@ -209,13 +209,13 @@ ul {
 	background: #00b4cc;
 	box-shadow: none;
 	text-align: left;
-	padding: 12px 30px;
+	padding: 12px 20px;
 	overflow: hidden;
 }
 
 .skills p {
 	font-family: 'Raleway';
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: 400;
 	line-height: 22px;
 }
@@ -227,14 +227,18 @@ ul {
 	font-weight: 400;
 	line-height: 22px;
 	vertical-align: -10px;
-	margin-right: 10px;
+	margin-right: 5px;
 }
-
+@media all and (max-width:400px){
+	.skills span{
+		font-size: 16px;
+	}
+}
 
 /*section our team*/
 
 .our_team {
-	margin-bottom: 134px;
+	margin-bottom: 114px;
 }
 
 .our_team .title {
@@ -289,29 +293,20 @@ ul {
 	position: relative;
 	background: #00b4cc;
 	border: 4px solid #00b4cc;
-	margin: 0 auto 40px;
+	margin: 0 auto 70px;
 	cursor: pointer;
-	opacity: 0.3;
-}
 
-.our_team .teams:hover {
-	opacity: 1;
-	transition: all 0.3s;
 }
-
 .our_team .team {
 	height: 260px;
 	margin: 0;
+	opacity: 0.3;
+	transition: all 0.3s;
 }
-
-
-/*
-.our_team .team:hover{
+.our_team .teams:hover .team {
 	opacity: 1;
 	transition: all 0.3s;
 }
-*/
-
 .our_team .team_block {
 	height: 120px;
 	background: #00b4cc;
@@ -338,19 +333,22 @@ ul {
 
 .our_team .team_social {
 	height: 61px;
-	width: 100%;
+	width: calc(100% + 8px);
 	background: #2f3333;
 	border: 4px solid #00b4cc;
 	transition: bottom 0.3s;
 	position: absolute;
 	bottom: 0;
+	left: -4px;
 	z-index: -1;
 	text-align: center;
+	box-sizing: border-box;
 }
 
-.our_team .team_social:hover {
+.our_team .teams:hover .team_social {
 	bottom: -61px;
-	position: relative
+	z-index: 0;
+	transition: all 0.3s;
 }
 
 .team_social .btn_ins {
