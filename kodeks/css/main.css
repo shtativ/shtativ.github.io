@@ -232,7 +232,7 @@ article {
 
 .services h2 {
 	color: #111;
-	font-family: 'Omnes';
+/*	font-family: 'Omnes';*/
 	font-size: 21px;
 	font-weight: 500;
 	margin: 0 0 56px 0;
@@ -295,6 +295,8 @@ article {
 .contact form .contact_name,
 .contact form .cantact_email,
 .contact form textarea {
+	font-family: 'Open Sans';
+	font-style: italic;
 	width: 100%;
 	max-width: 421px;
 	height: 56px;
@@ -336,7 +338,6 @@ article {
 	transition: all 0.3s ease 0s;
 }
 .contact_submit:hover .submit_btn{
-
 	transition: all 0.3s ease 0s;
 }
 /*??*/
