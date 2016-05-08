@@ -1,0 +1,347 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	background: #f1f1f1;
+	min-height: 100%;
+}
+
+.container {
+	background: #fff;
+	height: 127px;
+	width: 80%;
+	max-width: 1600px;
+	margin: 36px auto;
+}
+
+nav {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	margin-bottom: 36px;
+}
+
+nav .logo {
+	flex: 1;
+	margin: 0;
+	align-self: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #011;
+	font-size: 21px;
+	font-weight: 500;
+	outline: none;
+	cursor:pointer;
+}
+
+nav ul {
+	display: inline-flex;
+	list-style-type: none;
+	display: flex;
+	flex: 1;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li{
+	list-style-type: none;
+	/*	margin:0 31px;*/
+	padding: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+nav ul li:hover a {
+	color: #efc94c;
+}
+
+nav ul a {
+	color: #011;
+	/*	font-family: Gotham;*/
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: none;
+	overflow: hidden;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+
+/* полоса при наведении
+nav ul li:after {
+	content: "";
+	width: 70%;
+	height: 2px;
+	background: #efc94c;
+	margin: 0 auto;
+	transition: all 0.6s ease-in-out;
+	    backface-visibility: hidden;
+	    z-index: 2;
+	    bottom: 21px;
+    left: 0px;
+    right: 0px;
+	position: absolute;
+  
+}
+*/
+
+.nav_right {
+	display: inline-flex;
+	flex: 1;
+}
+
+.nav_search {
+	align-self: center;
+}
+
+.nav_search .search {
+	width: 149px;
+	/*  height: 49px;*/
+	font-size: 16px;
+	padding: 20px 5px 14px;
+	margin: 0 0 0 26px;
+	background: #fff;
+	border: none;
+	border-bottom: 2px solid #eaeaea;
+	text-align: center;
+	box-sizing: border-box;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.nav_search .submit {
+	position: relative;
+	top: 7px;
+	right: 23px;
+	width: 20px;
+	height: 20px;
+	background: url("../img/search_icon-16.png") no-repeat;
+	overflow: hidden;
+	outline: none;
+	border: 0;
+	opacity: 0.6;
+	box-shadow: none;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav_search:hover .submit {
+	opacity: 0;
+}
+
+
+/*delete button from .search*/
+
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	background: url("../img/delete_icon3-16.png")no-repeat;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	margin-right: 0px;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav_mail-bg {
+	background: #efc94c;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	cursor: pointer;
+	outline: none;
+	margin: 0 25px;
+}
+
+.nav_mail-bg .nav_contact-svg {
+	width: 20px;
+	height: 20px;
+	padding: 16px;
+	outline: none;
+}
+
+/*
+.nav_mail-bg img svg * {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 18px;
+	left: 18px;
+}
+*/
+
+
+/*main*/
+
+article {
+	background: #fff;
+	max-width: 1600px;
+	height: auto;
+	margin: 0 auto 82px;
+}
+
+.services {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding-bottom: 166px;
+}
+
+.services .services_item {
+	align-self: center;
+	/*	max-width: 225px;*/
+	padding: 61px 76px 0px;
+	text-align: center;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.services_img-bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 182px;
+	height: 182px;
+	border-radius: 50%;
+	background: #eaeaea;
+	margin: auto;
+	margin-bottom: 57px;
+	transition: all 0.3s ease-in-out;
+}
+
+.services .services_item:hover .services_img-bg {
+	background-color: #efc94c;
+}
+
+.services .services_img-bg .svg {
+	width: 32px;
+	height: 32px;
+}
+
+.services_img-bg img svg path {
+	stroke: #111;
+}
+
+.services h2 {
+	color: #111;
+	font-family: 'Omnes';
+	font-size: 21px;
+	font-weight: 500;
+	margin: 0 0 56px 0;
+	text-transform: uppercase;
+}
+
+.services p {
+	color: #888;
+	width: 225px;
+}
+
+.contact {
+	background: #fff;
+	max-width: 535px;
+	height: 1077px;
+	margin: 0 auto 145px;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.contact .title h1 {
+	color: #444;
+	/*	font-family: Omnes;*/
+	font-size: 42px;
+	font-weight: 400;
+	line-height: 72px;
+	text-transform: capitalize;
+	text-align: center;
+	padding: 0;
+	margin: 90px auto 27px;
+}
+
+.contact .title p {
+	width: 278px;
+	color: #888;
+	/*	font-family: Omnes;*/
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 32px;
+	text-align: center;
+	padding: 0;
+	margin: 0 auto 100px;
+}
+
+.contact form {
+	width: 75%;
+	text-align: center;
+}
+
+.contact form p {
+	color: #111;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0 auto 31px;
+	padding: 0;
+}
+
+.contact form .contact_name,
+.contact form .cantact_email,
+.contact form textarea {
+	width: 100%;
+	max-width: 421px;
+	height: 56px;
+	background-color: #eaeaea;
+	color: #888;
+	border-radius: 1px;
+	outline: none;
+	border: none;
+	box-shadow: 0;
+	padding-left: 15%;
+	text-transform: uppercase;
+	margin: 0 auto 56px;
+	box-sizing: border-box;
+}
+
+.contact form textarea {
+	padding-top: 23px;
+	padding-right: 23px;
+	height: 212px;
+	resize: none;
+	overflow: auto;
+}
+
+.contact form .contact_submit {
+	width: 52px;
+	height: 52px;
+	background-color: #2bacb5;
+	border-radius: 50%;
+	margin: 0 auto;
+	cursor: pointer;
+	outline: none;
+}
+
+.contact_submit .submit_btn {
+	width: 20px;
+	height: 20px;
+	padding: 15px;
+	outline: none;
+	transition: all 0.3s ease 0s;
+}
+.contact_submit:hover .submit_btn{
+
+	transition: all 0.3s ease 0s;
+}
+/*??*/
+.nav_search .contact_submit svg *{
+	fill: #efc94c;
+	stroke: #011;
+	transition: all 0.3s ease 0s;
+}
