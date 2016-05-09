@@ -65,20 +65,19 @@ body {
 	padding: 0;
 	background: #f1f1f1;
 	min-height: 100%;
+	
+	
+	
 }
 header{
-	width: 100%;
-	max-width:1131px;
-	margin:0 auto;
-}
-
-.container {
-	background: #fff;
-	height: 127px;
+	
+	margin:36px auto;
 	width: 80%;
 	max-width: 1600px;
-	margin: 36px auto;
+	background: #fff;
 }
+
+
 
 nav {
 	display: flex;
@@ -86,8 +85,14 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	height: 100%;
-	margin-bottom: 36px;
+	width: 100%;
+	max-width:1131px;
+	margin:0 auto;
 }
+
+	
+
+
 
 nav .logo {
 	flex: 1;
@@ -253,6 +258,7 @@ article {
 	max-width: 1600px;
 	height: auto;
 	margin: 0 auto 82px;
+	width: 80%;
 }
 
 .services {
@@ -262,6 +268,8 @@ article {
 	align-items: center;
 	align-content: center;
 	padding-bottom: 166px;
+	max-width:1131px;
+		margin: 0 auto;
 }
 
 .services .services_item {
@@ -301,7 +309,7 @@ article {
     transition: all 0.3s ease-in-out;
 }
 
-.services .services_img-bg:hover svg * {
+.services .services_item:hover svg * {
     fill: #fff;
 }
 
