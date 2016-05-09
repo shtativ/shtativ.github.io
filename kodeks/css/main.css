@@ -96,17 +96,17 @@ nav {
 
 nav .logo {
 	flex: 1;
-	margin: 0;
 	align-self: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	text-align: center;
+	text-align: left;
 	color: #011;
 	font-family: 'Omnes', sans-serif;
 	font-weight: 500;
 	font-size: 21px;
 	outline: none;
 	cursor:pointer;
+	margin: 0;
 }
 
 nav ul {
@@ -116,14 +116,15 @@ nav ul {
 	flex: 1;
 	padding: 0;
 	margin: 0;
+	
 }
 
 nav ul li{
 	list-style-type: none;
-	/*	margin:0 31px;*/
-	padding: 20px;
+	padding: 52px 0px 51px;
 	text-align: center;
 	cursor: pointer;
+	width: 92px;
 }
 
 nav ul li:hover a {
@@ -143,7 +144,6 @@ nav ul a {
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-
 
 /* полоса при наведении
 nav ul li:after {
@@ -170,16 +170,17 @@ nav ul li:after {
 
 .nav_search {
 	align-self: center;
+	white-space: nowrap;
 }
 
 .nav_search .search {
 	width: 149px;
-	/*  height: 49px;*/
+	height: 49px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	padding: 20px 20px 14px 5px;
 	margin: 0 0 0 26px;
-	background: #fff;
+	background: rgba(255, 255, 255, 0);
 	border: none;
 	border-bottom: 2px solid #eaeaea;
 	text-align: center;
@@ -194,6 +195,7 @@ nav ul li:after {
 	right: 23px;
 	width: 20px;
 	height: 20px;
+	margin-left: 5px;
 	background: url("../img/search_icon-16.png") no-repeat;
 	overflow: hidden;
 	outline: none;
@@ -204,24 +206,9 @@ nav ul li:after {
 	transition: all 0.3s ease-in-out;
 }
 
-.nav_search :focus .submit {
+.nav_search:hover .submit {
 	opacity: 1;
 }
-
-
-/*
-delete button from .search
-
-input[type="search"]::-webkit-search-cancel-button {
-	-webkit-appearance: none;
-	background: url("../img/delete_icon3-16.png")no-repeat;
-	cursor: pointer;
-	width: 16px;
-	height: 16px;
-	margin-right: 0px;
-	transition: all 0.3s ease-in-out;
-}
-*/
 
 .nav_mail-bg {
 	background: #efc94c;
@@ -239,16 +226,6 @@ input[type="search"]::-webkit-search-cancel-button {
 	padding: 16px;
 	outline: none;
 }
-
-/*
-.nav_mail-bg img svg * {
-	width: 16px;
-	height: 16px;
-	position: absolute;
-	top: 18px;
-	left: 18px;
-}
-*/
 
 
 /*main*/
@@ -275,7 +252,6 @@ article {
 .services .services_item {
 	flex-basis: 33%;
 	align-self: center;
-	/*	max-width: 225px;*/
 	padding: 61px 76px 0px;
 	text-align: center;
 	box-sizing: border-box;
@@ -304,7 +280,6 @@ article {
 	height: 32px;
 }
 
-
 .services_img-bg svg * {
     transition: all 0.3s ease-in-out;
 }
@@ -330,7 +305,6 @@ font-family: 'Omnes', sans-serif;
 	font-size: 14px;
 	line-height: 1.58;
 	letter-spacing: 0.05em;
-/*	width: 232px;*/
 }
 
 .contact {
@@ -432,9 +406,4 @@ font-family: 'Omnes', sans-serif;
 	transition: all 0.3s ease 0s;
 }
 
-/*??*/
-.submit_btn svg * {
-	fill: #efc94c;
-	stroke: #011;
-	transition: all 0.3s ease 0s;
-}
+	@media all and (min-width: 1540px) and (max-width: 1740){}
