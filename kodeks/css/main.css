@@ -1,63 +1,53 @@
 @font-face {
-	font-family:'Gotham';
+	font-family: 'Gotham';
 	src: url('../fonts/gotham/GothamMedium_gdi.eot');
-	src: url('../fonts/gotham/GothamMedium_gdi.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/gotham/GothamMedium_gdi.woff') format('woff'),
-		url('../fonts/gotham/GothamMedium_gdi.ttf') format('truetype'),
-		url('../fonts/gotham/GothamMedium_gdi.otf') format('opentype');
+	src: url('../fonts/gotham/GothamMedium_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/gotham/GothamMedium_gdi.woff') format('woff'), url('../fonts/gotham/GothamMedium_gdi.ttf') format('truetype'), url('../fonts/gotham/GothamMedium_gdi.otf') format('opentype');
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
 	unicode-range: U+0020-2248;
 }
+
 @font-face {
-	font-family:'Omnes';
+	font-family: 'Omnes';
 	src: url('../fonts/omnes-light/Omnes-Light_gdi.eot');
-	src: url('../fonts/omnes-light/Omnes-Light_gdi.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/omnes-light/Omnes-Light_gdi.woff') format('woff'),
-		url('../fonts/omnes-light/Omnes-Light_gdi.ttf') format('truetype'),
-		url(../fonts/omnes-light/'Omnes-Light_gdi.otf') format('opentype');
+	src: url('../fonts/omnes-light/Omnes-Light_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/omnes-light/Omnes-Light_gdi.woff') format('woff'), url('../fonts/omnes-light/Omnes-Light_gdi.ttf') format('truetype'), url(../fonts/omnes-light/'Omnes-Light_gdi.otf') format('opentype');
 	font-weight: 300;
 	font-style: normal;
 	font-stretch: normal;
 	unicode-range: U+0020-2264;
 }
+
 @font-face {
-	font-family:'Omnes';
+	font-family: 'Omnes';
 	src: url('../fonts/omnes-regular/Omnes-Regular_gdi.eot');
-	src: url('../fonts/omnes-regular/Omnes-Regular_gdi.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/omnes-regular/Omnes-Regular_gdi.woff') format('woff'),
-		url('../fonts/omnes-regular/Omnes-Regular_gdi.ttf') format('truetype'),
-		url('../fonts/omnes-regular/Omnes-Regular_gdi.otf') format('opentype');
+	src: url('../fonts/omnes-regular/Omnes-Regular_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/omnes-regular/Omnes-Regular_gdi.woff') format('woff'), url('../fonts/omnes-regular/Omnes-Regular_gdi.ttf') format('truetype'), url('../fonts/omnes-regular/Omnes-Regular_gdi.otf') format('opentype');
 	font-weight: 400;
 	font-style: normal;
 	font-stretch: normal;
 	unicode-range: U+0020-25CA;
 }
+
 @font-face {
-	font-family:'Omnes';
+	font-family: 'Omnes';
 	src: url('../fonts/omnes-medium/Omnes-Medium_gdi.eot');
-	src: url('../fonts/omnes-medium/Omnes-Medium_gdi.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/omnes-medium/Omnes-Medium_gdi.woff') format('woff'),
-		url('../fonts/omnes-medium/Omnes-Medium_gdi.ttf') format('truetype'),
-		url('../fonts/omnes-medium/Omnes-Medium_gdi.otf') format('opentype');
+	src: url('../fonts/omnes-medium/Omnes-Medium_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/omnes-medium/Omnes-Medium_gdi.woff') format('woff'), url('../fonts/omnes-medium/Omnes-Medium_gdi.ttf') format('truetype'), url('../fonts/omnes-medium/Omnes-Medium_gdi.otf') format('opentype');
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
 	unicode-range: U+0020-2264;
 }
+
 @font-face {
-	font-family:'Omnes';
+	font-family: 'Omnes';
 	src: url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.eot');
-	src: url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.woff') format('woff'),
-		url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.ttf') format('truetype'),
-		url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.otf') format('opentype');
+	src: url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.woff') format('woff'), url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.ttf') format('truetype'), url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.otf') format('opentype');
 	font-weight: 600;
 	font-style: normal;
 	font-stretch: normal;
 	unicode-range: U+0020-2264;
 }
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
@@ -65,19 +55,16 @@ body {
 	padding: 0;
 	background: #f1f1f1;
 	min-height: 100%;
-	
-	
-	
 }
-header{
-	
-	margin:36px auto;
+
+header {
+	margin: 36px auto;
 	width: 80%;
 	max-width: 1600px;
 	background: #fff;
+	padding-left: 25px;
+	box-sizing: border-box;
 }
-
-
 
 nav {
 	display: flex;
@@ -86,13 +73,9 @@ nav {
 	align-items: center;
 	height: 100%;
 	width: 100%;
-	max-width:1131px;
-	margin:0 auto;
+	max-width: 1131px;
+	margin: 0 auto;
 }
-
-	
-
-
 
 nav .logo {
 	flex: 1;
@@ -105,7 +88,7 @@ nav .logo {
 	font-weight: 500;
 	font-size: 21px;
 	outline: none;
-	cursor:pointer;
+	cursor: pointer;
 	margin: 0;
 }
 
@@ -116,10 +99,9 @@ nav ul {
 	flex: 1;
 	padding: 0;
 	margin: 0;
-	
 }
 
-nav ul li{
+nav ul li {
 	list-style-type: none;
 	padding: 52px 0px 51px;
 	text-align: center;
@@ -144,6 +126,7 @@ nav ul a {
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
+
 
 /* полоса при наведении
 nav ul li:after {
@@ -245,8 +228,8 @@ article {
 	align-items: center;
 	align-content: center;
 	padding-bottom: 166px;
-	max-width:1131px;
-		margin: 0 auto;
+	max-width: 1131px;
+	margin: 0 auto;
 }
 
 .services .services_item {
@@ -281,11 +264,11 @@ article {
 }
 
 .services_img-bg svg * {
-    transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .services .services_item:hover svg * {
-    fill: #fff;
+	fill: #fff;
 }
 
 .services h2 {
@@ -299,7 +282,7 @@ article {
 }
 
 .services p {
-font-family: 'Omnes', sans-serif;
+	font-family: 'Omnes', sans-serif;
 	font-weight: 300;
 	color: #888;
 	font-size: 14px;
@@ -319,10 +302,10 @@ font-family: 'Omnes', sans-serif;
 .contact .title h1 {
 	color: #444;
 	font-family: 'Omnes', sans-serif;
-		font-weight: 400;
+	font-weight: 400;
 	font-size: 42px;
 	line-height: 1.72;
-	 letter-spacing: 0.075em;
+	letter-spacing: 0.075em;
 	text-transform: capitalize;
 	text-align: center;
 	padding: 0;
@@ -406,4 +389,13 @@ font-family: 'Omnes', sans-serif;
 	transition: all 0.3s ease 0s;
 }
 
-	@media all and (min-width: 1540px) and (max-width: 1740){}
+@media all and (min-width: 880px) and (max-width: 1040px) {
+	nav ul li {
+		width: 66px;
+		padding: 32px 0px 31px;
+	}
+	.nav_search .search {
+		margin: 0;
+		width: 99px;
+	}
+}

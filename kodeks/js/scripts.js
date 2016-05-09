@@ -12,14 +12,3 @@
 		}
 		return false;
 	});
-	
-//hide the navigation menu
-
-(function() {
-  var toggle = document.querySelector("#nav_toggle");
-  var nav = document.querySelector("#nav_items");
-  toggle.addEventListener("click", function(e) {
-    e.preventDefault();
-    nav.classList.contains("nav_items--visible") ? nav.classList.remove("nav_items--visible") : nav.classList.add("nav_items--visible");
-  });
-})();
