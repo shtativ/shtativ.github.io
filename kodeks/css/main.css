@@ -107,6 +107,9 @@ nav .logo {
 	cursor: pointer;
 	margin: 0;
 }
+nav .hamburger{
+	display: none;
+}
 
 nav ul {
 	display: -webkit-inline-flex;
@@ -474,6 +477,18 @@ article {
 	}
 }
 @media all and (max-width: 768px) {
+	
+/*
+	<button class="hamburger--spin-r hamburger--collapse is-active" type="button">
+  		<span class="hamburger-box">
+    		<span class="hamburger-inner"></span>
+  		</span>
+	</button>
+*/
+
+	nav .hamburger{
+	display:block;
+}
 	nav{
 		display: -webkit-box;
 		display: -webkit-flex;
