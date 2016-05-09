@@ -1,10 +1,10 @@
 @font-face {
 	font-family:'Gotham';
-	src: url('GothamMedium_gdi.eot');
-	src: url('GothamMedium_gdi.eot?#iefix') format('embedded-opentype'),
-		url('GothamMedium_gdi.woff') format('woff'),
-		url('GothamMedium_gdi.ttf') format('truetype'),
-		url('GothamMedium_gdi.otf') format('opentype');
+	src: url('../fonts/gotham/GothamMedium_gdi.eot');
+	src: url('../fonts/gotham/GothamMedium_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/gotham/GothamMedium_gdi.woff') format('woff'),
+		url('../fonts/gotham/GothamMedium_gdi.ttf') format('truetype'),
+		url('../fonts/gotham/GothamMedium_gdi.otf') format('opentype');
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
@@ -12,11 +12,11 @@
 }
 @font-face {
 	font-family:'Omnes';
-	src: url('Omnes-Light_gdi.eot');
-	src: url('Omnes-Light_gdi.eot?#iefix') format('embedded-opentype'),
-		url('Omnes-Light_gdi.woff') format('woff'),
-		url('Omnes-Light_gdi.ttf') format('truetype'),
-		url('Omnes-Light_gdi.otf') format('opentype');
+	src: url('../fonts/omnes-light/Omnes-Light_gdi.eot');
+	src: url('../fonts/omnes-light/Omnes-Light_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/omnes-light/Omnes-Light_gdi.woff') format('woff'),
+		url('../fonts/omnes-light/Omnes-Light_gdi.ttf') format('truetype'),
+		url(../fonts/omnes-light/'Omnes-Light_gdi.otf') format('opentype');
 	font-weight: 300;
 	font-style: normal;
 	font-stretch: normal;
@@ -24,11 +24,11 @@
 }
 @font-face {
 	font-family:'Omnes';
-	src: url('Omnes-Regular_gdi.eot');
-	src: url('Omnes-Regular_gdi.eot?#iefix') format('embedded-opentype'),
-		url('Omnes-Regular_gdi.woff') format('woff'),
-		url('Omnes-Regular_gdi.ttf') format('truetype'),
-		url('Omnes-Regular_gdi.otf') format('opentype');
+	src: url('../fonts/omnes-regular/Omnes-Regular_gdi.eot');
+	src: url('../fonts/omnes-regular/Omnes-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/omnes-regular/Omnes-Regular_gdi.woff') format('woff'),
+		url('../fonts/omnes-regular/Omnes-Regular_gdi.ttf') format('truetype'),
+		url('../fonts/omnes-regular/Omnes-Regular_gdi.otf') format('opentype');
 	font-weight: 400;
 	font-style: normal;
 	font-stretch: normal;
@@ -36,11 +36,11 @@
 }
 @font-face {
 	font-family:'Omnes';
-	src: url('Omnes-Medium_gdi.eot');
-	src: url('Omnes-Medium_gdi.eot?#iefix') format('embedded-opentype'),
-		url('Omnes-Medium_gdi.woff') format('woff'),
-		url('Omnes-Medium_gdi.ttf') format('truetype'),
-		url('Omnes-Medium_gdi.otf') format('opentype');
+	src: url('../fonts/omnes-medium/Omnes-Medium_gdi.eot');
+	src: url('../fonts/omnes-medium/Omnes-Medium_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/omnes-medium/Omnes-Medium_gdi.woff') format('woff'),
+		url('../fonts/omnes-medium/Omnes-Medium_gdi.ttf') format('truetype'),
+		url('../fonts/omnes-medium/Omnes-Medium_gdi.otf') format('opentype');
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
@@ -48,11 +48,11 @@
 }
 @font-face {
 	font-family:'Omnes';
-	src: url('Omnes-SemiBold_gdi.eot');
-	src: url('Omnes-SemiBold_gdi.eot?#iefix') format('embedded-opentype'),
-		url('Omnes-SemiBold_gdi.woff') format('woff'),
-		url('Omnes-SemiBold_gdi.ttf') format('truetype'),
-		url('Omnes-SemiBold_gdi.otf') format('opentype');
+	src: url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.eot');
+	src: url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.woff') format('woff'),
+		url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.ttf') format('truetype'),
+		url('../fonts/omnes-semibold/Omnes-SemiBold_gdi.otf') format('opentype');
 	font-weight: 600;
 	font-style: normal;
 	font-stretch: normal;
@@ -65,6 +65,11 @@ body {
 	padding: 0;
 	background: #f1f1f1;
 	min-height: 100%;
+}
+header{
+	width: 100%;
+	max-width:1131px;
+	margin:0 auto;
 }
 
 .container {
@@ -425,4 +430,3 @@ font-family: 'Omnes', sans-serif;
 	stroke: #011;
 	transition: all 0.3s ease 0s;
 }
-
