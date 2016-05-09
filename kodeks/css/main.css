@@ -63,14 +63,25 @@ header {
 	max-width: 1600px;
 	background: #fff;
 	padding-left: 25px;
-	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
 }
 
 nav {
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-	align-items: center;
+	-webkit-flex-flow: row nowrap;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	height: 100%;
 	width: 100%;
 	max-width: 1131px;
@@ -78,8 +89,13 @@ nav {
 }
 
 nav .logo {
-	flex: 1;
-	align-self: center;
+	-webkit-flex: 1;
+	   -moz-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	        align-self: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: left;
@@ -93,10 +109,19 @@ nav .logo {
 }
 
 nav ul {
+	display: -webkit-inline-flex;
+	display: -moz-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
 	list-style-type: none;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex: 1;
+	-webkit-flex: 1;
+	   -moz-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	padding: 0;
 	margin: 0;
 }
@@ -121,9 +146,6 @@ nav ul a {
 	text-transform: uppercase;
 	text-decoration: none;
 	overflow: hidden;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -147,12 +169,20 @@ nav ul li:after {
 */
 
 .nav_right {
+	display: -webkit-inline-flex;
+	display: -moz-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
-	flex: 1;
+	-webkit-flex: 1;
+	   -moz-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 }
 
 .nav_search {
-	align-self: center;
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	        align-self: center;
 	white-space: nowrap;
 }
 
@@ -167,7 +197,8 @@ nav ul li:after {
 	border: none;
 	border-bottom: 2px solid #eaeaea;
 	text-align: center;
-	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
 	outline: none;
 	box-sizing: border-box;
 }
@@ -222,29 +253,56 @@ article {
 }
 
 .services {
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+	-webkit-flex-flow: row wrap;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	        align-content: center;
 	padding-bottom: 166px;
 	max-width: 1131px;
 	margin: 0 auto;
 }
 
 .services .services_item {
-	flex-basis: 33%;
-	align-self: center;
+	-webkit-flex-basis: 33%;
+	    -ms-flex-preferred-size: 33%;
+	        flex-basis: 33%;
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	        align-self: center;
 	padding: 61px 76px 0px;
 	text-align: center;
-	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
 	cursor: pointer;
 }
 
 .services_img-bg {
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 182px;
 	height: 182px;
 	border-radius: 50%;
@@ -295,8 +353,13 @@ article {
 	max-width: 535px;
 	height: 1077px;
 	margin: 0 auto 145px;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column nowrap;
+	-webkit-flex-flow: column nowrap;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
 }
 
 .contact .title h1 {
@@ -360,7 +423,8 @@ article {
 	padding-left: 15%;
 	text-transform: uppercase;
 	margin: 0 auto 56px;
-	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
 }
 
 .contact form textarea {
