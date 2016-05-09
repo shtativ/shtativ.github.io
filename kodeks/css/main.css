@@ -1,3 +1,63 @@
+@font-face {
+	font-family:'Gotham';
+	src: url('GothamMedium_gdi.eot');
+	src: url('GothamMedium_gdi.eot?#iefix') format('embedded-opentype'),
+		url('GothamMedium_gdi.woff') format('woff'),
+		url('GothamMedium_gdi.ttf') format('truetype'),
+		url('GothamMedium_gdi.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2248;
+}
+@font-face {
+	font-family:'Omnes';
+	src: url('Omnes-Light_gdi.eot');
+	src: url('Omnes-Light_gdi.eot?#iefix') format('embedded-opentype'),
+		url('Omnes-Light_gdi.woff') format('woff'),
+		url('Omnes-Light_gdi.ttf') format('truetype'),
+		url('Omnes-Light_gdi.otf') format('opentype');
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2264;
+}
+@font-face {
+	font-family:'Omnes';
+	src: url('Omnes-Regular_gdi.eot');
+	src: url('Omnes-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+		url('Omnes-Regular_gdi.woff') format('woff'),
+		url('Omnes-Regular_gdi.ttf') format('truetype'),
+		url('Omnes-Regular_gdi.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+@font-face {
+	font-family:'Omnes';
+	src: url('Omnes-Medium_gdi.eot');
+	src: url('Omnes-Medium_gdi.eot?#iefix') format('embedded-opentype'),
+		url('Omnes-Medium_gdi.woff') format('woff'),
+		url('Omnes-Medium_gdi.ttf') format('truetype'),
+		url('Omnes-Medium_gdi.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2264;
+}
+@font-face {
+	font-family:'Omnes';
+	src: url('Omnes-SemiBold_gdi.eot');
+	src: url('Omnes-SemiBold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('Omnes-SemiBold_gdi.woff') format('woff'),
+		url('Omnes-SemiBold_gdi.ttf') format('truetype'),
+		url('Omnes-SemiBold_gdi.otf') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2264;
+}
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
@@ -32,8 +92,9 @@ nav .logo {
 	text-transform: uppercase;
 	text-align: center;
 	color: #011;
-	font-size: 21px;
+	font-family: 'Omnes', sans-serif;
 	font-weight: 500;
+	font-size: 21px;
 	outline: none;
 	cursor:pointer;
 }
@@ -61,9 +122,9 @@ nav ul li:hover a {
 
 nav ul a {
 	color: #011;
-	/*	font-family: Gotham;*/
-	font-size: 12px;
+	font-family: 'Gotham', sans-serif;
 	font-weight: 500;
+	font-size: 12px;
 	text-transform: uppercase;
 	text-decoration: none;
 	overflow: hidden;
@@ -104,8 +165,9 @@ nav ul li:after {
 .nav_search .search {
 	width: 149px;
 	/*  height: 49px;*/
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	padding: 20px 5px 14px;
+	padding: 20px 20px 14px 5px;
 	margin: 0 0 0 26px;
 	background: #fff;
 	border: none;
@@ -132,12 +194,13 @@ nav ul li:after {
 	transition: all 0.3s ease-in-out;
 }
 
-.nav_search:hover .submit {
-	opacity: 0;
+.nav_search :focus .submit {
+	opacity: 1;
 }
 
 
-/*delete button from .search*/
+/*
+delete button from .search
 
 input[type="search"]::-webkit-search-cancel-button {
 	-webkit-appearance: none;
@@ -148,6 +211,7 @@ input[type="search"]::-webkit-search-cancel-button {
 	margin-right: 0px;
 	transition: all 0.3s ease-in-out;
 }
+*/
 
 .nav_mail-bg {
 	background: #efc94c;
@@ -196,6 +260,7 @@ article {
 }
 
 .services .services_item {
+	flex-basis: 33%;
 	align-self: center;
 	/*	max-width: 225px;*/
 	padding: 61px 76px 0px;
@@ -226,22 +291,33 @@ article {
 	height: 32px;
 }
 
-.services_img-bg img svg path {
-	stroke: #111;
+
+.services_img-bg svg * {
+    transition: all 0.3s ease-in-out;
+}
+
+.services .services_img-bg:hover svg * {
+    fill: #fff;
 }
 
 .services h2 {
 	color: #111;
-/*	font-family: 'Omnes';*/
-	font-size: 21px;
+	font-family: 'Omnes', sans-serif;
 	font-weight: 500;
+	font-size: 21px;
+	letter-spacing: 0.075em;
 	margin: 0 0 56px 0;
 	text-transform: uppercase;
 }
 
 .services p {
+font-family: 'Omnes', sans-serif;
+	font-weight: 300;
 	color: #888;
-	width: 225px;
+	font-size: 14px;
+	line-height: 1.58;
+	letter-spacing: 0.05em;
+/*	width: 232px;*/
 }
 
 .contact {
@@ -255,10 +331,11 @@ article {
 
 .contact .title h1 {
 	color: #444;
-	/*	font-family: Omnes;*/
+	font-family: 'Omnes', sans-serif;
+		font-weight: 400;
 	font-size: 42px;
-	font-weight: 400;
-	line-height: 72px;
+	line-height: 1.72;
+	 letter-spacing: 0.075em;
 	text-transform: capitalize;
 	text-align: center;
 	padding: 0;
@@ -268,10 +345,11 @@ article {
 .contact .title p {
 	width: 278px;
 	color: #888;
-	/*	font-family: Omnes;*/
-	font-size: 14px;
+	font-family: 'Omnes', sans-serif;
 	font-weight: 300;
-	line-height: 32px;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	line-height: 2.29;
 	text-align: center;
 	padding: 0;
 	margin: 0 auto 100px;
@@ -280,9 +358,12 @@ article {
 .contact form {
 	width: 75%;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .contact form p {
+	font-family: 'Omnes', sans-serif;
 	color: #111;
 	text-align: center;
 	text-transform: uppercase;
@@ -337,12 +418,11 @@ article {
 	outline: none;
 	transition: all 0.3s ease 0s;
 }
-.contact_submit:hover .submit_btn{
-	transition: all 0.3s ease 0s;
-}
+
 /*??*/
-.nav_search .contact_submit svg *{
+.submit_btn svg * {
 	fill: #efc94c;
 	stroke: #011;
 	transition: all 0.3s ease 0s;
 }
+
