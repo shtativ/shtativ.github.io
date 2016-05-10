@@ -421,7 +421,7 @@ article {
 	border-radius: 1px;
 	outline: none;
 	border: none;
-	box-shadow: 0;
+	box-shadow: none;
 	padding-left: 15%;
 	text-transform: uppercase;
 	margin: 0 auto 46px;
