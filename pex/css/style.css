@@ -1,0 +1,33 @@
+@font-face{
+	font-family: 'Open Sans';
+    src: url('../fonts/open_sans/light/opensans-300-normal.woff2') format('woff2'), url('../fonts/open_sans/light/opensans-300-normal.woff') format('woff'), url('../fonts/open_sans/light/opensans-300-normal.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face{
+	font-family: 'Open Sans';
+    src: url('../fonts/open_sans/light/opensans-400-normal.woff2') format('woff2'), url('../fonts/open_sans/light/opensans-400-normal.woff') format('woff'), url('../fonts/open_sans/light/opensans-400-normal.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+	font-family: 'Open Sans';
+    src: url('../fonts/open_sans/light/opensans-600-normal.woff2') format('woff2'), url('../fonts/open_sans/light/opensans-600-normal.woff') format('woff'), url('../fonts/open_sans/light/opensans-600-normal.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face{
+	font-family: 'Open Sans';
+    src: url('../fonts/open_sans/light/opensans-700-normal.woff2') format('woff2'), url('../fonts/open_sans/light/opensans-700-normal.woff') format('woff'), url('../fonts/open_sans/light/opensans-700-normal.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+body{
+	font-family: 'Merriweather', serif;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
