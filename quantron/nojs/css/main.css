@@ -24,6 +24,7 @@ main {
   margin: 0;
   padding: 0;
 }
+
 h1 {
       -ms-flex-item-align: center;
   align-self: center;
@@ -36,6 +37,7 @@ h1 {
   user-select: none;
   margin-bottom: 50px;
 }
+/*Red button*/
 .red_btn {
     position: relative;
         -ms-flex-item-align: center;
@@ -51,6 +53,9 @@ h1 {
     transition: all 0.3s ease-in-out;
     z-index: 2;
 }
+a.red_btn{outline: none;}
+
+/*green buttons*/
 .green_btns {
   position: absolute;
   top: 90px;
@@ -77,6 +82,7 @@ h1 {
 .green_btns a {
     text-decoration: none;
     border-radius: 5px;
+    outline: none;
 }
 .icons {
     margin: 5px;
@@ -96,6 +102,8 @@ h1 {
     background: url("../img/phoneicon.png")no-repeat;
     background-size: contain;
 }
+
+/*animation*/
 .red_btn:focus {
       -webkit-transform: scale(0.8);
   transform: scale(0.8);
