@@ -105,12 +105,20 @@ h1 {
 .red_btn:focus + .green_btns {
     opacity: 1;
         -webkit-transform: translateY(80px) scaleY(1);
-    transform: translateY(60px) scaleY(1);
+    transform: translateY(140px) scaleY(1);
 }
 
 @media all and (max-width: 380px) {
+  .green_btns{
+    margin-left: 55px;
+  }
   .icons {
     width: 80px;
     height: 80px;
+  }
+}
+@media all and (max-width: 340px){
+  .green_btns{
+    margin-left: 25px;
   }
 }
