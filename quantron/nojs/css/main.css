@@ -5,6 +5,8 @@ body {
     padding: 0;
     background: #f1f1f1;
     min-height: 100%;
+    display: flex;
+    justify-content: center;
 }
 main {
       display: -webkit-box;
@@ -18,6 +20,7 @@ main {
       -webkit-box-align: center;
       -ms-flex-align: center;
   align-items: center;
+  width: 380px;
   margin: 0;
   padding: 0;
 }
@@ -34,6 +37,7 @@ h1 {
   margin-bottom: 50px;
 }
 .red_btn {
+    position: relative;
         -ms-flex-item-align: center;
     align-self: center;
     cursor: pointer;
@@ -45,8 +49,11 @@ h1 {
     border-radius: 50%;
         -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    z-index: 2;
 }
 .green_btns {
+  position: absolute;
+  top: 90px;
       display: -webkit-box;
       display: -ms-flexbox;
   display: flex;
@@ -63,8 +70,9 @@ h1 {
     padding-top: 80px;
         -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-        -webkit-transform: scaleY(0.2);
-    transform: scaleY(0.2);
+        -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+    margin-left:25px;
 }
 .green_btns a {
     text-decoration: none;
@@ -96,6 +104,6 @@ h1 {
 }
 .red_btn:focus + .green_btns {
     opacity: 1;
-        -webkit-transform: translateY(60px) scaleY(1);
+        -webkit-transform: translateY(80px) scaleY(1);
     transform: translateY(60px) scaleY(1);
 }
