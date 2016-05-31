@@ -1,0 +1,67 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+    min-height: 100%;
+}
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    align-self: center;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+.red_btn {
+    align-self: center;
+    cursor: pointer;
+    background: url("../img/glossy_red_button.svg") no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease-in-out;
+}
+.green_btns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    padding-top: 80px;
+}
+.icons {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    outline: none;
+}
+.website_icon {
+    background: url("../img/webicon.png")no-repeat;
+    background-size: contain;
+}
+.ticket_icon {
+    background: url("../img/purchaseicon.png")no-repeat;
+    background-size: contain;
+}
+.phone_icon {
+    background: url("../img/phoneicon.png")no-repeat;
+    background-size: contain;
+}
+.red_btn:hover + .green_btns {
+    opacity: 1;
+    /*transition: all 0.3s ease-in-out;*/
+    background-position: bottom center;
+    transform: translateY(60px);
+    /*  transform-origin: -30% 50% ;*/
+    /*transform: scaleY(0.3);*/
+    /*transform:rotate(720deg);*/
+}
