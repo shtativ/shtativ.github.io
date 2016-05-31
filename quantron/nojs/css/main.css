@@ -7,20 +7,34 @@ body {
     min-height: 100%;
 }
 main {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+  display: flex;
+      -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+  justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 h1 {
-    align-self: center;
-    text-align: center;
-    letter-spacing: 3px;
-    margin-bottom: 50px;
+      -ms-flex-item-align: center;
+  align-self: center;
+  text-align: center;
+  letter-spacing: 3px;
+  cursor:default;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 50px;
 }
 .red_btn {
+        -ms-flex-item-align: center;
     align-self: center;
     cursor: pointer;
     background: url("../img/glossy_red_button.svg") no-repeat;
@@ -29,17 +43,27 @@ h1 {
     height: 100px;
     outline: none;
     border-radius: 50%;
+        -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 .green_btns {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
+      display: -webkit-box;
+      display: -ms-flexbox;
+  display: flex;
+      -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+  justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+  align-items: center;
     opacity: 0;
     outline: none;
     padding-top: 80px;
+        -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+        -webkit-transform: scaleY(0.2);
     transform: scaleY(0.2);
 }
 .green_btns a {
@@ -64,11 +88,14 @@ h1 {
     background: url("../img/phoneicon.png")no-repeat;
     background-size: contain;
 }
-.red_btn:focus{
-  transform: scale(2);
-  transition-duration: 5s;
+.red_btn:focus {
+      -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+     -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 .red_btn:focus + .green_btns {
     opacity: 1;
+        -webkit-transform: translateY(60px) scaleY(1);
     transform: translateY(60px) scaleY(1);
 }
