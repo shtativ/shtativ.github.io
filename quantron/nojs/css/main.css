@@ -27,6 +27,8 @@ h1 {
     background-size: contain;
     width: 100px;
     height: 100px;
+    outline: none;
+    border-radius: 50%;
     transition: all 0.3s ease-in-out;
 }
 .green_btns {
@@ -36,7 +38,13 @@ h1 {
     align-items: center;
     transition: all 0.3s ease-in-out;
     opacity: 0;
+    outline: none;
     padding-top: 80px;
+    transform: scaleY(0.2);
+}
+.green_btns a {
+    text-decoration: none;
+    border-radius: 5px;
 }
 .icons {
     margin: 5px;
@@ -56,12 +64,11 @@ h1 {
     background: url("../img/phoneicon.png")no-repeat;
     background-size: contain;
 }
-.red_btn:hover + .green_btns {
+.red_btn:focus{
+  transform: scale(2);
+  transition-duration: 5s;
+}
+.red_btn:focus + .green_btns {
     opacity: 1;
-    /*transition: all 0.3s ease-in-out;*/
-    background-position: bottom center;
-    transform: translateY(60px);
-    /*  transform-origin: -30% 50% ;*/
-    /*transform: scaleY(0.3);*/
-    /*transform:rotate(720deg);*/
+    transform: translateY(60px) scaleY(1);
 }
