@@ -1,0 +1,85 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+    min-height: 100%;
+}
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-align: center;
+    letter-spacing: 3px;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 44px;
+}
+.red_btn {
+    align-self: center;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+.red_btn img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border:5px solid #999;
+    background: #999;
+}
+.red_btn img svg * {
+    transition: all 0.3s ease-in-out;
+
+}
+.red_btn:hover svg path {
+    transition: all 0.3s ease-in-out;
+    fill: cyan;
+    stroke: cyan;
+}
+.green_btns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    /*opacity: 0;*/
+    margin-top: 144px;
+
+}
+.green_btns a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+}
+.icons {
+    background: green;
+    margin: 10px;
+    outline: none;
+}
+.green_btns .icons img {
+    width: 54px;
+    height: 54px;
+    padding: 12px 12px 8px;
+}
+.green_btns a {
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ddd;
+    padding: 0;
+}
