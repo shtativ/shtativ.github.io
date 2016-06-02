@@ -50,12 +50,10 @@ h1 {
     transition: all 0.3s ease-in-out;
     box-sizing: border-box;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
 }
 .red_btn .svg:hover {
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-.red_btn svg * {
-    fill: #EB726F;
 }
 .red_btn:focus .svg {
     -webkit-transition: all 0.3s ease-in-out;
@@ -81,13 +79,13 @@ h1 {
     align-items: center;
     outline: none;
     margin-top: 144px;
-    opacity: 0;
     display: none;
 }
 .green_btns a {
     text-align: center;
     text-decoration: none;
     border-radius: 15px;
+    outline: none;
     width: 100px;
     height: 100px;
     margin: 15px;
@@ -126,6 +124,10 @@ h1 {
     background: #157E63;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+.icons:active svg * {
+    fill: #27a383;
+    stroke: #27a383;
+}
 .green_btns a {
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
@@ -141,9 +143,16 @@ h1 {
 
 @media all and (max-width: 340px) {
     .green_btns a {
-        width: 80px;
-        height: 80px;
+        width: 82px;
+        height: 82px;
         margin: 10px;
+    }
+    .green_btns .icons .svg {
+        width: 38px;
+        height: 38px;
+    }
+    .green_btns a {
+        letter-spacing: normal;
     }
     .red_btn img {
         width: 78px;
