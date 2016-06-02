@@ -31,7 +31,6 @@ h1 {
     outline: none;
     width: 96px;
     height: 96px;
-    box-sizing: border-box;
 }
 .red_btn .svg {
     width: inherit;
@@ -41,14 +40,16 @@ h1 {
     background: #999;
     transition: all 0.3s ease-in-out;
     box-sizing: border-box;
+      box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 }
 .red_btn svg * {
-    fill: #CD2126;
+    fill: #e76263;
 }
 .red_btn:focus .svg {
     transition: all 0.3s ease-in-out;
 }
 .red_btn:active .svg {
+  transition: all 0.3s;
     transform: scale(0.8);
 }
 .green_btns {
@@ -60,7 +61,7 @@ h1 {
     margin-top: 144px;
     opacity: 0;
     display: none;
-}
+  }
 .green_btns a {
     text-align: center;
     text-decoration: none;
@@ -76,6 +77,7 @@ h1 {
     background: #0DCB9A;
     margin: 10px;
     outline: none;
+    transition: all 0.3s ease-in-out;
 }
 .green_btns .icons .svg {
     width: 54px;
@@ -91,12 +93,18 @@ h1 {
     transition: all 0.3s ease-in-out;
     fill: #157E63;
 }
+.icons:hover {
+    transition: all 0.3s ease-in-out;
+    background: #157E63;
+}
 .green_btns a {
+    font-family: 'Roboto', sans-serif;
     font-size: 10px;
-    font-weight: bold;
+    font-weight: 400;
+    letter-spacing: 0.6px;
     text-decoration: none;
     text-transform: capitalize;
-    color: #ddd;
+    color: #fff;
     padding: 0;
 }
 
