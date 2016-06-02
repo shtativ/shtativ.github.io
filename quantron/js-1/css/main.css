@@ -22,29 +22,32 @@ h1 {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin-bottom: 44px;
+    margin-top: 44px;
+    margin-bottom: 54px;
 }
 .red_btn {
     align-self: center;
     cursor: pointer;
     outline: none;
-    transition: all 0.3s ease-in-out;
-}
-.red_btn img {
     width: 96px;
     height: 96px;
+}
+.red_btn .svg {
+    width: inherit;
+    height: inherit;
     border-radius: 50%;
-    border:5px solid #999;
+    border: 5px solid #999;
     background: #999;
-}
-.red_btn img svg * {
     transition: all 0.3s ease-in-out;
-
 }
-.red_btn:hover svg path {
+.red_btn svg * {
+    fill: #CD2126;
+}
+.red_btn:focus .svg {
     transition: all 0.3s ease-in-out;
-    fill: cyan;
-    stroke: cyan;
+}
+.red_btn:active .svg {
+    transform: scale(0.8);
 }
 .green_btns {
     display: flex;
@@ -52,28 +55,39 @@ h1 {
     justify-content: center;
     align-items: center;
     outline: none;
-    /*opacity: 0;*/
     margin-top: 144px;
-
+    opacity: 0;
+    display: none;
 }
 .green_btns a {
-    display: block;
     text-align: center;
     text-decoration: none;
     border-radius: 15px;
     width: 100px;
     height: 100px;
     margin: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 .icons {
-    background: green;
+    background: #0DCB9A;
     margin: 10px;
     outline: none;
 }
-.green_btns .icons img {
+.green_btns .icons .svg {
     width: 54px;
     height: 54px;
     padding: 12px 12px 8px;
+    transition: all 0.3s ease-in-out;
+}
+.icons svg * {
+    transition: all 0.3s ease-in-out;
+}
+.icons:hover svg * {
+    fill: black;
+    transition: all 0.3s ease-in-out;
+    fill: #157E63;
 }
 .green_btns a {
     font-size: 10px;
@@ -82,4 +96,19 @@ h1 {
     text-transform: capitalize;
     color: #ddd;
     padding: 0;
+}
+
+/*media queries for small display*/
+
+@media all and (max-width: 340px) {
+    .green_btns a {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+    }
+    .red_btn img {
+        width: 78px;
+        height: 78px;
+        border-top-width: 3px;
+    }
 }

@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
     <!-- import style -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- import animated css -->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- import font -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
@@ -15,18 +17,23 @@
 <body>
     <main>
         <h1>Press button</h1>
-        <div class="red_btn"><img class="svg" src="img/button.svg" alt="red button"></div>
-        <div class="green_btns">
-            <a href="" class="icons website_icon"><img src="img/web.svg" alt="website icon">Website</a>
-            <a href="" class="icons ticket_icon"><img src="img/ticket.svg" alt="purchase tickets">purchase tickets</a>
-            <a href="" class="icons phone_icon"><img src="img/phone.svg" alt="phone call">phone call</a>
+        <div id="red_button" class="red_btn"><img class="svg" src="img/button.svg" alt="red button"></div>
+        <!-- <div class="green_btns animated fadeInDownBig"> -->
+        <div id="green_btns" class="green_btns">
+            <a href="" class="icons website_icon"><img class="svg" src="img/web.svg" alt="website icon">Website</a>
+            <a href="" class="icons ticket_icon"><img class="svg" src="img/ticket.svg" alt="purchase tickets">purchase tickets</a>
+            <a href="" class="icons phone_icon"><img class="svg" src="img/phone.svg" alt="phone call">phone call</a>
         </div>
     </main>
 
     <!-- import jquery -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
     <!-- svg script -->
-    <!-- <script src="js/svg.js"></script> -->
+     <script src="js/svg.js"></script>
+
+    <!-- import my script -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
