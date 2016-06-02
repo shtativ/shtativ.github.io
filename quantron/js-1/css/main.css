@@ -40,7 +40,11 @@ h1 {
     background: #999;
     transition: all 0.3s ease-in-out;
     box-sizing: border-box;
-      box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      /*box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset;*/
+}
+.red_btn .svg:hover{
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .red_btn svg * {
     fill: #e76263;
@@ -78,6 +82,7 @@ h1 {
     margin: 10px;
     outline: none;
     transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .green_btns .icons .svg {
     width: 54px;
@@ -89,13 +94,12 @@ h1 {
     transition: all 0.3s ease-in-out;
 }
 .icons:hover svg * {
-    fill: black;
     transition: all 0.3s ease-in-out;
-    fill: #157E63;
 }
 .icons:hover {
     transition: all 0.3s ease-in-out;
     background: #157E63;
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .green_btns a {
     font-family: 'Roboto', sans-serif;
