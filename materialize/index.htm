@@ -18,21 +18,46 @@
 
 
 <body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper teal lighten-1 white-text">
+                <a href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <!-- side menu for mobile -->
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#">Oe</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                    <li><a class="#" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
 
-    <nav>
-        <div class=" teal lighten-1 white-text nav-wrapper">
-            <a href="" class="brand-logo center-align">Logo</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="">sass</a></li>
-                <li><a href="">sass <span class="new badge">4</span></a></li>
-                <li><a href="">sass</a></li>
-            </ul>
-        </div>
-    </nav>
+                    <form class="teal lighten-1">
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </ul>
+                <!-- end side menu for mobile -->
+            </div>
+        </nav>
+
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+    </div>
+
     <div class="container">
-        <br>
-        <br>
-        <br>
         <!-- cards -->
         <div class="row">
             <!-- cards-1 -->
@@ -51,7 +76,6 @@
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
                         <p>Here is some more information about this product that is only revealed once clicked on.</p>
-
                     </div>
                 </div>
             </div>
@@ -93,36 +117,34 @@
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
                         <p>Here is some more information about this product that is only revealed once clicked on.</p>
-
                     </div>
                 </div>
             </div>
         </div>
         <!-- end cards -->
 
-  <!-- fixed action buttons -->
+        <!-- fixed action buttons -->
 
-  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large red">
-      <i class="large material-icons">mode_edit</i>
-    </a>
-    <ul>
-      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-    </ul>
-  </div>
-  <!-- end fixed action buttons -->
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">phone</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons">mail</i></a></li>
+            </ul>
+        </div>
+        <!-- end fixed action buttons -->
 
         <blockquote>
-            This is an example quotation that uses the blockquote tag.
+            Dregur úr mér andann þína skál teyga svarta sanda.
         </blockquote>
         <blockquote>
-            This is an example quotation that uses the blockquote tag.
+            Svo langt sem augað nær fennir yfir engi.
         </blockquote>
         <blockquote>
-            This is an example quotation that uses the blockquote tag.
+            Svo langt sem augað nær fennir vel og lengi﻿.
         </blockquote>
     </div>
     <footer class="page-footer">
@@ -130,7 +152,7 @@
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    <p class="grey-text text-lighten-4">Agony in pained defeat A toast of sand so dark and sweet As far as the eye can reach Snow engulfs the fields As far as the eye can reach The snow will never yield﻿.</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Links</h5>
