@@ -100,74 +100,197 @@ nav ul li:hover a {
 .header_contacts .email {
     font-size: 24px;
 }
+
+/**/
+
+
+/*SLIDE BLOCK*/
+
 .block_slide {
     background: url('../img/article1_1.jpg') 50% 0 no-repeat;
     background-size: cover;
     width: 100%;
-    height: 775px;
+    height: auto;
 }
 .block_slide .left {
     display: flex;
     flex-flow: column wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
+    max-width: 350px;
+    margin: 80px 70px;
+}
+.left h1 {
+    font-family: 'PT Sans Pro', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    color: #FF8000;
+    margin: 0;
+    padding: 0 0 40px;
+}
+.left span {
+    font-family: 'PT Sans Pro', sans-serif;
+    font-size: 47px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    color: #FFF;
+    margin: 0;
+    padding: 0 0 25px;
+}
+.left input {
+    align-self: flex-end;
+    width: 150px;
+    height: 45px;
+    background: #FF7900;
+    outline: none;
+    border: none;
+    color: #FFF;
+    font-family: 'PT Sans Pro Narrow Bold', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
 }
 .block_slide .right {
     display: flex;
     flex-flow: column-reverse wrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: flex-end;
-    height: 70%;
+    height: 100%;
+    padding-top: 25px;
 }
-.block_slide .right .right_tel {
-    width: 80%;
+.right form {
+    max-width: 500px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
+.right .right_tel {
+    width: 427px;
+    height: 53px;
+    border: 2px solid #FF7900;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 24px;
+    /*telephone number*/
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    color: #444F66;
+    font-size: 24px;
+    text-align: left;
+    margin: 0 45px 20px;
+}
+.right .r_btn {
+    /*align-self: flex-end;*/
+    width: 214px;
+    height: 45px;
+    background: #FF7900;
+    outline: none;
+    border: none;
+    color: #FFF;
+    font-family: 'PT Sans Pro Narrow Bold', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 0 40px 0;
+}
+
+/*END SLIDE BLOCK*/
+
+
+/*OFFER BLOCK*/
+
 .block_offer {
     background: url('../img/article2.jpg') 50% 0 no-repeat;
     background-size: cover;
     width: 100%;
-    height: 557px;
+    min-height: 557px;
+    margin: 0;
 }
+.block_offer h2 {
+    font-family: 'Ubuntu Medium', sans-serif;
+    font-size: 49px;
+    font-weight: 500;
+    color: #231F20;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 45px 50px 50px 105px;
+}
+.block_offer ul {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: #000;
+    padding: 0 15px 15px 105px;
+    margin: 0;
+}
+.block_offer ul li {
+    list-style-type: none;
+    max-width: 480px;
+    margin-bottom: 50px;
+}
+.block_offer ul li::before {
+    content: url("../img/offer_check.png");
+    display: inline-block;
+}
+
+/*END OFFER BLOCK*/
+
+
+/*STEPS BLOCK*/
+
 .block_steps {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    background: rgb(97, 232, 212);
-    /*fix*/
+    align-items: baseline;
+    background: url('../img/steps_bg.jpg') no-repeat;
     background-size: cover;
-    width: 100%;
     height: auto;
+    padding: 85px 15px 60px;
 }
 .block_steps h5 {
     width: 100%;
     text-align: center;
+    font-family: 'PT Sans Pro Bold', sans-serif;
     font-size: 45px;
     color: #FFF;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 50px;
 }
-.block_steps .step_1 {
+.block_steps .step {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-}
-.block_steps .step_2 {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
+    width: 245px;
     height: auto;
+    margin: 0 30px 30px;
 }
-.block_steps .step_3 {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
-    height: auto;
+.block_steps img {
+    margin-bottom: 20px;
 }
+.block_steps p {
+    font-family: 'Ubuntu Medium', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/*END STEPS BLOCK*/
+
 
 /*TESTIMONIALS BLOCK*/
 
@@ -184,20 +307,19 @@ nav ul li:hover a {
     text-transform: uppercase;
     text-align: center;
     margin: 0;
-    padding: 0 0 32px;
+    padding: 0 16px 32px;
     border-bottom: 1px solid #000;
 }
-.testimonials .testimonials_items {}
 .testimonials_items .t_item {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: flex-start;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px 75px;
 }
 .t_item .t_item_logo {
     padding: 0;
-    margin: 25px 47px 25px 125px;
+    margin: 0 50px 0;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: all 0.3s ease 0s;
     outline: none;
@@ -206,10 +328,14 @@ nav ul li:hover a {
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     transition: all 0.3s ease 0s;
 }
+.t_item .review {
+    padding: 15px;
+    flex-basis: 50%;
+}
 .t_item .review span {
     color: #231F20;
     font-family: 'Ubuntu Bold', sans-serif;
-		font-weight: 700;
+    font-weight: 700;
     font-size: 33px;
     text-transform: capitalize;
     text-align: left;
@@ -221,8 +347,8 @@ nav ul li:hover a {
     font-family: 'Ubuntu', sans-serif;
     font-size: 23px;
     text-align: justify;
-		margin: 0;
-		padding: 20px 0;
+    margin: 0;
+    padding: 20px 0;
 }
 .testimonials form {
     display: flex;
@@ -272,7 +398,7 @@ nav ul li:hover a {
     text-transform: uppercase;
     text-align: center;
     margin: 0 0;
-    padding: 0 0 32px;
+    padding: 0 15px 32px;
 }
 .feedback p {
     color: #FFF;
@@ -280,8 +406,8 @@ nav ul li:hover a {
     font-size: 20px;
     text-align: center;
     margin: 0;
-    padding: 0 18px 0;
-    width: 100%;
+    padding: 0 350px 0 18px;
+    min-width: 130px;
 }
 .feedback form {
     margin: 0 auto;
@@ -289,11 +415,10 @@ nav ul li:hover a {
     padding: 0;
 }
 .feedback input {
-    width: 100%;
+    max-width: 515px;
+    width: 90%;
 }
 .feedback .f_tel {
-    max-width: 515px;
-    width: 515px;
     height: 58px;
     background: #FFF;
     border: 0px solid #FFF;
@@ -307,7 +432,8 @@ nav ul li:hover a {
     text-align: center;
 }
 .feedback .f_btn {
-    width: 278px;
+    max-width: 278px;
+    width: 70%;
     height: 58px;
     background: #FF7900;
     color: #FFF;
@@ -357,7 +483,7 @@ nav ul li:hover a {
 }
 .partner_item {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 0 38px 35px 0;
+    margin: 0 17px 38px;
     transition: all 0.3s ease 0s;
 }
 .partner_item:hover {

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- import fonts -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    </head>
+</head>
 
 <body>
     <div class="container">
@@ -39,21 +39,20 @@
             </div>
             <article class="block_slide">
                 <div class="left">
-                    <h1>Простота </br> <span>Минимум документов!</span></h1>
-                    <a href="#" role="button">Подробнее</a>
-                    <!-- <button type="button" onclick="openMenuModal();">Подробнее</button> -->
+                    <h1>Простота</h1> <span>Минимум документов!</span>
+                    <input type="button"  value="Подробнее">
                 </div>
                 <div class="right">
                     <label>
                         <form action="" method="POST">
-                            <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" autofocus maxlength="18" x-webkit-speech>
-                            <input type="submit" name="submit" value="Получить займ" onclick="openMenuModal();" maxlength></input>
+                            <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" autofocus maxlength="25" x-webkit-speech>
+                            <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
                         </form>
                     </label>
                 </div>
             </article>
             <article class="block_offer">
-                <h2>Вкусное предложение</h2>
+                <h2>Вкусное предложение!</h2>
                 <ul>
                     <li>Без открытия счета</li>
                     <li>Без залога</li>
@@ -62,9 +61,18 @@
             </article>
             <article class="block_steps">
                 <h5>3 шага для обеспечения заявки:</h5>
-                <p class="step_1"><img src="./img/step_1.png" alt="step 1">Подайте заявку on-line</p>
-                <p class="step_2"><img src="./img/step_2.png" alt="step 2">Узнайте решение в течении часа</p>
-                <p class="step_3"><img src="./img/step_3.png" alt="step 3">Верните деньги после торгов</p>
+                <div class="step">
+                    <img src="./img/step_1.png" alt="step 1">
+                    <p>Подайте заявку on-line</p>
+                </div>
+                <div class="step">
+                    <img src="./img/step_2.png" alt="step 2">
+                    <p>Узнайте решение в течении часа</p>
+                </div>
+                <div class="step">
+                    <img src="./img/step_3.png" alt="step 3">
+                    <p>Верните деньги после торгов</p>
+                </div>
             </article>
             <article class="testimonials">
                 <h6>Отзывы наших клиентов</h6>
@@ -72,7 +80,8 @@
                     <div class="t_item">
                         <a href="" class="t_item_logo"><img src="./img/testimonials_pic2.jpg" alt="author"></a>
                         <div class="review">
-                            <span>Виктор Иванович</span><br>
+                            <span>Виктор Иванович</span>
+                            <br>
                             <img src="./img/star_full.png" alt="rating">
                             <img src="./img/star_full.png" alt="rating">
                             <img src="./img/star_full.png" alt="rating">
@@ -88,11 +97,10 @@
             </article>
             <article class="feedback">
                 <h6>Заказать обратный звонок</h6>
-
                 <form action="" method="POST">
                     <p>Ваш телефон</p>
                     <label for=”tel”></label>
-                    <input class="f_tel" type="tel" name="phone" autofocus maxlength="18" x-webkit-speech>
+                    <input class="f_tel" type="tel" name="phone" autofocus maxlength="25" x-webkit-speech>
                     <br>
                     <input class="f_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();" maxlength></input>
                 </form>
@@ -109,7 +117,7 @@
             <footer>
                 <div class="footer_logo">
                     <h3>Тендер<span>-</span>партнер</h3>
-                    <p>микрофинансовая организациz</p>
+                    <p>микрофинансовая организация</p>
                 </div>
                 <div class="footer_contacts">
                     <a class="f_contacts_item tel" href="tel:+7495 256 80 27">Телефон: +7 (495)256-80-27</a>
