@@ -16,8 +16,8 @@ body {
     margin: auto;
 }
 
-
 /*NAV*/
+
 header {
     width: 100%;
     border: 1px solid #C8C8C8;
@@ -48,10 +48,12 @@ nav ul li {
     border: 2px solid #fff;
     padding: 5px;
     margin: 8px;
+    transition: all 0.3s ease 0s;
 }
 nav ul li:hover {
     background: #E9E9E9;
     border: 2px solid #D5D5D5;
+    transition: all 0.3s ease 0s;
 }
 nav ul li:last-child {
     margin-right: 0;
@@ -65,11 +67,12 @@ nav ul a {
 nav ul li:hover a {
     color: #057fb5;
 }
+
 /*END NAV*/
 
 
-
 /*CONTACT*/
+
 .contact {
     display: flex;
     flex-flow: row nowrap;
@@ -123,6 +126,7 @@ nav ul li:hover a {
 .header_contacts .email {
     font-size: 24px;
 }
+
 /*END CONTACT*/
 
 
@@ -176,6 +180,12 @@ nav ul li:hover a {
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.left input:hover {
+    color: #FF7900;
+    background: #FFF;
+    transition: all 0.3s ease 0s;
 }
 .block_slide .right {
     display: flex;
@@ -209,7 +219,6 @@ nav ul li:hover a {
     margin: 0 45px 20px;
 }
 .right .r_btn {
-    /*align-self: flex-end;*/
     width: 214px;
     height: 45px;
     background: #FF7900;
@@ -223,6 +232,12 @@ nav ul li:hover a {
     text-align: center;
     cursor: pointer;
     margin: 0 0 40px 0;
+    transition: all 0.3s ease 0s;
+}
+.right .r_btn:hover {
+    color: #FF7900;
+    background: #FFF;
+    transition: all 0.3s ease 0s;
 }
 
 /*END SLIDE BLOCK*/
@@ -515,3 +530,126 @@ nav ul li:hover a {
 }
 
 /*END OUR PARTNERS BLOCK*/
+
+
+/*FOOTER*/
+
+footer {
+    background: #444F66;
+    width: 100%;
+    height: 100%;
+    padding: 40px 60px;
+box-sizing: border-box;
+}
+footer .footer_logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+footer .footer_contacts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer .f_left h3 {
+    font-family: 'Ubuntu Medium', sans-serif;
+    font-size: 47px;
+    font-weight: 500;
+    color: #FFF;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+footer .f_left span {
+    color: #FF7900;
+}
+footer .f_left p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+footer .f_right p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 29px;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+    border-left: 3px solid #FF7900;
+    margin: 0;
+    padding: 0;
+}
+.footer_contacts a {
+    text-decoration: none;
+    outline: none;
+}
+.footer_contacts .tel {
+    font-family: 'Ubuntu Medium', sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+.footer_contacts .tel span {
+    font-family: 'Ubuntu', sans-serif;
+}
+.footer_contacts .f_c_item_1::before {
+    content: url("../img/footer/tel.png");
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+.footer_contacts .f_c_item_2::before {
+    content: url("../img/footer/telegram.png");
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+.footer_contacts .f_c_item_3::before {
+    content: url("../img/footer/whatsapp.png");
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+.footer_contacts .f_c_item_4::before {
+    content: url("../img/footer/viber.png");
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+/*-----------------------------------*/
+
+.f_left {
+    flex: 2 1 300px;
+}
+.f_right {
+    flex: 2 1 300px;
+}
+.footer_contacts .f_cont_left {
+    flex: 2 1 400px;
+    text-align: left;
+    padding-top: 40px;
+}
+.footer_contacts .f_cont_right {
+    flex: 2 1 400px;
+    text-align: left;
+    padding-top: 40px;
+}
+.f_cont_left .f_c_item_1 .tel{
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+/*-----------------------------------*/
+/*END FOOTER*/
