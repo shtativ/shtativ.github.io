@@ -84,7 +84,7 @@ nav ul li:hover a {
     box-sizing: border-box;
 }
 .contact .header_logo {
-    font-family: 'Ubuntu Medium', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 33px;
     font-weight: 500;
     text-align: left;
@@ -107,7 +107,7 @@ nav ul li:hover a {
 }
 .header_contacts {
     text-align: right;
-    font-family: 'Ubuntu Light', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
     font-weight: 300;
     margin: 0;
@@ -147,7 +147,7 @@ nav ul li:hover a {
     margin: 80px 70px;
 }
 .left h1 {
-    font-family: 'PT Sans Pro', sans-serif;
+    font-family: 'PTSansProBold', sans-serif;
     font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
@@ -157,7 +157,7 @@ nav ul li:hover a {
     padding: 0 0 40px;
 }
 .left span {
-    font-family: 'PT Sans Pro', sans-serif;
+    font-family: 'PTSansProBold', sans-serif;
     font-size: 47px;
     font-weight: bold;
     text-transform: uppercase;
@@ -174,7 +174,7 @@ nav ul li:hover a {
     outline: none;
     border: none;
     color: #FFF;
-    font-family: 'PT Sans Pro Narrow Bold', sans-serif;
+    font-family: 'PTSansProNarrowBold', sans-serif;
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
@@ -225,7 +225,7 @@ nav ul li:hover a {
     outline: none;
     border: none;
     color: #FFF;
-    font-family: 'PT Sans Pro Narrow Bold', sans-serif;
+    font-family: 'PTSansProNarrowBold', sans-serif;
     font-size: 26px;
     font-weight: bold;
     text-transform: uppercase;
@@ -253,7 +253,7 @@ nav ul li:hover a {
     margin: 0;
 }
 .block_offer h2 {
-    font-family: 'Ubuntu Medium', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 49px;
     font-weight: 500;
     color: #231F20;
@@ -297,7 +297,8 @@ nav ul li:hover a {
 .block_steps h5 {
     width: 100%;
     text-align: center;
-    font-family: 'PT Sans Pro Bold', sans-serif;
+    font-family: 'PTSansProBold', sans-serif;
+    font-weight: bold;
     font-size: 45px;
     color: #FFF;
     text-transform: uppercase;
@@ -317,7 +318,7 @@ nav ul li:hover a {
     margin-bottom: 20px;
 }
 .block_steps p {
-    font-family: 'Ubuntu Medium', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 28px;
     font-weight: 500;
     color: #FFF;
@@ -340,7 +341,8 @@ nav ul li:hover a {
     padding: 70px 0 35px;
 }
 .testimonials h6 {
-    font-family: 'PT Sans Pro Bold', sans-serif;
+    font-family: 'PTSansProBold', sans-serif;
+    font-weight: bold;
     font-size: 36px;
     text-transform: uppercase;
     text-align: center;
@@ -372,7 +374,7 @@ nav ul li:hover a {
 }
 .t_item .review span {
     color: #231F20;
-    font-family: 'Ubuntu Bold', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 33px;
     text-transform: capitalize;
@@ -383,6 +385,7 @@ nav ul li:hover a {
     max-width: 581px;
     height: auto;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
     font-size: 23px;
     text-align: justify;
     margin: 0;
@@ -398,7 +401,8 @@ nav ul li:hover a {
     height: 46px;
     background: #FF7900;
     color: #FFF;
-    font-family: 'PT Sans Pro Narrow Bold', sans-serif;
+    font-family: 'PTSansProNarrowBold', sans-serif;
+    font-weight: bold;
     font-size: 26px;
     text-transform: uppercase;
     text-align: center;
@@ -431,7 +435,8 @@ nav ul li:hover a {
 }
 .feedback h6 {
     color: #FFF;
-    font-family: 'PT Sans Pro Bold', sans-serif;
+    font-family: 'PTSansProBold', sans-serif;
+    font-weight: bold;
     font-size: 36px;
     text-transform: uppercase;
     text-align: center;
@@ -441,6 +446,7 @@ nav ul li:hover a {
 .feedback p {
     color: #FFF;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
     font-size: 20px;
     text-align: center;
     margin: 0;
@@ -475,7 +481,8 @@ nav ul li:hover a {
     height: 58px;
     background: #FF7900;
     color: #FFF;
-    font-family: 'PT Sans Pro Narrow Bold', sans-serif;
+    font-family: 'PTSansProNarrowBold', sans-serif;
+    font-weight: bold;
     font-size: 32px;
     text-transform: uppercase;
     text-align: center;
@@ -506,7 +513,8 @@ nav ul li:hover a {
 }
 .our_partners h4 {
     color: #000;
-    font-family: 'PT Sans Pro Bold', sans-serif;
+    font-family: 'PTSansProBold', sans-serif;
+    font-weight: bold;
     font-size: 46px;
     text-transform: uppercase;
     text-align: center;
@@ -556,7 +564,7 @@ footer .footer_contacts {
 
 
 footer .f_left h3 {
-    font-family: 'Ubuntu Medium', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 47px;
     font-weight: 500;
     color: #FFF;
@@ -592,7 +600,7 @@ footer .f_right p {
     outline: none;
 }
 .footer_contacts .tel {
-    font-family: 'Ubuntu Medium', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 27px;
     font-weight: 500;
     color: #FFF;
@@ -603,6 +611,7 @@ footer .f_right p {
 }
 .footer_contacts .tel span {
     font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
 }
 .footer_contacts .f_c_item_1::before {
     content: url("../img/footer/tel.png");

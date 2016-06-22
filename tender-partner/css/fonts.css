@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'PTSansPro';
+	src: url('../fonts/PTSansPro/PTSansPro.otf');
+	src: url('../fonts//PTSansPro/PTSansPro.otf') format('opentype');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'PTSansProBold';
+	src: url('../fonts/PTSansPro/PTSansProBold.otf');
+	src: url('../fonts//PTSansPro/PTSansProBold.otf') format('opentype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PTSansProNarrowBold';
+	src: url('../fonts/PTSansPro/PTSansProNarrowBold.otf');
+	src: url('../fonts//PTSansPro/PTSansProNarrowBold.otf') format('opentype');
+	font-style: normal;
+}
