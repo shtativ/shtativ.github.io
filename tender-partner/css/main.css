@@ -146,10 +146,10 @@ nav ul li:hover a {
     max-width: 350px;
     margin: 80px 70px;
 }
-.left h1 {
+.left {
     font-family: 'PTSansProBold', sans-serif;
     font-size: 50px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     text-transform: uppercase;
     text-align: left;
     color: #FF8000;
@@ -159,7 +159,7 @@ nav ul li:hover a {
 .left span {
     font-family: 'PTSansProBold', sans-serif;
     font-size: 47px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     text-transform: uppercase;
     text-align: left;
     color: #FFF;
@@ -176,10 +176,11 @@ nav ul li:hover a {
     color: #FFF;
     font-family: 'PTSansProNarrowBold', sans-serif;
     font-size: 25px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
+    border: 1px solid #FF7900;
     transition: all 0.3s ease 0s;
 }
 .left input:hover {
@@ -227,10 +228,11 @@ nav ul li:hover a {
     color: #FFF;
     font-family: 'PTSansProNarrowBold', sans-serif;
     font-size: 26px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
+    border: 1px solid #FF7900;
     margin: 0 0 40px 0;
     transition: all 0.3s ease 0s;
 }
@@ -298,7 +300,7 @@ nav ul li:hover a {
     width: 100%;
     text-align: center;
     font-family: 'PTSansProBold', sans-serif;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 45px;
     color: #FFF;
     text-transform: uppercase;
@@ -342,7 +344,7 @@ nav ul li:hover a {
 }
 .testimonials h6 {
     font-family: 'PTSansProBold', sans-serif;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 36px;
     text-transform: uppercase;
     text-align: center;
@@ -402,7 +404,7 @@ nav ul li:hover a {
     background: #FF7900;
     color: #FFF;
     font-family: 'PTSansProNarrowBold', sans-serif;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 26px;
     text-transform: uppercase;
     text-align: center;
@@ -410,7 +412,7 @@ nav ul li:hover a {
     border: none;
     cursor: pointer;
     box-sizing: border-box;
-    border: 2px solid #FF7900;
+    border: 1px solid #FF7900;
     margin: 20px 160px 20px 20px;
     transition: all 0.3s ease 0s;
 }
@@ -418,7 +420,6 @@ nav ul li:hover a {
     color: #FF7900;
     background: #FFF;
     transition: all 0.3s ease 0s;
-    border: 2px solid #444F66;
 }
 
 /*END TESTIMONIALS BLOCK*/
@@ -436,7 +437,7 @@ nav ul li:hover a {
 .feedback h6 {
     color: #FFF;
     font-family: 'PTSansProBold', sans-serif;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 36px;
     text-transform: uppercase;
     text-align: center;
@@ -482,7 +483,7 @@ nav ul li:hover a {
     background: #FF7900;
     color: #FFF;
     font-family: 'PTSansProNarrowBold', sans-serif;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 32px;
     text-transform: uppercase;
     text-align: center;
@@ -514,7 +515,7 @@ nav ul li:hover a {
 .our_partners h4 {
     color: #000;
     font-family: 'PTSansProBold', sans-serif;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 46px;
     text-transform: uppercase;
     text-align: center;
@@ -546,8 +547,8 @@ footer {
     background: #444F66;
     width: 100%;
     height: 100%;
-    padding: 40px 60px;
-box-sizing: border-box;
+    padding: 50px 60px;
+    box-sizing: border-box;
 }
 footer .footer_logo {
     display: flex;
@@ -560,9 +561,8 @@ footer .footer_contacts {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    padding-left: 40px;
 }
-
-
 footer .f_left h3 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 47px;
@@ -571,7 +571,7 @@ footer .f_left h3 {
     text-transform: capitalize;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 40px;
 }
 footer .f_left span {
     color: #FF7900;
@@ -590,10 +590,10 @@ footer .f_right p {
     font-size: 29px;
     font-weight: 400;
     color: #FFF;
-    text-align: center;
+    text-align: left;
     border-left: 3px solid #FF7900;
     margin: 0;
-    padding: 0;
+    padding: 0 30px 0;
 }
 .footer_contacts a {
     text-decoration: none;
@@ -642,23 +642,225 @@ footer .f_right p {
 
 .f_left {
     flex: 2 1 300px;
+    padding: 0 20px 20px;
 }
 .f_right {
     flex: 2 1 300px;
+    padding: 0 20px 20px;
 }
 .footer_contacts .f_cont_left {
-    flex: 2 1 400px;
+    flex: 2 1 350px;
     text-align: left;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 .footer_contacts .f_cont_right {
-    flex: 2 1 400px;
+    flex: 2 1 350px;
     text-align: left;
-    padding-top: 40px;
+    padding-top: 20px;
 }
-.f_cont_left .f_c_item_1 .tel{
-  margin-bottom: 30px;
-  padding-bottom: 30px;
+.f_cont_left .f_c_item_1 .tel {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
+
 /*-----------------------------------*/
+
+
 /*END FOOTER*/
+
+
+/* PASSWORD FORM*/
+
+.pass {
+    /* temp-temp-temp*/
+    margin-top: 30px;
+    /* temp-temp-temp*/
+    background: #444F66;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+}
+.pass a {
+    outline: none;
+    text-align: right;
+}
+.pass form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'PTSansProBold', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    padding: 45px 70px 20px;
+}
+.pass form label {
+    margin: 0;
+    padding: 0 0 20px;
+}
+.pass form .pass_area {
+    max-width: 435px;
+    width: 80%;
+    height: 58px;
+    border: none;
+    cursor: text;
+    padding: 0 30px 0;
+    margin: 0 0 30px;
+    /*password text*/
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: #58595B;
+}
+.pass .pass_confirm {
+    font-family: 'PTSansProNarrowBold', sans-serif;
+    font-size: 27px;
+    text-transform: uppercase;
+    width: 180px;
+    height: 50px;
+    background: #FF7900;
+    border: none;
+    box-sizing: border-box;
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease 0s;
+}
+.pass .pass_confirm:hover {
+    background: #FFF;
+    color: #FF7900;
+    transition: all 0.3s ease 0s;
+}
+.pass .pass_cancel {
+    font-family: 'PTSansProNarrowBold', sans-serif;
+    font-size: 27px;
+    text-transform: uppercase;
+    width: 180px;
+    height: 50px;
+    background: #444F66;
+    border: 1px solid #FFF;
+    box-sizing: border-box;
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+.pass .pass_cancel:hover {
+    background: #FFF;
+    color: #444F66;
+    transition: all 0.3s ease 0s;
+}
+
+/* GIVE FEEDBACK FORM*/
+
+.give_feedback {
+    /* temp-temp-temp*/
+    margin-top: 30px;
+    /* temp-temp-temp*/
+    background: #444F66;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.give_feedback form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'PTSansProBold', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    padding: 45px 40px 20px;
+    box-sizing: border-box;
+}
+.give_feedback form label {
+    margin: 0;
+    padding: 0;
+}
+.give_feedback form p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+    padding: 10px 0;
+    margin: 0 85px;
+    align-self: flex-start;
+}
+.give_feedback form .name_area {
+    max-width: 754px;
+    width: 80%;
+    height: 58px;
+    border: none;
+    cursor: text;
+    padding: 0 30px;
+    margin: 0 0 30px;
+    /*password text*/
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: #58595B;
+    box-sizing: border-box;
+}
+.give_feedback form textarea {
+    max-width: 754px;
+    width: 80%;
+    height: 170px;
+    border: none;
+    cursor: text;
+    padding: 30px 30px;
+    /*feedback text*/
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    	resize: none;
+    color: #58595B;
+    box-sizing: border-box;
+    margin: 0 0 20px 0;
+}
+.give_feedback .give_feedback_btn {
+    display: inline-block;
+    vertical-align: middle;
+}
+.give_feedback .upload_logo, .give_feedback .submit_feedback {
+    font-family: 'PTSansProNarrowBold', sans-serif;
+    font-size: 27px;
+    text-transform: uppercase;
+    height: 50px;
+    background: #FF7900;
+    border: none;
+    box-sizing: border-box;
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px;
+    vertical-align: bottom;
+    transition: all 0.3s ease 0s;
+}
+.give_feedback .upload_logo {
+    width: 265px;
+}
+.give_feedback .upload_logo:hover {
+    background: #FFF;
+    color: #FF7900;
+    transition: all 0.3s ease 0s;
+}
+.give_feedback .submit_feedback {
+    width: 235px;
+}
+.give_feedback .submit_feedback:hover {
+    background: #FFF;
+    color: #FF7900;
+    transition: all 0.3s ease 0s;
+}
+
+/* END PASSWORD FORM*/

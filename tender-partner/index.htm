@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <!-- import fonts -->
+    <!-- import fonts <--></-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 
@@ -26,7 +26,6 @@
                 </ul>
             </nav>
         </header>
-
 
         <div class="contact">
             <div class="header_logo"><span>МФО </span>Тендер-Партнер
@@ -138,6 +137,33 @@
                 </div>
             </div>
         </footer>
+
+              <!--password entry form -->
+                    <div class="pass">
+                      <!-- <a class="close"><img src="./img/menu_close.png" alt="close"></a> -->
+                        <form action="">
+                          <label for="id_pass_area">Введите пароль</label>
+                          <input id="id_pass_area" class="pass_area" type="password" name="password" autofocus required>
+                          <input class="pass_confirm" type="submit" name="submit" value="Подтвердить" onclick="openMenuModal();"></input>
+                          <input class="pass_cancel" type="submit" name="submit" value="Отмена" onclick="openMenuModal();"></input>
+                        </form>
+                  </div>
+              <!-- end password entry form -->
+              <div class="give_feedback">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label for="">Оставить отзыв</label>
+                    <p>Ваше имя</p>
+                    <input class="name_area" type="text" name="username" autofocus required="required" placeholder="">
+                    <p>Ваш отзыв</p>
+                    <textarea name="messagecontact" placeholder="" maxlength="250"></textarea>
+                    <div class="give_feedback_btn">
+                        <!--  <input class="upload_logo" type="file" name="photo" multiple accept="image/*" value="Загрузить логотип"> -->
+                        <input class="upload_logo" type="submit" name="photo" multiple accept="image/*" value="Загрузить логотип">
+                        <input class="submit_feedback" class="send" type="submit" name="send" value="Оставить отзыв">
+                  </div>
+                </form>
+              </div>
+
     </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
