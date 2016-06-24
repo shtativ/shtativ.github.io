@@ -1,0 +1,61 @@
+/*END OBTAINING BLOCK*/
+
+.obtaining {
+    padding: 45px 100px 80px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    color: #000;
+    font-weight: normal;
+}
+.obtaining p {
+    font-family: 'PTSansProDemi', sans-serif;
+    font-size: 40px;
+    color: #000;
+    text-align: left;
+    margin: 0;
+    padding: 0 15px 20px 0px;
+}
+.obtaining ol {
+    padding-left: 0px;
+}
+.obtaining ol li {
+    list-style-type: none;
+}
+.obtaining ol li::before {
+    content: "\25A0";
+    color: #444F66;
+    padding-right: 15px;
+}
+.obtaining li {
+    padding-bottom: 25px;
+}
+.obtaining ul li {
+    list-style-type: none;
+    padding: 10px 0;
+}
+.obtaining ul li::before {
+    content: "\2022";
+    color: #FF7900;
+    padding: 5px 10px 0 0;
+}
+.obtaining ul li .no_marker::before {
+    content: "";
+    color: rgba(255, 255, 255, 0);
+    text-align: left;
+}
+.obtaining .obt_col {
+    width: 70%;
+}
+.obtaining .table_btn {
+    position: relative;
+    left: 85%;
+    bottom: 30px;
+    width: auto;
+    box-sizing: border-box;
+}
+.obtaining span {
+    font-weight: 500;
+}
+
+/*END OBTAINING BLOCK*/
