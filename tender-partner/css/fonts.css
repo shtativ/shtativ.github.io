@@ -17,3 +17,9 @@
 	src: url('../fonts/PTSansPro/PT Sans Pro Narrow Bold.otf') format('opentype');
 	font-style: normal;
 }
+@font-face {
+	font-family: 'PTSansProDemi';
+	src: url('../fonts/PTSansPro/PT Sans Pro Demi.otf');
+	src: url('../fonts/PTSansPro/PT Sans Pro Demi.otf') format('opentype');
+	font-style: normal;
+}

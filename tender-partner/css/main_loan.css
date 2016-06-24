@@ -1,0 +1,79 @@
+.nav_loan {
+    align-self: flex-start;
+    background: #F2F2F2;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #C8C8C8;
+    border-top: 1px solid #C8C8C8;
+}
+.nav_loan ul::after {
+    content: "";
+    background: #F2F2F2;
+}
+.nav_loan ul li {
+    border: none;
+    outline: none;
+    transition: all 0.3s ease 0s;
+}
+.nav_loan ul li:hover {
+    border: 1px solid #C8C8C8;
+    background: #E9E9E9;
+    transition: all 0.3s ease 0s;
+}
+
+
+/*OUR PROPOSALS BLOCK*/
+.our_proposals{
+  margin-bottom: 85px;
+}
+table caption {
+    font-family: 'PTSansProDemi', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    padding: 80px 10px 50px;
+    box-sizing: border-box;
+}
+table {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000;
+}
+table .table_title{
+  font-weight: 500;
+}
+table .table_title_top{
+  color:#FFF;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+.our_proposals .table_btn {
+    font-family: 'PTSansProNarrowBold', sans-serif;
+    font-size: 24px;
+    background: #FF7900;
+    outline: none;
+    border: none;
+    color: #FFF;
+    width: 110px;
+    height: 37px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #FF7900;
+    box-sizing: border-box;
+    padding: 6px 20px;
+    transition: all 0.3s ease 0s;
+}
+.our_proposals .table_btn:hover {
+    background: #FFF;
+    color: #FF7900;
+    transition: all 0.3s ease 0s;
+}
+.our_proposals table span {
+    color: #FF7900;
+    font-weight: 700;
+}
+/* END OUR PROPOSALS BLOCK*/

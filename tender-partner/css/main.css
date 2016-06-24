@@ -20,8 +20,7 @@ body {
 
 header {
     width: 100%;
-    border: 1px solid #C8C8C8;
-    border-bottom: none;
+    border-bottom: 1px solid #C8C8C8;
     box-sizing: border-box;
     background: #FFF;
     height: 45px;
@@ -45,14 +44,14 @@ nav ul li {
     list-style-type: none;
     text-align: center;
     cursor: pointer;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     padding: 5px;
     margin: 8px;
     transition: all 0.3s ease 0s;
 }
 nav ul li:hover {
     background: #E9E9E9;
-    border: 2px solid #D5D5D5;
+    border: 1px solid #D5D5D5;
     transition: all 0.3s ease 0s;
 }
 nav ul li:last-child {
@@ -80,7 +79,7 @@ nav ul li:hover a {
     background: #F2F2F2;
     width: 100%;
     height: 80px;
-    border: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
     box-sizing: border-box;
 }
 .contact .header_logo {
