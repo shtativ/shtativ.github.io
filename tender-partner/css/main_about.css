@@ -65,7 +65,6 @@
         transition: all 0.3s ease 0s;
     }
     /*END OTHER STEPS BLOCK*/
-    
     /*ABOUT HISTORY*/
 
     .about_name {
@@ -104,7 +103,6 @@
         padding: 0 0 40px;
     }
     /*END ABOUT HISTORY*/
-
     /*BLOCK STEPS OTHER*/
 
     .block_steps_other .step {
@@ -121,8 +119,6 @@
         margin: 40px 0 0;
     }
     /*END BLOCK STEPS OTHER*/
-
-
     /*ABOUT HISTORY*/
 
     .about_history {
@@ -184,8 +180,6 @@
         margin-right: 10%;
     }
     /*END ABOUT HISTORY*/
-
-
     /*INFLUENCER BLOCK*/
 
     .influencer {
@@ -244,6 +238,10 @@
         flex-flow: row nowrap;
         justify-content: flex-end;
         align-items: center;
+        border: none;
+    }
+    .influencer .table_btn {
+        border: none;
     }
     .influencer .infl_btn a {
         align-self: center;
@@ -253,8 +251,6 @@
         margin-right: 10%;
     }
     /*END INFLUENCER BLOCK*/
-
-
     /*DOCUMENTS*/
 
     .documents {

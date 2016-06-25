@@ -1,0 +1,75 @@
+/*BROKERS AND AGENTS*/
+
+.brokers {
+    background: #FFF;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 45px 45px 20px 115px;
+}
+.brokers h4 {
+    font-family: 'PTSansProDemi', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    color: #000;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 30px;
+}
+.brokers .brokers_title {
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 10px;
+}
+.brokers .brokers_title h4 {
+    text-transform: none;
+    color: #231F20;
+    margin: 0;
+    padding: 0;
+}
+.brokers .brokers_title p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.brokers a {
+    color: #057FB5;
+    padding: 0 25px;
+}
+.brokers ol {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 0px;
+    line-height: 1.5;
+}
+.brokers ol li {
+    font-weight: normal;
+    list-style-type: none;
+}
+.brokers ol li::before {
+    content: "\25A0";
+    color: #444F66;
+    padding-right: 15px;
+}
+.brokers ol li span {
+    color: #FF7900;
+    font-weight: bold;
+}
+.brokers li {
+    padding-bottom: 25px;
+}
+.brokers ul li {
+    list-style-type: none;
+    padding: 10px 0;
+}
+.brokers ul li::before {
+    content: "\2022";
+    color: #FF7900;
+    padding: 5px 10px 0 0;
+}
+
+/*END BROKERS AND AGENTS*/
