@@ -38,6 +38,7 @@
 .brokers a {
     color: #057FB5;
     padding: 0 25px;
+    outline: none;
 }
 .brokers ol {
     font-family: 'Ubuntu', sans-serif;

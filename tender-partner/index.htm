@@ -20,8 +20,8 @@
                 <ul>
                     <li><a href="./loan.htm">Займы</a></li>
                     <li><a href="./about.htm">О компании</a></li>
-                    <li><a href="#">Партнерская программа</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="./partners.htm">Партнерская программа</a></li>
+                    <li><a href="./contacts">Контакты</a></li>
                     <li><a href="./brokers.htm">Брокерам и агентам</a></li>
                 </ul>
             </nav>
@@ -96,15 +96,15 @@
             </form>
         </article>
         <article class="feedback">
-    <h6>Заказать обратный звонок</h6>
-    <form action="" method="POST">
-        <p>Ваш телефон</p>
-        <label for=”tel”></label>
-        <input class="f_tel" type="tel" name="phone" maxlength="25" x-webkit-speech>
-        <br>
-        <input class="f_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();" maxlength></input>
-    </form>
-</article>
+            <h6>Заказать обратный звонок</h6>
+            <form action="" method="POST">
+                <p>Ваш телефон</p>
+                <label for=”tel”></label>
+                <input class="f_tel" type="tel" name="phone" maxlength="25" x-webkit-speech>
+                <br>
+                <input class="f_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();" maxlength></input>
+            </form>
+        </article>
         <article class="our_partners">
             <h4>наши партнеры</h4>
             <div class="our_partners_items">
@@ -138,37 +138,37 @@
             </div>
         </footer>
 
-              <!--password entry form -->
-                    <div class="pass">
-                      <!-- <a class="close"><img src="./img/menu_close.png" alt="close"></a> -->
-                        <form action="">
-                          <label for="id_pass_area">Введите пароль</label>
-                          <input id="id_pass_area" class="pass_area" type="password" name="password" required>
-                          <input class="pass_confirm" type="submit" name="submit" value="Подтвердить" onclick="openMenuModal();"></input>
-                          <input class="pass_cancel" type="submit" name="submit" value="Отмена" onclick="openMenuModal();"></input>
-                        </form>
-                  </div>
-              <!-- end password entry form -->
-              <div class="give_feedback">
-                <form action="" method="POST" enctype="multipart/form-data">
-                    <label for="">Оставить отзыв</label>
-                    <p>Ваше имя</p>
-                    <input class="name_area" type="text" name="username" required="required" placeholder="">
-                    <p>Ваш отзыв</p>
-                    <textarea name="messagecontact" placeholder="" maxlength="250"></textarea>
-                    <div class="give_feedback_btn">
-                        <!--  <input class="upload_logo" type="file" name="photo" multiple accept="image/*" value="Загрузить логотип"> -->
-                        <input class="upload_logo" type="submit" name="photo" multiple accept="image/*" value="Загрузить логотип">
-                        <input class="submit_feedback" class="send" type="submit" name="send" value="Оставить отзыв">
-                  </div>
-                </form>
-              </div>
+        <!--password entry form -->
+        <div class="pass">
+            <!-- <a class="close"><img src="./img/menu_close.png" alt="close"></a> -->
+            <form action="">
+                <label for="id_pass_area">Введите пароль</label>
+                <input id="id_pass_area" class="pass_area" type="password" name="password" required>
+                <input class="pass_confirm" type="submit" name="submit" value="Подтвердить" onclick="openMenuModal();"></input>
+                <input class="pass_cancel" type="submit" name="submit" value="Отмена" onclick="openMenuModal();"></input>
+            </form>
+        </div>
+        <!-- end password entry form -->
+        <div class="give_feedback">
+            <form action="" method="POST" enctype="multipart/form-data">
+                <label for="">Оставить отзыв</label>
+                <p>Ваше имя</p>
+                <input class="name_area" type="text" name="username" required="required" placeholder="">
+                <p>Ваш отзыв</p>
+                <textarea name="messagecontact" placeholder="" maxlength="250"></textarea>
+                <div class="give_feedback_btn">
+                    <!--  <input class="upload_logo" type="file" name="photo" multiple accept="image/*" value="Загрузить логотип"> -->
+                    <input class="upload_logo" type="submit" name="photo" multiple accept="image/*" value="Загрузить логотип">
+                    <input class="submit_feedback" class="send" type="submit" name="send" value="Оставить отзыв">
+                </div>
+            </form>
+        </div>
 
-</section>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-<!--	my script-->
-<script src="js/scripts.js"></script>
+    </section>
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!--	my script-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

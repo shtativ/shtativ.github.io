@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="shortcut icon" href="#" type="image/png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main_loan.css">
+    <link rel="stylesheet" href="css/main_loan2.css">
+    <link rel="stylesheet" href="css/main_loan3.css">
+    <link rel="stylesheet" href="css/main_about.css">
+    <link rel="stylesheet" href="css/main_brokers.css">
+    <link rel="stylesheet" href="css/main_partners.css">
+    <link rel="stylesheet" href="css/main_contacts.css">
+
+    <!-- import fonts <-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./loan.htm">Займы</a></li>
+                    <li><a href="./about.htm">О компании</a></li>
+                    <li><a href="./partners.htm">Партнерская программа</a></li>
+                    <li><a href="./contacts">Контакты</a></li>
+                    <li><a href="./brokers.htm">Брокерам и агентам</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contact">
+            <div class="header_logo"><span>МФО </span>Тендер-Партнер
+                <p>микрофинансовая организация</p>
+            </div>
+            <div class="header_contacts">
+                <a class="tel" href="tel:+7495 256 80 27">8(495)256-80-27</a>
+                </br>
+                <a class="email" href="mailto:1@tender-partner.com">1@tender-partner.com</a>
+            </div>
+        </div>
+        <article class="block_slide">
+            <div class="left">
+                <h1>Простота</h1> <span>Минимум документов!</span>
+                <input type="button" value="Подробнее">
+            </div>
+            <div class="right">
+                <label>
+                    <form action="" method="POST">
+                        <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
+                        <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
+                    </form>
+                </label>
+            </div>
+        </article>
+        <article class="contact_main">
+            <h3><span>МФО</span> Тендер-Партнер</h3>
+            <p>микрофинансовая организация</p>
+        </article>
+
+        <article class="form_of_feedback">
+            <form action="" method="POST" enctype="multipart/form-data">
+                <label for="">Форма обратной связи</label>
+                <p>Ваше имя</p>
+                <input class="name_area" type="text" name="username" required="required" placeholder="">
+                <p>Ваше сообщение</p>
+                <textarea name="messagecontact" placeholder="" maxlength="999"></textarea>
+                <div class="form_of_feedback_btn">
+                    <input class="submit_feedback" class="send" type="submit" name="send" value="Отправить">
+                </div>
+            </form>
+        </article>
+        <article class="feedback_map">
+            <p>По всем вопросам можно обращаться по адресу:</br>
+                <address>
+                г.Москва, Руновский переулок, дом 6, строение 2
+            </address>
+            </p>
+        </article>
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.901160490381!2d37.6324335510
+
+        6255!3d55.74284630013247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afb822e442b%3A0xbb53a4cca04740
+
+        d5!2z0KDRg9C90L7QstGB0LrQuNC5INC_0LXRgC4sIDbRgTIsINCc0L7RgdC60LLQsCwgMTE1MTg0!5e0!3m2!1sru!2sru!4v1466883970199" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <footer>
+            <div class="footer_logo">
+                <div class="f_left">
+                    <h3>Тендер<span>-</span>партнер</h3>
+                    <p>микрофинансовая организация</p>
+                </div>
+                <div class="f_right">
+                    <p>Предоставление займов и микрозаемов юридическим лицам</p>
+                </div>
+            </div>
+            <div class="footer_contacts">
+                <div class="f_cont_left">
+                    <a class="f_c_item_1 tel" href="tel:+7495 256 80 27">Телефон: <span>+7 (495)256-80-27</span></a>
+                    <br>
+                    <a class="f_c_item_2 tel" href="tel:+7495 256 80 27">Telegram: <span>+7 (926)828-84-22</span></a>
+                </div>
+                <div class="f_cont_right">
+                    <a class="f_c_item_3 tel" href="tel:+7495 256 80 27">WhatsApp: <span>+7 (926)828-84-22</span></a>
+                    <br>
+                    <a class="f_c_item_4 tel" href="tel:+7495 256 80 27">Viber: <span>+7 (926)828-84-22</span></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- jQuery  -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!--	my script-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
