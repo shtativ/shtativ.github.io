@@ -1,0 +1,302 @@
+    /*OTHER STEPS BLOCK*/
+
+    .block_steps_other {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: baseline;
+        background: #444F66;
+        height: auto;
+        padding: 85px 15px 60px;
+    }
+    .block_steps_other h5 {
+        width: 100%;
+        text-align: center;
+        font-family: 'PTSansProBold', sans-serif;
+        font-size: 45px;
+        color: #FFF;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0 0 50px;
+    }
+    .block_steps_other .step {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 245px;
+        height: auto;
+        margin: 0 30px 30px;
+    }
+    .block_steps_other img {
+        margin-bottom: 20px;
+    }
+    .block_steps_other p {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        color: #FFF;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .block_steps_other .step_btn {
+        align-self: center;
+        width: 100%;
+    }
+    .block_steps_other input {
+        width: 150px;
+        height: 45px;
+        background: #FF7900;
+        outline: none;
+        border: none;
+        color: #FFF;
+        font-family: 'PTSansProNarrowBold', sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    .block_steps_other input:hover {
+        color: #FF7900;
+        background: #FFF;
+        transition: all 0.3s ease 0s;
+    }
+    /*END OTHER STEPS BLOCK*/
+    
+    /*ABOUT HISTORY*/
+
+    .about_name {
+        background: url('../img/about/about_logo.png') 10% 50% no-repeat;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 95px 20px 20px;
+        width: 100%;
+    }
+    .about_name h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        font-size: 50px;
+        color: #231F20;
+        text-align: center;
+        margin: 0;
+    }
+    .about_name_text {
+        text-align: center;
+    }
+    .about_name span {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 33px;
+        color: #057FB5;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .about_name p {
+        max-width: 855px;
+        width: 90%;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 25px;
+        color: #000;
+        text-align: justify;
+        margin: 30px auto;
+        padding: 0 0 40px;
+    }
+    /*END ABOUT HISTORY*/
+
+    /*BLOCK STEPS OTHER*/
+
+    .block_steps_other .step {
+        margin: 0;
+    }
+    .block_steps_other .step_arrow {
+        width: 87px;
+        padding: 0;
+        margin: 0;
+    }
+    .block_steps_other .step_btn {
+        display: inline-block;
+        text-align: center;
+        margin: 40px 0 0;
+    }
+    /*END BLOCK STEPS OTHER*/
+
+
+    /*ABOUT HISTORY*/
+
+    .about_history {
+        background: url('../img/about/about_logo.png') 10% 50% no-repeat;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 85px 20px 45px;
+        width: 100%;
+    }
+    .about_history h3 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        font-size: 39px;
+        color: #000;
+        text-align: center;
+        margin: 0 0 30px;
+    }
+    .about_history p {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: normal;
+        font-size: 25px;
+        color: #000;
+        width: 90%;
+        text-align: justify;
+        margin: 0 auto 30px;
+    }
+    .about_history ul {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: normal;
+        font-size: 30px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .about_history ul li {
+        margin-bottom: 20px;
+        list-style-type: none;
+    }
+    .about_history ul li::before {
+        content: "\2022";
+        color: #FF7900;
+        padding-right: 15px;
+    }
+    .about_history a {
+        text-decoration: none;
+        outline: none;
+    }
+    .about_history .about_btn {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .about_history .about_btn a {
+        align-self: center;
+        text-decoration: none;
+        outline: none;
+        width: auto;
+        margin-right: 10%;
+    }
+    /*END ABOUT HISTORY*/
+
+
+    /*INFLUENCER BLOCK*/
+
+    .influencer {
+        background: #444F66;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 55px 0 45px;
+    }
+    .influencer .infl_title {
+        text-align: center;
+        color: #FFF;
+        margin: 0;
+        padding: 0;
+    }
+    .influencer .infl_title h2 {
+        font-family: 'PTSansProBold', sans-serif;
+        text-transform: uppercase;
+        font-size: 41px;
+        font-weight: normal;
+        margin: 0;
+    }
+    .influencer .infl_title p {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: normal;
+        font-size: 36px;
+        margin-top: 0;
+    }
+    .influencer .infl_main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Ubuntu', sans-serif;
+        color: #FFF;
+        margin-bottom: 30px;
+    }
+    .influencer .infl_main img {
+        margin: 0 50px 0 0;
+    }
+    .influencer .infl_main h4 {
+        align-self: center;
+        font-weight: normal;
+        text-align: center;
+        font-size: 39px;
+        margin: 0 0 20px;
+    }
+    .influencer .infl_main p {
+        align-self: center;
+        text-align: center;
+        font-size: 36px;
+        margin: 0;
+    }
+    .influencer .infl_btn {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .influencer .infl_btn a {
+        align-self: center;
+        text-decoration: none;
+        outline: none;
+        width: auto;
+        margin-right: 10%;
+    }
+    /*END INFLUENCER BLOCK*/
+
+
+    /*DOCUMENTS*/
+
+    .documents {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        background: #F2F2F2;
+        padding: 85px 0 70px;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+    }
+    .documents h3 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: normal;
+        font-size: 39px;
+        color: #000;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        margin: 0;
+        padding: 0 0 30px;
+    }
+    .documents figure {
+        margin: 0 15px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    }
+    .documents figcaption {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: normal;
+        font-size: 21px;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .documents img {
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.3s ease 0s;
+    }
+    .documents figure:hover img {
+        box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.3s ease 0s;
+    }
+    /*END DOCUMENTS*/
