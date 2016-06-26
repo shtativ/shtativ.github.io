@@ -40,10 +40,17 @@
     box-sizing: border-box;
 }
 .form_of_feedback form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: 'PTSansProBold', sans-serif;
     font-size: 36px;
     text-transform: uppercase;
@@ -65,7 +72,8 @@
     font-size: 20px;
     font-weight: normal;
     text-align: left;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     padding-left: 15px;
 }
 .form_of_feedback form .name_area {
@@ -118,11 +126,13 @@
     text-align: center;
     margin: 20px;
     vertical-align: bottom;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .form_of_feedback .submit_feedback:hover {
     background: #FFF;
     color: #FF7900;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 

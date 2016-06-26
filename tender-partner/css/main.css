@@ -7,9 +7,16 @@ body {
     min-height: 100%;
 }
 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100%;
     max-width: 1200px;
@@ -20,15 +27,35 @@ body {
 
 header {
     width: 100%;
+    max-width: 1200px;
     border-bottom: 1px solid #C8C8C8;
     box-sizing: border-box;
     background: #FFF;
-    height: 45px;
+    box-sizing: border-box;
+}
+header button {
+    outline: none;
+}
+nav .hamburger {
+    display: none;
+    border: 0;
+    outline: none;
+    overflow: hidden;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
 }
 nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
     margin: 0;
     padding-left: 90px;
 }
@@ -47,11 +74,14 @@ nav ul li {
     border: 1px solid #fff;
     padding: 5px;
     margin: 8px;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 nav ul li:hover {
     background: #E9E9E9;
     border: 1px solid #D5D5D5;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 nav ul li:last-child {
@@ -73,8 +103,13 @@ nav ul li:hover a {
 /*CONTACT*/
 
 .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background: #F2F2F2;
     width: 100%;
@@ -138,9 +173,16 @@ nav ul li:hover a {
     height: auto;
 }
 .block_slide .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     max-width: 350px;
     margin: 80px 70px;
@@ -148,6 +190,7 @@ nav ul li:hover a {
 .left {
     font-family: 'PTSansProBold', sans-serif;
     font-size: 50px;
+    font-weight: normal;
     text-transform: uppercase;
     text-align: left;
     color: #FF8000;
@@ -157,6 +200,7 @@ nav ul li:hover a {
 .left span {
     font-family: 'PTSansProBold', sans-serif;
     font-size: 47px;
+    font-weight: normal;
     text-transform: uppercase;
     text-align: left;
     color: #FFF;
@@ -164,6 +208,7 @@ nav ul li:hover a {
     padding: 0 0 25px;
 }
 .left input {
+    -ms-flex-item-align: end;
     align-self: flex-end;
     width: 150px;
     height: 45px;
@@ -173,30 +218,48 @@ nav ul li:hover a {
     color: #FFF;
     font-family: 'PTSansProNarrowBold', sans-serif;
     font-size: 25px;
+    font-weight: normal;
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
     border: 1px solid #FF7900;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .left input:hover {
     color: #FF7900;
     background: #FFF;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    outline: none;
 }
 .block_slide .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: column-reverse wrap;
     flex-flow: column-reverse wrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
     height: 100%;
     padding-top: 25px;
 }
 .right form {
     max-width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: column;
     flex-flow: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .right .right_tel {
@@ -224,16 +287,19 @@ nav ul li:hover a {
     color: #FFF;
     font-family: 'PTSansProNarrowBold', sans-serif;
     font-size: 26px;
+    font-weight: normal;
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
     border: 1px solid #FF7900;
     margin: 0 0 40px 0;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .right .r_btn:hover {
     color: #FF7900;
     background: #FFF;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 
@@ -282,9 +348,16 @@ nav ul li:hover a {
 /*STEPS BLOCK*/
 
 .block_steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
     background: url('../img/steps_bg.jpg') no-repeat;
     background-size: cover;
@@ -296,15 +369,23 @@ nav ul li:hover a {
     text-align: center;
     font-family: 'PTSansProBold', sans-serif;
     font-size: 45px;
+    font-weight: normal;
     color: #FFF;
     text-transform: uppercase;
     margin: 0;
     padding: 0 0 50px;
 }
 .block_steps .step {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 245px;
     height: auto;
@@ -339,6 +420,7 @@ nav ul li:hover a {
 .testimonials h6 {
     font-family: 'PTSansProBold', sans-serif;
     font-size: 36px;
+    font-weight: normal;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
@@ -346,9 +428,16 @@ nav ul li:hover a {
     border-bottom: 1px solid #000;
 }
 .testimonials_items .t_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     padding: 25px 75px;
 }
@@ -356,15 +445,18 @@ nav ul li:hover a {
     padding: 0;
     margin: 0 50px 0;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     outline: none;
 }
 .t_item .t_item_logo:hover {
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .t_item .review {
     padding: 15px;
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
 }
 .t_item .review span {
@@ -387,8 +479,13 @@ nav ul li:hover a {
     padding: 20px 0;
 }
 .testimonials form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 .testimonials .t_btn {
@@ -398,6 +495,7 @@ nav ul li:hover a {
     color: #FFF;
     font-family: 'PTSansProNarrowBold', sans-serif;
     font-size: 26px;
+    font-weight: normal;
     text-transform: uppercase;
     text-align: center;
     outline: none;
@@ -406,11 +504,13 @@ nav ul li:hover a {
     box-sizing: border-box;
     border: 1px solid #FF7900;
     margin: 20px 160px 20px 20px;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .testimonials .t_btn:hover {
     color: #FF7900;
     background: #FFF;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 
@@ -430,6 +530,7 @@ nav ul li:hover a {
     color: #FFF;
     font-family: 'PTSansProBold', sans-serif;
     font-size: 36px;
+    font-weight: normal;
     text-transform: uppercase;
     text-align: center;
     margin: 0 0;
@@ -475,17 +576,20 @@ nav ul li:hover a {
     color: #FFF;
     font-family: 'PTSansProNarrowBold', sans-serif;
     font-size: 32px;
+    font-weight: normal;
     text-transform: uppercase;
     text-align: center;
     outline: none;
     border: none;
     cursor: pointer;
     margin: 35px;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .feedback .f_btn:hover {
     color: #FF7900;
     background: #FFF;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 
@@ -506,24 +610,34 @@ nav ul li:hover a {
     color: #000;
     font-family: 'PTSansProBold', sans-serif;
     font-size: 46px;
+    font-weight: normal;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
     padding: 0 0 48px;
 }
 .our_partners .our_partners_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .partner_item {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 0 17px 38px;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .partner_item:hover {
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 
@@ -540,15 +654,29 @@ footer {
     box-sizing: border-box;
 }
 footer .footer_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
 }
 footer .footer_contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-left: 40px;
     line-height: 2.2;
@@ -628,19 +756,27 @@ footer .f_right p {
     padding-right: 20px;
 }
 .f_left {
+    -webkit-box-flex: 2;
+    -ms-flex: 2 1 300px;
     flex: 2 1 300px;
     padding: 0 20px 20px;
 }
 .f_right {
+    -webkit-box-flex: 2;
+    -ms-flex: 2 1 300px;
     flex: 2 1 300px;
     padding: 0 20px 20px;
 }
 .footer_contacts .f_cont_left {
+    -webkit-box-flex: 2;
+    -ms-flex: 2 1 350px;
     flex: 2 1 350px;
     text-align: left;
     padding-top: 20px;
 }
 .footer_contacts .f_cont_right {
+    -webkit-box-flex: 2;
+    -ms-flex: 2 1 350px;
     flex: 2 1 350px;
     text-align: left;
     padding-top: 20px;
@@ -669,12 +805,20 @@ footer .f_right p {
     text-align: right;
 }
 .pass form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-family: 'PTSansProBold', sans-serif;
     font-size: 36px;
+    font-weight: normal;
     text-transform: uppercase;
     text-align: center;
     color: #FFF;
@@ -701,6 +845,7 @@ footer .f_right p {
 .pass .pass_confirm {
     font-family: 'PTSansProNarrowBold', sans-serif;
     font-size: 27px;
+    font-weight: normal;
     text-transform: uppercase;
     width: 180px;
     height: 50px;
@@ -712,16 +857,19 @@ footer .f_right p {
     cursor: pointer;
     text-align: center;
     margin-bottom: 20px;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .pass .pass_confirm:hover {
     background: #FFF;
     color: #FF7900;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .pass .pass_cancel {
     font-family: 'PTSansProNarrowBold', sans-serif;
     font-size: 27px;
+    font-weight: normal;
     text-transform: uppercase;
     width: 180px;
     height: 50px;
@@ -733,13 +881,16 @@ footer .f_right p {
     cursor: pointer;
     margin-bottom: 20px;
     text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .pass .pass_cancel:hover {
     background: #FFF;
     color: #444F66;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+
 /*ENS PASSWORD FORM*/
 
 
@@ -756,12 +907,20 @@ footer .f_right p {
     box-sizing: border-box;
 }
 .give_feedback form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-family: 'PTSansProBold', sans-serif;
     font-size: 36px;
+    font-weight: normal;
     text-transform: uppercase;
     text-align: center;
     color: #FFF;
@@ -779,6 +938,7 @@ footer .f_right p {
     text-align: left;
     padding: 10px 0;
     margin: 0 85px;
+    -ms-flex-item-align: start;
     align-self: flex-start;
 }
 .give_feedback form .name_area {
@@ -807,7 +967,7 @@ footer .f_right p {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    	resize: none;
+    resize: none;
     color: #58595B;
     box-sizing: border-box;
     margin: 0 0 20px 0;
@@ -819,6 +979,7 @@ footer .f_right p {
 .give_feedback .upload_logo, .give_feedback .submit_feedback {
     font-family: 'PTSansProNarrowBold', sans-serif;
     font-size: 27px;
+    font-weight: normal;
     text-transform: uppercase;
     height: 50px;
     background: #FF7900;
@@ -830,6 +991,7 @@ footer .f_right p {
     text-align: center;
     margin: 20px;
     vertical-align: bottom;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .give_feedback .upload_logo {
@@ -838,6 +1000,7 @@ footer .f_right p {
 .give_feedback .upload_logo:hover {
     background: #FFF;
     color: #FF7900;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .give_feedback .submit_feedback {
@@ -846,7 +1009,230 @@ footer .f_right p {
 .give_feedback .submit_feedback:hover {
     background: #FFF;
     color: #FF7900;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 
 /* END GIVE FEEDBACK FORM*/
+
+
+/*MEDIA QUERYS */
+
+@media all and (max-width: 1024px) {
+    .block_slide .left {
+        font-size: 40px;
+    }
+    .block_slide .left span {
+        font-size: 38px;
+    }
+    .block_offer h2 {
+        font-size: 40px;
+        padding-left: 90px;
+    }
+    .block_offer ul {
+        font-size: 36px;
+        padding-left: 90px;
+    }
+    .block_offer ul li {
+        max-width: 390px;
+        margin-bottom: 38px;
+    }
+    .block_steps h5 {
+        font-size: 38px;
+    }
+    .block_steps .step {
+        width: 205px;
+        margin: 0 20px 20px;
+    }
+    .block_steps p {
+        font-size: 22px;
+    }
+    .testimonials {
+        padding: 50px 0 25px;
+    }
+    .testimonials h6 {
+        font-size: 30px;
+    }
+    .testimonials_items .t_item {
+        padding: 25px 10px;
+    }
+    .footer_contacts .tel {
+        font-size: 22px;
+    }
+}
+@media all and (max-width: 918px) {
+    nav ul {
+        padding-left: 20px;
+    }
+    nav ul a {
+        font-size: 14px;
+    }
+    .contact .header_logo {
+        font-size: 28px;
+        padding-left: 55px;
+    }
+    .contact .header_logo p {
+        font-size: 18px;
+    }
+    .header_contacts {
+        padding-top: 10px;
+        padding-right: 35px;
+    }
+    .header_contacts .tel, .header_contacts .email {
+        font-size: 18px;
+    }
+    .contact {
+        height: 70px;
+    }
+    .block_slide .left {
+        max-width: 220px;
+        padding: 0;
+        margin: 50px 50px;
+    }
+    .block_slide .left h1 {
+        margin: 10px 0;
+        font-size: 40px;
+    }
+    .block_slide .left span {
+        font-size: 32px;
+    }
+    .left input {
+        width: 120px;
+        height: 38px;
+        font-size: 20px;
+    }
+    .right form {
+        max-width: 380px;
+    }
+    .block_slide .right {
+        padding-top: 0px;
+    }
+    .right .right_tel {
+        font-size: 20px;
+        height: 42px;
+    }
+    .right .r_btn {
+        font-size: 20px;
+        width: 160px;
+        height: 38px;
+    }
+    .block_offer {
+        min-height: 0;
+        background-position-x: 70%;
+    }
+    .block_offer h2 {
+        padding-top: 25px;
+        font-size: 32px;
+        padding-left: 70px;
+        padding-bottom: 30px;
+    }
+    .block_offer ul {
+        font-size: 26px;
+        padding-left: 70px;
+    }
+    .block_offer ul li {
+        max-width: 340px;
+        margin-bottom: 26px
+    }
+    .block_steps {
+        padding: 45px 15px 30px;
+    }
+    .block_steps h5 {
+        font-size: 30px;
+        padding-bottom: 25px;
+    }
+    .block_steps .step {
+        width: 160px;
+    }
+    .block_steps img {
+        width: 60px;
+    }
+    .block_steps p {
+        font-size: 18px;
+    }
+    .t_item .t_item_logo img {
+        width: 230px;
+    }
+    .t_item .review span {
+        font-size: 26px;
+    }
+    .t_item .review img {
+        width: 20px;
+    }
+    .t_item .review p {
+        font-size: 18px;
+    }
+    .testimonials_items .t_item {
+        padding-bottom: 0;
+    }
+    .testimonials .t_btn {
+        font-size: 20px;
+        width: 160px;
+        height: 36px;
+        margin-bottom: 0;
+    }
+    .feedback {
+        padding: 42px 0 10px;
+    }
+    .feedback h6 {
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+    .feedback .f_btn {
+        font-size: 24px;
+        margin: 25px;
+        wmax-width: 208px;
+        height: 48px;
+    }
+    .our_partners {
+        padding: 35px 0;
+    }
+    footer .f_left h3 {
+        font-size: 36px;
+        padding: 0;
+    }
+    footer .f_left {
+        font-size: 18px;
+    }
+    footer .f_right p {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    footer .footer_contacts {
+        padding: 0;
+    }
+    .footer_contacts .f_cont_left, .footer_contacts .f_cont_right {
+        padding-top: 10px;
+        flex: 2 1 300px;
+    }
+    .footer_contacts .tel {
+        font-size: 18px;
+    }
+    header button {
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+}
+@media all and (max-width: 769px) {
+    nav .hamburger {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        padding-left: 0;
+    }
+    .nav_items {
+        display: none;
+    }
+}
+@media all and (min-width: 768px) {
+    nav .hanmurger {
+        display: none;
+    }
+    header button {
+        display: none;
+    }
+}
+
+/*END  MEDIA QUERYS*/

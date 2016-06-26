@@ -1,7 +1,8 @@
 /*NAVBAR LOAN*/
 
 .nav_loan {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     background: #F2F2F2;
     width: 100%;
     box-sizing: border-box;
@@ -15,11 +16,13 @@
 .nav_loan ul li {
     border: none;
     outline: none;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .nav_loan ul li:hover {
     border: 1px solid #C8C8C8;
     background: #E9E9E9;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 
@@ -74,11 +77,13 @@ table .table_title_top {
     border: 1px solid #FF7900;
     box-sizing: border-box;
     padding: 6px 20px;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .table_btn:hover {
     background: #FFF;
     color: #FF7900;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .our_proposals table span {

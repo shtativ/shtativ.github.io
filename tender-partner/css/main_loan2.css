@@ -12,10 +12,17 @@
   margin: 0;
 }
 .rules .rules_btns{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content:flex-end;
-  align-items: flex-start;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -webkit-box-pack:end;
+      -ms-flex-pack:end;
+          justify-content:flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .rules .rules_btns a{
   text-decoration: none;
