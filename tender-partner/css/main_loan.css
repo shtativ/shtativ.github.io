@@ -2,7 +2,7 @@
 
 .nav_loan {
     -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
     background: #F2F2F2;
     width: 100%;
     box-sizing: border-box;
@@ -64,6 +64,7 @@ table .table_title_top {
 .table_btn {
     font-family: 'PTSansProNarrowBold', sans-serif;
     font-size: 24px;
+    font-weight: normal;
     background: #FF7900;
     outline: none;
     border: none;
@@ -141,7 +142,14 @@ table .table_title_top {
     left: 80%;
     box-sizing: border-box;
 }
-.steps_details .table_btn:last-child{
-  margin-left: 9px;
+.steps_details .table_btn:last-child {
+    margin-left: 9px;
 }
+
 /*END STEPS DETAILS BLOCK*/
+
+
+/*MEDIA QUERYS */
+
+
+/*END MEDIA QUERYS */

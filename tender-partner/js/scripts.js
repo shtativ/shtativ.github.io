@@ -7,7 +7,7 @@ $hamburger.on("click", function(e) {
 
 //hover fade menu
 $('.myMenu ul li').hover(function() {
-	$(this).children('ul li').stop(true, false, true).fadeToggle(300);
+	$(this)('ul li').fadeToggle(300);
 });
 //
 // $('.myMenu ul li.has-children > a').click(function() {

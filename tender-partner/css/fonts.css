@@ -10,12 +10,14 @@
 	src: url('../fonts/PTSansPro/PT Sans Pro Bold.otf');
 	src: url('../fonts/PTSansPro/PT Sans Pro Bold.otf') format('opentype');
 	font-style: normal;
+	font-weight: normal;
 }
 @font-face {
 	font-family: 'PTSansProNarrowBold';
 	src: url('../fonts/PTSansPro/PT Sans Pro Narrow Bold.otf');
 	src: url('../fonts/PTSansPro/PT Sans Pro Narrow Bold.otf') format('opentype');
 	font-style: normal;
+	font-weight: normal;
 }
 @font-face {
 	font-family: 'PTSansProDemi';
