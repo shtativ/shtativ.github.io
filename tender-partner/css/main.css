@@ -102,9 +102,13 @@ nav ul a {
     text-decoration: none;
     overflow: hidden;
     color: #58595b;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 nav .nav_items > li:hover  > a {
     color: #057fb5;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 nav .nav_potatoes {
     display: none;
@@ -129,6 +133,8 @@ nav .nav_potatoes li{
     margin: 0;
     position: relative;
     z-index: 999;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 nav .nav_potatoes a{
@@ -140,19 +146,29 @@ nav .nav_potatoes a{
   border: none;
   padding: 0;
   margin: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 nav .nav_potatoes li:hover a {
     color: #057fb5;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 nav .nav_potatoes li:hover {
     color: #057fb5;
     border: none;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 nav .nav_parent {
     position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 nav .nav_parent:hover .nav_potatoes {
     display: block;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 /*END NAV*/
 /*CONTACT*/
