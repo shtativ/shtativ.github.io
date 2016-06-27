@@ -6,8 +6,8 @@ $hamburger.on("click", function(e) {
 });
 
 //hover fade menu
-$('.myMenu ul li').hover(function() {
-	$(this)('ul li').fadeToggle(300);
+$('.myMenu ul>li').hover(function() {
+	$(this)('ul>li').fadeToggle(300);
 });
 //
 // $('.myMenu ul li.has-children > a').click(function() {
