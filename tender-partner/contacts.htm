@@ -17,7 +17,15 @@
     <link rel="stylesheet" href="css/main_brokers.css">
     <link rel="stylesheet" href="css/main_partners.css">
     <link rel="stylesheet" href="css/main_contacts.css">
+    <!-- media querys -->
+    <link rel="stylesheet" href="css/responsive/responsive_918-1024.css" media="screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/responsive/responsive_768-918.css" media="screen and (max-width: 918px)">
+    <link rel="stylesheet" href="css/responsive/responsive_640-768.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="css/responsive/responsive_480-640.css" media="screen and (max-width: 640px)">
+    <link rel="stylesheet" href="css/responsive/responsive_375-480.css" media="screen and (max-width: 480px)">
+    <link rel="stylesheet" href="css/responsive/responsive_320-375.css" media="screen and (max-width: 375px)">
 
+    <link rel="stylesheet" href="css/responsive/responsive_769-1200.css" media="screen and (min-width: 769px)">
     <!--Hamburger button-->
     <link href="css/hamburgers.min.css" rel="stylesheet">
     <!-- import fonts <-->
@@ -26,23 +34,32 @@
 
   <body>
     <section class="container">
-        <header>
-            <nav>
-              <button class="hamburger hamburger--boring" type="button">
-                  <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
-                  </span>
-              </button>
+      <header>
+          <nav>
+            <button class="hamburger hamburger--boring" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
 
-                <ul id="nav_items" class="nav_items">
-                    <li><a href="./loan.htm">Займы</a></li>
-                    <li><a href="./about.htm">О компании</a></li>
-                    <li><a href="./partners.htm">Партнерская программа</a></li>
-                    <li><a href="./contacts.htm">Контакты</a></li>
-                    <li><a href="./brokers.htm">Брокерам и агентам</a></li>
-                </ul>
-            </nav>
-        </header>
+              <ul id="nav_items" class="nav_items">
+                  <li class="nav_parent"><a href="#">Займы &#9660;</a>
+                      <ul class="nav_child">
+                        <div class="nav_potatoes">
+                        <li><a href="./loan.htm">О займах</a></li>
+                        <li><a href="./loan2.htm">Правила предоставления</a></li>
+                        <li><a href="./loan3.htm">Получение займа</a></li>
+                        </div>
+                      </ul>
+                  </li>
+                  <li><a href="./about.htm">О компании</a></li>
+                  <li><a href="./partners.htm">Партнерская программа</a></li>
+                  <li><a href="./contacts.htm">Контакты</a></li>
+                  <li><a href="./brokers.htm">Брокерам и агентам</a></li>
+              </ul>
+          </nav>
+      </header>
+
 
         <div class="contact">
           <div class="header_logo"><a href="./index.htm"><span>МФО </span>Тендер-Партнер
@@ -122,6 +139,7 @@
                 </div>
             </div>
         </footer>
+
     </section>
     <!-- jQuery  -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>

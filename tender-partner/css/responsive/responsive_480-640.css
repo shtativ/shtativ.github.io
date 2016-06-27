@@ -1,0 +1,129 @@
+.contact .header_logo {
+    font-size: 22px;
+    padding-left: 15px;
+}
+.contact .header_logo p {
+    font-size: 14px;
+}
+.contact .header_contacts {
+    padding-right: 15px;
+    padding-top: 15px;
+    font-size: 16px;
+}
+.header_contacts .tel, .header_contacts .email {
+    font-size: 16px;
+}
+.block_slide .left {
+    margin: 40px 20px;
+}
+.right form {
+    max-width: 250px;
+}
+.right form .right_tel {
+    width: 90%;
+}
+.block_offer h2 {
+    font-size: 24px;
+}
+.block_offer ul {
+    font-size: 18px;
+}
+.block_offer ul li {
+    max-width: 250px;
+}
+.t_item .t_item_logo img {
+    width: 230px;
+}
+.t_item .review {
+    -webkit-flex-basis: 80%;
+        -ms-flex-preferred-size: 80%;
+            flex-basis: 80%;
+}
+.feedback p {
+    padding: 0 250px 0 18px;
+    box-sizing: border-box;
+}
+.partner_item img {
+    width: 315px;
+}
+footer {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer_contacts .tel {
+    font-size: 16px;
+}
+footer .f_left, footer .f_right {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2 1 auto;
+        -ms-flex: 2 1 auto;
+            flex: 2 1 auto;
+    padding: 0 30px 16px;
+}
+footer .f_left h3 {
+    font-size: 26px;
+}
+footer .f_left p {
+    font-size: 18px;
+}
+footer .f_right p {
+    border-left: none;
+    padding-top: 10px;
+    text-align: center;
+    border-top: 3px solid #FF7900;
+}
+.footer_contacts .f_cont_left, .footer_contacts .f_cont_right {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    padding: 0;
+}
+.f_c_item_4 span {
+    margin-left: 36px;
+}
+footer .footer_contacts {
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+                -ms-grid-row-align: flex-start;
+            align-items: flex-start;
+    padding: 10px 10px 20px 70px;
+}
+/*О компании*/
+.container .block_steps_other h5 {
+    padding-bottom: 20px;
+}
+.container .block_steps_other .step {
+    width: 80px;
+}
+.container .block_steps_other img {
+    width: 70px;
+}
+.container .block_steps_other> .step_arrow img {
+    width: 57px;
+}
+.documents figure img {
+    width: 318px;
+}
+/*О компании*/
+/*Партнерская программа*/
+.container .partners_block h5 {
+    font-size: 30px;
+    text-align: left;
+}
+/*Партнерская программа*/
+/*Контакты*/
+.container .contact_main h3, .container .contact_main span {
+    font-size: 40px;
+}
+.container .contact_main p {
+    font-size: 22px;
+}
+.container .feedback_map {
+    font-size: 20px;
+}
+/*Контакты*/

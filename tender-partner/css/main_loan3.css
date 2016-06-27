@@ -1,3 +1,16 @@
+/*NAV*/
+.container .nav_loan .nav_loan_items li{
+  border: 1px solid #F2F2F2;
+  /*color: #057fb5;*/
+}
+.container .nav_loan .nav_loan_items li:hover{
+  border: 1px solid #C8C8C8;
+  /*color: #057fb5;*/
+}
+.container .nav_loan .nav_loan_items li:hover a{
+  color: #057fb5;
+}
+/*END NAV*/
 /*END OBTAINING BLOCK*/
 
 .obtaining {

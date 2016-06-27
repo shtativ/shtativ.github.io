@@ -100,4 +100,10 @@
     outline: none;
 }
 
+
+@media all and (max-width: 1024px) {
+  .partners_block .partners_main img{
+    width: 320px;
+  }
+}
 /*END PARTNERS BLOCK*/

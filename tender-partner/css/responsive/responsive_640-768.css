@@ -1,0 +1,108 @@
+nav .hamburger {
+    display: block;
+}
+nav ul {
+    display: none;
+    margin-top: -30px;
+}
+nav ul li {
+    width: 80%;
+    margin: 8px auto;
+}
+.container nav ul::after {
+    display: none;
+}
+.right .right_tel {
+    width: 70%;
+}
+.block_offer h2 {
+    padding-left: 20px;
+}
+.block_offer ul {
+    padding-left: 20px;
+}
+.t_item .t_item_logo img {
+    width: 180px;
+}
+.t_item .review p {
+    font-size: 16px;
+    padding: 10px 0;
+}
+.our_partners h4 {
+    padding-bottom: 28px;
+}
+.partner_item img {
+    width: 280px;
+    height: auto;
+}
+.footer_contacts .tel {
+    font-size: 16px;
+}
+.footer_contacts .f_cont_left, .footer_contacts .f_cont_right {
+    padding-top: 10px;
+    -webkit-box-flex: 2;
+    -webkit-flex: 2 1 200px;
+        -ms-flex: 2 1 200px;
+            flex: 2 1 200px;
+}
+footer .f_left, footer .f_right {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2 1 200px;
+        -ms-flex: 2 1 200px;
+            flex: 2 1 200px;
+    padding: 0 0 20px;
+}
+footer .f_left h3 {
+    font-size: 30px;
+}
+footer .f_left p {
+    font-size: 20px;
+}
+footer .f_c_item_4 span {
+    margin-left: 38px;
+}
+/*О компании*/
+.container .block_steps_other h5 {
+    font-size: 34px;
+    font-weight: normal;
+}
+.container .block_steps_other .step {
+    width: 100px;
+}
+.container .block_steps_other> .step_arrow img {
+    width: 67px;
+}
+.container .block_steps_other p {
+    font-size: 16px;
+}
+.container .block_steps_other {
+    padding: 45px 15px 30px;
+}
+.container .influencer .infl_title h2 {
+    font-size: 36px;
+}
+.container .influencer .infl_main h4 {
+    font-size: 32px;
+}
+.container .influencer .infl_main p {
+    font-size: 28px;
+}
+.container .influencer .infl_main img {
+    width: 154px;
+    margin: 0;
+}
+/*О компании*/
+/*О заёмах*/
+.container .rules > p {
+    padding: 10px 30px;
+    font-size: 28px;
+}
+/*О заёмах*/
+/*Партнерская программа*/
+.container .partners_block h4 {
+    font-size: 34px;
+}
+.container .partners_block {
+    padding-left: 50px;
+}
+/*Партнерская программа*/

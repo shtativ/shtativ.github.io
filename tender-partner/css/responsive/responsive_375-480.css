@@ -1,0 +1,131 @@
+.contact {
+    height: 100%;
+    padding-bottom: 10px;
+}
+.contact .header_logo {
+    padding-left: 10px;
+    font-size: 18px;
+}
+.contact .header_contacts {
+    padding-right: 0;
+    padding-top: 10px;
+}
+.header_contacts .tel, .header_contacts .email {
+    font-size: 12px;
+    padding-right: 5px;
+}
+.block_slide .left h1 {
+    font-size: 36px;
+    font-weight: normal;
+}
+.block_slide .left span {
+    font-size: 28px;
+}
+.block_slide .left input {
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+}
+.right form .right_tel {
+    width: 75%;
+    margin-right: 0;
+}
+.right form .r_btn {
+    width: 150px;
+    margin-left: 45px;
+}
+.feedback p {
+    padding-right: 150px;
+}
+footer .footer_contacts {
+    padding-left: 0px;
+}
+/*О компании*/
+.container .about_name {
+    padding: 35px 10px 10px;
+}
+.container .about_name h1 {
+    font-size: 30px;
+}
+.container .about_name span {
+    font-size: 20px;
+}
+.container .about_name p {
+    font-size: 16px;
+}
+.container .block_steps_other h5 {
+    font-size: 24px;
+    font-weight: normal;
+}
+.container .block_steps_other .step {
+    width: 60px;
+}
+.container .block_steps_other img {
+    width: 55px;
+}
+.container .block_steps_other> .step_arrow img {
+    width: 47px;
+}
+.container .block_steps_other p {
+    font-size: 14px;
+    width: 170%;
+}
+.container .about_history h3 {
+    font-size: 26px;
+}
+.container .about_history p {
+    font-size: 18px;
+}
+.container .about_history ul {
+    font-size: 18px;
+    padding: 0;
+}
+.container .influencer .infl_title h2 {
+    font-size: 0px;
+}
+.container .influencer .infl_title p {
+    font-size: 24px;
+}
+.container .influencer .infl_main h4 {
+    font-size: 28px;
+}
+.container .influencer .infl_main p {
+    font-size: 24px;
+}
+.container .documents h3 {
+    font-size: 32px;
+}
+/*О компании*/
+/*Получение займа*/
+.container .obtaining .obt_col {
+    width: 80%;
+}
+.container .obtaining .table_btn {
+    left: 55%;
+}
+.container .obtaining ul li ul {
+    padding-left: 0;
+}
+.container .obtaining p {
+    font-size: 30px;
+}
+/*Получение займа*/
+/*Контакты*/
+.container .contact_main h3, .container .contact_main span {
+    font-size: 32px;
+}
+.container .contact_main p {
+    font-size: 20px;
+}
+.container .feedback_map {
+    font-size: 16px;
+}
+.container .form_of_feedback form label {
+    font-size: 30px;
+}
+/*Контакты*/
+/*Брокерам*/
+.container .brokers h4{
+  font-size: 30px;
+}
+/*Брокерам*/
