@@ -14,20 +14,28 @@
     <link rel="stylesheet" href="css/main_loan3.css">
     <link rel="stylesheet" href="css/main_about.css">
     <link rel="stylesheet" href="css/main_brokers.css">
-    <!-- import fonts <--></-->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
-</head>
+    <!--Hamburger button-->
+    <link href="css/hamburgers.min.css" rel="stylesheet">
+    <!-- import fonts <-->
+    <link href="htps://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  </head>
 
-<body>
+  <body>
     <section class="container">
         <header>
             <nav>
-                <ul>
-                  <li><a href="./loan.htm">Займы</a></li>
-                  <li><a href="./about.htm">О компании</a></li>
-                  <li><a href="./partners.htm">Партнерская программа</a></li>
-                  <li><a href="./contacts.htm">Контакты</a></li>
-                  <li><a href="./brokers.htm">Брокерам и агентам</a></li>
+              <button class="hamburger hamburger--boring" type="button">
+                  <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                  </span>
+              </button>
+
+                <ul id="nav_items" class="nav_items">
+                    <li><a href="./loan.htm">Займы</a></li>
+                    <li><a href="./about.htm">О компании</a></li>
+                    <li><a href="./partners.htm">Партнерская программа</a></li>
+                    <li><a href="./contacts.htm">Контакты</a></li>
+                    <li><a href="./brokers.htm">Брокерам и агентам</a></li>
                 </ul>
             </nav>
         </header>
@@ -79,29 +87,29 @@
         </ol>
     </article>
 
-      <footer>
-          <div class="footer_logo">
-              <div class="f_left">
-                  <h3>Тендер<span>-</span>партнер</h3>
-                  <p>микрофинансовая организация</p>
-              </div>
-              <div class="f_right">
-                  <p>Предоставление займов и микрозаемов юридическим лицам</p>
-              </div>
-          </div>
-          <div class="footer_contacts">
-              <div class="f_cont_left">
-                  <a class="f_c_item_1 tel" href="tel:+7495 256 80 27">Телефон: <span>+7 (495)256-80-27</span></a>
-                  <br>
-                  <a class="f_c_item_2 tel" href="tel:+7495 256 80 27">Telegram: <span>+7 (926)828-84-22</span></a>
-              </div>
-              <div class="f_cont_right">
-                  <a class="f_c_item_3 tel" href="tel:+7495 256 80 27">WhatsApp: <span>+7 (926)828-84-22</span></a>
-                  <br>
-                  <a class="f_c_item_4 tel" href="tel:+7495 256 80 27">Viber: <span>+7 (926)828-84-22</span></a>
-              </div>
-          </div>
-      </footer>
+    <footer>
+        <div class="footer_logo">
+            <div class="f_left">
+                <h3>Тендер<span>-</span>партнер</h3>
+                <p>микрофинансовая организация</p>
+            </div>
+            <div class="f_right">
+                <p>Предоставление займов и микрозаемов юридическим лицам</p>
+            </div>
+        </div>
+        <div class="footer_contacts">
+            <div class="f_cont_left">
+                <a class="f_c_item_1 tel" href="tel:+7495 256 80 27">Телефон: <span>+7 (495)256-80-27</span></a>
+                <br>
+                <a class="f_c_item_2 tel" href="tel:+7495 256 80 27">Telegram: <span>+7 (926)828-84-22</span></a>
+            </div>
+            <div class="f_cont_right">
+                <a class="f_c_item_3 tel" href="tel:+7495 256 80 27">WhatsApp: <span>+7 (926)828-84-22</span></a>
+                <br>
+                <a class="f_c_item_4 tel" href="tel:+7495 256 80 27">Viber: <span>+7 (926)828-84-22</span></a>
+            </div>
+        </div>
+    </footer>
       </section>
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
