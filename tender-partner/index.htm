@@ -30,20 +30,20 @@
     <section class="container">
         <header>
             <nav>
-              <button class="hamburger hamburger--boring" type="button">
-                  <span class="hamburger-box">
+                <button class="hamburger hamburger--boring" type="button">
+                    <span class="hamburger-box">
                       <span class="hamburger-inner"></span>
-                  </span>
-              </button>
+                    </span>
+                </button>
 
                 <ul id="nav_items" class="nav_items">
                     <li class="nav_parent"><a href="#">Займы &#9660;</a>
                         <ul class="nav_child">
-                          <div class="nav_potatoes">
-                          <li><a href="./loan.htm">О займах</a></li>
-                          <li><a href="./loan2.htm">Правила предоставления</a></li>
-                          <li><a href="./loan3.htm">Получение займа</a></li>
-                          </div>
+                            <div class="nav_potatoes">
+                                <li><a href="./loan.htm">О займах</a></li>
+                                <li><a href="./loan2.htm">Правила предоставления</a></li>
+                                <li><a href="./loan3.htm">Получение займа</a></li>
+                            </div>
                         </ul>
                     </li>
                     <li><a href="./about.htm">О компании</a></li>
@@ -119,7 +119,7 @@
                 </div>
             </div>
             <form action="">
-                <input class="t_btn" type="submit" name="submit" value="Оставить отзыв" </input>
+                <input id="feedback_popup_listener" class="t_btn" type="submit" name="submit" value="Оставить отзыв" </input>
             </form>
         </article>
         <article class="feedback">
@@ -166,7 +166,7 @@
         </footer>
 
         <!--password entry form -->
-        <div class="pass">
+        <div id="pass_popup" class="pass">
             <!-- <a class="close"><img src="./img/menu_close.png" alt="close"></a> -->
             <form action="">
                 <label for="id_pass_area">Введите пароль</label>
@@ -176,21 +176,22 @@
             </form>
         </div>
         <!-- end password entry form -->
-        <div class="give_feedback">
-            <form action="" method="POST" enctype="multipart/form-data">
-                <label for="">Оставить отзыв</label>
-                <p>Ваше имя</p>
-                <input class="name_area" type="text" name="username" required="required" placeholder="">
-                <p>Ваш отзыв</p>
-                <textarea name="messagecontact" placeholder="" maxlength="250"></textarea>
-                <div class="give_feedback_btn">
-                    <!--  <input class="upload_logo" type="file" name="photo" multiple accept="image/*" value="Загрузить логотип"> -->
-                    <input class="upload_logo" type="submit" name="photo" multiple accept="image/*" value="Загрузить логотип">
-                    <input class="submit_feedback" class="send" type="submit" name="send" value="Оставить отзыв">
-                </div>
-            </form>
+        <div id="feedback_popup">
+            <div class="give_feedback">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label for="">Оставить отзыв</label>
+                    <p>Ваше имя</p>
+                    <input class="name_area" type="text" name="username" required="required" placeholder="">
+                    <p>Ваш отзыв</p>
+                    <textarea name="messagecontact" placeholder="" maxlength="250"></textarea>
+                    <div class="give_feedback_btn">
+                        <!--  <input class="upload_logo" type="file" name="photo" multiple accept="image/*" value="Загрузить логотип"> -->
+                        <input class="upload_logo" type="submit" name="photo" multiple accept="image/*" value="Загрузить логотип">
+                        <input class="submit_feedback" class="send" type="submit" name="send" value="Оставить отзыв">
+                    </div>
+                </form>
+            </div>
         </div>
-
     </section>
     <!-- jQuery-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>

@@ -895,6 +895,9 @@ footer .f_right p {
     margin-left: 62px;
 }
 /*END FOOTER*/
+
+
+/*//POP-UPS//*/
 /* PASSWORD FORM*/
 
 .pass {
@@ -1002,7 +1005,17 @@ footer .f_right p {
 }
 /*ENS PASSWORD FORM*/
 /* GIVE FEEDBACK FORM*/
-
+#feedback_popup{
+  text-align: center;
+  background-color: rgba(59, 67, 76, 0.95);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  position: fixed;
+  z-index: 333;
+}
 .give_feedback {
     /* temp-temp-temp*/
     margin-top: 30px;
