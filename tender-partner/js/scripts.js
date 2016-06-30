@@ -10,7 +10,7 @@ $hamburger.on("click", function(e) {
     $('#feedback_popup').fadeIn('slow');
 });
 
-//hide menu
-    $('#feedback_popup_listener ').click(function () {
-    $('#feedback_popup').fadeOut('slow');
-});
+// //hide menu
+//     $('#feedback_popup_listener ').click(function () {
+//     $('#feedback_popup').fadeOut('slow');
+// });

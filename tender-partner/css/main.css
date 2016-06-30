@@ -612,6 +612,12 @@ nav .nav_parent:hover .nav_potatoes {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+.testimonials .t_btn_popup{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
 /*END TESTIMONIALS BLOCK*/
 /*FEEDBACK BLOCK*/
 
