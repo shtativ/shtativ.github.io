@@ -1036,6 +1036,7 @@ footer .f_right p {
     box-sizing: border-box;
     position: absolute;
     bottom: 100px;
+    left: 40px;
 }
 .give_feedback form {
     display: -webkit-box;
