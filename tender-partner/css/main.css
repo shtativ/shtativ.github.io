@@ -41,6 +41,7 @@ header {
     box-sizing: border-box;
     background: #FFF;
     box-sizing: border-box;
+    position: fixed;
 }
 nav button {
     outline: none;
@@ -190,6 +191,7 @@ nav .nav_parent:hover .nav_potatoes {
     height: 80px;
     border-bottom: 1px solid #C8C8C8;
     box-sizing: border-box;
+    margin-top: 40px;
 }
 .contact .header_logo {
     font-family: 'Ubuntu', sans-serif;
@@ -1015,22 +1017,25 @@ footer .f_right p {
   text-align: center;
   background-color: rgba(59, 67, 76, 0.95);
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  width: 100%;
+  max-width: 815px;
+  width: 80%;
   height: 100%;
   display: none;
   align-items: center;
-  position: fixed;
+  position: relative;
+  left:0;
+  top:200px;
+  margin: 0 auto;
   z-index: 333;
 }
 .give_feedback {
-    /* temp-temp-temp*/
-    margin-top: 30px;
-    /* temp-temp-temp*/
     background: #444F66;
     width: auto;
     height: auto;
     border-radius: 20px;
     box-sizing: border-box;
+    position: absolute;
+    bottom: 100px;
 }
 .give_feedback form {
     display: -webkit-box;

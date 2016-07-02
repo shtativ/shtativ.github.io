@@ -118,6 +118,26 @@
                     </div>
                 </div>
             </div>
+
+            <!-- feedback popup -->
+            <div id="feedback_popup">
+                <div class="give_feedback">
+                    <form action="" method="POST" enctype="multipart/form-data">
+                        <label for="">Оставить отзыв</label>
+                        <p>Ваше имя</p>
+                        <input class="name_area" type="text" name="username" required="required" placeholder="">
+                        <p>Ваш отзыв</p>
+                        <textarea name="messagecontact" placeholder="" maxlength="250"></textarea>
+                        <div class="give_feedback_btn">
+                            <!--  <input class="upload_logo" type="file" name="photo" multiple accept="image/*" value="Загрузить логотип"> -->
+                            <input class="upload_logo" type="submit" name="photo" multiple accept="image/*" value="Загрузить логотип">
+                            <input class="submit_feedback" class="send" type="submit" name="send" value="Оставить отзыв">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- end feedback popup -->
+
                 <div class="t_btn_popup">
                   <input id="feedback_popup_listener" class="t_btn" type="submit" name="submit" value="Оставить отзыв" </input>
                 </div>
@@ -176,22 +196,7 @@
             </form>
         </div>
         <!-- end password entry form -->
-        <div id="feedback_popup">
-            <div class="give_feedback">
-                <form action="" method="POST" enctype="multipart/form-data">
-                    <label for="">Оставить отзыв</label>
-                    <p>Ваше имя</p>
-                    <input class="name_area" type="text" name="username" required="required" placeholder="">
-                    <p>Ваш отзыв</p>
-                    <textarea name="messagecontact" placeholder="" maxlength="250"></textarea>
-                    <div class="give_feedback_btn">
-                        <!--  <input class="upload_logo" type="file" name="photo" multiple accept="image/*" value="Загрузить логотип"> -->
-                        <input class="upload_logo" type="submit" name="photo" multiple accept="image/*" value="Загрузить логотип">
-                        <input class="submit_feedback" class="send" type="submit" name="send" value="Оставить отзыв">
-                    </div>
-                </form>
-            </div>
-        </div>
+
     </section>
     <!-- jQuery-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
