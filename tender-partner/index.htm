@@ -22,7 +22,9 @@
 
     <!--Hamburger button-->
     <link href="css/hamburgers.min.css" rel="stylesheet">
-    <!-- import fonts <-->
+    <!--owl.carousel-->
+    <link rel="stylesheet" type="text/css" href="lib/owlcarousel/assets/owl.carousel.css" />
+    <!--import fonts-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 
@@ -65,18 +67,50 @@
             </div>
         </div>
         <article class="block_slide">
-            <div class="left">
-                <h1>Простота</h1> <span>Минимум документов!</span>
-                <input type="button" value="Подробнее">
-            </div>
-            <div class="right">
-                <label>
-                    <form action="" method="POST">
-                        <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
-                        <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
-                    </form>
-                </label>
-            </div>
+            <!-- <div class="slider owl-carousel"> -->
+                <div class="slide_1 item">
+                    <div class="left">
+                        <h1>Простота</h1> <span>Минимум документов!</span>
+                        <input type="button" value="Подробнее" onClick='location.href="./loan.htm"'>
+                    </div>
+                    <div class="right">
+                        <label>
+                            <form action="" method="POST">
+                                <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
+                                <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
+                            </form>
+                        </label>
+                    </div>
+                </div>
+                <div class="slide_2 item">
+                    <div class="left">
+                        <h1>Скорость</h1> <span>Решение за 1 час!</span>
+                        <input type="button" value="Подробнее" onClick='location.href="./loan2.htm"'>
+                    </div>
+                    <div class="right">
+                        <label>
+                            <form action="" method="POST">
+                                <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
+                                <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
+                            </form>
+                        </label>
+                    </div>
+                </div>
+                <div class="slide_3 item">
+                    <div class="left">
+                        <h1>Выгода</h1> <span>Всего 0,18% от суммы контракта</span>
+                        <input type="button" value="Подробнее" onClick='location.href="./loan3.htm"'>
+                    </div>
+                    <div class="right">
+                        <label>
+                            <form action="" method="POST">
+                                <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
+                                <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
+                            </form>
+                        </label>
+                    </div>
+                </div>
+            <!-- </div> -->
         </article>
         <article class="block_offer">
             <h2>Вкусное предложение!</h2>
@@ -122,15 +156,15 @@
             <!-- feedback popup -->
             <div id="feedback_popup">
                 <div class="give_feedback">
-                    <form action="" method="POST" enctype="multipart/form-data">
+                    <form action="./lib/phpmailer/sendmail.php" method="POST" enctype="multipart/form-data">
                         <label for="">Оставить отзыв</label>
                         <p>Ваше имя</p>
                         <input class="name_area" type="text" name="username" required="required" placeholder="">
                         <p>Ваш отзыв</p>
                         <textarea name="messagecontact" placeholder="" maxlength="250"></textarea>
                         <div class="give_feedback_btn">
-                            <!--  <input class="upload_logo" type="file" name="photo" multiple accept="image/*" value="Загрузить логотип"> -->
-                            <input id="ipload_logo_popup" class="upload_logo" type="submit" name="photo" multiple accept="image/*" value="Загрузить логотип">
+                            <!-- <input class="upload_logo" type="file" name="photo" multiple accept="image/*" value="Загрузить логотип"> -->
+                            <!-- <input id="ipload_logo_popup" class="upload_logo" type="submit" name="photo" multiple accept="image/*" value="Загрузить логотип"> -->
                             <input id="submit_popup" class="submit_feedback" class="send" type="submit" name="send" value="Оставить отзыв">
                         </div>
                     </form>
@@ -138,9 +172,9 @@
             </div>
             <!-- end feedback popup -->
 
-                <div class="t_btn_popup">
-                  <input id="feedback_popup_listener" class="t_btn" type="submit" name="submit" value="Оставить отзыв" </input>
-                </div>
+            <div class="t_btn_popup">
+                <input id="feedback_popup_listener" class="t_btn" type="submit" name="submit" value="Оставить отзыв" </input>
+            </div>
         </article>
         <article class="feedback">
             <h6>Заказать обратный звонок</h6>
@@ -202,6 +236,8 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!--	my script-->
     <script src="js/scripts.js"></script>
+    <!--	owl.corousel plugin-->
+    <script src="lib/owlcarousel/owl.carousel.js"></script>
     </script>
 </body>
 

@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <!-- gallery -->
+    <link href="./lib/lightbox/css/lightbox.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/main_loan.css">
     <link rel="stylesheet" href="css/main_loan2.css">
     <link rel="stylesheet" href="css/main_loan3.css">
@@ -31,37 +34,37 @@
 
 <body>
     <section class="container">
-      <header>
-          <nav>
-            <button class="hamburger hamburger--boring" type="button">
-                <span class="hamburger-box">
+        <header>
+            <nav>
+                <button class="hamburger hamburger--boring" type="button">
+                    <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
-                </span>
-            </button>
+                    </span>
+                </button>
 
-              <ul id="nav_items" class="nav_items">
-                  <li class="nav_parent"><a href="#">Займы &#9660;</a>
-                      <ul class="nav_child">
-                        <div class="nav_potatoes">
-                        <li><a href="./loan.htm">О займах</a></li>
-                        <li><a href="./loan2.htm">Правила предоставления</a></li>
-                        <li><a href="./loan3.htm">Получение займа</a></li>
-                        </div>
-                      </ul>
-                  </li>
-                  <li><a href="./about.htm">О компании</a></li>
-                  <li><a href="./partners.htm">Партнерская программа</a></li>
-                  <li><a href="./contacts.htm">Контакты</a></li>
-                  <li><a href="./brokers.htm">Брокерам и агентам</a></li>
-              </ul>
-          </nav>
-      </header>
+                <ul id="nav_items" class="nav_items">
+                    <li class="nav_parent"><a href="#">Займы &#9660;</a>
+                        <ul class="nav_child">
+                            <div class="nav_potatoes">
+                                <li><a href="./loan.htm">О займах</a></li>
+                                <li><a href="./loan2.htm">Правила предоставления</a></li>
+                                <li><a href="./loan3.htm">Получение займа</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="./about.htm">О компании</a></li>
+                    <li><a href="./partners.htm">Партнерская программа</a></li>
+                    <li><a href="./contacts.htm">Контакты</a></li>
+                    <li><a href="./brokers.htm">Брокерам и агентам</a></li>
+                </ul>
+            </nav>
+        </header>
 
 
         <div class="contact">
-          <div class="header_logo"><a href="./index.htm"><span>МФО </span>Тендер-Партнер
+            <div class="header_logo"><a href="./index.htm"><span>МФО </span>Тендер-Партнер
               <p>микрофинансовая организация</p></a>
-          </div>
+            </div>
             <div class="header_contacts">
                 <a class="tel" href="tel:+7495 256 80 27">8(495)256-80-27</a>
                 </br>
@@ -99,109 +102,110 @@
                 <br>
                 <input class="f_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();" maxlength></input>
             </form>
-      </article>
-      <article class="about_name">
-        <h1>МФО Тендер-Партнер</h1>
-        <div class="about_name_text">
-        <span>микрофинансовая организация</span>
-        <p>Мы предоставляем займы и микрозаймы юридическим лицам для обеспечения участия заявок в проводимых
-        электронными площадками (СБ-АСТ, ЕЭТП, ММВБ) электронных аукционах и открытых конкурсах
-      согласно требований федеральных законов 44-ФЗ и 223-ФЗ.</p>
-      </div>
-      </article>
-      <article class="block_steps_other">
-        <h5>3 шага для обеспечения заявки:</h5>
-        <div class="step">
-            <img src="./img/step_1.png" alt="step 1">
-            <p>Подайте заявку on-line</p>
-        </div>
-        <div class="step step_arrow">
-          <img src="./img/step_arrow.png" alt="step arrow">
-        </div>
-        <div class="step">
-            <img src="./img/step_2.png" alt="step 2">
-            <p>Узнайте решение в течении часа</p>
-        </div>
-        <div class="step step_arrow">
-          <img src="./img/step_arrow.png" alt="step arrow">
-        </div>
-        <div class="step">
-            <img src="./img/step_3.png" alt="step 3">
-            <p>Верните деньги после торгов</p>
-        </div>
-        <div class="step_btn">
-            <input type="button" value="Подробнее">
-        </div>
-      </article>
-      <article class="about_history">
-        <h3>Общество с ограниченной ответственностью</br>Микрофинансовая организация "Тендер-Партнер"</h3>
-        <p>была зарегистрированна в качестве юридического лица ООО "Тендер-Финанс" 12 мая 2015 года.</p></br>
-        <p>13 ноября 2015 года компания была переименована и внесена в государственный реестр микрофинансовых
-        организаций как Общество с ограниченной ответственностью "Микрофинансовая организация "Тендер-Партнер".</p>
-        <ul>
-          <li>Положение о коммерческой тайне</li>
-          <li>Положение об охране персональных данных</li>
-        </ul>
-        <div class="about_btn">
-            <a class="table_btn" download href="./resources/Положение о коммерческой тайне.pdf">Скачать</a>
-            <!-- <a class="table_btn" download href="./resources/Положение об охране персональных данных.pdf">Скачать</a> -->
-        </div>
-      </article>
-      <article class="influencer">
-          <div class="infl_title">
-              <h2>Список лиц, оказывающих влияние</h2>
-              <p>на решения микрофинансовой организации</p>
-          </div>
-          <div class="infl_main">
-              <img src="./img/about/diagram.png" alt="diagram">
-              <div class="infl_text">
-              <h4>Одинцов Юрий Геннадьевич</h4>
-              <p>владеет долей более 20%Б</br>в уставном капитале МФО</p>
-              </div>
-          </div>
-          <div class="infl_btn">
-              <a class="table_btn" download href="./resources/Список лиц, оказывающих влияние.docx">Скачать</a>
-          </div>
-      </article>
+        </article>
+        <article class="about_name">
+            <h1>МФО Тендер-Партнер</h1>
+            <div class="about_name_text">
+                <span>микрофинансовая организация</span>
+                <p>Мы предоставляем займы и микрозаймы юридическим лицам для обеспечения участия заявок в проводимых электронными площадками (СБ-АСТ, ЕЭТП, ММВБ) электронных аукционах и открытых конкурсах согласно требований федеральных законов 44-ФЗ и 223-ФЗ.</p>
+            </div>
+        </article>
+        <article class="block_steps_other">
+            <h5>3 шага для обеспечения заявки:</h5>
+            <div class="step">
+                <img src="./img/step_1.png" alt="step 1">
+                <p>Подайте заявку on-line</p>
+            </div>
+            <div class="step step_arrow">
+                <img src="./img/step_arrow.png" alt="step arrow">
+            </div>
+            <div class="step">
+                <img src="./img/step_2.png" alt="step 2">
+                <p>Узнайте решение в течении часа</p>
+            </div>
+            <div class="step step_arrow">
+                <img src="./img/step_arrow.png" alt="step arrow">
+            </div>
+            <div class="step">
+                <img src="./img/step_3.png" alt="step 3">
+                <p>Верните деньги после торгов</p>
+            </div>
+            <div class="step_btn">
+                <input type="button" value="Подробнее">
+            </div>
+        </article>
+        <article class="about_history">
+            <h3>Общество с ограниченной ответственностью</br>Микрофинансовая организация "Тендер-Партнер"</h3>
+            <p>была зарегистрированна в качестве юридического лица ООО "Тендер-Финанс" 12 мая 2015 года.</p>
+            </br>
+            <p>13 ноября 2015 года компания была переименована и внесена в государственный реестр микрофинансовых организаций как Общество с ограниченной ответственностью "Микрофинансовая организация "Тендер-Партнер".</p>
+            <ul>
+                <li>Положение о коммерческой тайне</li>
+                <li>Положение об охране персональных данных</li>
+            </ul>
+            <div class="about_btn">
+                <a class="table_btn" download href="./resources/Положение о коммерческой тайне.pdf">Скачать</a>
+                <!-- <a class="table_btn" download href="./resources/Положение об охране персональных данных.pdf">Скачать</a> -->
+            </div>
+        </article>
+        <article class="influencer">
+            <div class="infl_title">
+                <h2>Список лиц, оказывающих влияние</h2>
+                <p>на решения микрофинансовой организации</p>
+            </div>
+            <div class="infl_main">
+                <img src="./img/about/diagram.png" alt="diagram">
+                <div class="infl_text">
+                    <h4>Одинцов Юрий Геннадьевич</h4>
+                    <p>владеет долей более 20%Б</br>в уставном капитале МФО</p>
+                </div>
+            </div>
+            <div class="infl_btn">
+                <a class="table_btn" download href="./resources/Список лиц, оказывающих влияние.docx">Скачать</a>
+            </div>
+        </article>
 
-      <article class="documents">
-        <h3>Свидетельства компании</h3>
-         <figure>
-             <img src="./img/about/inn_mini.jpg" alt="ИНН МФО Тендер-Партнер">
-             <figcaption>ИНН МФО Тендер-Партнер</figcaption>
-         </figure>
-        <figure>
-            <img src="./img/about/ogrn_mini.jpg" alt="ОГРН Тендер-Партнер">
-            <figcaption>ОГРН Тендер-Партнер</figcaption>
-        </figure>
-        <figure>
-        <img src="./img/about/gosreestr_mini.jpg" alt="Свид-во госреестр мфо ООО МФО Тендер-Партнер">
-        <figcaption>Свид-во госреестр мфо</br> ООО МФО Тендер-Партнер</figcaption>
-        </figure>
-      </article>
-      <footer>
-          <div class="footer_logo">
-              <div class="f_left">
-                  <h3>Тендер<span>-</span>партнер</h3>
-                  <p>микрофинансовая организация</p>
-              </div>
-              <div class="f_right">
-                  <p>Предоставление займов и микрозаемов юридическим лицам</p>
-              </div>
-          </div>
-          <div class="footer_contacts">
-              <div class="f_cont_left">
-                  <a class="f_c_item_1 tel" href="tel:+7495 256 80 27">Телефон: <span>+7 (495)256-80-27</span></a>
-                  <br>
-                  <a class="f_c_item_2 tel" href="tel:+7495 256 80 27">Telegram: <span>+7 (926)828-84-22</span></a>
-              </div>
-              <div class="f_cont_right">
-                  <a class="f_c_item_3 tel" href="tel:+7495 256 80 27">WhatsApp: <span>+7 (926)828-84-22</span></a>
-                  <br>
-                  <a class="f_c_item_4 tel" href="tel:+7495 256 80 27">Viber: <span>+7 (926)828-84-22</span></a>
-              </div>
-          </div>
-      </footer>
+        <article class="documents">
+            <h3>Свидетельства компании</h3>
+            <figure>
+                <a href="./img/about/inn.jpg" data-lightbox="roadtrip">
+                    <img src="./img/about/inn_mini.jpg" data-lightbox="roadtrip" alt="ИНН МФО Тендер-Партнер"></a>
+                <figcaption>ИНН МФО Тендер-Партнер</figcaption>
+            </figure>
+            <figure>
+                <a href="./img/about/ogrn.jpg" data-lightbox="roadtrip">
+                    <img src="./img/about/ogrn_mini.jpg" alt="ОГРН Тендер-Партнер"></a>
+                <figcaption>ОГРН Тендер-Партнер</figcaption>
+            </figure>
+            <figure>
+                <a href="./img/about/gosreestr.jpg" data-lightbox="roadtrip">
+                    <img src="./img/about/gosreestr_mini.jpg" alt="Свид-во госреестр мфо ООО МФО Тендер-Партнер"></a>
+                <figcaption>Свид-во госреестр мфо</br> ООО МФО Тендер-Партнер</figcaption>
+            </figure>
+        </article>
+        <footer>
+            <div class="footer_logo">
+                <div class="f_left">
+                    <h3>Тендер<span>-</span>партнер</h3>
+                    <p>микрофинансовая организация</p>
+                </div>
+                <div class="f_right">
+                    <p>Предоставление займов и микрозаемов юридическим лицам</p>
+                </div>
+            </div>
+            <div class="footer_contacts">
+                <div class="f_cont_left">
+                    <a class="f_c_item_1 tel" href="tel:+7495 256 80 27">Телефон: <span>+7 (495)256-80-27</span></a>
+                    <br>
+                    <a class="f_c_item_2 tel" href="tel:+7495 256 80 27">Telegram: <span>+7 (926)828-84-22</span></a>
+                </div>
+                <div class="f_cont_right">
+                    <a class="f_c_item_3 tel" href="tel:+7495 256 80 27">WhatsApp: <span>+7 (926)828-84-22</span></a>
+                    <br>
+                    <a class="f_c_item_4 tel" href="tel:+7495 256 80 27">Viber: <span>+7 (926)828-84-22</span></a>
+                </div>
+            </div>
+        </footer>
 
     </section>
 
@@ -209,6 +213,8 @@
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <!--	my script-->
     <script src="js/scripts.js"></script>
-    </body>
+    <!--	gallery script  lightbox-->
+    <script src="lib/lightbox/js/lightbox.js"></script>
+</body>
 
-    </html>
+</html>

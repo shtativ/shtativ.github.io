@@ -243,10 +243,21 @@ nav .nav_parent:hover .nav_potatoes {
 }
 /*END CONTACT*/
 /*SLIDE BLOCK*/
-
+.block_slide .slide_1{
+  background: url('../img/article1_1.jpg') 50% 0 no-repeat;
+  background-size: cover;
+}
+.block_slide .slide_2{
+  background: url('../img/article1_2.jpg') 50% 0 no-repeat;
+  background-size: cover;
+}
+.block_slide .slide_3{
+  background: url('../img/article1_3.jpg') 50% 0 no-repeat;
+  background-size: cover;
+}
 .block_slide {
-    background: url('../img/article1_1.jpg') 50% 0 no-repeat;
-    background-size: cover;
+    /*background: url('../img/article1_1.jpg') 50% 0 no-repeat;
+    background-size: cover;*/
     width: 100%;
     height: auto;
 }
@@ -267,7 +278,7 @@ nav .nav_parent:hover .nav_potatoes {
     -webkit-align-items: flex-start;
             align-items: flex-start;
     max-width: 350px;
-    margin: 80px 70px;
+    margin: 0px 70px;
 }
 .left {
     font-family: 'PTSansProBold', sans-serif;

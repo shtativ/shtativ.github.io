@@ -10,10 +10,30 @@ $hamburger.on("click", function(e) {
     $('#feedback_popup').fadeIn('slow');
 });
 
+//owl.carousel
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  items:1,
+  dots:false,
+  autoplay:true,
+  smartSpeed: 1050
+});
+
+
+
 // click out popup
-
-
 var $submit_popup = $(".submit_feedback");
-$submit_feedback.on("click", ':not(#feedback_popup)', function(){
+$submit_popup.on("click", ':not("#feedback_popup")', function(){
   $('#feedback_popup').fadeOut('slow')
+});
+
+//send feedback
+$('.give_feedback form').submit(function(e){
+  e.preventDefault();
+  $.post('./lib/phpmailer/sendmail.php', $(this).serialize(),function(data){
+    //тут можно что-то сделать,чтобы показать сообщение об успешной отправке
+  });
+    $('#feedback_popup').fadeOut('slow')
 });
