@@ -23,8 +23,7 @@ $mail->SMTPAuth = false;                               // Enable SMTP authentica
 
 
 $mail->setFrom('robot@tender-partner.com', 'Tender-Partner');
-$mail->addAddress('robot@tender-partner.com');     // почта, куда отправляются отзывы
-
+$mail->addAddress('1@tender-partner.com');     // почта, куда отправляются отзывы
 
 
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
@@ -32,7 +31,7 @@ $mail->addAddress('robot@tender-partner.com');     // почта, куда от�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Отзыв с tender-partner.com';
-$mail->Body    = "<h2>Новый отзыв!</h2><br><b>От:</b> $name<br><br><small>источник: $message</small>";
+$mail->Body    = "<h2>Новый отзыв!</h2><br><b>От:</b> $name<br><small>источник: $message</small>";
 $mail->AltBody =    "Отзыв с tender-partner.com!
                     От: $name
                     Отзыв: $message

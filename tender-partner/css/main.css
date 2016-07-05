@@ -19,19 +19,20 @@ button::-moz-focus-inner {
     display: flex;
     -ms-flex-flow: column nowrap;
     -webkit-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+    flex-flow: column nowrap;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-            align-items: center;
+    align-items: center;
     width: 100%;
     max-width: 1200px;
     margin: auto;
 }
+
 /*NAV*/
 
 header {
@@ -42,6 +43,7 @@ header {
     background: #FFF;
     box-sizing: border-box;
     position: fixed;
+    z-index: 999;
 }
 nav button {
     outline: none;
@@ -53,7 +55,7 @@ nav .hamburger {
     overflow: hidden;
     -webkit-transform: scale(0.6);
     -ms-transform: scale(0.6);
-        transform: scale(0.6);
+    transform: scale(0.6);
 }
 nav ul {
     display: -webkit-box;
@@ -62,11 +64,11 @@ nav ul {
     display: flex;
     -ms-flex-flow: row nowrap;
     -webkit-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    flex-flow: row nowrap;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     width: 100%;
     max-width: 1200px;
     box-sizing: border-box;
@@ -106,7 +108,7 @@ nav ul a {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
-nav .nav_items > li:hover  > a {
+nav .nav_items> li:hover> a {
     color: #057fb5;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -124,7 +126,7 @@ nav .nav_potatoes {
 nav .nav_child {
     padding: 0;
 }
-nav .nav_potatoes li{
+nav .nav_potatoes li {
     display: block;
     font-size: 15px;
     border: none;
@@ -137,18 +139,17 @@ nav .nav_potatoes li{
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
-
-nav .nav_potatoes a{
-  font-size: 15px;
-  color: #6D6E71;
-  text-decoration: none;
-  overflow: hidden;
-  text-transform:none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+nav .nav_potatoes a {
+    font-size: 15px;
+    color: #6D6E71;
+    text-decoration: none;
+    overflow: hidden;
+    text-transform: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 nav .nav_potatoes li:hover a {
     color: #057fb5;
@@ -171,7 +172,10 @@ nav .nav_parent:hover .nav_potatoes {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+
 /*END NAV*/
+
+
 /*CONTACT*/
 
 .contact {
@@ -181,11 +185,11 @@ nav .nav_parent:hover .nav_potatoes {
     display: flex;
     -ms-flex-flow: row nowrap;
     -webkit-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    flex-flow: row nowrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
-            justify-content: space-between;
+    justify-content: space-between;
     background: #F2F2F2;
     width: 100%;
     height: 80px;
@@ -241,23 +245,31 @@ nav .nav_parent:hover .nav_potatoes {
 .header_contacts .email {
     font-size: 24px;
 }
+
 /*END CONTACT*/
+
+
 /*SLIDE BLOCK*/
-.block_slide .slide_1{
-  background: url('../img/article1_1.jpg') 50% 0 no-repeat;
-  background-size: cover;
+
+.block_slide .slide_1 {
+    background: url('../img/article1_1.jpg') 50% 0 no-repeat;
+    background-size: cover;
 }
-.block_slide .slide_2{
-  background: url('../img/article1_2.jpg') 50% 0 no-repeat;
-  background-size: cover;
+.block_slide .slide_2 {
+    background: url('../img/article1_2.jpg') 50% 0 no-repeat;
+    background-size: cover;
 }
-.block_slide .slide_3{
-  background: url('../img/article1_3.jpg') 50% 0 no-repeat;
-  background-size: cover;
+.block_slide .slide_3 {
+    background: url('../img/article1_3.jpg') 50% 0 no-repeat;
+    background-size: cover;
+}
+.block_slide .slide_3 .left {
+    padding-bottom: 27px;
+}
+.block_slide .slide_3 .left h1 {
+    margin-bottom: 10px;
 }
 .block_slide {
-    /*background: url('../img/article1_1.jpg') 50% 0 no-repeat;
-    background-size: cover;*/
     width: 100%;
     height: auto;
 }
@@ -268,15 +280,15 @@ nav .nav_parent:hover .nav_potatoes {
     display: flex;
     -ms-flex-flow: column wrap;
     -webkit-flex-flow: column wrap;
-            flex-flow: column wrap;
+    flex-flow: column wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
-            justify-content: space-between;
+    justify-content: space-between;
     -webkit-box-align: start;
     -ms-flex-align: start;
     -webkit-align-items: flex-start;
-            align-items: flex-start;
+    align-items: flex-start;
     max-width: 350px;
     margin: 0px 70px;
 }
@@ -306,7 +318,7 @@ nav .nav_parent:hover .nav_potatoes {
 .left input {
     -ms-flex-item-align: end;
     -webkit-align-self: flex-end;
-            align-self: flex-end;
+    align-self: flex-end;
     width: 150px;
     height: 45px;
     background: #FF7900;
@@ -337,15 +349,15 @@ nav .nav_parent:hover .nav_potatoes {
     display: flex;
     -ms-flex-flow: column-reverse wrap;
     -webkit-flex-flow: column-reverse wrap;
-            flex-flow: column-reverse wrap;
+    flex-flow: column-reverse wrap;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
-            justify-content: flex-end;
+    justify-content: flex-end;
     -webkit-box-align: end;
     -ms-flex-align: end;
     -webkit-align-items: flex-end;
-            align-items: flex-end;
+    align-items: flex-end;
     height: 100%;
     padding-top: 25px;
 }
@@ -357,15 +369,15 @@ nav .nav_parent:hover .nav_potatoes {
     display: flex;
     -ms-flex-flow: column;
     -webkit-flex-flow: column;
-            flex-flow: column;
+    flex-flow: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-            align-items: center;
+    align-items: center;
 }
 .right .right_tel {
     max-width: 430px;
@@ -407,7 +419,10 @@ nav .nav_parent:hover .nav_potatoes {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+
 /*END SLIDE BLOCK*/
+
+
 /*OFFER BLOCK*/
 
 .block_offer {
@@ -443,7 +458,10 @@ nav .nav_parent:hover .nav_potatoes {
     content: url("../img/offer_check.png");
     display: inline-block;
 }
+
 /*END OFFER BLOCK*/
+
+
 /*STEPS BLOCK*/
 
 .block_steps {
@@ -453,15 +471,15 @@ nav .nav_parent:hover .nav_potatoes {
     display: flex;
     -ms-flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     -webkit-align-items: baseline;
-            align-items: baseline;
+    align-items: baseline;
     background: url('../img/steps_bg.jpg') no-repeat;
     background-size: cover;
     height: auto;
@@ -485,15 +503,15 @@ nav .nav_parent:hover .nav_potatoes {
     display: flex;
     -ms-flex-flow: column nowrap;
     -webkit-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+    flex-flow: column nowrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-            align-items: center;
+    align-items: center;
     width: 245px;
     height: auto;
     margin: 0 30px 30px;
@@ -511,7 +529,10 @@ nav .nav_parent:hover .nav_potatoes {
     padding: 0;
     width: 100%;
 }
+
 /*END STEPS BLOCK*/
+
+
 /*TESTIMONIALS BLOCK*/
 
 .testimonials {
@@ -538,15 +559,15 @@ nav .nav_parent:hover .nav_potatoes {
     display: flex;
     -ms-flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: start;
     -ms-flex-align: start;
     -webkit-align-items: flex-start;
-            align-items: flex-start;
+    align-items: flex-start;
     padding: 25px 75px;
 }
 .t_item .t_item_logo {
@@ -566,7 +587,7 @@ nav .nav_parent:hover .nav_potatoes {
     padding: 15px;
     -ms-flex-preferred-size: 50%;
     -webkit-flex-basis: 50%;
-            flex-basis: 50%;
+    flex-basis: 50%;
 }
 .t_item .review span {
     color: #231F20;
@@ -594,11 +615,11 @@ nav .nav_parent:hover .nav_potatoes {
     display: flex;
     -ms-flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
-            justify-content: flex-end;
+    justify-content: flex-end;
 }
 .testimonials .t_btn {
     width: 218px;
@@ -625,13 +646,16 @@ nav .nav_parent:hover .nav_potatoes {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
-.testimonials .t_btn_popup{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: center;
+.testimonials .t_btn_popup {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
 }
+
 /*END TESTIMONIALS BLOCK*/
+
+
 /*FEEDBACK BLOCK*/
 
 .feedback {
@@ -707,7 +731,10 @@ nav .nav_parent:hover .nav_potatoes {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+
 /*END FEEDBACK BLOCK*/
+
+
 /*OUR PARTNERS BLOCK*/
 
 .our_partners {
@@ -735,15 +762,15 @@ nav .nav_parent:hover .nav_potatoes {
     display: flex;
     -ms-flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-            align-items: center;
+    align-items: center;
 }
 .partner_item {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -756,7 +783,10 @@ nav .nav_parent:hover .nav_potatoes {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+
 /*END OUR PARTNERS BLOCK*/
+
+
 /*FOOTER*/
 
 footer {
@@ -773,15 +803,15 @@ footer .footer_logo {
     display: flex;
     -ms-flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: start;
     -ms-flex-align: start;
     -webkit-align-items: flex-start;
-            align-items: flex-start;
+    align-items: flex-start;
 }
 footer .footer_contacts {
     display: -webkit-box;
@@ -790,15 +820,15 @@ footer .footer_contacts {
     display: flex;
     -ms-flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-            align-items: center;
+    align-items: center;
     padding-left: 40px;
     line-height: 2.2;
 }
@@ -880,21 +910,21 @@ footer .f_right p {
     -webkit-box-flex: 2;
     -ms-flex: 2 1 300px;
     -webkit-flex: 2 1 300px;
-            flex: 2 1 300px;
+    flex: 2 1 300px;
     padding: 0 20px 20px;
 }
 .f_right {
     -webkit-box-flex: 2;
     -ms-flex: 2 1 300px;
     -webkit-flex: 2 1 300px;
-            flex: 2 1 300px;
+    flex: 2 1 300px;
     padding: 0 20px 20px;
 }
 .footer_contacts .f_cont_left {
     -webkit-box-flex: 2;
     -ms-flex: 2 1 350px;
     -webkit-flex: 2 1 350px;
-            flex: 2 1 350px;
+    flex: 2 1 350px;
     text-align: left;
     padding-top: 20px;
 }
@@ -902,7 +932,7 @@ footer .f_right p {
     -webkit-box-flex: 2;
     -ms-flex: 2 1 350px;
     -webkit-flex: 2 1 350px;
-            flex: 2 1 350px;
+    flex: 2 1 350px;
     text-align: left;
     padding-top: 20px;
 }
@@ -913,10 +943,13 @@ footer .f_right p {
 .f_c_item_4 span {
     margin-left: 62px;
 }
+
 /*END FOOTER*/
 
 
 /*//POP-UPS//*/
+
+
 /* PASSWORD FORM*/
 
 .pass {
@@ -939,15 +972,15 @@ footer .f_right p {
     display: flex;
     -ms-flex-flow: column nowrap;
     -webkit-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+    flex-flow: column nowrap;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-            align-items: center;
+    align-items: center;
     font-family: 'PTSansProBold', sans-serif;
     font-size: 36px;
     font-weight: normal;
@@ -1022,22 +1055,26 @@ footer .f_right p {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+
 /*ENS PASSWORD FORM*/
+
+
 /* GIVE FEEDBACK FORM*/
-#feedback_popup{
-  text-align: center;
-  background-color: rgba(59, 67, 76, 0.95);
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  max-width: 815px;
-  width: 80%;
-  height: 100%;
-  display: none;
-  align-items: center;
-  position: relative;
-  left:0;
-  top:200px;
-  margin: 0 auto;
-  z-index: 333;
+
+#feedback_popup {
+    text-align: center;
+    background-color: rgba(59, 67, 76, 0.95);
+    filter: progid: DXImageTransform.Microsoft.Alpha(opacity=50);
+    max-width: 815px;
+    width: 80%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    position: relative;
+    left: 0;
+    top: 200px;
+    margin: 0 auto;
+    z-index: 333;
 }
 .give_feedback {
     background: #444F66;
@@ -1056,15 +1093,15 @@ footer .f_right p {
     display: flex;
     -ms-flex-flow: column nowrap;
     -webkit-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+    flex-flow: column nowrap;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-            align-items: center;
+    align-items: center;
     font-family: 'PTSansProBold', sans-serif;
     font-size: 36px;
     font-weight: normal;
@@ -1087,7 +1124,7 @@ footer .f_right p {
     margin: 0 85px;
     -ms-flex-item-align: start;
     -webkit-align-self: flex-start;
-            align-self: flex-start;
+    align-self: flex-start;
 }
 .give_feedback form .name_area {
     max-width: 754px;
@@ -1160,4 +1197,5 @@ footer .f_right p {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+
 /* END GIVE FEEDBACK FORM*/

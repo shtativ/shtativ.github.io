@@ -12,6 +12,8 @@
 
     <!-- gallery -->
     <link href="./lib/lightbox/css/lightbox.css" rel="stylesheet">
+    <!--owl.carousel-->
+    <link rel="stylesheet" type="text/css" href="lib/owlcarousel/assets/owl.carousel.css" />
 
     <link rel="stylesheet" href="css/main_loan.css">
     <link rel="stylesheet" href="css/main_loan2.css">
@@ -72,17 +74,72 @@
             </div>
         </div>
         <article class="block_slide">
-            <div class="left">
-                <h1>Простота</h1> <span>Минимум документов!</span>
-                <input type="button" value="Подробнее">
+            <div class="owl-carousel">
+                <div class="slide_1 item">
+                    <div class="left">
+                        <h1>Простота</h1> <span>Минимум документов!</span>
+                        <input type="button" value="Подробнее" onClick='location.href="./loan.htm"'>
+                    </div>
+                    <div class="right">
+                        <label>
+                            <form action="" method="POST">
+                                <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
+                                <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
+                            </form>
+                        </label>
+                    </div>
+                </div>
+                <div class="slide_2 item">
+                    <div class="left">
+                        <h1>Скорость</h1> <span>Решение за 1 час!</span>
+                        <input type="button" value="Подробнее" onClick='location.href="./loan2.htm"'>
+                    </div>
+                    <div class="right">
+                        <label>
+                            <form action="" method="POST">
+                                <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
+                                <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
+                            </form>
+                        </label>
+                    </div>
+                </div>
+                <div class="slide_3 item">
+                    <div class="left">
+                        <h1>Выгода</h1> <span>Всего 0,18% от суммы контракта</span>
+                        <input type="button" value="Подробнее" onClick='location.href="./loan3.htm"'>
+                    </div>
+                    <div class="right">
+                        <label>
+                            <form action="" method="POST">
+                                <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
+                                <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
+                            </form>
+                        </label>
+                    </div>
+                </div>
             </div>
-            <div class="right">
-                <label>
-                    <form action="" method="POST">
-                        <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
-                        <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
-                    </form>
-                </label>
+        </article>
+        <article class="block_offer">
+            <h2>Вкусное предложение!</h2>
+            <ul>
+                <li>Без открытия счета</li>
+                <li>Без залога</li>
+                <li>Ставка 0,18% от суммы контракта</li>
+            </ul>
+        </article>
+        <article class="block_steps">
+            <h5>3 шага для обеспечения заявки:</h5>
+            <div class="step">
+                <img src="./img/step_1.png" alt="step 1">
+                <p>Подайте заявку on-line</p>
+            </div>
+            <div class="step">
+                <img src="./img/step_2.png" alt="step 2">
+                <p>Узнайте решение в течении часа</p>
+            </div>
+            <div class="step">
+                <img src="./img/step_3.png" alt="step 3">
+                <p>Верните деньги после торгов</p>
             </div>
         </article>
         <article class="block_offer">
@@ -211,6 +268,8 @@
 
     <!-- jQuery  -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!--	owl.corousel plugin-->
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <!--	my script-->
     <script src="js/scripts.js"></script>
     <!--	gallery script  lightbox-->

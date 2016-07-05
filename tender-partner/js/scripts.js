@@ -14,11 +14,11 @@ $hamburger.on("click", function(e) {
 $('.owl-carousel').owlCarousel({
   loop:true,
   margin:10,
-  nav:true,
   items:1,
-  dots:false,
   autoplay:true,
-  smartSpeed: 1050
+  smartSpeed: 1050,
+  nav:false,
+  navText:['','']
 });
 
 
