@@ -75,8 +75,8 @@
                     </div>
                     <div class="right">
                         <label>
-                            <form action="" method="POST">
-                                <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
+                            <form class="callback_form" action="./lib/phpmailer/callback.php" method="POST">
+                                <input  id="callback" class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
                                 <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
                             </form>
                         </label>
@@ -89,8 +89,8 @@
                     </div>
                     <div class="right">
                         <label>
-                            <form action="" method="POST">
-                                <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
+                            <form class="callback_form" action="./lib/phpmailer/callback.php" method="POST">
+                                <input  id="callback" class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
                                 <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
                             </form>
                         </label>
@@ -103,8 +103,8 @@
                     </div>
                     <div class="right">
                         <label>
-                            <form action="" method="POST">
-                                <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
+                            <form class="callback_form" action="./lib/phpmailer/callback.php" method="POST">
+                                <input  id="callback" class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
                                 <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
                             </form>
                         </label>
@@ -159,7 +159,7 @@
                     <form action="./lib/phpmailer/sendmail.php" method="POST" enctype="multipart/form-data">
                         <label for="">Оставить отзыв</label>
                         <p>Ваше имя</p>
-                        <input class="name_area" type="text" name="username" required="required" placeholder="">
+                        <input class="name_area" type="text" name="name" required="required" placeholder="">
                         <p>Ваш отзыв</p>
                         <textarea name="messagecontact" placeholder="" maxlength="250"></textarea>
                         <div class="give_feedback_btn">
@@ -178,10 +178,10 @@
         </article>
         <article class="feedback">
             <h6>Заказать обратный звонок</h6>
-            <form action="" method="POST">
+            <form class="callback_form" action="./lib/phpmailer/callback.php" method="POST">
                 <p>Ваш телефон</p>
                 <label for=”tel”></label>
-                <input class="f_tel" type="tel" name="phone" maxlength="25" x-webkit-speech>
+                <input  id="callback" class="f_tel" type="tel" name="phone" maxlength="25" x-webkit-speech>
                 <br>
                 <input class="f_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();" maxlength></input>
             </form>

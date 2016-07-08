@@ -58,7 +58,6 @@
             </nav>
         </header>
 
-
         <div class="contact">
             <div class="header_logo"><a href="./index.htm"><span>МФО </span>Тендер-Партнер
             <p>микрофинансовая организация</p></a>
@@ -69,6 +68,7 @@
                 <a class="email" href="mailto:1@tender-partner.com">1@tender-partner.com</a>
             </div>
         </div>
+
         <article class="block_slide">
             <div class="owl-carousel">
                 <div class="slide_1 item">
@@ -78,7 +78,7 @@
                     </div>
                     <div class="right">
                         <label>
-                            <form action="" method="POST">
+                            <form class="callback_form" action="./lib/phpmailer/callback.php" method="POST">
                                 <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
                                 <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
                             </form>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="right">
                         <label>
-                            <form action="" method="POST">
+                            <form class="callback_form" action="./lib/phpmailer/callback.php" method="POST">
                                 <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
                                 <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
                             </form>
@@ -106,7 +106,7 @@
                     </div>
                     <div class="right">
                         <label>
-                            <form action="" method="POST">
+                            <form class="callback_form" action="./lib/phpmailer/callback.php" method="POST">
                                 <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
                                 <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
                             </form>
@@ -115,31 +115,9 @@
                 </div>
             </div>
         </article>
-        <article class="block_offer">
-            <h2>Вкусное предложение!</h2>
-            <ul>
-                <li>Без открытия счета</li>
-                <li>Без залога</li>
-                <li>Ставка 0,18% от суммы контракта</li>
-            </ul>
-        </article>
-        <article class="block_steps">
-            <h5>3 шага для обеспечения заявки:</h5>
-            <div class="step">
-                <img src="./img/step_1.png" alt="step 1">
-                <p>Подайте заявку on-line</p>
-            </div>
-            <div class="step">
-                <img src="./img/step_2.png" alt="step 2">
-                <p>Узнайте решение в течении часа</p>
-            </div>
-            <div class="step">
-                <img src="./img/step_3.png" alt="step 3">
-                <p>Верните деньги после торгов</p>
-            </div>
-        </article>
+
         <nav class="nav_loan">
-            <ul class="nav_loan_items">
+            <ul class="loan_chils">
                 <li><a href="./loan.htm">О займах</a></li>
                 <li><a href="./loan2.htm">Правила предоставления</a></li>
                 <li><a href="./loan3.htm">Получение займа</a></li>

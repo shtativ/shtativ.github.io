@@ -82,7 +82,7 @@
                     </div>
                     <div class="right">
                         <label>
-                            <form action="" method="POST">
+                            <form class="callback_form" action="./lib/phpmailer/callback.php" method="POST">
                                 <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
                                 <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
                             </form>
@@ -96,7 +96,7 @@
                     </div>
                     <div class="right">
                         <label>
-                            <form action="" method="POST">
+                            <form class="callback_form" action="./lib/phpmailer/callback.php" method="POST">
                                 <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
                                 <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
                             </form>
@@ -110,7 +110,7 @@
                     </div>
                     <div class="right">
                         <label>
-                            <form action="" method="POST">
+                            <form class="callback_form" action="./lib/phpmailer/callback.php" method="POST">
                                 <input class="right_tel" type="tel" name="phone" placeholder="Ваш телефон" maxlength="25" x-webkit-speech>
                                 <input class="r_btn" type="submit" name="submit" value="Получить займ" onclick="openMenuModal();"></input>
                             </form>
@@ -119,6 +119,7 @@
                 </div>
             </div>
         </article>
+
         <article class="block_offer">
             <h2>Вкусное предложение!</h2>
             <ul>
@@ -148,16 +149,18 @@
         </article>
 
         <article class="form_of_feedback">
-            <form action="" method="POST" enctype="multipart/form-data">
+          <!-- <div class="give_feedback"> -->
+            <form action="./lib/phpmailer/sendmail.php" method="POST" enctype="multipart/form-data">
                 <label for="">Форма обратной связи</label>
                 <p>Ваше имя</p>
-                <input class="name_area" type="text" name="username" required="required" placeholder="">
+                <input id="callback" class="name_area" type="text" name="name" required="required" placeholder="">
                 <p>Ваше сообщение</p>
-                <textarea name="messagecontact" placeholder="" maxlength="999"></textarea>
+                <textarea id="callback" name="messagecontact" placeholder="" maxlength="999"></textarea>
                 <div class="form_of_feedback_btn">
                     <input class="submit_feedback" class="send" type="submit" name="send" value="Отправить">
                 </div>
             </form>
+          <!-- </div> -->
         </article>
         <article class="feedback_map">
             <p>По всем вопросам можно обращаться по адресу:</br>

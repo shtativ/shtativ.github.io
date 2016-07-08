@@ -37,3 +37,20 @@ $('.give_feedback form').submit(function(e){
   });
     $('#feedback_popup').fadeOut('slow')
 });
+//send feedback (contact.htm)
+$('.form_of_feedback form').submit(function(e){
+  e.preventDefault();
+  $.post('./lib/phpmailer/sendmail.php', $(this).serialize(),function(data){
+    //тут можно что-то сделать,чтобы показать сообщение об успешной отправке
+  });
+});
+
+//callback feedback
+$('.callback_form').submit(function(e){
+  e.preventDefault();
+  $.post('./lib/phpmailer/callback.php', $(this).serialize(),function(data){
+    //тут можно что-то сделать,чтобы показать сообщение об успешной отправке
+  });
+  $('#callback').val(null);
+    // $('#feedback_popup').fadeOut('slow')
+});

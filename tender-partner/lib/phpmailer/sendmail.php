@@ -14,16 +14,12 @@ $mail = new PHPMailer;
 $mail->CharSet = "UTF-8"; //возможно нужно будет убрать
 
 
-
-
-
-
-
 $mail->SMTPAuth = false;                               // Enable SMTP authentication
 
 
 $mail->setFrom('robot@tender-partner.com', 'Tender-Partner');
 $mail->addAddress('1@tender-partner.com');     // почта, куда отправляются отзывы
+$mail->addAddress('buwozoc@divismail.ru');     // почта, куда отправляются отзывы
 
 
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
@@ -31,7 +27,7 @@ $mail->addAddress('1@tender-partner.com');     // почта, куда отпр�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Отзыв с tender-partner.com';
-$mail->Body    = "<h2>Новый отзыв!</h2><br><b>От:</b> $name<br><small>источник: $message</small>";
+$mail->Body    = "<h2>Новый отзыв!</h2><br><b>От:</b> $name<br><small>Отзыв: $message</small>";
 $mail->AltBody =    "Отзыв с tender-partner.com!
                     От: $name
                     Отзыв: $message
