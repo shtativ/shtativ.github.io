@@ -1,0 +1,231 @@
+body {
+    background: rgba(98, 230, 149, 0.37);
+    padding: 30px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+header {
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header .logo span {
+    font-family: 'Linux Libertine Slanted';
+    font-size: 11px;
+    word-spacing: -0.5px;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+    text-align: center;
+    color: #EBEBEB;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+    max-width: 500px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 40px 5px;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 3px rgba(255, 255, 255, 0) solid;
+}
+
+nav ul li:hover {
+    border-bottom: 3px #FFF solid;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul a {
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.nav_search {
+    position: relative;
+    width: 220px;
+}
+
+.nav_search input {
+    border: none;
+}
+
+.nav_search .search {
+    width: 100%;
+    height: 44px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    background: #E8E8E8;
+    color: #3a4d60;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+    padding: 8px 37px 9px 15px;
+}
+
+.nav_search .search:focus {
+    background: #FFF;
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.nav_search .submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 37px;
+    height: 100%;
+    cursor: pointer;
+    color: black;
+    background: url('../img/icons/search_3.png') 50% no-repeat;
+    outline: none;
+    opacity: 0.5;
+}
+
+.nav_search .submit:hover {
+    opacity: 0.8;
+}
+
+
+/* данное свойство необходимо для того, чтобы в браузерах
+** Chrome и Safari можно было стилизовать инпуты */
+
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+.top {
+    background: url('../img/top_bg.jpg') 60% no-repeat;
+    background-size: cover;
+    min-height: 800px;
+}
+
+.top .title {
+    padding-top: 170px;
+}
+
+.top .title h1 {
+    max-width: 550px;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 50px;
+    font-weight: 400;
+    text-align: right;
+    font-style: normal;
+    padding: 0 10px;
+    margin-bottom: 25px;
+}
+
+.top .title p {
+    width: 100%;
+    max-width: 500px;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 50px;
+    font-weight: 400;
+    text-align: right;
+    font-style: normal;
+    margin-bottom: 25px;
+    padding: 0 0 0 140px;
+}
+
+.top .title button {
+    width: 280px;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    background: #8824cd;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    padding: 20px 10px;
+    margin: 25px 10px 18px;
+}
+
+.top .title button:active {
+    outline: none;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 1px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.top .title button:focus {
+    outline: none;
+}
+
+.top .title button::-moz-focus-inner {
+    border: 0;
+}
+
+.top .title span {
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 400;
+    word-wrap: normal;
+    margin: 0 30px;
+}
+
+
+/*end top section*/
+
+
+/*masthead section*/
+
+.masthead {
+    background: #2e3b4e;
+    margin: 0;
+    padding: 55px 0 90px;
+}
+
+.masthead h4 {
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0;
+    margin: 20px 10px;
+}
+
+.masthead p {
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+    padding: 0;
+    margin: 14px 0 48px;
+}
+
+
+/*end masthead section*/
