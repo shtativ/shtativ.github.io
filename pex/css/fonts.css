@@ -20,15 +20,14 @@
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/open_sans/bold/opensans-700-normal.woff2') format('woff2'), url('../fonts/open_sans/bold/opensans-700-normal.woff') format('woff'), url('../fonts/open_sans/bold/opensans-700-normal.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Linux Libertine Slanted';
     src: url('../fonts/linux_libertine_slanted/linlibslanted-600-normal.woff2') format('woff2'), url('../fonts/linux_libertine_slanted/linlibslanted-600-normal.woff') format('woff'), url('../fonts/linux_libertine_slanted/linlibslanted-600-normal.ttf') format('truetype');
     font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open_sans/bold/opensans-700-normal.woff2') format('woff2'), url('../fonts/open_sans/bold/opensans-700-normal.woff') format('woff'), url('../fonts/open_sans/bold/opensans-700-normal.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
 }

@@ -155,7 +155,7 @@ input[type="search"] {
     padding: 0 0 0 140px;
 }
 
-.top .title button {
+.btn_purple {
     width: 280px;
     color: #FFF;
     font-family: 'Open Sans';
@@ -171,17 +171,17 @@ input[type="search"] {
     margin: 25px 10px 18px;
 }
 
-.top .title button:active {
+.btn_purple:active {
     outline: none;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 1px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
 }
 
-.top .title button:focus {
+.btn_purple:focus {
     outline: none;
 }
 
-.top .title button::-moz-focus-inner {
+.btn_purple::-moz-focus-inner {
     border: 0;
 }
 
@@ -195,10 +195,10 @@ input[type="search"] {
 }
 
 
-/*end top section*/
+/*-end-TOP section*/
 
 
-/*masthead section*/
+/*MASTHEAD section*/
 
 .masthead {
     background: #2e3b4e;
@@ -228,4 +228,208 @@ input[type="search"] {
 }
 
 
-/*end masthead section*/
+/*-end-MASTHEAD section*/
+
+
+/*PINK section*/
+
+.pink {
+    background: url('../img/pink_bg.jpg') no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0 0 180px;
+}
+
+.pink img {
+    display: block;
+    position: relative;
+    top: -2px;
+    margin: 0 auto;
+}
+
+.pink h2 {
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 35px;
+    font-weight: 300;
+    padding: 0;
+    margin: 86px 0 0;
+}
+
+.pink p {
+    max-width: 447px;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 10px 0 30px;
+}
+
+.pink button {
+    width: 344px;
+    background: #FFF;
+    border-radius: 50px;
+    color: #d54c63;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    padding: 17px 20px 19px;
+    margin: 0 0 14px;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+}
+
+.pink button:active {
+    background: #d54c63;
+    color: #FFF;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.pink button:focus {
+    outline: none;
+}
+
+.pink button::-moz-focus-inner {
+    border: 0;
+}
+
+
+/*-end-PINK section*/
+
+
+/*NEED section*/
+
+.need {
+    background: #FFF;
+    color: #3a4d60;
+    font-family: 'Open Sans';
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.need .need_right {
+    max-width: 648px;
+    padding: 0 20px;
+    margin: 85px 0 40px;
+    text-align: justify;
+}
+
+.need h5 {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.need p {
+    max-width: 648px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+.need span {
+    font-size: 15px;
+}
+
+
+/*-end-NEED section*/
+
+
+/*BASE section*/
+
+.base {
+    background: url('../img/base_bg.jpg') 50% no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans';
+    color: #FFF;
+    font-weight: 400;
+}
+
+.base .base_bg_2 {
+    opacity: 0.8;
+    background-color: #521a66;
+    max-width: 1600px;
+    box-sizing: border-box;
+    margin: 94px 0 0;
+    padding: 94px 20px 116px;
+}
+
+.base h2 {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+    padding: 20px;
+}
+
+.base p {
+    max-width: 762px;
+    color: #a87bb7;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.base span {
+    font-size: 12px;
+}
+
+
+/*-end-BASE section*/
+
+
+/*POST section*/
+
+.post {
+    background: url('../img/post_bg.jpg') 50% no-repeat;
+    background-size: cover;
+    color: #FFF;
+    font-family: 'Open Sans';
+    padding: 340px 0 90px;
+}
+
+.post span {
+    font-size: 13px;
+    font-weight: 600;
+    border: 2px solid #FFF;
+    border-radius: 50px;
+    padding: 6px 24px 8px;
+    margin: 0;
+}
+
+.post h1 {
+    /* Text style for "Lorem ipsu" */
+    max-width: 534px;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+    padding: 28px 0 20px;
+}
+
+.post .author {
+    display: flex;
+    align-items: center;
+}
+
+.post .img {
+    padding: 0;
+    margin: 0;
+}
+
+.post p {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 15px;
+}
+
+
+/*-end-POST section*/
