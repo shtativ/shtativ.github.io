@@ -1,6 +1,6 @@
 body {
-    background: rgba(98, 230, 149, 0.37);
-    padding: 30px;
+    background: #424242;
+    padding: 0 30px;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -353,6 +353,10 @@ input[type="search"] {
     font-weight: 400;
 }
 
+.base .row {
+    margin: 0;
+}
+
 .base .base_bg_2 {
     opacity: 0.8;
     background-color: #521a66;
@@ -394,6 +398,11 @@ input[type="search"] {
     color: #FFF;
     font-family: 'Open Sans';
     padding: 340px 0 90px;
+    box-sizing: border-box;
+}
+
+.post .post_left {
+    margin-left: 74px;
 }
 
 .post span {
@@ -402,7 +411,8 @@ input[type="search"] {
     border: 2px solid #FFF;
     border-radius: 50px;
     padding: 6px 24px 8px;
-    margin: 0;
+    margin: 0 0 0 74px;
+    box-sizing: border-box;
 }
 
 .post h1 {
@@ -410,13 +420,15 @@ input[type="search"] {
     max-width: 534px;
     font-size: 40px;
     font-weight: 400;
-    margin: 0;
+    margin: 0 0 0 74px;
     padding: 28px 0 20px;
+    box-sizing: border-box;
 }
 
 .post .author {
     display: flex;
     align-items: center;
+    margin-left: 74px;
 }
 
 .post .img {
@@ -433,3 +445,88 @@ input[type="search"] {
 
 
 /*-end-POST section*/
+
+
+/* DEEN section*/
+
+.deen {
+    color: #3a4d60;
+    background: #FFF;
+    font-family: 'Open Sans';
+    font-size: 19px;
+    font-weight: 400;
+    height: auto;
+}
+
+.deen .deen_left {
+    max-width: 647px;
+    padding: 0;
+    margin: 116px 20px 138px 74px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.deen h5 {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.deen p {
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+.deen span {
+    font-size: 15px;
+}
+
+.deen .deen_right {
+    background: url('../img/deen_hand.jpg') 50% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*-end-DEEN section*/
+
+
+/*FOOTER*/
+
+footer {
+    background: #2e3b4e;
+}
+
+footer .f_text {
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+    max-width: 390px;
+    margin: 116px 20px 138px 74px;
+    box-sizing: border-box;
+}
+
+footer span {
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+footer span:hover {
+    padding-left: 10px;
+    border-left: 13px #FFF solid;
+    transition: all 0.3s ease-in-out;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+
+/*-end-FOOTER*/
