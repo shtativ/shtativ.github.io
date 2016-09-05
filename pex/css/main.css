@@ -1,7 +1,7 @@
 body {
     background: #424242;
-    padding: 0 30px;
     max-width: 1600px;
+    padding: 0 30px;
     margin: 0 auto;
 }
 
@@ -16,6 +16,19 @@ nav {
     box-sizing: border-box;
 }
 
+nav .hamburger {
+    display: none;
+    border: 0;
+    outline: none;
+    overflow: hidden;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+}
+
+nav button {
+    outline: none;
+}
+
 header {
     box-sizing: border-box;
     margin: 0 auto;
@@ -26,6 +39,17 @@ header a {
     text-decoration: none;
 }
 
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo a {
+    align-self: center;
+    padding-top: 10px;
+}
+
 header .logo span {
     font-family: 'Linux Libertine Slanted';
     font-size: 11px;
@@ -33,7 +57,9 @@ header .logo span {
     letter-spacing: -0.5px;
     white-space: nowrap;
     text-align: center;
+    align-self: center;
     color: #EBEBEB;
+    padding: 10px;
     margin: 0;
 }
 
@@ -314,13 +340,15 @@ input[type="search"] {
     font-family: 'Open Sans';
     font-size: 19px;
     font-weight: 400;
+    height: auto;
 }
 
 .need .need_right {
-    max-width: 648px;
-    padding: 0 20px;
-    margin: 85px 0 40px;
+    max-width: 647px;
+    box-sizing: border-box;
     text-align: justify;
+    padding: 0;
+    margin: 116px 20px 138px 60px;
 }
 
 .need h5 {
@@ -330,13 +358,20 @@ input[type="search"] {
 }
 
 .need p {
-    max-width: 648px;
     text-align: justify;
     padding-bottom: 30px;
 }
 
 .need span {
     font-size: 15px;
+}
+
+.need .need_left {
+    background: url('../img/need_hand.jpg') 50% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -460,10 +495,10 @@ input[type="search"] {
 
 .deen .deen_left {
     max-width: 647px;
-    padding: 0;
-    margin: 116px 20px 138px 74px;
     box-sizing: border-box;
     text-align: justify;
+    padding: 0;
+    margin: 116px 20px 138px 74px;
 }
 
 .deen h5 {
@@ -530,3 +565,19 @@ footer a {
 
 
 /*-end-FOOTER*/
+
+@media all and (max-width: 768px) {
+    nav {
+        display: none;
+        padding-left: 0;
+    }
+    nav .hamburger {
+        display: block;
+    }
+}
+
+@media all and (min-width: 768px) {
+    header .hamburger {
+        display: none;
+    }
+}
