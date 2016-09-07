@@ -2,11 +2,13 @@ body {
     background: #424242;
     /*background: #FFF;*/
     max-width: 1600px;
-    margin:0 auto;
-    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    margin: 0 auto;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-/*
-body .row{
+
+
+/*temp*/
+/*body .row{
   margin-left: 0;
   margin-right: 0;
 }*/
@@ -25,10 +27,13 @@ nav {
 nav .hamburger {
     display: none;
     border: 0;
-    outline: none;
     overflow: hidden;
     -webkit-transform: scale(0.6);
     transform: scale(0.6);
+}
+
+span .hamburger-inner::before, span .hamburger-inner, span .hamburger-inner::after {
+    background-color: #FFF;
 }
 
 nav button {
@@ -144,10 +149,8 @@ nav ul a {
     opacity: 0.8;
 }
 
-
 /* данное свойство необходимо для того, чтобы в браузерах
 ** Chrome и Safari можно было стилизовать инпуты */
-
 input[type="search"] {
     -webkit-appearance: none;
 }
@@ -155,11 +158,12 @@ input[type="search"] {
 .top {
     background: url('../img/top_bg.jpg') 60% no-repeat;
     background-size: cover;
-    min-height: 800px;
+    height: auto;
 }
 
 .top .title {
     padding-top: 170px;
+    padding-bottom: 120px;
 }
 
 .top .title h1 {
@@ -197,15 +201,15 @@ input[type="search"] {
     border-radius: 50px;
     background: #8824cd;
     cursor: pointer;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
     padding: 20px 10px;
     margin: 25px 10px 18px;
 }
 
 .btn_purple:active {
+    background: #FFF;
+    color: #8824cd;
     outline: none;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 1px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
 }
 
@@ -225,13 +229,10 @@ input[type="search"] {
     word-wrap: normal;
     margin: 0 30px;
 }
-
-
 /*-end-TOP section*/
 
 
 /*MASTHEAD section*/
-
 .masthead {
     background: #2e3b4e;
     margin: 0;
@@ -258,13 +259,10 @@ input[type="search"] {
     padding: 0;
     margin: 14px 0 48px;
 }
-
-
 /*-end-MASTHEAD section*/
 
 
 /*PINK section*/
-
 .pink {
     background: url('../img/pink_bg.jpg') no-repeat;
     -webkit-background-size: cover;
@@ -317,12 +315,14 @@ input[type="search"] {
     margin: 0 0 14px;
     box-sizing: border-box;
     transition: all 0.5s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
 
 .pink button:active {
     background: #d54c63;
     color: #FFF;
     outline: none;
+    border: 1px solid #fff;
     transition: all 0.3s ease-in-out;
 }
 
@@ -333,13 +333,10 @@ input[type="search"] {
 .pink button::-moz-focus-inner {
     border: 0;
 }
-
-
 /*-end-PINK section*/
 
 
 /*NEED section*/
-
 .need {
     background: #FFF;
     color: #3a4d60;
@@ -380,13 +377,10 @@ input[type="search"] {
     height: 100%;
     min-height: 556.5px;
 }
-
-
 /*-end-NEED section*/
 
 
 /*BASE section*/
-
 .base {
     background: url('../img/base_bg.jpg') 50% no-repeat;
     background-size: cover;
@@ -401,7 +395,7 @@ input[type="search"] {
 
 .base .base_bg_2 {
     opacity: 1;
-    background-color: rgba(82,26,102,0.8);
+    background-color: rgba(82, 26, 102, 0.8);
     max-width: 1600px;
     box-sizing: border-box;
     margin: 94px 0 0;
@@ -427,13 +421,10 @@ input[type="search"] {
 .base span {
     font-size: 12px;
 }
-
-
 /*-end-BASE section*/
 
 
 /*POST section*/
-
 .post {
     background: url('../img/post_bg.jpg') 50% no-repeat;
     background-size: cover;
@@ -458,7 +449,6 @@ input[type="search"] {
 }
 
 .post h1 {
-    /* Text style for "Lorem ipsu" */
     max-width: 534px;
     font-size: 40px;
     font-weight: 400;
@@ -484,13 +474,10 @@ input[type="search"] {
     margin: 0;
     padding-left: 15px;
 }
-
-
 /*-end-POST section*/
 
 
 /* DEEN section*/
-
 .deen {
     color: #3a4d60;
     background: #FFF;
@@ -531,13 +518,10 @@ input[type="search"] {
     height: 100%;
     min-height: 556.5px;
 }
-
-
 /*-end-DEEN section*/
 
 
 /*FOOTER*/
-
 footer {
     background: #2e3b4e;
 }
@@ -570,22 +554,4 @@ footer a {
     text-decoration: underline;
     color: #FFF;
 }
-
-
 /*-end-FOOTER*/
-
-@media all and (max-width: 768px) {
-    nav {
-        display: none;
-        padding-left: 0;
-    }
-    nav .hamburger {
-        display: block;
-    }
-}
-
-@media all and (min-width: 768px) {
-    header .hamburger {
-        display: none;
-    }
-}

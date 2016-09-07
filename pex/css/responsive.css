@@ -1,0 +1,94 @@
+@media all and (max-width: 992px) {
+    .nav_search {
+        width: auto;
+    }
+    .nav_search .search {
+        height: 32px;
+        width: 160px;
+        font-size: 11px;
+    }
+    nav ul li {
+        padding: 20px 5px;
+    }
+    nav ul a {
+        font-size: 11px;
+    }
+    .need .need_right {
+        max-width: 800px;
+        padding: 0 45px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .deen .deen_left {
+        max-width: 800px;
+        padding: 0 45px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .base p {
+        padding: 0 25px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    nav {
+        display: none;
+        padding-left: 0;
+    }
+    nav .hamburger {
+        display: block;
+        outline: none!important;
+    }
+    nav ul {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 10px;
+    }
+    nav .nav_search {
+        display: none;
+    }
+    nav ul a {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 544px) {
+    .top .title_col {
+        padding-left: 2rem;
+    }
+    .top .title h1 {
+        font-size: 36px;
+    }
+    .top .title {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    .post .row .col-xs-offset-1 {
+        margin-left: 0;
+    }
+    .pink {
+        padding-bottom: 90px;
+    }
+    footer .f_text {
+        margin: 46px 20px 68px 45px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    header .hamburger {
+        display: none;
+    }
+    nav {
+        display: flex!important;
+        padding: 0 5px;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0px;
+    }
+}
