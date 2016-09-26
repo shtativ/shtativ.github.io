@@ -1,0 +1,99 @@
+body {
+    background: #FFF;
+    max-width: 1600px;
+    color: #718493;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+
+/*.container{
+  padding: 0 100px;
+}*/
+
+header {
+    background: #edf3f8;
+    padding: 10px;
+}
+.headerContainer{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 75%;
+}
+.headerSection {
+    display: flex;
+    align-items: center;
+}
+.headerLogo{
+  color: #3c4357;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+.headerMenu_item {
+    font-size: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    padding: 5px 15px;
+    transition: all .3s;
+}
+
+.headerMenu_item:hover {
+    color: #3c4357;
+    border-bottom: 3px solid #bcccd9;
+    transition: all .3s;
+}
+
+.headerMenu_item+.headerMenu_item {
+    margin-left: 5px;
+}
+
+
+/*SECTION topSection*/
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edf3f8;
+    padding: 176px 0 231px;
+}
+.topSection{
+  display: flex;
+  flex-direction: column;
+  max-width: 510px;
+}
+.topSection_title{
+  font-family: 'Cabin', sans-serif;
+  color: #3c4458;
+  font-size: 40px;
+  font-weight: 600;
+}
+.topSection_text{
+  font-size: 20px;
+}
+.topSection_btn{
+  color:#FFF;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  width: 193px;
+  height: 56px;
+  background-color: #bcccd9;
+  border-radius: 28px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+.topSection_img{
+  width: 227px;
+  height: 207px;
+}
+/*END topSection*/
