@@ -16,7 +16,7 @@ header {
     background: #edf3f8;
     padding: 10px;
 }
-.headerContainer{
+.centerRow{
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -25,6 +25,7 @@ header {
 .headerSection {
     display: flex;
     align-items: center;
+
 }
 .headerLogo{
   color: #3c4357;
@@ -57,9 +58,6 @@ header {
 /*SECTION topSection*/
 
 .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: #edf3f8;
     padding: 176px 0 231px;
 }
@@ -67,15 +65,26 @@ header {
   display: flex;
   flex-direction: column;
   max-width: 510px;
+  height: auto;
+}
+.topSection + .topSection{
+  margin: 0px 50px 30px 30px;
+}
+.topSection_right{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 .topSection_title{
   font-family: 'Cabin', sans-serif;
   color: #3c4458;
   font-size: 40px;
   font-weight: 600;
+  padding-bottom: 40px;
 }
 .topSection_text{
   font-size: 20px;
+  padding-bottom: 32px;
 }
 .topSection_btn{
   color:#FFF;
@@ -92,8 +101,279 @@ header {
   border: none;
   box-sizing: border-box;
 }
+
 .topSection_img{
-  width: 227px;
-  height: 207px;
+  max-width: 227px;
+  max-height: 207px;
 }
 /*END topSection*/
+
+/*SECTION services*/
+.services{
+  background: #fff;
+  padding: 160px 0;
+}
+.centerColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.centerCenter{
+  max-width: 75%;
+  margin: 0 auto;
+}
+.srvSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.srvSection_title{
+  font-family: 'Cabin', sans-serif;
+  color: #3c4357;
+  font-size: 35px;
+  font-weight: 500;
+}
+.srvSection_text{
+  font-size: 20px;
+  max-width: 503px;
+  text-align: center;
+  padding: 30px;
+}
+.srvOffers{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 70px 0 10px;
+}
+.srvOffers_item{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  max-width: 260px;
+  min-width: 200px;
+  border-top: 8px solid rgba(255, 255, 255, 0);
+  transition: all 0.1s ease-in-out;
+  padding: 0 10px 10px;
+  margin: 0 10px;
+}
+.srvOffers_item:hover{
+  transition: all 0.1s ease-in-out;
+  border-top:8px solid #bcccd9;
+  background: #edf3f8;
+}
+.srvOffers_item img{
+  align-self: center;
+  padding: 48px 0 40px;
+}
+.srvOffers_item-title{
+  font-family: 'Cabin', sans-serif;
+  color: #3c4357;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 34px;
+}
+.srvOffers_item-text{
+  font-size: 17px;
+  text-align: center;
+}
+/*END services*/
+
+/*SECTION team*/
+.team{
+  background: #FFF;
+  padding-left:12.5% ;
+  padding-bottom: 159px;
+}
+.teamBetween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.teamInfo{
+  display: flex;
+  flex-direction: column;
+  max-width: 490px;
+}
+.teamInfo_title{
+  font-family: 'Cabin', sans-serif;
+  color: #3c4458;
+  font-size: 35px;
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+.teamInfo span{
+  font-size: 17px;
+  padding-bottom: 28px;
+}
+.teamInfo p{
+  font-size: 17px;
+  text-align: left;
+}
+.teamInfo p + .teamInfo p{
+  padding-top: 40;
+  padding-bottom: 41px;
+}
+.teamInfo a{
+  color: #7d8e9c;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.teamPhoto{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-basis: 57%;
+}
+.teamPhoto_item{
+  background: #edf3f8;
+  width: 233px;
+  height: 233px;
+  margin: 5px;
+}
+.teamPhoto_item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.teamPhoto_item:hover{
+  background: #FFF;
+  transform: scale(1.21);
+	transform-origin: 50% center 50%;
+  transition: all 0.2s ease-in-out;
+}
+/*bpменить цвет иконки при наведении*/
+
+/*END team*/
+
+/*SECTION office*/
+ .office{
+  background: #edf3f8;
+  padding: 132px 0 140px;
+}
+.
+.officeTitle{
+  color: #3c4458;
+  font-family: 'Cabin', sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.office p{
+  font-size: 20px;
+  max-width: 455px;
+  text-align: center;
+  margin-bottom: 56px;
+}
+.officePlay img{
+  opacity: 0.5;
+  border: 2px solid #bcccd9;
+  border-radius: 100px;
+  padding: 22px;
+}
+/*END office/
+
+/*SECTION features*/
+ .fetures{
+  background: #FFF;
+  padding: 160px 0 100px;
+}
+.featuresTitle{
+  color: #3c4458;
+  font-family: 'Cabin', sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.featuresText{
+  font-size: 20px;
+  padding-bottom: 115px;
+}
+.centerRow_wrap{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 75%;
+}
+.features_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 284px;
+  box-sizing: border-box;
+  margin: 0 30px 42px;
+}
+.features_item-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding-bottom: 24px;
+
+}
+.features_item-title{
+  color: #3c4458;
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 27px;
+}
+.features_item span{
+  font-size: 17px;
+  max-width: 275px;
+  text-align: left;
+}
+/*END features*/
+
+/*SECTION testimonials*/
+.testimonials{
+  background: #edf3f8;
+  padding: 106px 0 107px;
+}
+.testimonials img{
+  padding-bottom: 36px;
+}
+.testimonials blockquote{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials p{
+  color: #3c4458;
+  font-family: 'Cabin', sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  max-width: 840px;
+  text-align: center;
+  padding-bottom: 27px;
+}
+.testimonials blockquote cite{
+  font-size: 17px;
+}
+/*END testimonials*/
+
+/*SECTION download*/
+.download{
+background: #FFF;
+padding: 159px 0 160px;
+}
+.downloadTitle{
+  max-width: 560px;
+  color: #3c4458;
+  font-family: 'Cabin', sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+/*END download*/
