@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Kodeks</title>
+	<link rel="shortcut icon" href="img/header_logo.png" type="image/png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+	<link rel="stylesheet" href="css/main.css">
+
+	<!--Hamburger button-->
+	<link rel="stylesheet" href="dist/hamburgers.css">
+
+<!-- import font -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#" class="logo nav_item">Logo</a>
+
+			<button class="hamburger hamburger--spring" type="button">
+				<span class="hamburger-box">
+   				 <span class="hamburger-inner"></span>
+				</span>
+			</button>
+
+			<ul id="nav_items" class="nav_items">
+				<li class="nav_item"><a href="#">Home</a></li>
+				<li class="nav_item"><a href="#">About</a></li>
+				<li class="nav_item"><a href="#">Works</a></li>
+				<li class="nav_item"><a href="#">Services</a></li>
+				<li class="nav_item"><a href="#">Blog</a></li>
+			</ul>
+
+			<div class="nav_right">
+				<form action="" class="nav_search" method="post">
+					<input class="search nav_item" type="text">
+					<input type="submit" name="" value="" class="submit" />
+				</form>
+
+				<div id="btn_nav" class="nav_mail-bg">
+					<a href="#contact">
+						<input class="svg nav_contact-svg" type="image" name="picture" src="img/svg/mail_icon.svg" alt="mail" />
+					</a>
+				</div>
+			</div>
+
+		</nav>
+	</header>
+
+	<article>
+		<div class="services">
+
+			<div class="services_item branding">
+				<div class="services_img-bg"><img class="svg" src="img/svg/img_icon.svg" alt="Branding"></div>
+				<h2>Branding</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun.</p>
+			</div>
+			<div class="services_item design">
+				<div class="services_img-bg"><img class="svg" src="img/svg/img_icon.svg" alt="Design"></div>
+				<h2>Design</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun.</p>
+			</div>
+			<div class="services_item development">
+				<div class="services_img-bg">
+					<img class="svg" src="img/svg/img_icon.svg" alt="Development">
+				</div>
+				<h2>Development</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun.</p>
+			</div>
+		</div>
+
+	</article>
+	<div id="contact" class="contact">
+		<div class="title">
+			<h1>Get in touch.</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur, sed do eiusmod tempor.</p>
+		</div>
+		<form method="post">
+			<p>What's your name?</p>
+			<input class="contact_name" name="username" type="text" required="required" placeholder="Your name...">
+			<p>What's your email?</p>
+			<input class="cantact_email" name="email" type="email" required="required" maxlength="129" placeholder="Your email...">
+			<p>What's on your mind?</p>
+			<textarea name="contact_msg" required="required" placeholder="Your message..."></textarea>
+			<div class="contact_submit">
+				<input class="submit_btn" type="image" name="picture" alt="submit" src="img/svg/plane_icon2.svg" />
+			</div>
+		</form>
+	</div>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<!--	my script-->
+	<script src="js/scripts.js"></script>
+	<!-- svg script -->
+	<script src="js/svg.js"></script>
+
+</body>
+
+</html>

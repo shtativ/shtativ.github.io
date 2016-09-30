@@ -1,0 +1,19 @@
+$(document).ready(function () {
+
+    //hide menu
+    $('a#menu').click(function () {
+        $('#menu').fadeIn('slow');
+    });
+
+    //show menu
+    $('#menu a').click(function () {
+        $('#menu').fadeOut('slow');
+    });
+
+    //out of bounds
+    var ww = $(window).width();
+    $('body *').each(function () {
+        if ($(this).width() > ww) $(this).css('border','red');
+    });
+
+});
