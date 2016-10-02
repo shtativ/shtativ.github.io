@@ -1,0 +1,23 @@
+{
+  "name": "maker",
+  "version": "1.0.0",
+  "description": "free template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shtativ/shtativ.github.io/tree/master/maker"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^6.5.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0"
+  },
+  "devDependencies": {
+    "postcss-flexbugs-fixes": "^2.0.0"
+  }
+}
