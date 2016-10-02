@@ -134,12 +134,15 @@ header {
     transition: all 0.2s ease-in-out;
     background: #434c54;
 }
-
-.topSection_img {
-    max-width: 227px;
-    max-height: 207px;
+.topSection svg *{
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-
+.topSection:hover svg *{
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  fill:#3c4357;
+}
 
 /*END topSection*/
 
@@ -365,6 +368,15 @@ header {
     transform-origin: 50% center 50%;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+}
+.teamPhoto_item svg {
+  width: 101px;
+  height: 97px;
+}
+.teamPhoto_item:hover svg *{
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    fill: #bcccd9;
 }
 
 
@@ -685,13 +697,22 @@ footer {
     padding-right: 0;
 }
 
-
-/*изменить цвет иконки при наведении*/
+.footerNav_icon  a svg *{
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  fill:#6d808e;
+  width: 30px;
+  height: 20px;
+}
+.footerNav_icon a:hover svg *{
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  fill:#FFF;
+}
 
 .footerNav_icon ul li img {
     max-width: 20px;
     height: auto;
 }
-
 
 /*END FOOTER */
