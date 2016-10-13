@@ -4,3 +4,10 @@
 	  	$hamburger.toggleClass("is-active");
 	  	$('#nav_items').slideToggle('slow');
      });
+     
+//red line
+  //    $('*').each(function() {
+  //      if($(this).width() > $(window).width()
+  //    )
+  //    $(this).css('border','2px solid red')
+  //  });
