@@ -5,18 +5,29 @@ body {
     font-weight: 400;
     color: #fff;
     background: #2c2827;
+    max-width: 1280px;
     box-sizing: border-box;
     padding: 28px 26px;
     margin: 0 auto;
 }
-body li{
-      list-style: none;
+
+body li {
+    list-style: none;
 }
+
+
 /*top begin*/
+
 .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 10px;
 }
 
@@ -37,56 +48,274 @@ body li{
 
 .top nav .nav_active {
     color: #fff;
-    /*background: #c056a0;*/
+    cursor: default;
 }
 
-
 .top button {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
     background: #403c3b;
     box-sizing: border-box;
     border: none;
     border-radius: 5%;
+    cursor: pointer;
     padding: 10px;
     margin: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .top button+button {
-    margin:  2px;
+    margin: 2px;
 }
 
 .top .rating_active {
     background: #c056a0;
+    cursor: default;
 }
+
+.top button:hover:not(.rating_active) {
+    background-color: #a7a5a6;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
 /*top end*/
 
-/*main begin*/
- /*.main_items{
-   display: flex;
-   flex-wrap: wrap;
-   margin: -0.5em;
-}
-.main_items > *{
-  flex: 1 0 5em;
-  margin: 0.5em;
-}
-.main_items  li img{
-  width: 300px;
-  height: 220px;
 
-}*/
-main{
-  display: flex;
-  flex-wrap:wrap;
-  margin: -0.1em;
+/*main begin*/
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 12px;
+    margin: -2px -26px;
 }
-main > * {
-  flex:1 0 3em;
-  margin: 9px;
-  width: 300px;
-  height: auto;
+
+main>* {
+    margin: 6px;
 }
+
+main div img {
+    height: 220px;
+}
+
+main .main_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    border: 2px solid #1a1819;
+    background: #1a1819;
+    width: 300px;
+    height: 286px;
+}
+
+main .main_container>span {
+    position: absolute;
+    font-size: 12px;
+    border-radius: 4px;
+    background: #413d3c;
+    width: 36px;
+    opacity: .9;
+    padding: 4px;
+    margin: 5px 5px 5px 250px;
+}
+
+main .main_description {
+    padding: 5px 5px 12px;
+}
+
+main .main_container .btns {
+    position: relative;
+    display: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 290px;
+    margin-left: 5px;
+    bottom: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+main .main_container .btns img {
+    width: 15px;
+    height: 16px;
+    padding: 5px 8px;
+    background: #413d3c;
+    border-radius: 4px;
+    opacity: 0.6;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+main .main_container .btns img:hover {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+main .main_container:hover .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+main .main_description .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #494748;
+    padding-bottom: 6px;
+}
+main .main_description .icons  span{
+  cursor: pointer;
+}
+main .main_description .icons .calendar:before {
+    content: url('../img/icons/calendar.png');
+    display: inline;
+    vertical-align: -webkit-baseline-middle;
+    padding-right: 5px;
+}
+
+main .main_description .icons .youtube:before {
+    content: url('../img/icons/youtube.png');
+    display: inline;
+    vertical-align: -webkit-baseline-middle;
+    padding-right: 5px;
+}
+
+main .main_description p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #a7a5a6;
+    margin: 0;
+}
+
+main .main_description ul {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    width: 220px;
+    margin: 2px 0 0;
+    padding: 0;
+}
+
+main .main_description ul:before {
+    content: url('../img/icons/tags.png');
+    display: inline;
+    vertical-align: -webkit-baseline-middle;
+    padding-right: 5px;
+}
+
+main .main_description ul li {
+    display: inline;
+}
+
+main .main_description ul a {
+    text-decoration: none;
+    color: #b44981;
+}
+
+main .main_description button {
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 260px;
+    bottom: 15px;
+}
+
+main .main_description button img {
+    width: 12px;
+    height: 10px;
+    display: inline;
+}
+
 
 /*main end*/
+
+
+/*paginator begin*/
+
+.paginator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 10px;
+}
+
+.paginator ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.paginator ul li {
+    display: inline;
+}
+
+.paginator ul li a {
+    color: #fff;
+    background: #403c3b;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    padding: 6px 9px;
+    box-sizing: border-box;
+    margin: 0 2px;
+}
+
+.paginator ul li a.paginator_active {
+    background: #c056a0;
+    cursor: default;
+}
+
+.paginator ul li a:hover:not(.paginator_active) {
+    background-color: #a7a5a6;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.paginator_btn {
+    display: none;
+    margin: 10px;
+}
+
+.paginator_btn ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 25px;
+}
+
+.paginator_btn ul li a {
+    padding: 5px 10px 8px;
+}
+/*paginator end*/
