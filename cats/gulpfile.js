@@ -3,6 +3,7 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 postcss([require('postcss-flexbugs-fixes')]);
 var browserSync = require('browser-sync');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('css', function () {
     var processors = [
@@ -13,6 +14,20 @@ gulp.task('css', function () {
         .pipe(postcss(processors))
         .pipe(gulp.dest('dest/css'));
 });
+
+//compress images task
+gulp.task('compress', function () {
+    gulp.src('img/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dest/img'))
+});
+
+//watch task
+gulp.task('watch', function() {
+  gulp.watch('img/**/*', ['compress']);
+});
+
+//livereload task
 gulp.task('browser-sync', function () {
 	var files = [
 		'*.html',
@@ -25,8 +40,14 @@ gulp.task('browser-sync', function () {
 			}
 		});
 	});
-gulp.task('default', ['css']);
 
 gulp.watch('css/*.css', function(){
   console.log('seen');
 });
+
+//default task
+gulp.task('default', ['css', 'watch']);
+
+
+
+
