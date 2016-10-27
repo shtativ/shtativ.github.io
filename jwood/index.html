@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JWood-bem</title>
+    <link rel="favicon" href="images/favicon.png" type="image/png" />
+    <title>JWood</title>
     <!-- fonts -->
     <link rel="stylesheet" href="./css/fonts.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/media_queries.css" />
     <!-- import jquery plagin -->
     <!-- <link rel="stylesheet" href="./css/onepage-scroll.css"> -->
-<!-- firstpage -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/jquery.fullPage.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/vendors/scrolloverflow.min.js"></script>
-
-
+    <!-- firstpage -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/jquery.fullPage.min.css" />
 
 </head>
 
@@ -47,6 +46,7 @@
                 <h1 class="logo-text_top"><span class="logo-text_top_bold">Jwood</span>photography</h1></div>
         </div>
         <div class="scroll">
+          <a href="#secondPage">
             <button class="scroll_btn-down" type="button">Scroll down to see more </br></br>
               <svg xmlns="http://www.w3.org/2000/svg" class="scroll_btn-down_img" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 284.929 284.929" xml:space="preserve">
             <g>
@@ -60,6 +60,7 @@
                 c1.902-1.903,2.847-4.093,2.847-6.565c0-2.474-0.951-4.661-2.847-6.567L267.808,117.053z" fill="#f1f1f1"/>
             </g>
             </svg></button>
+          </a>
         </div>
     </section>
 
@@ -76,6 +77,7 @@
             </div>
         </div>
         <div class="scroll">
+          <a href="#3thPage">
             <button class="scroll_btn-down brown" type="button">keep scrolling, there is still more to come.</br></br>
               <svg xmlns="http://www.w3.org/2000/svg" class="scroll_btn-down_img_brown" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 284.929 284.929" xml:space="preserve">
               <g>
@@ -90,6 +92,7 @@
               </g>
               </svg>
             </button>
+          </a>
         </div>
 
     </section>
@@ -109,9 +112,10 @@
             <img class="portfolio-gallery_photo" src="./images/portfolio-gallery_photo_10.jpg" alt="gallery photo10">
         </div>
         <div class="scroll">
-            <button class="scroll_btn-down" type="button">do you want to see it with your own eyes? Scroll!</br></br>
-              <svg xmlns="http://www.w3.org/2000/svg" class="scroll_btn-down_img" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 284.929 284.929" xml:space="preserve">
-            <g>
+              <a href="#4thPage">
+                <button class="scroll_btn-down" type="button">do you want to see it with your own eyes? Scroll!</br></br>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="scroll_btn-down_img" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 284.929 284.929" xml:space="preserve">
+                    <g>
                 <path d="M135.899,167.877c1.902,1.902,4.093,2.851,6.567,2.851s4.661-0.948,6.562-2.851L282.082,34.829
                  c1.902-1.903,2.847-4.093,2.847-6.567s-0.951-4.665-2.847-6.567L267.808,7.417c-1.902-1.903-4.093-2.853-6.57-2.853
                  c-2.471,0-4.661,0.95-6.563,2.853L142.466,119.622L30.262,7.417c-1.903-1.903-4.093-2.853-6.567-2.853
@@ -123,6 +127,7 @@
             </g>
             </svg>
           </button>
+        </a>
         </div>
     </section>
 
@@ -172,22 +177,20 @@
                 </button>
             </div>
         </div>
-    </section>
 
-    <footer class="footer section">
+
+    <footer class="footer ">
         <span class="footer__name">DESIGNED by Pawel szymankiewicz</span>
     </footer>
-
+</section>
     <!-- jQuery cdn-->
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
             <!-- fullPage -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/jquery.fullPage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/vendors/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/jquery.fullPage.min.js"></script>
+
+
     <!-- jQuery file -->
-    <!-- <script src="./js/jquery.onepage-scroll.min.js" type="text/javascript"></script> -->
     <script src="./js/index.js" type="text/javascript"></script>
 
   </div>

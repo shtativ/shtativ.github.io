@@ -1,0 +1,41 @@
+@media all and (min-width: 1220px) and (max-width: 1440px) {
+    .top-title {
+        margin: 118px 28px 44px;
+    }
+    .about {
+        padding: 96px 16px 0;
+    }
+    .portfolio__title {
+        padding: 96px 36px 36px;
+    }
+    .contact-items {
+        padding: 120px auto 16px;
+    }
+    .logo-text_top, .about-block__info_title, .portfolio__title, .contact-items_mail {
+        font-size: 48px;
+        line-height: 2;
+        margin: 0;
+    }
+    .about-block__info_text {
+        font-size: 20px;
+        line-height: 2;
+    }
+    .about-block__info_author {
+        font-size: 22px;
+    }
+    .contact-items_contact-type {
+        font-size: 24px;
+        margin-top: 32px;
+    }
+    .contact-items_phone {
+        font-size: 38px;
+        line-height: 2;
+    }
+    .contact-items__social {
+      margin: 20px;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1219px) {
+  
+}

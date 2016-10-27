@@ -19,7 +19,7 @@ gulp.task('css', function () {
 gulp.task('compress', function () {
     gulp.src('images/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dest/images/'))
+        .pipe(gulp.dest('dist/images/'))
 });
 
 //watch task

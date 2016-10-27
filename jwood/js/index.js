@@ -1,23 +1,5 @@
-// One Page Scroll v1.3.1
-
-// $(".main").onepage_scroll({
-//   sectionContainer: "section",
-//    easing: "ease",
-//
-//     animationTime: 1000,
-//     pagination: true,
-//     updateURL: false,
-//     beforeMove: function(index) {},
-//     afterMove: function(index) {},
-//     loop: false,
-//     keyboard: true,
-//     responsiveFallback: false,
-//
-//     direction: "vertical"
-//   });
-////////////////////////////////////////////////////
-//
 // fullPage
+
 // $(document).ready(function() {
 //     $('#fullpage').fullpage();
 // });
@@ -27,8 +9,8 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['firstPage', 'secondPage', '3thPage', '4thPage'],
-        navigation: false,
+        anchors: ['firstPage', 'secondPage', '3thPage', '4thPage'],
+        navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['firstSlide', 'secondSlide'],
         showActiveTooltip: false,
@@ -43,8 +25,8 @@ $(document).ready(function() {
         fitToSectionDelay: 1000,
         scrollBar: false,
         easing: 'easeInOutCubic',
-        easingcss3: 'ease',
-        loopBottom: false,
+        easingcss3: 'ease-in-out',
+        loopBottom: true,
         loopTop: false,
         loopHorizontal: true,
         continuousVertical: false,
@@ -68,25 +50,25 @@ $(document).ready(function() {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        sectionsColor : ['#ccc', '#fff'],
-        paddingTop: '3em',
-        paddingBottom: '10px',
-        fixedElements: '#header, .footer',
+        sectionsColor: ['#ccc', '#fff'],
+        paddingTop: '10px', //'1em',
+        paddingBottom: '0', //'10px',
+        fixedElements: null,
         responsiveWidth: 0,
         responsiveHeight: 0,
-        responsiveSlides: false,
+        responsiveSlides: true,
 
         //Custom selectors
         sectionSelector: '.section',
         slideSelector: '.slide',
 
         //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
-        afterRender: function(){},
-        afterResize: function(){},
-        afterResponsive: function(isResponsive){},
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+        onLeave: function(index, nextIndex, direction) {},
+        afterLoad: function(anchorLink, index) {},
+        afterRender: function() {},
+        afterResize: function() {},
+        afterResponsive: function(isResponsive) {},
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
+        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
     });
 });
