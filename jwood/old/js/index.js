@@ -76,6 +76,6 @@
 // });
 $(document).ready(function() {
     $('#fullpage').fullpage({
-      resize: true
+      resize: true,
     });
 });
