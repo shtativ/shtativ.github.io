@@ -80,9 +80,10 @@ $(document).ready(function() {
       var ww = $(window).width();
       var wh = $(window).height();
       var c = 1.5; //коэффициент, чтобы все не было слишком мелким
-      var fs = (ww * wh)/(1920 * 955) * 100 * c + '%';
+      var fs = (ww * wh)/(1920 * 955) * 100 * c;
       console.log(fs);
-      $(this).css('font-size', fs);
+      if (fs >= 100) return;
+      $(this).css('font-size', fs + '%');
     }
 
     $('section').scale();
