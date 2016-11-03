@@ -1,5 +1,5 @@
 .body {
-    font-size: 16px;
+    font-size: 10px;
     max-width: 1920px;
     height: 100%;
     box-sizing: border-box;
@@ -40,6 +40,10 @@ html.fp-enabled, .fp-enabled body {
     width: 94%;
     border-bottom: 1px solid #fff;
     margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2em;
 }
 
 .nav-items {
@@ -88,7 +92,7 @@ html.fp-enabled, .fp-enabled body {
     text-decoration: none;
     line-height: 50px;
     font-family: "Nexa";
-    font-size: 24px;
+    font-size: 2.4em;
     cursor: pointer;
     font-weight: 300;
     -webkit-transition: all 0.3s ease-in-out;
@@ -114,7 +118,7 @@ html.fp-enabled, .fp-enabled body {
 
 .logo-text_top {
     color: #f1f1f1;
-    font-size: 50px;
+    font-size: 5em;
     font-weight: 300;
     text-transform: uppercase;
     font-family: "Nexa";
@@ -130,14 +134,18 @@ html.fp-enabled, .fp-enabled body {
     text-align: center;
     padding: 55px 20px;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .scroll_btn-down {
     color: #f1f1f1;
     font-family: "Nexa";
-    font-size: 16px;
+    font-size: 1.6em;
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
@@ -227,7 +235,7 @@ html.fp-enabled, .fp-enabled body {
 
 .about-block__info_title {
     font-family: "Nexa";
-    font-size: 60px;
+    font-size: 6em;
     font-weight: 300;
     line-height: 120px;
     text-transform: uppercase;
@@ -240,15 +248,15 @@ html.fp-enabled, .fp-enabled body {
     width: 100%;
     max-width: 673px;
     font-family: "Open Sans";
-    font-size: 24px;
+    font-size: 2.4em;
+    line-height: 1.5;
     font-weight: 300;
-    line-height: 50px;
     padding: 0 0 75px;
     margin: 0;
 }
 
 .about-block__info_author {
-    font-size: 28px;
+    font-size: 2.8em;
     font-family: 'Open Sans';
     font-style: italic;
 }
@@ -278,7 +286,7 @@ html.fp-enabled, .fp-enabled body {
 .portfolio__title {
     color: #f1f1f1;
     font-family: "Nexa";
-    font-size: 60px;
+    font-size: 6em;
     font-weight: 300;
     line-height: 100px;
     text-transform: uppercase;
@@ -309,11 +317,11 @@ html.fp-enabled, .fp-enabled body {
 }
 
 .portfolio-gallery_photo {
-    width: 279px;
-    height: 250px;
+    width: 27.9em;
+    height: 25em;
     margin: 2% 1% 0%;
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
@@ -367,7 +375,7 @@ html.fp-enabled, .fp-enabled body {
 .contact-items_contact-type {
     color: #202020;
     font-family: "Nexa";
-    font-size: 30px;
+    font-size: 3em;
     font-weight: 700;
     text-transform: uppercase;
     padding: 0;
@@ -377,7 +385,7 @@ html.fp-enabled, .fp-enabled body {
 .contact-items_mail {
     color: #202020;
     font-family: "Nexa";
-    font-size: 60px;
+    font-size: 6em;
     font-weight: 300;
     line-height: 120px;
     text-transform: uppercase;
@@ -388,7 +396,7 @@ html.fp-enabled, .fp-enabled body {
 .contact-items_phone {
     color: #202020;
     font-family: "Nexa";
-    font-size: 48px;
+    font-size: 4.8em;
     font-weight: 300;
     line-height: 120px;
     text-transform: uppercase;
@@ -453,7 +461,7 @@ footer {
 .footer__name {
     color: #bebebe;
     font-family: "Nexa";
-    font-size: 18px;
+    font-size: 1.8em;
     font-weight: 300;
     text-transform: uppercase;
     text-align: center;

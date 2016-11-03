@@ -73,6 +73,25 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
     });
+
+
+    //scaler
+    $.fn.scale = function(){
+      var ww = $(window).width();
+      var wh = $(window).height();
+      var c = 1.5; //коэффициент, чтобы все не было слишком мелким
+      var fs = (ww * wh)/(1920 * 955) * 100 * c;
+      console.log(fs);
+      if (fs >= 100) return;
+      $(this).css('font-size', fs + '%');
+    }
+
+    $('section').scale();
+
+    $(window).on('resize',function(){
+      $('section').scale();
+    });
+
 });
 
 //old pullpage plugin
