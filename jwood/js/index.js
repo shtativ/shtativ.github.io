@@ -1,10 +1,4 @@
-// fullPage
-
-// $(document).ready(function() {
-//     $('#fullpage').fullpage();
-// });
-//
-
+//fullpage plugin
 
 $(document).ready(function() {
     $('#fullpage').fullpage({
@@ -73,12 +67,32 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
     });
+    //scaler
+    $.fn.scale = function() {
+        var ww = $(window).width();
+        var wh = $(window).height();
+        var c = 1.5; //коэффициент, чтобы все не было слишком мелким
+        var fs = (ww * wh) / (1920 * 955) * 100 * c;
+        console.log(fs);
+        $(this).css('font-size', fs);
+        if (fs >= 100) return;
+        $(this).css('font-size', fs + '%');
+    }
+
+    $('section').scale();
+
+    $(window).on('resize', function() {
+        $('section').scale();
+    });
+
 });
 
-//old pullpage plugin
-//
-// $(document).ready(function() {
-//     $('#fullpage').fullpage({
-//       resize: true
-//     });
+//custom plugin
+// $.fn.resize = function(){
+//   size = (($(window).height()*$(window).width())/(1920*1080)) * 100 + "%"
+//   console.log(size);
+//   $(this).css('font-size',size);
+// }
+// $(window).on('resize',function(){
+//   $('.section').resize();
 // });

@@ -1,5 +1,5 @@
 @media all and (min-width: 1220px) and (max-width: 1440px) {
-    .top-title {
+    /*.top-title {
         margin: 118px 28px 44px;
     }
     .about {
@@ -10,7 +10,7 @@
     }
     .contact-items {
         padding: 120px auto 16px;
-    }
+    }*/
     .logo-text_top, .about-block__info_title, .portfolio__title, .contact-items_mail {
         font-size: 48px;
         line-height: 2;
@@ -37,5 +37,5 @@
 }
 
 @media all and (min-width: 1024px) and (max-width: 1219px) {
-  
+
 }
