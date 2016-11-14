@@ -15,8 +15,8 @@ $(document).ready(function() {
 
         //Scrolling
         css3: true,
-        scrollingSpeed: 700,
-        autoScrolling: true,
+        scrollingSpeed: 500,
+        autoScrolling: false,
         fitToSection: true,
         fitToSectionDelay: 1000,
         scrollBar: false,
@@ -68,22 +68,22 @@ $(document).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
     });
     //scaler
-    $.fn.scale = function() {
-        var ww = $(window).width();
-        var wh = $(window).height();
-        var c = 1.5; //коэффициент, чтобы все не было слишком мелким
-        var fs = (ww * wh) / (1920 * 955) * 100 * c;
-        console.log(fs);
-        $(this).css('font-size', fs);
-        if (fs >= 100) return;
-        $(this).css('font-size', fs + '%');
-    }
+    // $.fn.scale = function() {
+    //     var ww = $(window).width();
+    //     var wh = $(window).height();
+    //     var c = 1.5; //коэффициент, чтобы все не было слишком мелким
+    //     var fs = (ww * wh) / (1920 * 955) * 100 * c;
+    //     console.log(fs);
+    //     $(this).css('font-size', fs);
+    //     if (fs >= 100) return;
+    //     $(this).css('font-size', fs + '%');
+    // }
 
-    $('section').scale();
-
-    $(window).on('resize', function() {
-        $('section').scale();
-    });
+    // $('section').scale();
+    //
+    // $(window).on('resize', function() {
+    //     $('section').scale();
+    // });
 
 });
 
