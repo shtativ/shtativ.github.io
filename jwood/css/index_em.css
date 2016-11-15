@@ -1,15 +1,16 @@
 .body {
     font-size: 10px;
     max-width: 1920px;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
     margin: 0 auto;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.49);
 }
 
-html.fp-enabled, .fp-enabled body {
+
+/*html.fp-enabled, .fp-enabled body {
     margin: 0 auto!important;
-}
+}*/
 
 .section {
     min-height: 100vh;
@@ -43,7 +44,7 @@ html.fp-enabled, .fp-enabled body {
     position: absolute;
     left: 0;
     right: 0;
-    top: 2em;
+    top: 0;
 }
 
 .nav-items {
@@ -100,12 +101,14 @@ html.fp-enabled, .fp-enabled body {
 }
 
 .nav-item__nav-item_white:hover {
-    color: #FFF;
+    color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 .top-title {
+    position: relative;
+    top: 11em;
     margin: auto;
 }
 
@@ -123,7 +126,7 @@ html.fp-enabled, .fp-enabled body {
     text-transform: uppercase;
     font-family: "Nexa";
     font-style: normal;
-    margin: 3em;
+    padding: 0.1em 1em 1.2em;
 }
 
 .logo-text_top_bold {
@@ -132,14 +135,15 @@ html.fp-enabled, .fp-enabled body {
 
 .scroll {
     text-align: center;
-    padding: 5.5em 2em;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-     position: absolute;
+    padding: 5.5em 2em;
+    margin-bottom: 3em;
+    /*position: absolute;
      left: 0;
      right: 0;
-     bottom: 0;
+     bottom: 0;*/
 }
 
 .scroll_btn-down {
@@ -296,8 +300,8 @@ html.fp-enabled, .fp-enabled body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    /*padding: 2em;*/
-    margin: auto;
+    margin: 0 auto;
+    padding: 1em 1em 0.8em;
 }
 
 .portfolio-gallery {

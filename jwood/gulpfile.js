@@ -12,7 +12,7 @@ gulp.task('css', function () {
     ];
     return gulp.src('css/**/*.css')
         .pipe(postcss(processors))
-        .pipe(gulp.dest('dist/css/1'));
+        .pipe(gulp.dest('dist/css/'));
 });
 
 //compress images task
