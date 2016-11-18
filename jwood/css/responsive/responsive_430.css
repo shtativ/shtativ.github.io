@@ -1,0 +1,31 @@
+.scroll{
+  margin-bottom: 0.1em;
+}
+.scroll_btn-down, .scroll_btn-down_brown {
+    font-size: 0.8em;
+}
+.scroll_btn-down_img, .scroll_btn-down_img_brown {
+    width: 2em;
+    height: 2em;
+}
+.about-block__photo {
+  padding-bottom: 2em;
+}
+.about-block__info_title {
+    font-size: 2.4em;
+    line-height: 1;
+    padding-bottom: 0.4em;
+}
+.portfolio-gallery_photo {
+    width: auto;
+    height: 9em;
+}
+.portfolio__title {
+    font-size: 3em;
+}
+.contact-items__social {
+    margin: 0;
+}
+.contact-items__social_btn {
+  margin: 1em;
+}

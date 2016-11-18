@@ -1,3 +1,12 @@
+.logo-img_top {
+    width: 42vw;
+  }
+.logo-text_top{
+  font-size: 2.1em;
+}
+.top-title{
+  top:6em;
+}
 .nav-items{
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -6,4 +15,36 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.nav-items{
+  display: none;
+}
+.scroll{
+  padding: 3.0em 2.0em;
+}
+.scroll_btn-down,.scroll_btn-down_brown{
+  font-size: 1em;
+}
+.scroll_btn-down_img, .scroll_btn-down_img_brown {
+    width: 2em;
+    height: 2em;
+}
+.contact-items {
+  padding-top: 12vh;
+}
+.contact-items_mail {
+    font-size: 2.4em;
+}
+
+.contact-items_phone {
+    font-size: 2.2em;
+}
+
+.contact-items_contact-type {
+    font-size: 2.1em;
+    margin-top: 2em;
+}
+
+.contact-items__social {
+    margin: 1.5em;
 }

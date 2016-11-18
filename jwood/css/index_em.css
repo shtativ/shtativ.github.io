@@ -407,7 +407,6 @@
     text-decoration: none;
     cursor: pointer;
 }
-
 .contact-items_phone {
     color: #202020;
     font-family: "Nexa";
@@ -420,7 +419,6 @@
     padding: 0;
     margin: 0;
 }
-
 .contact-items__social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -446,12 +444,18 @@
 }
 
 .contact-items__social_btn:hover path, .contact-items__social_btn:focus path {
-    fill: #202020;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-
-
+.contact-items__social_btn_facebook:hover path, .contact-items__social_btn_facebook:focus path{
+  fill: #3B5998;
+}
+.contact-items__social_btn_twitter:hover path, .contact-items__social_btn_twitter:focus path{
+  fill: #1DA1F3;
+}
+.contact-items__social_btn_pinterest:hover path, .contact-items__social_btn_pinterest:focus path{
+  fill: #BD2125;
+}
 /*contact end*/
 
 
