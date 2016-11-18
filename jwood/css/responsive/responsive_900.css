@@ -1,0 +1,17 @@
+.about-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.about-block__photo {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 3.0em;
+}
+
+.about-block__info_title {
+    text-align: center;
+}
