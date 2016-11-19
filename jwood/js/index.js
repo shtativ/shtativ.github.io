@@ -1,13 +1,9 @@
-//fullpage plugin
-
-
-//flex-navbar
+//navbar
 $(document).ready(function() {
-  var toggle = document.querySelector("#nav-button");
-  var nav = document.querySelector("#nav-items");
-  toggle.addEventListener("click", function(e) {
-    e.preventDefault();
-    nav.classList.contains("nav-items") ? nav.classList.remove("nav-items") : nav.classList.add("nav-items");
+  $( "#nav-button" ).click(function() {
+    // $( this ).slideUp();
+    $('#nav-items').toggleClass( 'active' );
+    	// $('#nav-items').slideToggle('slow');
   });
 });
 
