@@ -7,7 +7,7 @@ $(document).ready(function() {
   var nav = document.querySelector("#nav-items");
   toggle.addEventListener("click", function(e) {
     e.preventDefault();
-    nav.classList.contains("nav-items--visible") ? nav.classList.remove("nav-items--visible") : nav.classList.add("nav-items--visible");
+    nav.classList.contains("nav-items") ? nav.classList.remove("nav-items") : nav.classList.add("nav-items");
   });
 });
 
