@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="css/responsive/responsive_590.css" media="screen and (max-width: 590px)">
     <link rel="stylesheet" href="css/responsive/responsive_430.css" media="screen and (max-width: 430px)">
     <link rel="stylesheet" href="css/responsive/responsive_min_768.css" media="screen and (min-width: 768px)">
+
+    <!-- Add lightBox -->
+    <link rel="stylesheet" href="./css/lightbox.min.css" type="text/css" media="screen" />
     <!-- <link rel="stylesheet" href="./css/media_queries.css" /> -->
     <!-- import jquery plagin -->
     <!-- <link rel="stylesheet" href="./css/onepage-scroll.css"> -->
@@ -34,7 +37,7 @@
     <div id="fullpage">
         <section class="top section">
             <nav class="nav">
-              <button id="nav-button" class="nav-button">Tap here</button>
+                <button id="nav-button" class="nav-button nav-item__nav-item_white">Menu</button>
                 <ul id="nav-items" class="nav-items">
                     <li class="nav-items__nav-item">
                         <a href="#firstPage" class="nav-item__nav-item_white">Home</a>
@@ -110,16 +113,36 @@
         <section class="portfolio section">
             <span class="portfolio__title">Portfolio</span>
             <div class="portfolio-gallery">
-                <img class="portfolio-gallery_photo" src="./images/portfolio-gallery_photo_01.jpg" alt="gallery photo1">
-                <img class="portfolio-gallery_photo" src="./images/portfolio-gallery_photo_02.jpg" alt="gallery photo2">
-                <img class="portfolio-gallery_photo" src="./images/portfolio-gallery_photo_03.jpg" alt="gallery photo3">
-                <img class="portfolio-gallery_photo" src="./images/portfolio-gallery_photo_04.jpg" alt="gallery photo4">
-                <img class="portfolio-gallery_photo" src="./images/portfolio-gallery_photo_05.jpg" alt="gallery photo5">
-                <img class="portfolio-gallery_photo" src="./images/portfolio-gallery_photo_06.jpg" alt="gallery photo6">
-                <img class="portfolio-gallery_photo" src="./images/portfolio-gallery_photo_07.jpg" alt="gallery photo7">
-                <img class="portfolio-gallery_photo" src="./images/portfolio-gallery_photo_08.jpg" alt="gallery photo8">
-                <img class="portfolio-gallery_photo" src="./images/portfolio-gallery_photo_09.jpg" alt="gallery photo9">
-                <img class="portfolio-gallery_photo" src="./images/portfolio-gallery_photo_10.jpg" alt="gallery photo10">
+                <a class="portfolio-gallery_photo" rel="gallery" href="./images/gallery/portfolio-gallery_photo_1.jpg" data-lightbox="gallery photos" title="gallery's photos 1">
+                    <img class="portfolio-gallery_photo" src="./images/gallery/preview/portfolio-gallery_photo_1_min.jpg" alt="gallery photo1">
+                </a>
+                <a class="portfolio-gallery_photo" rel="gallery" href="./images/gallery/portfolio-gallery_photo_2.jpg" data-lightbox="gallery photos" title="gallery's photos 2">
+                    <img class="portfolio-gallery_photo" src="./images/gallery/preview/portfolio-gallery_photo_2_min.jpg" alt="gallery photo2">
+                </a>
+                <a class="portfolio-gallery_photo" rel="gallery" href="./images/gallery/portfolio-gallery_photo_3.jpg" data-lightbox="gallery photos" title="gallery's photos 3">
+                    <img class="portfolio-gallery_photo" src="./images/gallery/preview/portfolio-gallery_photo_3_min.jpg" alt="gallery photo3">
+                </a>
+                <a class="portfolio-gallery_photo" rel="gallery" href="./images/gallery/portfolio-gallery_photo_4.jpg" data-lightbox="gallery photos" title="gallery's photos 4">
+                    <img class="portfolio-gallery_photo" src="./images/gallery/preview/portfolio-gallery_photo_4_min.jpg" alt="gallery photo4">
+                </a>
+                <a class="portfolio-gallery_photo" rel="gallery" href="./images/gallery/portfolio-gallery_photo_5.jpg" data-lightbox="gallery photos" title="gallery's photos 5" data-lightbox="gallery photos">
+                    <img class="portfolio-gallery_photo" src="./images/gallery/preview/portfolio-gallery_photo_5_min.jpg" alt="gallery photo5">
+                </a>
+                <a class="portfolio-gallery_photo" rel="gallery" href="./images/gallery/portfolio-gallery_photo_6.jpg" data-lightbox="gallery photos" title="gallery's photos 6" data-lightbox="gallery photos">
+                    <img class="portfolio-gallery_photo" src="./images/gallery/preview/portfolio-gallery_photo_6_min.jpg" alt="gallery photo6">
+                </a>
+                <a class="portfolio-gallery_photo" rel="gallery" href="./images/gallery/portfolio-gallery_photo_7.jpg" data-lightbox="gallery photos" title="gallery's photos 7" data-lightbox="gallery photos">
+                    <img class="portfolio-gallery_photo" src="./images/gallery/preview/portfolio-gallery_photo_7_min.jpg" alt="gallery photo7">
+                </a>
+                <a class="portfolio-gallery_photo" rel="gallery" href="./images/gallery/portfolio-gallery_photo_8.jpg" data-lightbox="gallery photos" title="gallery's photos 8" data-lightbox="gallery photos">
+                    <img class="portfolio-gallery_photo" src="./images/gallery/preview/portfolio-gallery_photo_8_min.jpg" alt="gallery photo8">
+                </a>
+                <a class="portfolio-gallery_photo" rel="gallery" href="./images/gallery/portfolio-gallery_photo_9.jpg" data-lightbox="gallery photos" title="gallery's photos 9" data-lightbox="gallery photos">
+                    <img class="portfolio-gallery_photo" src="./images/gallery/preview/portfolio-gallery_photo_9_min.jpg" alt="gallery photo9">
+                </a>
+                <a class="portfolio-gallery_photo" rel="gallery" href="./images/gallery/portfolio-gallery_photo_10.jpg" data-lightbox="gallery photos" title="gallery's photos 10" data-lightbox="gallery photos">
+                    <img class="portfolio-gallery_photo" src="./images/gallery/preview/portfolio-gallery_photo_10_min.jpg" alt="gallery photo10">
+                </a>
             </div>
             <div class="scroll">
                 <a href="#4thPage">
@@ -200,6 +223,9 @@
 
         <!-- jQuery file -->
         <script src="./js/index.js" type="text/javascript"></script>
+        <!-- Add lightBox -->
+        <script type="text/javascript" src="./js/lightbox.min.js"></script>
+
 
     </div>
 </body>

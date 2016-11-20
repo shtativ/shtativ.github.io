@@ -24,6 +24,9 @@
   width: 90%;
   padding: 0;
 }
+.about-block__info_author{
+  text-align: center;
+}
 .about-block__info_title {
     text-align: center;
 }

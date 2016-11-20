@@ -12,13 +12,29 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100vh;
+padding-top: 20vh;
 }
 .nav-items{
   display: none;
+    text-align: left;
 }
+.nav-items-active{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav-items__nav-item{
+  z-index: 999;
+  margin:4vw;
+
+}
+/*.nav-items__nav-item + .nav-items__nav-item {
+    margin-left: 0vw;
+  }*/
 .scroll{
   padding: 3.0em 2.0em;
 }
@@ -47,9 +63,4 @@
 
 .contact-items__social {
     margin: 1.5em;
-}
-.active{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }

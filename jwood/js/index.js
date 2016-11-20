@@ -2,11 +2,16 @@
 $(document).ready(function() {
   $( "#nav-button" ).click(function() {
     // $( this ).slideUp();
-    $('#nav-items').toggleClass( 'active' );
+    $('#nav-items').toggleClass( 'nav-items-active');
     	// $('#nav-items').slideToggle('slow');
   });
 });
-
+// $(document).ready(function() {
+lightbox.option({
+     'resizeDuration': 200,
+     'wrapAround': true
+   })
+ // });
 //
 // $(document).ready(function() {
 //     $('#fullpage').fullpage({
