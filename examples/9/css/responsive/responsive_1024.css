@@ -1,0 +1,43 @@
+.logo-text_top{
+  font-size: 3em;
+}
+.about-block__info_title {
+    font-size: 3.0em;
+}
+
+.about-block__info_text {
+    font-size: 1.6em;
+    padding-bottom: 1.8em;
+}
+
+.about-block__info_author {
+    font-size: 2.0em;
+}
+
+.portfolio-gallery{
+  max-width: 90vw;
+}
+.portfolio-gallery_photo{
+  width: auto;
+  height: 13em;
+}
+.contact-items_mail {
+    font-size: 3.0em;
+}
+
+.contact-items_phone {
+    font-size: 2.8em;
+}
+
+.contact-items_contact-type {
+    font-size: 2.4em;
+    margin-top: 2.2em;
+}
+
+.contact-items__social {
+    margin: 1.8em;
+}
+
+.footer__name {
+    font-size: 1.6em;
+}
