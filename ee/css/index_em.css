@@ -8,9 +8,9 @@
 }
 
 
-/*html.fp-enabled, .fp-enabled body {
+html.fp-enabled, .fp-enabled body {
     margin: 0 auto!important;
-}*/
+}
 
 .section {
     min-height: 100vh;
@@ -122,8 +122,12 @@
 }
 
 .logo-img_top {
-    width: 22vw;
-    max-width: 47.3em;
+    /*width: 22vw;*/
+    width: auto;
+    height: 45vh;
+    /*max-width: 47.3em;*/
+    max-width: 51.3em;
+    max-height: 51.3em;
     padding: 0;
     margin: 2% 0 2%;
 }
