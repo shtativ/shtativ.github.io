@@ -8,7 +8,10 @@ $(document).ready(function() {
 });
 // $(document).ready(function() {
 lightbox.option({
-     'resizeDuration': 200,
+     'resizeDuration': 50,
+     'adeDuration': 100,
+     'imageFadeDuration':100,
+     'positionFromTop': 30,
      'wrapAround': true
    })
  // });
