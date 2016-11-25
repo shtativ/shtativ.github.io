@@ -140,7 +140,7 @@ html.fp-enabled, .fp-enabled body {
 }
 
 .scroll {
-    position: absolute;
+    position:relative;
     bottom: 0;
     left: 0;
     right: 0;
