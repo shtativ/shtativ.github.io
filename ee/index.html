@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.png" type="image/png" />
-    <!-- <base href="/jwood/"> -->
+    <!-- <base href="/ee/"> -->
     <title>EE</title>
     <!-- fonts -->
     <link rel="stylesheet" href="./css/fonts.css" />
@@ -31,25 +31,26 @@
 </head>
 
 <body class="body">
-    <div id="fullpage">
-        <section class="top section">
-            <nav class="nav">
+<div id="fullpage">
+        <section  data-anchor="firstPage" class="top section">
+            <nav data-anchor="header" class="nav">
                 <button id="nav-button" class="nav-button nav-item__nav-item_white">Menu</button>
                 <ul id="nav-items" class="nav-items">
-                    <li class="nav-items__nav-item">
-                        <a href="" class="nav-item__nav-item_white">Home</a>
+                    <li class="nav-items__nav-item active" data-menuanchor="firstPage">
+                        <a href="#firstPage" class="nav-item__nav-item_white">Home</a>
                     </li>
-                    <li class="nav-items__nav-item">
-                        <a href="" class="nav-item__nav-item_white">About Me</a>
+                    <li class="nav-items__nav-item" data-menuanchor="secondPage">
+                        <a href="#secondPage" class="nav-item__nav-item_white">About Me</a>
                     </li>
-                    <li class="nav-items__nav-item">
-                        <a href="" class="nav-item__nav-item_white">Portfolio</a>
+                    <li class="nav-items__nav-item"  data-menuanchor="3thPage">
+                        <a href="#3thPage" class="nav-item__nav-item_white">Portfolio</a>
                     </li>
-                    <li class="nav-items__nav-item">
-                        <a href="" class="nav-item__nav-item_white">Contact</a>
+                    <li class="nav-items__nav-item" data-menuanchor="4thPage">
+                        <a href="#4thPage" class="nav-item__nav-item_white">Contact</a>
                     </li>
                 </ul>
             </nav>
+
             <div class="top-title">
                 <div class="logo-img"><img class="logo-img_top" src="./images/top-img_logo.png" alt="top logo"></div>
                 <div class="logo-text">
@@ -64,7 +65,7 @@
             </div>
         </section>
 
-        <section id="secondPage" class="about  section">
+        <section data-anchor="secondPage" class="about section">
             <div class="about-block">
                 <img class="about-block__photo" src="./images/about-block__photo.jpg" alt="about photo">
                 <div class="about-block__info">
@@ -85,7 +86,7 @@
             </div>
         </section>
 
-        <section id="3thPage" class="3thPage portfolio section">
+        <section data-anchor="3thPage" class="portfolio section">
             <span class="portfolio__title">Portfolio</span>
             <div class="portfolio-gallery">
                 <a class="portfolio-gallery_photo" rel="gallery" href="./images/gallery/portfolio-gallery_photo_1.jpg" data-lightbox="gallery photos" title="gallery's photos 1">
@@ -128,10 +129,10 @@
             </div>
         </section>
 
-        <section id="4thPage" class="contact section">
+        <section data-anchor="4thPage" class="contact section">
             <div class="contact-items">
                 <span class="contact-items_contact-type">Mail:</span>
-                <a class="contact-items_mail" href="mailto:jason@wood.com">tanyago@travel.com</a>
+                <a class="contact-items_mail" href="mailto:jason@wood.com">tanyago@home.com</a>
                 <span class="contact-items_contact-type">Phone:</span>
                 <a class="contact-items_phone" href="tel:+44 212 432 444">+12 345 678 901</a>
                 <span class="contact-items_contact-type">Social media:</span>
@@ -168,8 +169,7 @@
                     </a>
                 </div>
             </div>
-
-            <footer class="footer ">
+            <footer class="footer">
                 <span class="footer__name">猫の手も借りたいほど忙しい</span>
             </footer>
         </section>
@@ -179,11 +179,10 @@
         <script type="text/javascript" src="./js/lightbox.min.js"></script>
         <!-- fullPage -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.min.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/vendors/jquery.easings.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/vendors/scrolloverflow.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/vendors/jquery.easings.min.js"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/vendors/scrolloverflow.min.js"></script>
         <!--my js file -->
         <script src="./js/index.js" type="text/javascript"></script>
-
 
     </div>
 </body>

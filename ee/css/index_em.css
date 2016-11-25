@@ -45,9 +45,8 @@ html.fp-enabled, .fp-enabled body {
     left: 0;
     right: 0;
     top: 0;
+    z-index: 1;
 }
-
-.nav-button {}
 
 .nav-items {
     display: -webkit-box;
@@ -90,8 +89,7 @@ html.fp-enabled, .fp-enabled body {
 
 .nav-items__nav-item:hover:after {
     width: 100%;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out
+    /*transition: all 0.2s ease-in-out*/
 }
 
 .nav-item__nav-item_white {
@@ -111,8 +109,7 @@ html.fp-enabled, .fp-enabled body {
 
 .nav-item__nav-item_white:hover {
     color: #fff;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    /*transition: all 0.3s ease-in-out;*/
 }
 
 .top-title {
@@ -349,17 +346,15 @@ html.fp-enabled, .fp-enabled body {
     margin: 2% 1% 0%;
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .portfolio-gallery_photo:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
     -webkit-transform-origin: 50% center 50%;
             transform-origin: 50% center 50%;
-    -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
     z-index: 999;
 }
 

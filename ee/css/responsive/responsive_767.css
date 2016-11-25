@@ -1,7 +1,3 @@
-/*.logo-img_top {
-    width: 42vw;
-}*/
-
 .logo-text_top {
     /*font-size: 2.1em;*/
     font-size: 7vw;
@@ -32,10 +28,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    /*height: 100vh;*/
     width: 100%;
-    background: rgb(0, 0, 73);
-    z-index: 9999;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 99;
 }
 
 .nav-items__nav-item {
