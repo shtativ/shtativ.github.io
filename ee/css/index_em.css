@@ -7,7 +7,6 @@
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.49);
 }
 
-
 html.fp-enabled, .fp-enabled body {
     margin: 0 auto!important;
 }
@@ -109,11 +108,11 @@ html.fp-enabled, .fp-enabled body {
 
 .nav-item__nav-item_white:hover {
     color: #fff;
-    /*transition: all 0.3s ease-in-out;*/
 }
 
 .top-title {
-    position: relative;
+    /*position: relative;*/
+    /*отключен из-за плохой центровки*/
     top: 11em;
     margin: auto;
 }
@@ -125,7 +124,7 @@ html.fp-enabled, .fp-enabled body {
     /*max-width: 47.3em;*/
     max-width: 51.3em;
     max-height: 51.3em;
-    padding: 0;
+    padding: 2em 0 0;
     margin: 2% 0 2%;
 }
 
@@ -141,6 +140,10 @@ html.fp-enabled, .fp-enabled body {
 }
 
 .scroll {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
     width: 3.4em;
     height: 5.5em;
@@ -283,6 +286,7 @@ html.fp-enabled, .fp-enabled body {
     font-size: 2.8em;
     font-family: 'Open Sans';
     font-style: italic;
+    font-weight: 600;
 }
 
 
@@ -290,6 +294,7 @@ html.fp-enabled, .fp-enabled body {
 
 
 /*portfolio begin*/
+
 .portfolio {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -479,8 +484,10 @@ html.fp-enabled, .fp-enabled body {
 footer {
     width: 94%;
     border-top: 1px solid #bebebe;
-    padding: 0;
-    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -490,6 +497,8 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .footer__name {

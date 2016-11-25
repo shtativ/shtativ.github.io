@@ -4,8 +4,7 @@ var autoprefixer = require('autoprefixer');
 postcss([require('postcss-flexbugs-fixes')]);
 var browserSync = require('browser-sync');
 var imagemin = require('gulp-imagemin');
-var out = postcss([ clean() ]).process(css).css;
-console.log(out)
+
 
 gulp.task('css', function () {
     var processors = [
