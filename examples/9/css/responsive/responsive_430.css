@@ -13,6 +13,9 @@
 .portfolio__title {
     font-size: 3em;
 }
+.contact-items{
+  padding-top: 0;
+}
 .contact-items__social {
     margin: 0;
 }

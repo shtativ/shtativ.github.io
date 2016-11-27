@@ -118,14 +118,12 @@ html.fp-enabled, .fp-enabled body {
 }
 
 .logo-img_top {
-    /*width: 22vw;*/
     width: auto;
     height: 45vh;
-    /*max-width: 47.3em;*/
     max-width: 51.3em;
     max-height: 51.3em;
     padding: 2em 0 0;
-    margin: 2% 0 2%;
+    margin: 5% 0 2%;
 }
 
 .logo-text_top {

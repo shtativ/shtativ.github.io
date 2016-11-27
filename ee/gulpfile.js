@@ -4,12 +4,12 @@ var autoprefixer = require('autoprefixer');
 postcss([require('postcss-flexbugs-fixes')]);
 var browserSync = require('browser-sync');
 var imagemin = require('gulp-imagemin');
+postcss([require('postcss-flexbugs-fixes')]);
 
 
 gulp.task('css', function () {
     var processors = [
         autoprefixer({browsers: ['last 2 version']['> 2%']}),
-
     ];
     return gulp.src('css/**/*.css')
         .pipe(postcss(processors))

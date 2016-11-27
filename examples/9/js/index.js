@@ -1,19 +1,20 @@
 //navbar
 $(document).ready(function() {
-  $( "#nav-button" ).click(function() {
-    $('#nav-items').toggleClass( 'nav-items-active');
-    	// $('#nav-items').slideToggle('slow');
-  });
+    $("#nav-button").click(function() {
+        $('#nav-items').toggleClass('nav-items-active');
+        // $('#nav-items').slideToggle('slow');
+        // $('#secondPage').toggleClass('.nav-items-active-no');
+    });
 });
 
 // lightbox plugin
 lightbox.option({
-     'resizeDuration': 50,
-     'adeDuration': 100,
-     'imageFadeDuration':100,
-     'positionFromTop': 30,
-     'wrapAround': true
-   })
+    'resizeDuration': 50,
+    'adeDuration': 100,
+    'imageFadeDuration': 100,
+    'positionFromTop': 30,
+    'wrapAround': true
+})
 
 
 //FullPage scroll
@@ -22,7 +23,7 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['firstPage', 'secondPage', '3thPage', '4thPage'],
+        anchors: ['firstPage', 'secondPage', '3thPage', '4thPage'],
         navigation: true,
         navigationPosition: 'right',
         showActiveTooltip: false,
@@ -30,7 +31,7 @@ $(document).ready(function() {
 
         //Scrolling
         css3: true,
-        scrollingSpeed: 500,
+        scrollingSpeed: 444,
         autoScrolling: true,
         fitToSection: true,
         fitToSectionDelay: 1000,
@@ -40,7 +41,6 @@ $(document).ready(function() {
         loopBottom: false,
         loopTop: false,
         loopHorizontal: true,
-        continuousVertical: false,
         continuousHorizontal: false,
         scrollHorizontally: false,
         interlockedSlides: false,
@@ -54,6 +54,8 @@ $(document).ready(function() {
         normalScrollElementTouchThreshold: 5,
         bigSectionsDestination: null,
         continuousVertical: true,
+        //
+
 
 
         //Accessibility
@@ -63,11 +65,11 @@ $(document).ready(function() {
 
         //Design
         controlArrows: true,
-        verticalCentered: false,
-        sectionsColor : ['#ccc', '#fff'],
+        verticalCentered: true, //cмещение картинок
+        sectionsColor: ['#ccc', '#fff'],
         paddingTop: '1em',
         paddingBottom: '5px',
-        fixedElements: '#header, .footer',
+        fixedElements: '#header',
         responsiveWidth: 768,
         responsiveHeight: 0,
         responsiveSlides: false,
@@ -77,12 +79,12 @@ $(document).ready(function() {
         lazyLoading: true,
 
         //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
-        afterRender: function(){},
-        afterResize: function(){},
-        afterResponsive: function(isResponsive){},
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+        onLeave: function(index, nextIndex, direction) {},
+        afterLoad: function(anchorLink, index) {},
+        afterRender: function() {},
+        afterResize: function() {},
+        afterResponsive: function(isResponsive) {},
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
+        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
     });
 });

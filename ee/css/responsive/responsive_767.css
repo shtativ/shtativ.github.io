@@ -18,24 +18,12 @@
     padding-top: 20vh;
     -webkit-transform: scale(0);
             transform: scale(0);
-    top: -110vh;
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav {
     height: 2.8em;
-}
-
-
-/*temp*/
-
-.nav-items-active-no {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    top: -110vh;
-    opacity: 0;
 }
 
 .nav-button {
@@ -47,10 +35,8 @@
 }
 
 .nav-items-active {
-    opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1);
-    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -58,6 +44,8 @@
     bottom: 0;
     margin: 0;
     width: 100%;
+    height: auto;
+    box-sizing: border-box;
     background: rgba(0, 0, 0, 0.85);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
