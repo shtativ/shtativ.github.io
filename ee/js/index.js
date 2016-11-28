@@ -1,9 +1,10 @@
 //navbar
 $(document).ready(function() {
     $("#nav-button").click(function() {
-        $('#nav-items').toggleClass('nav-items-active');
-        // $('#nav-items').slideToggle('slow');
-        // $('#secondPage').toggleClass('.nav-items-active-no');
+        $('#nav-items').addClass('nav-items-active');
+    });
+    $('#nav-items a').click(function() {
+        $('#nav-items').removeClass('nav-items-active');
     });
 });
 
@@ -14,7 +15,7 @@ lightbox.option({
     'imageFadeDuration': 100,
     'positionFromTop': 30,
     'wrapAround': true
-})
+})  
 
 
 //FullPage scroll
