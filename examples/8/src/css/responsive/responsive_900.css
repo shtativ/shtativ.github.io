@@ -1,0 +1,27 @@
+.top-title{
+  top:8em;
+}
+.logo-text_top{
+  font-size: 2.6em;
+}
+.about-block {
+    flex-direction: column;
+}
+
+.about-block__photo {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 3.0em;
+}
+.about-block__info{
+  align-self: center;
+  width: 90%;
+  padding: 0;
+}
+.about-block__info_author{
+  text-align: center;
+}
+.about-block__info_title {
+    text-align: center;
+}
