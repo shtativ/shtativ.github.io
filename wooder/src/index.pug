@@ -1,0 +1,135 @@
+doctype html
+html(lang='ru')
+
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title WOODER
+        //css
+        link(rel='stylesheet' href='./css/normalize.css')
+        link(rel='stylesheet' href='./css/index.css')
+        link(rel='stylesheet' href='./css/fonts.min.css')
+
+    body.body
+      article.top
+        header.header
+          .header__menu
+            button.header__menu-btn.hamburger.hamburger--spring(type='button')
+              span.hamburger-box
+                span.hamburger-inner
+            span.header__menu--title menu
+          nav.header-nav
+            .header-nav-logo.logo wooder
+            ul.header-nav__items
+              li
+                a.header-nav__items-top home
+              li
+                a.header-nav__items-top products
+              li
+                a.header-nav__items-top about
+          .header-etc
+            button.header-etc__info-btn i
+            button.header-etc__lang-toggle-btn en &#9207;
+        .wooder-container.wooder-container__top
+          section.top-aside-nav
+            span.top-aside-nav__page-number 01
+            ul.top-aside-nav__page-dots
+              li.top-aside-nav__page-dots-item
+                a.top-aside-nav__page-dots-item-a &#9679;
+              li.top-aside-nav__page-dots-item
+                a.top-aside-nav__page-dots-item-a &#9679;
+              li.top-aside-nav__page-dots-item
+                a.top-aside-nav__page-dots-item-a &#9679;
+              li.top-aside-nav__page-dots-item
+                a.top-aside-nav__page-dots-item-a &#9679;
+          section.top-main
+            h1.top-main__logo.logo wooder
+            button.top-main__btn.wooder-btn
+              | learn more
+              span.wooder-btn--brown &#8594;
+            .top-main__scroll
+              img.top-main__scroll-img-mouse(src="img/main-scroll__img-mouse.svg" alt="mouse scroll icon")
+              img.top-main__scroll-img-arrow--down(src="img/main-scroll__img-arrow--down.svg" alt="arrow down")
+              span.top-main__scroll-mark scroll
+          section.top-aside-etc
+            .top-aside-etc__title
+              span.top-aside-etc__title-mark furniture & decor
+              .top-aside-etc__title-line
+            button.top-aside-etc__share-btn
+            span.top-aside-etc__symbol--w.wooder-symbol w
+      article.middle-block
+        .wooder-container.wooder-container__middle-block
+
+
+          section.middle-block-furniture
+            span.middle-block-furniture__symbol--f.wooder-symbol f
+            .middle-block-furniture__text.middle-block-text
+              h2.middle-block-furniture__text-h2.wooder-h2 furniture
+              .middle-block-furniture__wrapper
+                p.middle-block-furniture__wrapper-text.wooder-p.wooder-p--gray Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creating new pieces made of reclaimed barnwood
+              button.middle-block-btn.wooder-btn
+                | learn more
+                span.wooder-btn--brown &#8594;
+            .middle-block__page-number.furniture-page-number
+              span.page-number--black 01
+              | .
+            .middle-block__img.furniture-img
+            span.middle-block-furniture__mark.wooder__mark furniture
+
+
+          section.middle-block-decor
+            span.middle-block-decor__mark.wooder__mark decor
+            .middle-block__img.decor-img
+            .middle-block-decor__text.middle-block-text
+              h2.middle-block-decor__text-h2.wooder-h2 decor
+              .middle-block-decor__wrapper
+                p.middle-block-decor__wrapper-text.wooder-p.wooder-p--gray We make all types of wooden decor as per design given by Architect,Interior designer, contractor which is suitable your premises.
+              button.middle-block-btn.wooder-btn
+                | learn more
+                span.wooder-btn--brown &#8594;
+            span.middle-block-decor__symbol--d.wooder-symbol d
+            .middle-block__page-number.decor-page-number
+              span.page-number--black 02
+              | .
+          section.middle-block-video
+            .middle-block-video-title
+              h2.wooder-h2.middle-block-video-title__h2 wooder - is quality
+              p.wooder-p.wooder-p--light-gray We create unique design objects made of rare wood, specially under the order. Look at the short video about our work.
+            .middle-block-video-items
+              figure.middle-block-video-items__item
+                img.video-item__bg(src="img/video-item__bg--1.png" alt="video item №1")
+                button.video-item__play
+                figcaption.video__inspiration Innovative Design
+              figure.middle-block-video-items__item
+                img.video-item__bg(src="img/video-item__bg--2.png" alt="video item №2")
+                img.video-item__play
+                figcaption.video__inspiration High-level Skills
+              figure.middle-block-video-items__item
+                img.video-item__bg(src="img/video-item__bg--3.png" alt="video item №3")
+                img.video-item__play
+                figcaption.video__inspiration Quality Products
+      article.video-block
+        .wooder-container.wooder-container__video
+          span.video-block__symbol.wooder-symbol v
+          .video-block__inner
+            h2.wooder-h2.wooder-h2--brown we do the design of any complexity
+            p.wooder-p.wooder-p--white This is a team of professionals that make the furniture and wood décor high standard. Creating modern designs. Adhering to the global quality standards. And we are doing work with love.
+            button.video-block__btn.wooder-btn watch video
+      article.about-us
+        .wooder-container.wooder-container__about
+          span.about-us__symbol.wooder-symbol a
+          span.about-us__mark.wooder__mark about us
+          .about-us__img
+          .about-us__text
+            h2.wooder-h2 about us
+              .about-us__wrapper-text
+                p.about-us__wrapper-text.wooder-p.wooder-p--gray We are a team of professionals in the wood processing and the creation of wooden furniture of the highest class This is a team of professionals that make the furniture and wood décor high standard. Creating modern designs. Adhering to the global quality standards. And we are doing work with love.
+              button.about-us-btn.wooder-btn learn more &#8594;
+      footer.footer
+        .wooder-container
+          span.footer__copiright © 2016 WOODER
+          span.logo.footer-logo wooder
+          p.footer__author
+            span.footer__author--grey Designed by
+            |  Viacheslav Olianishyn
