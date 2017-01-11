@@ -55,7 +55,7 @@ html(lang='ru')
           section.top-aside-etc
             .top-aside-etc__title
               span.top-aside-etc__title-mark furniture & decor
-              .top-aside-etc__title-line
+            .top-aside-etc__title-line
             button.top-aside-etc__share-btn
             span.top-aside-etc__symbol--w.wooder-symbol w
       article.middle-block
@@ -116,7 +116,7 @@ html(lang='ru')
                     img.video-item__play-img(src="img/video-item__play-img.svg" alt="video playback button")
                 figcaption.video__inspiration Quality Products
       article.video-block
-        .wooder-container.wooder-container__video
+        .wooder-container
           span.video-block__symbol.wooder-symbol v
           .video-block__inner
             h2.wooder-h2.wooder-h2--brown we do the design of any complexity
@@ -124,19 +124,22 @@ html(lang='ru')
             p.wooder-p.wooder-p--white This is a team of professionals that make the furniture and wood décor high standard. Creating modern designs. Adhering to the global quality standards. And we are doing work with love.
             button.wooder-btn.video-block__btn
               span.video-block__btn-text watch video
+        img.video-block__play-icon(src="img/video-block__play-icon.svg" alt="vi deo lay icon")
       article.about-us
         .wooder-container.wooder-container__about
           span.about-us__symbol.wooder-symbol a
           span.about-us__mark.wooder__mark about us
-          .about-us__img
+          .about-us__pic
           .about-us__text
-            h2.wooder-h2 about us
-              .about-us__wrapper-text
-                p.about-us__wrapper-text.wooder-p.wooder-p--gray We are a team of professionals in the wood processing and the creation of wooden furniture of the highest class This is a team of professionals that make the furniture and wood décor high standard. Creating modern designs. Adhering to the global quality standards. And we are doing work with love.
-              button.about-us-btn.wooder-btn learn more &#8594;
+            h2.wooder-h2.about-us__h2 about us
+            .about-us__wrapper-text
+              p.wooder-p.wooder-p--gray We are a team of professionals in the wood processing and the creation of wooden furniture of the highest class
+              button.middle-block-btn.about-us-btn.wooder-btn
+                | learn more
+                span.wooder-btn--brown &#8594;
       footer.footer
-        .wooder-container
-          span.footer__copiright © 2016 WOODER
+        .wooder-container.footer-wrapper
+          span.footer__copiright © &nbsp; 2016 WOODER
           span.logo.footer-logo wooder
           p.footer__author
             span.footer__author--grey Designed by
