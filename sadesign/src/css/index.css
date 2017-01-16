@@ -219,5 +219,6 @@ body {
 .hamburger {
 	display: none;
 	border: 0;
+  padding: 0;
 	overflow: hidden;
 }

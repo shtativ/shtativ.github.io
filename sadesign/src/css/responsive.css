@@ -140,6 +140,7 @@
                   display: block;
                   outline: none;
                   align-self: center;
+                  padding: 0;
               }
               .body-container {
                   padding: 0 4.7%;
@@ -196,6 +197,7 @@
                 font-size: 1.2rem;
               }
           }
+
           @media all and (max-width: 440px) {
               .body-nav__menu {
                   flex-direction: column;
@@ -252,6 +254,7 @@
           /**/
 
           @media all and (min-width: 769px) {
+
               .body-nav__menu {
                   display: inline-flex!important;
               }
