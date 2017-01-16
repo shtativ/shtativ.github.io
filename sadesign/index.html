@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СА•дизайн</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Raleway:700&amp;subset=cyrillic" rel="stylesheet">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header class="body-header body-container">
+        <nav class="body-nav">
+            <!-- <img class="body-header__logo" src="img/body-header__logo.svg" alt="logo"> -->
+            <svg class="body-header__logo"><use xlink:href="#logotype-icon" /></svg>
+
+            <ul class="body-nav__menu">
+                <li class="body-nav__menu-item"><a href="" class="body-nav__menu-item--link">Портфолио</a></li>
+                <li class="body-nav__menu-item"><a href="" class="body-nav__menu-item--link">Как мы работаем</a></li>
+                <li class="body-nav__menu-item"><a href="" class="body-nav__menu-item--link">Отзывы</a></li>
+                <li class="body-nav__menu-item"><a href="" class="body-nav__menu-item--link">О компании</a></li>
+                <li class="body-nav__menu-item"><a href="" class="body-nav__menu-item--link">Контакты</a></li>
+            </ul>
+
+            <button class="hamburger hamburger--collapse" type="button" aria-label="Menu" aria-controls="navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+        </nav>
+    </header>
+    <main class="main body-container">
+        <div class="inner">
+            <!-- test bg animation-->
+        </div>
+        <h1 class="main__title">По глобальной статистике liveinternet.ru на апрель 2016</h1>
+        <section class="main-statistic">
+            <div class="main-satistic__block block--pda">
+                <span id="live-number--pda" class="main-statistic__block-percents">60%</span>
+                <p class="main-statistic__block-text">Пользователи мобильных телефонов и планшетов</p>
+            </div>
+            <div class="main-satistic__block block--pc">
+                <span id="live-number--pc" class="main-statistic__block-percents">40%</span>
+                <p class="main-statistic__block-text">Пользователи настольных компьютеров и ноутбуков</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer body-container">
+        <div class="footer__copiright">
+            <span>©&nbsp;Веб-студия СА•дизайн, 2005-2016</span>
+        </div>
+        <div class="footer-column footer__social">
+            <a class="footer-btn footer-btn--gp" href="">Google+</a>
+            <a class="footer-btn footer-btn--vk" href="">Vkontakte</a>
+            <a class="footer-btn footer-btn--fb" href="">Facebook</a>
+        </div>
+        <div class="footer-column footer__contacts">
+            <a href="https://yandex.ru/maps/-/CZXZRY-o" class="adress footer-btn footer__contacts-item">190005, Санкт-Петербург, 7-я Красноармейская, 25, офис 404.</a>
+            <!--лишний класс -->
+            <a href="tel: +78129970625" class="tel footer-btn footer__contacts-item">+7 (812) 997-06-25. <span class="footer__contacts--gray-text">По будням: 11<sup>00</sup>...20<sup>00</sup></span></a>
+            <a href="mailto:sa@sadesign.ru" class="email footer-btn footer__contacts-item">sa@sadesign.ru</a>
+        </div>
+    </footer>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.animateNumber.js" type="text/javascript"></script>
+    <script src="./js/index.js" type="text/javascript"></script>
+</body>
+
+</html>
