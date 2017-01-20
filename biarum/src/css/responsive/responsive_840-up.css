@@ -1,0 +1,7 @@
+.body-header-nav__btn {
+    display: inline-block;
+}
+
+.body-header-nav__menu {
+    display: flex!important;
+}
