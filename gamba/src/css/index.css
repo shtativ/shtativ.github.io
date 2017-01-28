@@ -1,0 +1,318 @@
+/*
+font-family: 'Cuprum', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto Slab', serif;
+*/
+
+body {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 16px;
+    color: #455255;
+}
+
+.body-container {
+    max-width: 1920px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1170px;
+    padding: 0 0 192px;
+    margin: 0 auto;
+}
+
+
+/*header begin*/
+
+.top {
+    background: url('../img/top-bg.jpg')no-repeat;
+    background-size: cover;
+}
+
+.top-header {
+    margin-bottom: 190px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    box-sizing: content-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    /*изменить*/
+    margin-bottom: 20px;
+}
+
+.top__order {
+    color: #fafafa;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.order-status::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: url('../img/icons/order-status_icon.svg')no-repeat;
+    background-size: 8px 8px;
+    width: 8px;
+    height: 10px;
+    margin-right: 8px;
+}
+
+.order-time {
+    margin-left: 30px;
+}
+
+.order-time::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: url('../img/icons/order-time_icon.svg')no-repeat;
+    background-size: 10px 10px;
+    width: 10px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+.top__account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top__account-enter-btn {
+    background: transparent;
+    border: none;
+    color: #fbfbfb;
+    cursor: pointer;
+    /*объединить свойство в один класс*/
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.top__account-enter-btn::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: url('../img/icons/top__account-enter-btn_icon.svg')no-repeat;
+    background-size: 12px 14px;
+    width: 12px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.top__account-line {
+    width: 1px;
+    height: 20px;
+    background: #6e6e6e;
+    margin: 0 18px;
+}
+
+.top__account-cart-icon-btn {
+    display: inline-block;
+    vertical-align: middle;
+    /*объединить свойство в один класс*/
+    background: url('../img/icons/top__account-cart-icon-btn_icon.svg')no-repeat;
+    background-size: 18px 15px;
+    width: 18px;
+    height: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 6px;
+}
+
+.navbar-toggleable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 136px;
+    height: 59px;
+    color: #fff;
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    background: transparent;
+    padding: 0;
+}
+
+.header__search-btn {
+    /*объединить свойство в один класс*/
+    width: auto;
+    height: auto;
+    border: none;
+    fill: #f6f9fa;
+    background: transparent;
+    padding: 0;
+}
+
+.header__search-btn--svg {
+    width: 17px;
+    height: 17px;
+    background: rgba(0, 0, 0, 0);
+    vertical-align: middle;
+    cursor: pointer;
+    fill: #f6f9fa;
+    transition: all .2s ease-in-out;
+}
+
+.header__search-btn--svg:hover {
+    fill: #86bc42;
+}
+
+.header__menu-item {
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+}
+
+.nav-link {
+    color: #f6f9fa;
+    transition: all .1s ease-in-out;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #86bc42;
+}
+
+
+/*header end*/
+
+.top-main-block {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.top-main-block__logo {
+    margin: 0 auto 28px;
+}
+
+.top-main-block__logo-name {
+    width: 158px;
+    height: 36px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.33;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.top-main-block__title {
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    font-size: 100px;
+    margin-bottom: 50px;
+}
+
+.top-main-block__title-caption {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.body-btn {
+    border-radius: 20px;
+    background-color: #86bc42;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.body-btn--shop-now {
+    width: 180px;
+    height: 40px;
+}
+
+
+/*top end*/
+
+
+/*welcome begin*/
+
+.welcome {
+    padding: 118px 0 ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.welcome-title {
+    color: #26363a;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.welcome-plus, .welcome-plus_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome-plus_item + .welcome-plus_item{
+  margin-top: 70px;
+}
+.welcome-img {
+  background: url('../img/temp-temp-temp.jpg') 50% no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.welcome-plus_item-icon {
+    background: url('../img/welcome-plus_item-icon.png')no-repeat;
+    width: 90px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.welcome-plus__name{
+color: #26363a;
+font-size: 22px;
+font-weight: 700;
+line-height: 1.1;
+margin-bottom: 20px;
+}
+.welcome-plus__text{
+width: 100%;
+max-width: 250px;
+font-weight: 400;
+line-height: 1.6;
+text-align: center;
+}
+
+/*welcome end*/
