@@ -20,17 +20,18 @@ body {
 
 .section-container {
     display: flex;
-    flex-direction: column;
     max-width: 1170px;
-    padding: 0 0 192px;
     margin: 0 auto;
 }
-
+.top-container{
+    flex-direction: column;
+    padding: 0 0 192px;
+}
 
 /*header begin*/
 
 .top {
-    background: url('../img/top-bg.jpg')no-repeat;
+    background: url('../img/top-bg.jpg') 50% 80% no-repeat;
     background-size: cover;
 }
 
@@ -144,6 +145,8 @@ body {
     font-family: 'Great Vibes', cursive;
     font-size: 48px;
     font-weight: bold;
+    user-select: none;
+    cursor: default;
     padding: 0;
 }
 
@@ -262,12 +265,17 @@ body {
 /*welcome begin*/
 
 .welcome {
-    padding: 118px 0 ;
+
+}
+.welcome-container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 1170px;
+    width: 100%;
+    padding: 118px 0;
+    margin: 0 auto;
 }
-
 .welcome-title {
     color: #26363a;
     font-family: 'Pacifico', cursive;
@@ -286,7 +294,7 @@ body {
   margin-top: 70px;
 }
 .welcome-img {
-  background: url('../img/temp-temp-temp.jpg') 50% no-repeat;
+  background: url('../img/welcome-img_bg.png') 50% no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
 }
@@ -316,3 +324,47 @@ text-align: center;
 }
 
 /*welcome end*/
+
+/*banner-begin*/
+.banner{
+  background: url('../img/banner-bg.jpg') 50% no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 109px 15px;
+  position: relative;
+}
+.banner-container{
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid #fff;
+  padding: 65px 0;
+}
+.banner-double-bg{
+  background: url('../img/banner-1-2.png') 50% no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.banner-title-top{
+color: #86bc42;
+font-size: 40px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.banner-title{
+color: #fff;
+font-family: 'Pacifico', cursive;
+font-size: 80px;
+margin-bottom: 25px;
+}
+.banner-text{
+color: #d4dfd1;
+font-size: 18px;
+font-weight: 400;
+line-height: 1.33;
+text-transform: uppercase;
+margin-bottom: 25px;
+}
+/*banner-end*/
